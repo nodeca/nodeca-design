@@ -1,5 +1,6 @@
 .profile-status{
-  font-size:16px;
+  font-size:12px;
+  color: #888;
   margin:0 0 15px;
 }
 /* ---------------------------------------------
@@ -21,6 +22,7 @@
 }
 .profile-photo img{
   vertical-align:top;
+  box-shadow: 0 0 2px #333
 }
 .profile-photo .img{
   margin:0 0 10px;
@@ -71,6 +73,9 @@
   display:inline;
   margin:0 13px 0 0;
 }
+.photo-module-thumb img{
+  border-radius:2px;
+}
 .photo-module .timestamp{
   font-size:11px;
   display:block;
@@ -93,6 +98,7 @@
 }
 .friends-module .thumb{
   vertical-align:top;
+  border-radius:2px;
 }
 .friends-module .name{
   display:block;
@@ -114,7 +120,8 @@
   margin:10px 0 0;
 }
 .blogs-module .meta{
-  font-size:11px;
+  font-size:10px;
+  color: #888;
   margin:3px 0 0;
 }
 .blogs-module .meta .left{
@@ -171,6 +178,7 @@
   width:50px;
   height:50px;
   vertical-align:top;
+  border-radius:2px;
 }
 .wall-replies .wall-userpic img{
   width:30px;

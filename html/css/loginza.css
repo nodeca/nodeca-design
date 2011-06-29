@@ -8,10 +8,10 @@
   background-image: -moz-linear-gradient(#fff, #e7e7e7);
   background-image: -webkit-linear-gradient(#fff, #e7e7e7);
   border-radius:4px;
-  border:1px solid #AAA;
+  border:1px solid #CCC;
   display:inline-block;
   *display:inline;
-  padding:4px 5px;
+  padding:8px 7px;
   line-height:1;
   margin:4px 0 0;
 }
@@ -24,4 +24,5 @@
 }
 .loginza-buttons img{
   vertical-align:middle;
+  padding: 0 3px;
 }
