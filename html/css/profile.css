@@ -136,11 +136,10 @@
   margin:0 0 10px;
 }
 .notepad-text{
-  height:60px;
+  height:150px;
+  width:100%;
 }
-.wall-text{
-  height:17px;
-}
+
 /* ---------------------------------------------
  * Profile wall form
  */
@@ -149,6 +148,10 @@
 }
 *+html .profile-wall{
   margin:0 0 15px;
+}
+.wall-text{
+  height:50px;
+  width:100%;
 }
 .wall-post{
   border-top:1px solid #b0b0b0;
@@ -225,8 +228,8 @@
   margin-left:3px;
 }
 
-.older-posts{
-  width:456px;
+.wall-more-btn{
+  width:100%;
 }
 
 .online-sticker{

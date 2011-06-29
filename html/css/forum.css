@@ -134,6 +134,7 @@
 
 .frm-summary-info{
   background-color:#ececec;
+  border-radius: 4px;
   padding:20px;
   height:1%;
 }
@@ -146,9 +147,6 @@
 }
 .frm-options{
   margin:20px 0 0;
-}
-.frm-options select{
-  padding:5px;
 }
 
 .frm-section-toggle{
