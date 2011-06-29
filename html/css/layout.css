@@ -664,35 +664,3 @@ footer{
   font-size:12px;
   vertical-align:middle;
 }
-.auth-via-row{
-  text-align:center;
-  margin:15px 0 0;
-}
-.auth-via-options{
-  background: #fff;
-  background: -moz-linear-gradient(#fff, #e7e7e7);
-  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fff), color-stop(1, #e7e7e7));
-  background: linear-gradient(#fff, #e7e7e7);
-  background: -o-linear-gradient(#fff, #e7e7e7);
-  -pie-background: linear-gradient(#fff, #e7e7e7);
-  border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
-  border:1px solid #cccccc;
-  behavior: url(./css/PIE.htc);
-  display:-moz-inline-stack;
-  display:inline-block;
-  *display:inline;
-  zoom:1;
-  padding:4px 5px;
-  line-height:1;
-  margin:4px 0 0;
-}
-.auth-via-options li{
-  display:inline;
-  vertical-align:middle;
-}
-.auth-via-options a{
-  vertical-align:top;
-}
-.auth-via-options img{
-  vertical-align:middle;
-}
