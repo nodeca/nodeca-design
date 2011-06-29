@@ -595,9 +595,9 @@ footer{
   z-index:1;
 }
 .auth-popup{
-  transition:height 0.5s ease;
-  -moz-transition:height 0.5s ease;
-  -webkit-transition:height 0.5s ease;
+  transition:opacity 0.5s ease-in-out;
+  -moz-transition:opacity 0.5s ease-in-out;
+  -webkit-transition:opacity 0.5s ease-in-out;
   color:#373737;
   position:absolute;
   *top:26px;
@@ -608,17 +608,19 @@ footer{
   overflow:hidden;
   padding:0;
   height:0;
+  opacity: 0.5;
   border:0;
+  box-shadow:0 0 20px #333;
+  -moz-box-shadow:0 0 20px #333;
+  -webkit-box-shadow:0 0 20px #333;
 }
 .auth-visible .auth-popup{
-  transition:height 0.5s ease;
-  -moz-transition:height 0.5s ease;
-  -webkit-transition:height 0.5s ease;
   border-color:#f3f3f3 #0c4d6c #0c4d6c #f3f3f3;
   border-style:solid;
   border-width:1px;
   padding:15px 10px 10px;
-  height:175px;
+  height:auto;
+  opacity: 1;
 }
 .auth-top-shadow{
   position:absolute;
@@ -648,14 +650,6 @@ footer{
   width:183px;
 }
 
-.auth-row .textfield::-webkit-input-placeholder{
-  color:#373737;
-  font-style:normal;
-}
-.auth-row .textfield:-moz-placeholder{
-  color:#373737;
-  font-style:normal;
-}
 #rememberme{
   margin:0 0 0 4px;
   vertical-align:middle;
