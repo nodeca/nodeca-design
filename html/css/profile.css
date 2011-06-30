@@ -35,8 +35,7 @@
   border-right:1px solid #cecece;
   border-bottom:1px solid #cecece;
   margin:0 0 20px;
-  border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
-  behavior: url(./css/PIE.htc);
+  border-radius:4px;
 }
 .prf-wgt:last-child{
   margin:0;
@@ -44,8 +43,7 @@
 .prf-wgt-head{
   background-color:#e9e9e9;
   padding:13px 15px 11px;
-  border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;
-  behavior: url(./css/PIE.htc);
+  border-radius:4px 4px 0 0;
 }
 .prf-wgt-head .left{
   float:left;
@@ -245,19 +243,14 @@
   margin:-12px 0 0 4px;
   font-size:11px;
   border-radius:4px 4px 4px 0;
-  -moz-border-radius:4px 4px 4px 0;
-  -webkit-border-radius:4px 4px 4px 0;
   background: #b7db47;
-  background: -o-linear-gradient(#9fc42d, #b7db47, #b7db47);
-  background: -moz-linear-gradient(#9fc42d, #b7db47, #b7db47);
-  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #9fc42d),color-stop(1, #b7db47),color-stop(1, #b7db47));
   background: linear-gradient(#9fc42d, #b7db47, #b7db47);
-  -pie-background: linear-gradient(#9fc42d, #b7db47, #b7db47);
+  background: -moz-linear-gradient(#9fc42d, #b7db47, #b7db47);
+  background: -webkit-linear-gradient(#9fc42d, #b7db47, #b7db47);
   color:#fff;
   padding:0 5px;
   line-height:15px;
   height:17px;
-  behavior: url(./css/PIE.htc);
 }
 .online-sticker .bottom{
   background-color:#b7db47;
@@ -272,12 +265,9 @@
 .online-sticker .round{
   background-color:#fff;
   border-radius:4px 0 0 0;
-  -moz-border-radius:4px 0 0 0;
-  -webkit-border-radius:4px 0 0 0;
   display:block;
   width:100%;
   height:100%;
-  behavior: url(./css/PIE.htc);
   position:absolute;
   left:0;
   top:0;
