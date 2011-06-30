@@ -47,6 +47,8 @@
 }
 .last-post-date{
   color:#888;
+  font-size: 11px;
+  padding-left: 3px;
 }
 .last-post-author a{
   color:#373737;
@@ -109,6 +111,7 @@
 .moders-list dt,
 .assoc-frms dt{
   margin-right:3px;
+  margin-left:5px;
 }
 .assoc-frms dd:after,
 .frm-users-list li:after{
@@ -123,9 +126,13 @@
 .moders-list,
 .moders-list a{
   color:#888;
+  font-size: 12px;
 }
 .assoc-frms dd a{
   margin:0 3px 0 0;
+}
+.frm-board-stats {
+  margin-left:5px;
 }
 .frm-board-stats li,
 .frm-options li{
@@ -137,6 +144,9 @@
   border-radius: 4px;
   padding:20px;
   height:1%;
+}
+.frm-summary-info p{
+  margin-left:5px;
 }
 .frm-users-list{
   margin:5px 0 15px;
