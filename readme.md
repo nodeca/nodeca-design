@@ -1,7 +1,7 @@
 Nodeca Artworks & Mockups
 =========================
 
-Screenshots for nodeca pages + html mockups
+Screenshots for nodeca pages + [html mockups](http://nodeca.github.com/nodeca-design/)
 
 License Information
 -------------------
