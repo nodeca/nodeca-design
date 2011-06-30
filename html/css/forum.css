@@ -1,5 +1,5 @@
 .frm-tbls-wrapper{
-  margin:0 0 20px;
+  margin:0 0 20 px;
 }
 .frm-tbl{
   display:table;
@@ -74,7 +74,7 @@
 .frm-tbl-markread{
   border-top:1px solid #b0b0b0;
   text-align:center;
-  padding:10px 0 0;
+  padding:10px 0;
 }
 .frm-icon{
   background:#d2e4ee no-repeat 50% 50%;
@@ -90,7 +90,7 @@
   font-weight:bold;
 }
 .frm-simple-list li{
-  margin:0 0 2px;
+  margin:0 0 2px; 
 }
 .fl-total {
   font-size: 12px;
@@ -98,53 +98,32 @@
 }
 
 /*
- * Subforums @ forum index
+ * Subforums @ forum index (use with .def-list)
  */
 .fl-subforums {
   margin-left:17px;
-}
-.fl-subforums dt,
-.fl-subforums dd {
-  display:inline;
-  white-space:nowrap;
 }
 .fl-subforums dt{
   margin-right:3px;
   margin-left:-15px;
 }
 .fl-subforums dd:after{
-  content:',';
-  margin:0 5px 0 0;
-}
-.fl-subforums dd:last-child:after{
-  content:'';
-  margin:0;
+  margin-right:5px;
 }
 .fl-subforums {
   font-size: 12px;
 }
 .fl-subforums dd a{
-  margin:0 2px 0 0;
+  margin-right:2px;
   font-weight: bold;
 }
 
 /*
- * forum moderators @ forum index
+ * forum moderators @ forum index (use with .def-list)
  */
-.fl-moderators dt,
-.fl-moderators dd {
-  display:inline;
-  white-space:nowrap;
-}
 .fl-moderators dt{
   margin-right:3px;
   margin-left:5px;
-}
-.fl-moderators dd:after{
-  content:',';
-}
-.fl-moderators dd:last-child:after{
-  content:'';
 }
 .fl-moderators,
 .fl-moderators a{
@@ -153,42 +132,11 @@
 }
 
 
-.frm-users-list li,
-.frm-board-stats li,
 .frm-options li{
   display:inline;
 }
-.frm-users-list li:after{
-  content:',';
-  margin:0 3px 0 0;
-}
-.frm-users-list li:last-child:after{
-  content:'';
-  margin:0;
-}
-.frm-board-stats {
-  margin:7px 5px 0;
-}
-.frm-board-stats li,
 .frm-options li{
   margin:0 10px 0 0;
-}
-
-.frm-summary-info{
-  background-color:#F7F7F7;
-  border-radius: 4px;
-  padding:20px;
-  height:1%;
-}
-.frm-summary-info p{
-  margin: 7px 5px 0;
-}
-.frm-users-list{
-  margin:5px 0 15px 5px;
-  line-height:20px;
-}
-.frm-users-list a{
-  color:#067ba1;
 }
 .frm-options{
   margin:20px 0 0;

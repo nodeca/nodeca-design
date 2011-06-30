@@ -1,3 +1,9 @@
+/*
+ * 
+ * Basic definitions
+ * 
+ */
+
 body { color:#373737; font:14px/1.231 sans-serif; }
 
 ul,ol{margin:0;}
@@ -8,51 +14,11 @@ a, a:active, a:visited { color: #015b7d;text-decoration:none; }
 a:hover { color: #015b7d;text-decoration:underline; }
 a *{cursor:pointer;}
 
-.nobr{white-space:nowrap;}
-
-.nofloat{display:block;overflow:hidden;zoom:1;}
-
-.modbox-extra {margin-bottom: 50px;}
-.modbox-big {margin-bottom: 30px;}
-.modbox-medium {margin-bottom: 20px;}
-.modbox-small {margin-bottom: 10px;}
-.modbox-micro {margin-bottom: 5px;}
-
-.page-title{font-size:24px;font-weight:normal;}
-.block-title{font-size:16px;font-weight:bold;}
-.block-title-light{font-size:16px;font-weight:normal;}
-
-.dib{display:inline-block;*display:inline;zoom:1;}
-
-.icon{
-  display:inline-block;*display:inline;zoom:1;
-  line-height:1;
-  overflow:hidden;
-  width:0;height:0;
-  vertical-align:middle;
-}
-.title-drop{
-  background:#ececec;height:13px;width:13px;margin-left:5px;position:relative;top:-1px;line-height:14px;text-align:center;
-  border-radius:4px;
-  content:'';
-  font-size:7px;
-}
-.title-drop:hover{
-  text-decoration:none;
-}
-.title-drop:before{
-  content:'▲';
-}
-.title-drop-expanded .title-drop{
-  line-height:13px;
-}
-.title-drop-expanded .title-drop:before{
-  content:'▼';
-}
-.like-icon{background:url(../images/like-icon.png);height:6px;width:7px;}
-.more-icon{background-position:-18px -24px;height:13px;width:9px;font-size:7px;line-height:12px;}
-.more-icon:before{content:'▼';}
-
+/*
+ * 
+ * Buttons & form fieldset
+ *
+ */
 .button{
   background: #f3f3f3;
   background: linear-gradient(#fff, #e7e7e7);
@@ -109,6 +75,120 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   border: 1px solid #C53;
   box-shadow: 1px 1px 1px #EEE, 0 0 2px #C53 inset;
 }
+
+/*
+ * 
+ * Lists helpers
+ *
+ */
+
+/*  Definition list template. Looks like:
+ *    Today Plans: Kill Bill, Play game, Save documents */
+.def-list dt,
+.def-list dd {
+  display:inline;
+  white-space:nowrap;
+}
+.def-list dd:after{
+  content:',';
+}
+.def-list dd:last-child:after{
+  content:'';
+}
+
+/* Horisontal list, separated by ',' */
+.hlist li {
+  display: inline;
+}
+.hlist li:after{
+  content:',';
+  margin-right: 3px;
+}
+.hlist li:last-child:after{
+  content:'';
+}
+
+/*
+ * 
+ * Page footer statictics.
+ *
+ */
+.page-summary {
+  background-color:#F7F7F7;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #E0E0E0;
+  padding:20px;
+  height:1%;
+}
+.page-summary section {
+  margin: 0 0 15px 10px;
+}
+.page-summary section:last-child {
+  margin-bottom: 0;
+}
+.page-summary section h3 {
+  margin: 0 0 8px -10px;
+}
+.page-summary section p{
+  line-height:1.4em;
+}
+.page-summary-users{
+  line-height:1.4em;
+}
+.page-summary-users a{
+  color:#067ba1;
+}
+.global-stats li{
+  display: inline;
+  margin-right:10px;
+}
+
+
+
+.nobr{white-space:nowrap;}
+
+.nofloat{display:block;overflow:hidden;zoom:1;}
+
+.modbox-extra {margin-bottom: 50px;}
+.modbox-big {margin-bottom: 30px;}
+.modbox-medium {margin-bottom: 20px;}
+.modbox-small {margin-bottom: 10px;}
+.modbox-micro {margin-bottom: 5px;}
+
+.page-title{font-size:24px;font-weight:normal;}
+.block-title{font-size:16px;font-weight:bold;}
+.block-title-light{font-size:16px;font-weight:normal;}
+
+.dib{display:inline-block;*display:inline;zoom:1;}
+
+.icon{
+  display:inline-block;*display:inline;zoom:1;
+  line-height:1;
+  overflow:hidden;
+  width:0;height:0;
+  vertical-align:middle;
+}
+.title-drop{
+  background:#ececec;height:13px;width:13px;margin-left:5px;position:relative;top:-1px;line-height:14px;text-align:center;
+  border-radius:4px;
+  content:'';
+  font-size:7px;
+}
+.title-drop:hover{
+  text-decoration:none;
+}
+.title-drop:before{
+  content:'▲';
+}
+.title-drop-expanded .title-drop{
+  line-height:13px;
+}
+.title-drop-expanded .title-drop:before{
+  content:'▼';
+}
+.like-icon{background:url(../images/like-icon.png);height:6px;width:7px;}
+.more-icon{background-position:-18px -24px;height:13px;width:9px;font-size:7px;line-height:12px;}
+.more-icon:before{content:'▼';}
 
 .tgl-title{
   cursor:pointer;
