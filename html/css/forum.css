@@ -1,3 +1,5 @@
+
+/*=========== Needs cleanup =======================*/
 .frm-tbls-wrapper{
   margin:0 0 20 px;
 }
@@ -5,35 +7,7 @@
   display:table;
   width:100%;
 }
-.frm-tbl-section-head{
-  background: #025c7e;
-  background: linear-gradient(#258ac3, #025c7e);
-  background: -moz-linear-gradient(#258ac3,#025c7e);
-  background: -webkit-linear-gradient(#258ac3,#025c7e);
-  border-radius:4px;
-  color:#fff;
-  font-weight:normal;
-  text-align:left;
-  padding:15px;
-  position:relative;
-  line-height:21px;
-  transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  -webkit-transition: opacity 1s ease;
-  opacity:1;
-}
-.frm-tbl-section-head a{
-  color:#fff;
-}
-.frm-tbl-section-head .right{
-  float:right;
-}
-.frm-tbl-section-hidden .frm-tbl-section-head{
-  opacity:.5;
-  transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  -webkit-transition: opacity 1s ease;
-}
+
 .last-post-column{
   width:170px;
 }
@@ -97,6 +71,17 @@
   color: #444;
 }
 
+.frm-options li{
+  display:inline;
+}
+.frm-options li{
+  margin:0 10px 0 0;
+}
+.frm-options{
+  margin:20px 0 0;
+}
+/*=======================================================*/
+
 /*
  * Subforums @ forum index (use with .def-list)
  */
@@ -131,25 +116,49 @@
   font-size: 12px;
 }
 
+/*
+ * 
+ * Categories wrappers & collapsers
+ * 
+ */ 
+.fl-category{
+  margin:0 0 5px;
+}
+.fl-cat-head{
+  transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
 
-.frm-options li{
-  display:inline;
+  background: #025c7e;
+  background: linear-gradient(#258ac3, #025c7e);
+  background: -moz-linear-gradient(#258ac3,#025c7e);
+  background: -webkit-linear-gradient(#258ac3,#025c7e);
+  border-radius:4px;
+  color:#fff;
+  font-weight:normal;
+  text-align:left;
+  padding:15px;
+  position:relative;
+  line-height:21px;
+  transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  opacity:1;
 }
-.frm-options li{
-  margin:0 10px 0 0;
+.collapsed .fl-cat-head:hover{
+  opacity: 0.7;
 }
-.frm-options{
-  margin:20px 0 0;
+.collapsed .fl-cat-head{
+  opacity: 0.2;
 }
-
-.frm-section-toggle{
+.fl-cat-head .collapser{
   background: #298dc2;
   background: linear-gradient(#5bb6e7, #298dc2);
   background: -moz-linear-gradient(#5bb6e7,#298dc2);
   background: -webkit-linear-gradient(#5bb6e7,#298dc2);
-  transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -webkit-transition: opacity 0.6s ease;
   display:block;
   overflow:hidden;
   height:20px;
@@ -162,45 +171,42 @@
   font-size:6px;
   opacity:0;
 }
-.frm-tbl-section-head .frm-section-toggle{
+.fl-cat-title{
+  font-size:16px;
+  font-weight:bold;
+}
+.fl-cat-head .collapser{
   position:absolute;
   right:15px;
   top:15px;
 }
-.frm-tbl-section-head:hover .frm-section-toggle{
-  transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -webkit-transition: opacity 0.3s ease;
+.fl-cat-head:hover .collapser{
   opacity:1;
 }
-.frm-section-toggle:hover{
+.fl-cat-head .collapser:hover{
   text-decoration:none;
 }
-.frm-section-toggle:before{
+.fl-cat-head .collapser:focus{
+  outline: 0;
+}
+.fl-cat-head .collapser:before{
   content:'▼';
 }
-.frm-tbl-section-hidden .frm-section-toggle{
+.collapsed > .fl-cat-head > .collapser{
   line-height:19px;
 }
-.frm-tbl-section-hidden .frm-section-toggle:before{
+.collapsed > .fl-cat-head > .collapser:before{
   content:'▲';
 }
 
-.frm-tgl-content{
+.fl-cat-content{
   transition:height 1s ease, opacity 1s ease;
   -moz-transition:height 1s ease, opacity 1s ease;
   -webkit-transition:height 1s ease, opacity 1s ease;
   overflow:hidden;
   opacity:1;
 }
-.frm-tbl-section-hidden .frm-tgl-content{
-  transition:height 1s ease, opacity 1s ease;
-  -moz-transition:height 1s ease, opacity 1s ease;
-  -webkit-transition:height 1s ease, opacity 1s ease;
+.collapsed .fl-cat-content{
   height:0!important;
   opacity:.5;
-}
-
-.frm-tbl-section{
-  margin:0 0 5px;
 }

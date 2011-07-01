@@ -144,7 +144,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 
 
-
+/*===== Bullshit to clear =========================*/
 .nobr{white-space:nowrap;}
 
 .nofloat{display:block;overflow:hidden;zoom:1;}
@@ -155,11 +155,12 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .modbox-small {margin-bottom: 10px;}
 .modbox-micro {margin-bottom: 5px;}
 
+/*==================================================*/
+
 .page-title{font-size:24px;font-weight:normal;}
 .block-title{font-size:16px;font-weight:bold;}
 .block-title-light{font-size:16px;font-weight:normal;}
 
-.dib{display:inline-block;*display:inline;zoom:1;}
 
 .icon{
   display:inline-block;*display:inline;zoom:1;
@@ -222,7 +223,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   margin-right:auto;
   width:960px;
 }
-header{
+.head{
   background: #00597b;
   background: linear-gradient(#258ac4, #00597b);
   background: -moz-linear-gradient(#258ac4, #00597b);
@@ -258,8 +259,10 @@ header .trunk{
   color:#00374c;
   top:31px;
 }
-/* --------------------------------------
- * Global navigation
+/*
+ * 
+ * Global navigation (heading tabs)
+ * 
  */
 .global-nav{
   position:absolute;
@@ -306,7 +309,7 @@ a.gn-link{
 .notify{
   position:absolute;
   top:0;
-  left:10%;
+  left:60%;
   z-index:1;
   height:34px;
 }
@@ -330,6 +333,9 @@ a.gn-link{
 .notify-picker:hover{
   color:#c6b932;
   text-decoration:none;
+}
+.notify-picker:focus{
+  outline: 0;
 }
 .notify-popup{
   position:absolute;
