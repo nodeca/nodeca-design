@@ -242,38 +242,38 @@
 /* ---------------------------------------------
  * Profile wall form
  */
-.pwall-editor {
+.w-editor {
   margin:10px 0 15px;
 }
 
-*+html .pwall-content{
+*+html .w-content{
   margin:0 0 15px;
 }
 .wall-text{
   height:50px;
   width:100%;
 }
-.wall-post{
+.w-entry{
   border-top:1px solid #b0b0b0;
   padding:15px 0;
   float:left;
   width:100%;
 }
-.wall-replies{
+.w-comments{
   margin:15px 0 0;
 }
-.wall-userpic{
+.w-userpic{
   float:left;
   display:inline;
   margin:0 11px 0 0;
 }
-.wall-userpic img{
+.w-userpic img{
   width:50px;
   height:50px;
   vertical-align:top;
   border-radius:2px;
 }
-.wall-replies .wall-userpic img{
+.w-comments .w-userpic img{
   width:30px;
   height:30px;
 }
@@ -281,15 +281,15 @@
   float:left;
   width:419px;
 }
-.wall-post .comment-post,
-.wall-post .like-post{
+.w-entry .w-new-comment,
+.w-entry .w-like-link{
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
   opacity:0;
 }
-.wall-post:hover .comment-post,
-.wall-post:hover .like-post{
+.w-entry:hover .w-new-comment,
+.w-entry:hover .w-like-link{
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
@@ -298,13 +298,13 @@
 .wall-head{
   margin:0 0 4px;
 }
-.wall-replies .wall-post:last-child{
+.w-comments .w-entry:last-child{
   padding-bottom:0;
 }
-.wall-replies .wall-head{
+.w-comments .wall-head{
   margin:0 0 1px;
 }
-.wall-replies .wall-content{
+.w-comments .wall-content{
   width:378px;
 }
 .wall-content .author{
@@ -325,11 +325,11 @@
 .wall-content .meta .right{
   float:right;
 }
-.like-wrap{
+.w-likes-stat{
   margin-left:3px;
 }
 
-.pwall-more-button{
+.w-more-buttonn{
   width:100%;
 }
 
