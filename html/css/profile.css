@@ -142,13 +142,14 @@
   font-weight: bold;
 }
 
+/* Toggler for title */
 .pblock-title  .collapser{
   background: #f3f3f3;
   background: linear-gradient(#fff, #e7e7e7);
   background: -moz-linear-gradient(#fff,#e7e7e7);
   background: -webkit-linear-gradient(#fff,#e7e7e7);
-  border: 1px solid #DDD;
   border-radius: 4px 4px 4px 4px;
+  box-shadow: 1px 1px 3px #CCC;
   padding:0 5px 2px;
   vertical-align: top;
   display:inline-block;
@@ -194,6 +195,35 @@
 }
 .pinfo-box .timestamp{
   font-size:11px;
+}
+
+/* Toggler in subblock */
+.pinfo-collapser  .collapser{
+  background: #f3f3f3;
+  background: linear-gradient(#fff, #e7e7e7);
+  background: -moz-linear-gradient(#fff,#e7e7e7);
+  background: -webkit-linear-gradient(#fff,#e7e7e7);
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 1px 1px 3px #CCC;
+  padding:0 5px 2px;
+  vertical-align: top;
+  display:inline-block;
+  font-size: 10px;
+}
+.collapser:hover{
+  text-decoration:none;
+}
+.collapser:focus{
+  outline:0;
+}
+.pinfo-collapser .collapser:before{
+  content:'▴';
+}
+.collapsed .pinfo-collapser .collapser:before{
+  content:'▾';
+}
+.collapsed .pinfo-collapser .collapser{
+  padding:1px 5px 1px;
 }
 
 /* ---------------------------------------------

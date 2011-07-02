@@ -15,6 +15,7 @@ a:hover { color: #015b7d;text-decoration:underline; }
 a *{cursor:pointer;}
 
 .normal {font-weight: normal;}
+.nodisplay {display:none;}
 
 /*
  * 
@@ -168,24 +169,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   width:0;height:0;
   vertical-align:middle;
 }
-.title-drop{
-  background:#ececec;height:13px;width:13px;margin-left:5px;position:relative;top:-1px;line-height:14px;text-align:center;
-  border-radius:4px;
-  content:'';
-  font-size:7px;
-}
-.title-drop:hover{
-  text-decoration:none;
-}
-.title-drop:before{
-  content:'▲';
-}
-.title-drop-expanded .title-drop{
-  line-height:13px;
-}
-.title-drop-expanded .title-drop:before{
-  content:'▼';
-}
+
 .like-icon{background:url(../images/like-icon.png);height:6px;width:7px;}
 .more-icon{background-position:-18px -24px;height:13px;width:9px;font-size:7px;line-height:12px;}
 .more-icon:before{content:'▼';}
