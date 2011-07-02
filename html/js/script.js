@@ -9,15 +9,6 @@ $(window).load(function(){
     $(this).parent().toggleClass('auth-visible');
   });
 
-  $('.frm-tgl-content,.tgl-box').each(function(){
-    if ( $(this).hasClass('tgl-hide') ){
-      $(this).removeClass('tgl-hide');
-      $(this).height($(this).height());
-      $(this).addClass('tgl-hide');
-    } else {
-      $(this).height($(this).height());
-    }
-  });
   // collapsable items animation
   $('.collapser').click(function(){
     $(this).parent().next().slideToggle('slow').parent().toggleClass('collapsed');

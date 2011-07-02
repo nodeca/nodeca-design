@@ -128,30 +128,95 @@
 .blogs-module .meta .right{
   float:right;
 }
+
+/*
+ * 
+ * Profile info blocks (right column)
+ * 
+ */
+.pblock{
+  margin:0 0 20px;
+}
+.pblock-title{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pblock-title  .collapser{
+  background: #f3f3f3;
+  background: linear-gradient(#fff, #e7e7e7);
+  background: -moz-linear-gradient(#fff,#e7e7e7);
+  background: -webkit-linear-gradient(#fff,#e7e7e7);
+  border: 1px solid #DDD;
+  border-radius: 4px 4px 4px 4px;
+  padding:0 5px 2px;
+  vertical-align: top;
+  display:inline-block;
+  font-size: 13px;
+}
+.collapser:hover{
+  text-decoration:none;
+}
+.collapser:focus{
+  outline:0;
+}
+.pblock-title .collapser:before{
+  content:'▴';
+}
+.collapsed .pblock-title .collapser:before{
+  content:'▾';
+}
+.collapsed .pblock-title .collapser{
+  padding:1px 5px 1px;
+}
+
+/* user statictics subblocks */
+.pinfo-box{
+  margin:20px 0;
+}
+.pinfo-box dd{
+  clear:both;
+  min-height:17px;
+  _height:17px;
+}
+.pinfo-box dt{
+  color:#898989;
+  font-weight:bold;
+  margin:0 0 3px 10px;
+}
+.pinfo-box label{
+  float:left;
+  width:120px;
+}
+.pinfo-box .info{
+  overflow:hidden;
+  zoom:1;
+}
+.pinfo-box .timestamp{
+  font-size:11px;
+}
+
 /* ---------------------------------------------
  * Profile notepad
  */
-.profile-notepad{
-  margin:0 0 20px;
-}
-.profile-notepad .buttons{
-  text-align:right;
-}
-.profile-notepad .row{
-  margin:0 0 10px;
-}
-.notepad-text{
+.pnotepad-text{
   height:150px;
   width:100%;
+  margin-top: 10px;
+}
+.pnotepad-controls{
+  text-align:right;
+  margin-top: 10px;
 }
 
 /* ---------------------------------------------
  * Profile wall form
  */
-.profile-wall-form{
-  margin:0 0 15px;
+.pwall-editor {
+  margin:10px 0 15px;
 }
-*+html .profile-wall{
+
+*+html .pwall-content{
   margin:0 0 15px;
 }
 .wall-text{
@@ -234,9 +299,11 @@
   margin-left:3px;
 }
 
-.wall-more-btn{
+.pwall-more-button{
   width:100%;
 }
+
+
 
 .online-sticker{
   position:absolute;
@@ -271,32 +338,4 @@
   position:absolute;
   left:0;
   top:0;
-}
-
-/* ------------------------------
- * Info box
- */
-.info-box{
-  margin:20px 0;
-}
-.info-box dd{
-  clear:both;
-  min-height:17px;
-  _height:17px;
-}
-.info-box dt{
-  color:#898989;
-  font-weight:bold;
-  margin:0 0 3px 10px;
-}
-.info-box label{
-  float:left;
-  width:120px;
-}
-.info-box .info{
-  overflow:hidden;
-  zoom:1;
-}
-.info-box .timestamp{
-  font-size:11px;
 }

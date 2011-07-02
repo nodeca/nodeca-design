@@ -14,6 +14,8 @@ a, a:active, a:visited { color: #015b7d;text-decoration:none; }
 a:hover { color: #015b7d;text-decoration:underline; }
 a *{cursor:pointer;}
 
+.normal {font-weight: normal;}
+
 /*
  * 
  * Buttons & form fieldset
@@ -149,11 +151,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 .nofloat{display:block;overflow:hidden;zoom:1;}
 
-.modbox-extra {margin-bottom: 50px;}
-.modbox-big {margin-bottom: 30px;}
 .modbox-medium {margin-bottom: 20px;}
 .modbox-small {margin-bottom: 10px;}
-.modbox-micro {margin-bottom: 5px;}
 
 /*==================================================*/
 

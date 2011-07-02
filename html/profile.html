@@ -268,50 +268,52 @@
               </div><!-- module end -->
             </div>
             <div class="profile-right">
-              <form method="post" action="" class="profile-notepad">
-                <h3 class="block-title modbox-small"><span class="tgl-title">Notepad <a href="#1" class="icon title-drop"><!-- --></a></span></h3>
-                <ul class="tgl-box">
-                  <li class="row">
-                    <textarea class="notepad-text" placeholder="Write something"></textarea>
+              <form method="post" action="" class="pblock">
+                <h3 class="pblock-title">Notepad <a href="#1" class="collapser"><!-- --></a></h3>
+                <ul>
+                  <li>
+                    <textarea class="pnotepad-text" placeholder="Write something"></textarea>
                   </li>
-                  <li class="buttons">
+                  <li class="pnotepad-controls">
                     <input type="submit" value="Saved" class="button" />
                   </li>
                 </ul>
               </form>
-              <h3 class="block-title modbox-medium"><span class="tgl-title title-drop-expanded">Basic Information <a href="#1" class="icon title-drop"><!-- --></a></span></h3>
-              <div class="tgl-box tgl-hide">
-                <dl class="info-box">
-                  <dt class="hidden">User Info</dt>
-                  <dd><label>Name</label><div class="info"><a href="#1">Aleksandr</a></div></dd>
-                  <dd><label>Surname</label><div class="info"><a href="#1">Makedonskiy</a></div></dd>
-                  <dd><label>Birthday</label><div class="info"><a href="#1">2 august 2011</a></div></dd>
-                  <dd><label>Interests</label><div class="info"><a href="#1">Music</a>, <a href="#1">Books</a>, <a href="#1">Football</a>, <a href="#1">Tennis</a></div></dd>
-                  <dd><label>Music</label><div class="info"><a href="#1">Classic</a>, <a href="#1">Jazz</a>, <a href="#1">Pop</a></div></dd>
-                </dl>
-                <div class="msgs-info info-box">
-                  <dl>
-                    <dt>Statistics</dt>
-                    <dd class="tgl-title"><label>Messages </label><div class="info"><a href="#1">234</a><span class="icon title-drop"><!-- --></span></div></dd>
+              <div class="pblock">
+                <h3 class="pblock-title">Basic Information <a href="#1" class="collapser"><!-- --></a></h3>
+                <div class="pblock-content">
+                  <dl class="pinfo-box">
+                    <dt class="hidden">User Info</dt>
+                    <dd><label>Name</label><div class="info"><a href="#1">Aleksandr</a></div></dd>
+                    <dd><label>Surname</label><div class="info"><a href="#1">Makedonskiy</a></div></dd>
+                    <dd><label>Birthday</label><div class="info"><a href="#1">2 august 2011</a></div></dd>
+                    <dd><label>Interests</label><div class="info"><a href="#1">Music</a>, <a href="#1">Books</a>, <a href="#1">Football</a>, <a href="#1">Tennis</a></div></dd>
+                    <dd><label>Music</label><div class="info"><a href="#1">Classic</a>, <a href="#1">Jazz</a>, <a href="#1">Pop</a></div></dd>
                   </dl>
-                  <dl class="tgl-box">
-                    <dd><label>Themes</label><div class="info"><a href="#1">45</a></div></dd>
-                    <dd><label>Comments</label><div class="info"><a href="#1">256</a></div></dd>
-                    <dd><label>Posts</label><div class="info"><a href="#1">96</a></div></dd>
-                    <dd><label>Posts Per Day</label><div class="info">1,24</div></dd>
+                  <div class="pinfo-box">
+                    <dl>
+                      <dt>Statistics</dt>
+                      <dd class="tgl-title"><label>Messages </label><div class="info"><a href="#1">234</a><span class="icon title-drop"><!-- --></span></div></dd>
+                    </dl>
+                    <dl class="tgl-box">
+                      <dd><label>Themes</label><div class="info"><a href="#1">45</a></div></dd>
+                      <dd><label>Comments</label><div class="info"><a href="#1">256</a></div></dd>
+                      <dd><label>Posts</label><div class="info"><a href="#1">96</a></div></dd>
+                      <dd><label>Posts Per Day</label><div class="info">1,24</div></dd>
+                    </dl>
+                  </div>
+                  <dl class="pinfo-box">
+                    <dt>Votes Statistic</dt>
+                    <dd><label>Received at forum </label><div class="info"><a href="#1">234</a></div></dd>
+                    <dd><label>Given at forum</label><div class="info">23</div></dd>
                   </dl>
                 </div>
-                <dl class="info-box">
-                  <dt>Votes Statistic</dt>
-                  <dd><label>Received at forum </label><div class="info"><a href="#1">234</a></div></dd>
-                  <dd><label>Given at forum</label><div class="info">23</div></dd>
-                </dl>
               </div>
-              <h3 class="block-title-light modbox-small"><strong>Wall</strong> (3456 messages)</h3>
-              <form method="post" action="" class="profile-wall-form">
+              <h3 class="pblock-title">Wall <span class="normal">(3456 messages)</span></h3>
+              <form method="post" action="" class="pwall-editor">
                 <textarea class="wall-text" placeholder="Write something" rows="1"></textarea>
               </form>
-              <ul class="profile-wall clearfix">
+              <ul class="pwall-content clearfix">
                 <li class="wall-post">
                   <a href="#1" class="wall-userpic"><img src="images/tmp/friend.jpg" alt="" /></a>
                   <div class="wall-content">
@@ -427,7 +429,7 @@
                   </div>
                 </li><!--  wall item -->
               </ul>
-              <a href="#1" class="button wall-more-btn">Older Posts</a>
+              <a href="#1" class="button pwall-more-button">Older Posts</a>
             </div>
           </div>
         </div>
