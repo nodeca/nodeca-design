@@ -174,27 +174,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .more-icon{background-position:-18px -24px;height:13px;width:9px;font-size:7px;line-height:12px;}
 .more-icon:before{content:'▼';}
 
-.tgl-title{
-  cursor:pointer;
-}
-.tgl-box{
-  overflow:hidden;zoom:1;
-  transition: height 1s ease;
-  -moz-transition: height 1s ease;
-  -webkit-transition: height 1s ease;
-}
-.tgl-box .info-box{
-  margin:0 0 20px;
-}
-.tgl-hide{
-  transition: height 1s ease;
-  -moz-transition: height 1s ease;
-  -webkit-transition: height 1s ease;
-  min-height:0!important;
-  height:0!important;
-  position:relative;
-}
-
 .container{
   min-height:100%;
 }
