@@ -492,7 +492,12 @@ footer{
   font-size:13px;
 }
 
-.search-form{
+/*
+ * 
+ * Quick search styles
+ * 
+ */
+.qs{
   border-radius:4px;
   position:absolute;
   top:38px;
@@ -503,26 +508,25 @@ footer{
   width:240px;
   height:21px;
 }
-.search-form .right{
+.qs .right{
   float:right;
   position:relative;
 }
-.search-form .left{
+.qs .left{
   overflow:hidden;zoom:1;
 }
-.search-text{
+.qs-text{
   width:99% !important;
   border:0 !important;
   padding:0 !important;
   background:#F3F3F3 !important;
   margin:2px 0 0 !important;
 }
-.search-text:focus{
+.qs-text:focus{
  border-radius:0;
  box-shadow:none !important;
 }
-
-.search-submit{
+.qs-submit{
   background:url(../images/search-submit.png) no-repeat 50% 50%;
   width:20px;
   height:22px;
@@ -530,11 +534,11 @@ footer{
   margin:0 0 0 3px;
   cursor:pointer;
 }
-.search-rubric-wrap{
+.qs-menu{
   display:inline-block;*display:inline;zoom:1;
   vertical-align:top;
 }
-.search-rubric{
+.qs-selection{
   display:inline-block;*display:inline;zoom:1;
   background-color:#e0e0e0;
   border-radius:4px;
@@ -542,7 +546,7 @@ footer{
   font-size:12px;
   padding:3px 9px 4px;
 }
-.search-rubric-wrap .search-drop{
+.qs-popup{
   position:absolute;
   right:0;
   bottom:100px;
@@ -550,15 +554,14 @@ footer{
   transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
-  width:120px;
+  width:140px;
 }
-.search-rubric-wrap:hover .search-drop{
+.qs-menu:hover .qs-popup{
   top:20px;
   bottom:auto;
   opacity:1;
-  filter:alpha(opacity=100)
 }
-.search-drop ul{
+.qs-popup ul{
   background-color:#fff;
   padding:15px 10px;
   height:1%;
@@ -566,12 +569,18 @@ footer{
   border:1px solid #D5DDE5;
   font-size:12px;
 }
-.search-drop .search-drop-title{
+.qs-popup-title{
   font-weight:bold;
 }
-.search-drop .search-drop-section{
+.qs-popup-section{
   margin:10px 0 0;
 }
+
+/*
+ * 
+ * Login menu styles
+ * 
+ */
 .auth-wrapper{
   position:relative;
 }
@@ -616,13 +625,13 @@ footer{
   height:0;
   opacity: 0;
   border:0;
-  box-shadow:0 0 20px #333;
   border-radius:4px 0 4px 4px;
 }
 .auth-visible .auth-popup{
   border-color:#f3f3f3 #0c4d6c #0c4d6c #f3f3f3;
   border-style:solid;
   border-width:1px;
+  box-shadow:0 0 20px #333;
   padding:15px 10px 0;
   height:auto;
   opacity: 1;
