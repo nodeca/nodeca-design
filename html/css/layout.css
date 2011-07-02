@@ -16,6 +16,7 @@ a *{cursor:pointer;}
 
 .normal {font-weight: normal;}
 .nodisplay {display:none;}
+.more-icon:after{content:' ▾';}
 
 /*
  * 
@@ -171,8 +172,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 
 .like-icon{background:url(../images/like-icon.png);height:6px;width:7px;}
-.more-icon{background-position:-18px -24px;height:13px;width:9px;font-size:7px;line-height:12px;}
-.more-icon:before{content:'▼';}
 
 .container{
   min-height:100%;
