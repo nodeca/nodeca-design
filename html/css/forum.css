@@ -198,15 +198,13 @@
 .collapsed > .fl-cat-head > .collapser:before{
   content:'▲';
 }
-
 .fl-cat-content{
-  transition:height 1s ease, opacity 1s ease;
-  -moz-transition:height 1s ease, opacity 1s ease;
-  -webkit-transition:height 1s ease, opacity 1s ease;
+  transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;*/
   overflow:hidden;
   opacity:1;
 }
 .collapsed .fl-cat-content{
-  height:0!important;
-  opacity:.5;
+  opacity:0;
 }

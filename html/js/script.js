@@ -18,23 +18,9 @@ $(window).load(function(){
       $(this).height($(this).height());
     }
   });
-
-  $('.frm-section-toggle').click(function(){
-    $(this).toggleClass('frm-section-toggle-clicked').parent().parent().toggleClass('frm-tbl-section-hidden');
-  });
-/*
-  $('.collapsable').each(function(){
-    if ( $(this).hasClass('collapsed') ){
-      $(this).removeClass('collapsed');
-      $(this).height($(this).height());
-      $(this).addClass('collapsed');
-    } else {
-      $(this).height($(this).height());
-    }
-  }
-*/
+  // collapsable items animation
   $('.collapser').click(function(){
-    $(this).parent().parent().toggleClass('collapsed');
+    $(this).parent().next().slideToggle('slow').parent().toggleClass('collapsed');
   });
 
 });
