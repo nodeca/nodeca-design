@@ -1,3 +1,21 @@
+/*
+ *
+ * user moderation quick links
+ * 
+ */
+.user-mod-menu{
+  position:absolute;
+  top:85px;
+  right:0;
+  font-size:12px;
+}
+.user-mod-menuitem{
+  float:left;
+  display:inline;
+  margin:0 0 0 16px;
+}
+
+
 .profile-status{
   font-size:12px;
   color: #888;
@@ -214,8 +232,10 @@
   padding:1px 5px 1px;
 }
 
-/* ---------------------------------------------
+/*
+ *
  * Profile notepad
+ *
  */
 .pnotepad-text{
   height:150px;
@@ -227,8 +247,10 @@
   margin-top: 10px;
 }
 
-/* ---------------------------------------------
- * Profile wall form
+/* 
+ * 
+ * Wall styles
+ * 
  */
 .w-editor {
   margin:10px 0 15px;

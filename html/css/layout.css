@@ -396,20 +396,6 @@ a.gn-link{
 a.ub-link{
   color:#77c8f3;
 }
-/* --------------------------------------
- * user navigation
- */
-.admin-nav{
-  position:absolute;
-  top:85px;
-  right:0;
-  font-size:12px;
-}
-.an-item{
-  float:left;
-  display:inline;
-  margin:0 0 0 16px;
-}
 
 /* --------------------------------------
  * Sidebar
@@ -510,7 +496,7 @@ footer{
   float:right;
   position:relative;
 }
-.qs .left{
+.qs-text-wrap{
   overflow:hidden;zoom:1;
 }
 .qs-text{
