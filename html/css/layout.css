@@ -17,6 +17,8 @@ a *{cursor:pointer;}
 .normal {font-weight: normal;}
 .nodisplay {display:none;}
 .more-icon:after{content:' ▾';}
+.left { float: left;}
+.right { float: right;}
 
 /*
  * 
@@ -152,8 +154,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .nobr{white-space:nowrap;}
 
 .nofloat{display:block;overflow:hidden;zoom:1;}
-
-.modbox-small {margin-bottom: 10px;}
 
 /*==================================================*/
 
