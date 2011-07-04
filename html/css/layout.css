@@ -161,13 +161,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .page-title{
   font-size:24px;
   font-weight:normal;
-  margin-bottom:15px;
-}
-
-.page-title-nopager{
-  font-size:24px;
-  font-weight:normal;
-  margin-bottom:20px;
 }
 
 .like-icon{background:url(../images/like-icon.png);height:6px;width:7px;}
