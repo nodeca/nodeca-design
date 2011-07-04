@@ -347,8 +347,13 @@
   font-size:11px;
   margin:3px 0 0;
 }
-.w-more-buttonn{
+.w-more-button{
   width:100%;
+}
+.w-more-button:after{
+/*  content: ' ⇓'; */
+  content: ' 	↓';
+  font-weight:normal;
 }
 
 
