@@ -182,7 +182,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   margin-left:auto;
   margin-right:auto;
   /* width:960px; */
-  width:auto; /* for liquid layout */
+  width:85%; /* for liquid layout */
   padding-left:15px;
   padding-right:15px;
 }
