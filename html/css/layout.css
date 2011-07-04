@@ -4,6 +4,7 @@
  * 
  */
 
+html,body{height:100%;}
 body { color:#373737; font:14px/1.231 sans-serif; }
 
 ul,ol{margin:0;}
@@ -180,7 +181,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .trunk{
   margin-left:auto;
   margin-right:auto;
-  width:960px;
+  /* width:960px; */
+  width:auto; /* for liquid layout */
+  padding-left:15px;
+  padding-right:15px;
 }
 .head{
   background: #00597b;
@@ -211,7 +215,7 @@ header .trunk{
 .logo .logo-txt,
 .logo .logo-txt-shadow{
   position:absolute;
-  left:0;
+  left:15px;
   top:32px;
 }
 .logo .logo-txt-shadow{
@@ -225,7 +229,7 @@ header .trunk{
  */
 .global-nav{
   position:absolute;
-  left:160px;
+  left:175px;
   top:38px;
 }
 .gn-tab{
@@ -384,7 +388,7 @@ a.gn-link{
 .user-bar{
   position:absolute;
   top:10px;
-  right:0;
+  right:15px;
   z-index:1;
 }
 .ub-item{
@@ -400,7 +404,7 @@ a.ub-link{
 /* --------------------------------------
  * Sidebar
  */
-aside{
+.page-sidebar{
   float:left;
   display:inline;
   margin:38px 0 0;
@@ -420,14 +424,16 @@ aside{
 /* --------------------------------------
  * content
  */
-.main-wrapper{padding:0 0 153px;}
+.main-wrapper{padding-bottom:153px;}
+.content-wrapper{
+  float:left;
+  width:100%;
+  margin-left:-150px;
+}
 .content{
-  display:inline;
-  float:right;
   border-bottom:1px solid #b0b0b0;
   border-left:1px solid #b0b0b0;
-  width:780px;
-  margin:17px 0 0;
+  margin:17px 0 0 179px;
 }
 .content-wide{
   border-bottom:1px solid #b0b0b0;
@@ -455,25 +461,25 @@ aside{
   padding:20px 0 30px 30px;
 }
 
-footer{
+.page-footer{
   position:relative;
-  margin: -133px auto 0;
-  width: 780px;
-  padding-left:180px;
-}
-.footer-wide{
-  padding:0;
-  width:960px;
+  margin-top:-133px;
 }
 .footer-nav{
   margin:0 0 5px;
+  padding-left:180px;
 }
 .footer-nav li{
   display:inline;
   margin-right:7px;
 }
 .copyrights{
+  padding-left:180px;
   font-size:13px;
+}
+.width-aside .footer-nav,
+.width-aside .copyrights{
+  padding-left:0;
 }
 
 /*
@@ -485,7 +491,7 @@ footer{
   border-radius:4px;
   position:absolute;
   top:38px;
-  right:0;
+  right:15px;
   background:#f3f3f3;
   border:0;
   padding:4px;

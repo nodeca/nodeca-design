@@ -28,9 +28,13 @@
   float:left;
   width:240px;
 }
+.profile-right-wrapper{
+  float:left;
+  width:100%;
+  margin-left:-240px;
+}
 .profile-right{
-  float:right;
-  width:480px;
+  margin:0 0 0 270px;
 }
 /* ---------------------------------------------
  * Profile photo
@@ -288,8 +292,7 @@
   height:30px;
 }
 .w-entry-body{
-  float:left;
-  width:419px;
+  overflow:hidden;
 }
 .w-new-comment,
 .w-like-link,
@@ -330,9 +333,6 @@
 }
 .w-comments .wall-head{
   margin:0 0 1px;
-}
-.w-comments .w-entry-body{
-  width:378px;
 }
 .w-entry-body .author{
   float:left;

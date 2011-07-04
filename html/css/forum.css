@@ -170,6 +170,7 @@
 .fl-cat-title{
   font-size:16px;
   font-weight:bold;
+  margin:0 25px 0 0;
 }
 .fl-cat-head .collapser{
   position:absolute;
@@ -197,7 +198,7 @@
 .fl-cat-content{
   transition: opacity 1s ease;
   -moz-transition: opacity 1s ease;
-  -webkit-transition: opacity 1s ease;*/
+  -webkit-transition: opacity 1s ease;
   overflow:hidden;
   opacity:1;
 }
