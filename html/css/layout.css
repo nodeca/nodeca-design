@@ -424,7 +424,7 @@ a.ub-link{
 /* --------------------------------------
  * content
  */
-.main-wrapper{padding-bottom:153px;}
+.main-wrapper{padding-bottom:120px;}
 .content-wrapper{
   float:left;
   width:100%;
@@ -463,7 +463,7 @@ a.ub-link{
 
 .page-footer{
   position:relative;
-  margin-top:-133px;
+  margin-top:-100px;
 }
 .footer-nav{
   margin:0 0 5px;
