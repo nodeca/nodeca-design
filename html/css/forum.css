@@ -1,17 +1,17 @@
 
 /*=========== Needs cleanup =======================*/
 .frm-tbls-wrapper{
-  margin:0 0 20 px;
+  margin:0 0 20px;
 }
-.frm-tbl{
+.fl-table{
   display:table;
   width:100%;
 }
 
-.last-post-column{
+.fl-last-post{
   width:170px;
 }
-.frm-tbl .last-post-column{
+.fl-table .fl-last-post{
   font-size:12px;
 }
 .last-post-date{
@@ -22,44 +22,40 @@
 .last-post-author a{
   color:#373737;
 }
-.frm-tbl-section-head .frm-section-title{
+.fl-table-section-head .frm-section-title{
   float:left;
   font-size:16px;
   font-weight:bold;
   width:729px;
 }
-.frm-tbl-row{
-  display:table-row;
-}
-.frm-tbl-cell{
-  display:table-cell;
+.fl-table td{
   padding:15px;
   border-bottom:1px solid #b0b0b0;
   vertical-align:middle;
 }
-.frm-tbl-row:last-child .frm-tbl-cell{
+.fl-table tr:last-child td{
   border:0;
 }
-.frm-tbl-row .frm-icon-cell{
+.fl-table tr .fl-icon-cell{
   padding-left:0;
   padding-right:0;
   width:1%;
 }
-.frm-tbl-markread{
+.fl-markread{
   border-top:1px solid #b0b0b0;
   text-align:center;
   padding:10px 0;
 }
-.frm-icon{
+.fl-icon{
   background:#d2e4ee no-repeat 50% 50%;
   border-radius:4px;
   height:50px;
   width:50px;
 }
-.frm-tpc-icon{
+.fl-tpc-icon{
   background-image:url(../images/frm-tpc-icon.png);
 }
-.frm-tpc-title{
+.fl-tpc-title{
   font-size:16px;
   font-weight:bold;
 }
