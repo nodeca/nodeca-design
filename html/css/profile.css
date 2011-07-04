@@ -133,6 +133,7 @@
  */
 .pw-groups li{
   display:inline;
+  line-height: 1.4em;
 }
 /* 
  * Blog widget internals
