@@ -8,11 +8,11 @@
   width:100%;
 }
 
-.fl-last-post{
-  width:170px;
-}
 .fl-table .fl-last-post{
   font-size:12px;
+  max-width:190px;
+  min-width:190px;
+  width:190px;
 }
 .last-post-date{
   color:#888;
@@ -62,9 +62,26 @@
 .frm-simple-list li{
   margin:0 0 2px; 
 }
+.last-post-title{
+  position:relative;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.last-post-title:after,
+.last-post-title:before{
+  content:' ';
+  display:block;
+  position:absolute;
+  top:0;
+  right:-10px;
+  height:30px;
+  width:10px;
+  -moz-box-shadow:-5px -5px 15px #fff;
+}
 .fl-total {
   font-size: 12px;
   color: #444;
+  min-width:80px;
 }
 
 .frm-options li{
