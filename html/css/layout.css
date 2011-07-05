@@ -405,6 +405,7 @@ a.ub-link{
   display:inline;
   margin:38px 0 0;
   width:150px;
+  position:relative;
 }
 
 /* --------------------------------------
@@ -442,8 +443,7 @@ a.ub-link{
   width:16px;
   position:relative;
 }
-.content .frame-line .uname,
-.content-wide .frame-line .uname{
+.breadcrumbs{
   position:absolute;
   left:30px;
   top:-7px;
@@ -451,6 +451,11 @@ a.ub-link{
   font-size:16px;
   color:#898989;
   white-space:nowrap;
+}
+.breadcrumbs li{
+  float:left;
+  display:inline;
+  margin:0 10px 0 0;
 }
 .content .holder,
 .content-wide .holder{

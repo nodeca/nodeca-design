@@ -76,12 +76,6 @@
           <li class="ub-item">Alexandr Makedonskiy</li>
           <li class="ub-item"><a class="ub-link" href="#1">Logout</a></li>
         </ul><!-- user nav end -->
-        <ul class="user-mod-menu">
-          <li class="user-mod-menuitem"><a href="#1">Notices</a> (6)</li>
-          <li class="user-mod-menuitem"><a href="#1">Edit</a></li>
-          <li class="user-mod-menuitem"><a href="#1">Ban</a></li>
-          <li class="user-mod-menuitem"><a class="more-icon" href="#1">More</a></li>
-        </ul><!-- admin nav end -->
         <form method="post" action="" class="qs">
           <div class="right">
             <div class="qs-menu">
@@ -107,6 +101,12 @@
       </div>
     </header>
     <div role="main" class="main-wrapper trunk clearfix">
+      <ul class="user-mod-menu">
+        <li class="user-mod-menuitem"><a href="#1">Notices</a> (6)</li>
+        <li class="user-mod-menuitem"><a href="#1">Edit</a></li>
+        <li class="user-mod-menuitem"><a href="#1">Ban</a></li>
+        <li class="user-mod-menuitem"><a class="more-icon" href="#1">More</a></li>
+      </ul><!-- admin nav end -->
       <aside class="page-sidebar">
         <ul class="sidebar-nav">
           <li class="sn-item"><a class="sn-link" href="#1">Home</a></li>
@@ -121,16 +121,20 @@
       <div class="content-wrapper">
         <div class="content">
           <div class="frame-line">
-            <span class="uname">User Profile</span>
+            <ul class="breadcrumbs">
+              <li>User Profile</li>
+            </ul>
           </div>
           <div class="holder">
-            <h2 class="page-title">
-              Alexandr (kuka) Makedonskiy
-              <span class="online-sticker">
-                online <span class="bottom"><span class="round"><!-- --></span></span>
-              </span>
-            </h2>
-            <div class="profile-status">Status text. Connect with the things you care about.</div>
+            <div class="profile-head">
+              <h2 class="page-title">
+                Alexandr (kuka) Makedonskiy
+                <span class="online-sticker">
+                  online <span class="bottom"><span class="round"><!-- --></span></span>
+                </span>
+              </h2>
+              <div class="profile-status">Status text. Connect with the things you care about.</div>
+            </div>
             <div class="clearfix">
               <div class="profile-left">
                 <ul class="p-photo">
@@ -296,28 +300,28 @@
                     <div class="p-block-content">
                       <dl class="p-info-box">
                         <dt class="hidden">User Info</dt>
-                        <dd><label>Name</label><div class="info"><a href="#1">Aleksandr</a></div></dd>
-                        <dd><label>Surname</label><div class="info"><a href="#1">Makedonskiy</a></div></dd>
-                        <dd><label>Birthday</label><div class="info"><a href="#1">2 august 2011</a></div></dd>
-                        <dd><label>Interests</label><div class="info"><a href="#1">Music</a>, <a href="#1">Books</a>, <a href="#1">Football</a>, <a href="#1">Tennis</a></div></dd>
-                        <dd><label>Music</label><div class="info"><a href="#1">Classic</a>, <a href="#1">Jazz</a>, <a href="#1">Pop</a></div></dd>
+                        <dd><div class="label">Name</div><div class="info"><a href="#1">Aleksandr</a></div></dd>
+                        <dd><div class="label">Surname</div><div class="info"><a href="#1">Makedonskiy</a></div></dd>
+                        <dd><div class="label">Birthday</div><div class="info"><a href="#1">2 august 2011</a></div></dd>
+                        <dd><div class="label">Interests</div><div class="info"><a href="#1">Music</a>, <a href="#1">Books</a>, <a href="#1">Football</a>, <a href="#1">Tennis</a></div></dd>
+                        <dd><div class="label">Music</div><div class="info"><a href="#1">Classic</a>, <a href="#1">Jazz</a>, <a href="#1">Pop</a></div></dd>
                       </dl>
                       <div class="p-info-box collapsed">
                         <dl>
                           <dt>Statistics</dt>
-                          <dd class="p-info-collapser"><label>Messages </label><div class="info"><a href="#1">234</a> <a href="#1" class="collapser" data-toggle=".p-info-substat"></div></dd>
+                          <dd class="p-info-collapser"><div class="label">Messages </div><div class="info"><a href="#1">234</a> <a href="#1" class="collapser" data-toggle=".p-info-substat"></div></dd>
                         </dl>
                         <dl class="p-info-substat nodisplay">
-                          <dd><label>Themes</label><div class="info"><a href="#1">45</a></div></dd>
-                          <dd><label>Comments</label><div class="info"><a href="#1">256</a></div></dd>
-                          <dd><label>Posts</label><div class="info"><a href="#1">96</a></div></dd>
-                          <dd><label>Posts Per Day</label><div class="info">1,24</div></dd>
+                          <dd><div class="label">Themes</div><div class="info"><a href="#1">45</a></div></dd>
+                          <dd><div class="label">Comments</div><div class="info"><a href="#1">256</a></div></dd>
+                          <dd><div class="label">Posts</div><div class="info"><a href="#1">96</a></div></dd>
+                          <dd><div class="label">Posts Per Day</div><div class="info">1,24</div></dd>
                         </dl>
                       </div>
                       <dl class="p-info-box">
                         <dt>Votes Statistic</dt>
-                        <dd><label>Received at forum </label><div class="info"><a href="#1">234</a></div></dd>
-                        <dd><label>Given at forum</label><div class="info">23</div></dd>
+                        <dd><div class="label">Received at forum </div><div class="info"><a href="#1">234</a></div></dd>
+                        <dd><div class="label">Given at forum</div><div class="info">23</div></dd>
                       </dl>
                     </div>
                   </div>
