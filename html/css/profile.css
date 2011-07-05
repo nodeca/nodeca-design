@@ -223,7 +223,7 @@
 }
 
 /* Toggler in subblock */
-.p-info-collapser  .collapser{
+.p-info-collapser .collapser{
   background: #f3f3f3;
   background: linear-gradient(#fff, #e7e7e7);
   background: -moz-linear-gradient(#fff,#e7e7e7);
@@ -235,10 +235,10 @@
   display:inline-block;
   font-size: 10px;
 }
-.collapser:hover{
+.p-info-collapser .collapser:hover{
   text-decoration:none;
 }
-.collapser:focus{
+.p-info-collapser .collapser:focus{
   outline:0;
 }
 .p-info-collapser .collapser:before{
