@@ -307,7 +307,15 @@
 .w-entry-body{
   overflow:hidden;
 }
+.w-more-comments {
+  margin-left: 10px;
+}
+.w-more-comments:before{
+  content: '↓';
+}
+
 .w-new-comment,
+.w-more-comments,
 .w-like-link,
 .w-lk-none{
   transition: opacity 0.5s ease;
@@ -322,6 +330,7 @@
   opacity:0.4;
 }
 .w-entry:hover .w-new-comment,
+.w-entry:hover .w-more-comments,
 .w-entry:hover .w-like-link{
   opacity:1;
 }
@@ -362,8 +371,8 @@
 .w-more-button{
   width:100%;
 }
-.w-more-button:after{
-  content: ' 	↓';
+.w-more-button:before{
+  content: '↓';
   font-weight:normal;
 }
 
