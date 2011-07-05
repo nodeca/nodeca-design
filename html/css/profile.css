@@ -210,7 +210,7 @@
   font-weight:bold;
   margin:0 0 3px 10px;
 }
-.p-info-box .label{
+.p-info-label{
   float:left;
   width:120px;
 }
@@ -287,7 +287,6 @@
   padding:15px 0;
   float:left;
   width:100%;
-  font-size:13px;
   line-height: 1.4em;
 }
 .w-comments{
@@ -341,6 +340,7 @@
 .w-entry:hover .w-lk-none {
   opacity:0.4;
 }
+.w-lk-some:hover,
 .w-lk-none:hover {
   opacity:1 !important;
 }
@@ -353,6 +353,7 @@
 
 .wall-head{
   margin:0 0 4px;
+  font-size: 13px
 }
 .w-comments .w-entry:last-child{
   padding-bottom:0;
