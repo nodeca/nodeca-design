@@ -76,7 +76,9 @@
   right:-10px;
   height:30px;
   width:10px;
+  -webkit-box-shadow:-5px -5px 15px #fff;
   -moz-box-shadow:-5px -5px 15px #fff;
+  box-shadow:-5px -5px 15px #fff;
 }
 .fl-total {
   font-size: 12px;

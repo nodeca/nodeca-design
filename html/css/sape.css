@@ -1,4 +1,8 @@
 .sape-links{
+  color:#888;
   font-size:10px;
   margin:10px 0 0;
+}
+.sape-links a{
+  color:#888;
 }
