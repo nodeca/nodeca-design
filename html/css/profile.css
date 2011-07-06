@@ -24,20 +24,22 @@
   font-size:12px;
   color: #888;
 }
-/* ---------------------------------------------
- * Profile columns
+/*
+ *
+ * Profile content columns
+ *
  */
-.profile-left{
-  float:left;
-  width:240px;
-  position:relative;
-}
 .p-content-wrapper{
   float:left;
   width:100%;
   margin-left:-240px;
 }
-.profile-right{
+.p-content-left{
+  float:left;
+  width:240px;
+  position:relative;
+}
+.p-content-right{
   margin:0 0 0 270px;
 }
 
@@ -180,10 +182,10 @@
   display:inline-block;
   font-size: 13px;
 }
-.collapser:hover{
+.p-block-title .collapser:hover{
   text-decoration:none;
 }
-.collapser:focus{
+.p-block-title .collapser:focus{
   outline:0;
 }
 .p-block-title .collapser:before{

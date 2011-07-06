@@ -494,9 +494,7 @@ a.ub-link{
 }
 .site-theme,
 .site-lang{
-  -webkit-border-radius:0;
-  -moz-border-radius:0;
-  border-radius:0;
+  border-radius:2px;
   font-size:10px;
   padding:0;
   width:100px;
