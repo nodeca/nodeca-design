@@ -287,7 +287,7 @@
 .w-entry,
 .w-comment{
   border-top:1px solid #b0b0b0;
-  padding:15px 0;
+  padding:15px 0 5px;
   float:left;
   width:100%;
   line-height: 1.4em;
@@ -296,7 +296,7 @@
   padding-bottom:0;
 }
 .w-comments{
-  margin:15px 0 0;
+  margin:5px 0 0;
 }
 .w-entry-userpic,
 .w-comment-userpic{
@@ -423,7 +423,8 @@
 .w-entry-meta,
 .w-comment-meta{
   font-size:11px;
-  margin:3px 0 0;
+  line-height: 14px;
+/*  margin:3px 0 0; */
 }
 .w-more-button{
   width:100%;
