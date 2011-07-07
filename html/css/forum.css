@@ -16,8 +16,8 @@
   border:0;
 }
 
-/*============== Needs cleanup =====================*/
-.fl-cat-table td.fl-icon-cell{
+/* first column + icon */
+td.fl-icon-col{
   padding-left:0;
   padding-right:0;
   width:1%;
@@ -27,6 +27,7 @@
   height:50px;
   width:50px;
 }
+    /* icon-specific styles, modify on your needs */
 .fl-icon-default{
   background:#d2e4ee url(../images/forum.png) no-repeat 50% 50%;
 }
@@ -39,40 +40,36 @@
 .fl-icon-link{
   background:#d2e4ee url(../images/forum-link.png) no-repeat 50% 50%;
 }
-/*===================================================*/
-
-.fl-summary{
-  width:67%;
-}
-.fl-last-post{
-  width:20%;
-}
 
 /* forum title, moderators, description */
+/*.fl-summary-col{
+  width:67%;
+}*/
+
 .fl-title{
   font-size:16px;
   font-weight:bold;
 }
 
 /* counters */
-.fl-total {
+.fl-total-col {
   font-size: 12px;
   color: #444;
   min-width:80px;
   width:12%;
 }
-.fl-total li{
+.fl-total-col li{
   margin:0 0 2px; 
 }
 
 /* last column styles */
-.fl-last-post{
+.fl-last-post-col{
   font-size:12px;
   max-width:190px;
   min-width:190px;
   width:190px;
 }
-.fl-last-post li{
+.fl-last-post-col li{
   margin:0 0 2px; 
 }
 .fl-last-post-date{
@@ -97,8 +94,6 @@
   right:-10px;
   height:30px;
   width:10px;
-  -webkit-box-shadow:-5px -5px 15px #fff;
-  -moz-box-shadow:-5px -5px 15px #fff;
   box-shadow:-5px -5px 15px #fff;
 }
 

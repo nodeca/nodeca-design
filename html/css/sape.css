@@ -6,3 +6,6 @@
 .sape-links a{
   color:#888;
 }
+.width-aside .sape-links{
+  padding-left:180px;
+}
