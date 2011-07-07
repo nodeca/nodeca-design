@@ -287,13 +287,14 @@
 .w-entry,
 .w-comment{
   border-top:1px solid #b0b0b0;
-  padding:15px 0 5px;
+  padding-top:15px;
   float:left;
   width:100%;
   line-height: 1.4em;
 }
-.w-comment:last-child{
-  padding-bottom:0;
+.w-entry-inner,
+.w-comment{
+  padding-bottom:5px;
 }
 .w-comments{
   margin:5px 0 0;
@@ -331,8 +332,8 @@
 .w-like-link,
 .w-lk-none,
 .w-reply-link,
-.w-entry-head:after,
-.w-comment-head:after{
+.w-entry-delete,
+.w-comment-delete{
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
@@ -348,8 +349,8 @@
 .w-entry:hover .w-more-comments,
 .w-entry:hover .w-like-link,
 .w-comment:hover .w-reply-link,
-.w-entry:hover .w-entry-head:after,
-.w-comment:hover .w-comment-head:after{
+.w-entry-inner:hover .w-entry-delete,
+.w-comment:hover .w-comment-delete{
   opacity:1;
 }
 .w-entry:hover .w-lk-none {
@@ -365,6 +366,16 @@
 .w-likes-stat:hover{
   text-decoration:none;
 }
+.w-content .timestamp{
+  transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  opacity:1;
+}
+.w-entry-inner:hover .timestamp,
+.w-comment:hover .timestamp{
+  opacity:0;
+}
 
 .w-entry-head,
 .w-comment-head{
@@ -372,22 +383,6 @@
   margin:0 0 4px;
   font-size: 13px;
   overflow:hidden;
-}
-.w-entry-head:after,
-.w-comment-head:after{
-  cursor:pointer;
-  background-color:#fff;
-  font-size:18px;
-  font-weight:bold;
-  color:#607890;
-  content:'×';
-  position:absolute;
-  right:-5px;
-  top:-6px;
-  padding:5px;
-  -webkit-box-shadow:0 10px #fff;
-  -moz-box-shadow:0 10px #fff;
-  box-shadow:0 10px #fff;
 }
 .w-comment-head{
   margin:0 0 1px;
@@ -398,6 +393,24 @@
   overflow:hidden;
   white-space:nowrap;
   position:relative;
+}
+.w-entry-delete,
+.w-comment-delete{
+  background-color:#fff;
+  font-size:18px;
+  font-weight:bold;
+  position:absolute;
+  right:0;
+  top:-1px;
+  opacity:0;
+}
+.w-entry-delete:after,
+.w-comment-delete:after{
+  content:'×';
+}
+.w-entry-delete:hover,
+.w-comment-delete:hover{
+  text-decoration:none;
 }
 .w-entry-body .author:after,
 .w-entry-body .author:before,
