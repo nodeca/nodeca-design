@@ -93,20 +93,24 @@
 .pw-albums{
   margin:-15px 0 0;
 }
-.pw-albums .item{
+.pw-a-item{
   float:left;
   width:100%;
   margin:15px 0 0;
 }
-.pw-albums-thumb{
+a.pw-a-thumb{
   float:left;
   display:inline;
   margin:0 13px 0 0;
 }
-.pw-albums-thumb img{
+img.pw-a-thumb{
   border-radius:2px;
 }
-.pw-albums .timestamp{
+.pw-a-desc{
+  display:block;
+  overflow:hidden;zoom:1;
+}
+.pw-a-desc .ts{
   font-size:11px;
   display:block;
   margin:2px 0 0;
@@ -117,7 +121,7 @@
 .pw-friends{
   margin:-10px -29px 0 0;
 }
-.pw-friends .item{
+.pw-f-item{
   float:left;
   width:50px;
   margin:10px 29px 0 0;
@@ -126,20 +130,25 @@
   font-size:11px;
   text-align:center;
 }
-.pw-friends .thumb{
+.pw-f-thumb{
   vertical-align:top;
   border-radius:2px;
 }
-.pw-friends .name{
+.pw-f-name{
   display:block;
   margin:5px 0 0;
 }
 /*
  * Groups widget internals
  */
-.pw-groups li{
+li.pw-g-item{
   display:inline;
   line-height: 1.4em;
+}
+li.pw-g-item:after{
+  content:'•';
+  margin:0 0 0 4px;
+  color: #444;
 }
 /* 
  * Blog widget internals
@@ -147,10 +156,10 @@
 .pw-blog{
   margin:-10px 0 0;
 }
-.pw-blog .item{
+.pw-b-item{
   margin:10px 0 0;
 }
-.pw-blog .meta{
+.pw-b-meta{
   font-size:10px;
   color: #888;
   margin:3px 0 0;
@@ -220,7 +229,7 @@
   overflow:hidden;
   zoom:1;
 }
-.p-info-box .timestamp{
+.p-info-box .ts{
   font-size:11px;
 }
 
@@ -366,14 +375,14 @@
 .w-likes-stat:hover{
   text-decoration:none;
 }
-.w-content .timestamp{
+.w-content .ts{
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
   opacity:1;
 }
-.w-entry-inner:hover .timestamp,
-.w-comment:hover .timestamp{
+.w-entry-inner:hover .ts,
+.w-comment:hover .ts{
   opacity:0;
 }
 
@@ -427,8 +436,8 @@
   -moz-box-shadow:-5px -5px 15px #fff;
   box-shadow:-5px -5px 15px #fff;
 }
-.w-entry-body .timestamp,
-.w-comment-body .timestamp{
+.w-entry-body .ts,
+.w-comment-body .ts{
   color:#959595;
   font-size:11px;
   float:right;

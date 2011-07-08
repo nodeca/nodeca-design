@@ -150,31 +150,30 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   margin-right:10px;
 }
 
-
-/*===== Bullshit to clear =========================*/
-.nobr{white-space:nowrap;}
-
-.nofloat{display:block;overflow:hidden;zoom:1;}
-
-/*==================================================*/
-
+/*
+ *
+ * General Styles
+ *
+ */
 .page-title{
   font-size:24px;
   font-weight:normal;
 }
 
-.like-icon{background:url(../images/like-icon.png);height:6px;width:7px;}
-
+/* Helps to keep footer near window bottom */
 .container{
   min-height:100%;
 }
 * html .container{
   height:100%;
 }
+
+/* Limits content width */
 .trunk{
   margin-left:auto;
   margin-right:auto;
   min-width:800px;
+  
   /* Change to switch page width             */
   /* by default - 960px, for 1024px screens  */
   width:960px;
@@ -182,6 +181,12 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   padding-left:15px;
   padding-right:15px;
 }
+
+/*
+ *
+ * Page header styles
+ *
+ */
 .head{
   background: #00597b;
   background: linear-gradient(#258ac4, #00597b);
@@ -218,6 +223,7 @@ header .trunk{
   color:#00374c;
   top:31px;
 }
+
 /*
  * 
  * Global navigation (heading tabs)
@@ -397,24 +403,22 @@ a.ub-link{
   color:#77c8f3;
 }
 
-/* --------------------------------------
+/*
+ *
  * Sidebar
+ *
  */
-.page-sidebar{
+.page-aside-menu{
   float:left;
   display:inline;
   margin:38px 0 0;
   width:150px;
   position:relative;
 }
-
-/* --------------------------------------
- * sidebar navigation
- */
-.sn-item{
+.am-item{
   line-height:24px;
 }
-.active .sn-link{
+.active .am-link{
   font-weight:bold;
 }
 
@@ -448,7 +452,7 @@ a.ub-link{
   left:30px;
   top:-7px;
   line-height:1;
-  font-size:16px;
+  font-size:13px;
   color:#898989;
   white-space:nowrap;
 }
@@ -470,6 +474,11 @@ a.ub-link{
   padding:20px 0 30px 30px;
 }
 
+/*
+ *
+ * Page footer styles
+ *
+ */
 .page-footer{
   position:relative;
   margin-top:-100px;
@@ -484,8 +493,8 @@ a.ub-link{
 .copyrights{
   font-size:13px;
 }
-.width-aside .footer-nav,
-.width-aside .copyrights{
+.with-aside-menu-col .footer-nav,
+.with-aside-menu-col .copyrights{
   padding-left:180px;
 }
 .site-options{
