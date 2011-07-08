@@ -173,20 +173,17 @@ td.fl-icon-col{
   -moz-transition: opacity 0.6s ease;
   -webkit-transition: opacity 0.6s ease;
   display:block;
-  overflow:hidden;
   position:absolute;
   right:13px;
   top:13px;
   height:24px;
-  width:25px;
-  line-height: 25x;
-  padding-top: 1px;
+  width:24px;
+  line-height: 22px;
   text-align:center;
   border-radius:5px;
   box-shadow: 0 0 1px #888;
   content:'';
   color:#fff;
-/*  font-size:6px; */
   font-size:10px;
   opacity:0;
 }
@@ -207,9 +204,7 @@ td.fl-icon-col{
   content:'▲';
 }
 .collapsed > .fl-cat-head > .collapser{
-  padding-top: 2px;
-  height:24px;
-/*  line-height:25px; */
+  line-height:24px;
 }
 .collapsed > .fl-cat-head > .collapser:before{
   content:'▼';
