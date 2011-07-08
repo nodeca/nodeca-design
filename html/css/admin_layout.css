@@ -153,8 +153,6 @@ li.clearfix{display:list-item;}
  */
 .global-nav{
   margin: 12px 0 0;
-  float: left;
-  position: relative;
 }
 .global-nav li{
   float:left;
