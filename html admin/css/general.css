@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* page reset
+ ------------------------------------------------------------------------------------------------------------ */
+html,body{height:100%;}
+body{background:#fbfbfb;color:#373737;font:14px Arial,sans-serif;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,address{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;font-size:inherit;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font:1em Arial,sans-serif;}
+pre,code,kbd,samp,tt{font-family:monospace;line-height:100%;}
+a{color:#015b7d;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a *{cursor:pointer;}
+textarea{overflow:auto;}
+
+/* float clearing
+ ------------------------------------------------------------------------------------------------------------ */
+.clear{clear:both;border:none;overflow:hidden;display:block;height:0;line-height:0;font-size:0;float:none;margin:0;padding:0;background:transparent;}
+.clearfix:after{clear:both;display:block;content:".";height:0px;visibility:hidden;font-size:0;line-height:0;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+li.clearfix{display:list-item;}
+* html .clearfix {height:1px;} /* ie6 hack for clearfix */
+
+/*
+ *
+ * Buttons
+ *
+ */
+.button{
+  background: #034e79;
+  background: linear-gradient(#106fa5, #034e79);
+  background: -moz-linear-gradient(#106fa5,#034e79);
+  background: -webkit-linear-gradient(#106fa5,#034e79);
+  -pie-background: linear-gradient(#106fa5, #034e79);
+  border:0;
+  font-size: 12px;
+  font-weight:bold;
+  color:#fff;
+  padding:6px 14px;
+  text-align:center;
+  display:inline-block;*display:inline;zoom:1;
+  border-radius:4px;
+  cursor:pointer;
+  box-sizing:border-box;-moz-box-sizing:border-box;
+  behavior:url(./css/PIE.htc);
+}
+.button:hover{
+  background: #035a8c;
+  background: linear-gradient(#106fa5, #035a8c);
+  background: -moz-linear-gradient(#106fa5,#035a8c);
+  background: -webkit-linear-gradient(#106fa5,#035a8c);
+  -pie-background: linear-gradient(#106fa5, #035a8c);
+  text-decoration:none;
+}
+.button:focus{
+  outline:0;
+}
+.button:active{
+  background: #0a6090;
+  background: linear-gradient(#106fa5, #0a6090);
+  background: -moz-linear-gradient(#106fa5,#0a6090);
+  background: -webkit-linear-gradient(#106fa5,#0a6090);
+  box-shadow:0 0 3px #333 inset;
+}
+
+.submit-button{
+  background: #4996c2;
+  background: linear-gradient(#78b8dd, #1771a4);
+  background: -moz-linear-gradient(#78b8dd,#1771a4);
+  background: -webkit-linear-gradient(#78b8dd,#1771a4);
+  -pie-background: linear-gradient(#78b8dd, #1771a4);
+  border:1px solid #4286ad;
+  color:#fff;
+  font-size: 12px;
+  font-weight:bold;
+  padding:3px 15px 4px;
+  text-align:center;
+  display:inline-block;*display:inline;zoom:1;
+  border-radius:4px;
+  cursor:pointer;
+  box-sizing:border-box;-moz-box-sizing:border-box;
+}
+.submit-button:hover{
+  background: #62a8d1;
+  background: linear-gradient(#78b8dd, #1a88c7);
+  background: -moz-linear-gradient(#78b8dd,#1a88c7);
+  background: -webkit-linear-gradient(#78b8dd,#1a88c7);
+  -pie-background: linear-gradient(#78b8dd, #1a88c7);
+  text-decoration:none;
+}
+.submit-button:focus{
+  border-color:#3a799e;
+  outline:0;
+}
+.submit-button:active{
+  background: #62a8d1;
+  background: linear-gradient(#62a8d1, #2a7faf);
+  background: -moz-linear-gradient(#62a8d1,#2a7faf);
+  background: -webkit-linear-gradient(#62a8d1,#2a7faf);
+  -pie-background: linear-gradient(#62a8d1, #2a7faf);
+  border-color:#3486b5;
+}
+
+.c-block{
+  margin-bottom: 30px;
+}
+
+.textfield{
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  behavior:url(./css/PIE.htc);
+  padding: 4px;
+}
+.form-submit-row{
+  background-color: #f3f3f3;
+  padding: 14px;
+  height: 1%;
+  text-align: center;
+}

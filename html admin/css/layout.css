@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+/* -------------------------------------
+ * Page head
+ */
+.page-head{
+  background-color: #0b669a;
+  color:#fff;
+  padding:10px 60px 0;
+  margin-bottom: 15px;
+}
+.page-head .left{
+  float: left;
+}
+.page-head .right{
+  float: right;
+}
+.back-link{
+  color: #fff;
+  font-size: 12px;
+}
+/* -------------------------------------
+ * Global nav
+ */
+.global-nav{
+  margin: 12px 0 0;
+  float: left;
+  position: relative;
+}
+.global-nav li{
+  float:left;
+}
+.global-nav a{
+  background-color: #2988be;
+  color:#fff;
+  font-weight: bold;
+  float: left;
+  display: inline; /* ie6 double margin hack */
+  margin-right: 1px;
+  line-height: 38px;
+  padding: 0 10px;
+  border-radius: 4px 4px 0 0;
+  behavior:url(./css/PIE.htc);
+}
+.global-nav .active a{
+  background-color:#fbfbfb;
+  color:#2a2a2a;
+  cursor: default;
+}
+.global-nav .active a:hover{
+  text-decoration: none;
+}
+/* -------------------------------------
+ * User Bar
+ */
+.user-bar{
+  text-align: right;
+}
+.user-bar li{
+  display: inline;
+  margin-left: 12px;
+}
+.user-bar a{
+  color:#77c8f3;
+}
+/* -------------------------------------
+ * Settings search
+ */
+.ss{
+  border-radius:4px;
+  float: right;
+  background:#f3f3f3;
+  border:0;
+  padding:4px;
+  width:204px;
+  height:21px;
+  margin-top: 13px;
+}
+.ss-query{
+  width:178px;
+  border:0;
+  padding:0;
+  background:#F3F3F3;
+  margin:2px 0 0;
+}
+.ss-query:focus{
+  outline:0!important;
+  border-radius:0;
+  box-shadow:none !important;
+}
+.ss-submit{
+  background:url(../images/search-submit.png) no-repeat 50% 50%;
+  width:20px;
+  height:22px;
+  border:0;
+  cursor:pointer;
+}
+
+/* -------------------------------------
+ * Page sidebar
+ */
+.page-sidebar{
+  float: left;
+  display: inline; /* ie6 double margin hack */
+  margin: 25px 0 0 43px;
+  position: relative;
+  width: 257px;
+}
+.page-nav a{
+  color:#373737;
+}
+.page-nav-section{
+  padding: 15px;
+  height: 1%; /* ie6-7 padding bug hack */
+  line-height: 1.3;
+}
+.page-nav .active{
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-right: 0;
+  padding:14px 16px 14px 13px;
+  right: -1px;
+  position: relative;
+}
+.page-nav-tree dt{
+  font-weight: bold;
+  margin:0 0 5px;
+}
+.page-nav-tree dd{
+  margin-left: 20px;
+}
+.page-nav-subtree{
+  font-size: 12px;
+  margin: 2px 0 2px 20px;
+}
+
+/* -------------------------------------
+ * Page content
+ */
+.page-content-wrapper{
+  float: left;
+  width: 100%;
+  display: inline; /* ie6 double margin hack */
+  margin-left: -300px;
+}
+.page-content{
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-right: 0;
+  margin: 0 0 0 300px;
+  padding: 10px 60px 30px 30px;
+}
+
+/* --------------------------
+ * Footer
+ */
+.page-footer{
+  margin: 20px 0 0 300px;
+}
+
+/* -------------------------------------
+ * breadcrumbs
+ */
+.breadcrumbs{
+  color:#898989;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.breadcrumbs li{
+  display: inline;
+}
+
+/* -------------------------------------
+ * page title
+ */
+.page-title{
+  margin-bottom: 10px;
+  position: relative;
+  height: 1%;
+}
+.page-title h1{
+  font-size: 24px;
+}
+.page-title .button{
+  position: absolute;
+  right:0;
+  top:0;
+}
+
+/* -------------------------------------
+ * Tabs
+ */
+.tabs{
+  border-bottom: 2px solid #2988be;
+  font-size: 16px;
+  height: 32px;
+  overflow: hidden;
+  padding-left: 14px;
+  position: relative;
+}
+.tabs li{
+  float:left;
+}
+.tabs a{
+  background-color: #e9e9e9;
+  float:left;
+  display: inline; /* ie6 double margin hack */
+  margin-right: 1px;
+  line-height: 32px;
+  padding:0 12px;
+  border-radius: 4px 4px 0 0;
+  behavior:url(./css/PIE.htc);
+}
+.tabs .active a{
+  color:#fff;
+  cursor: default;
+  font-weight: bold;
+  background-color: #2988be;
+}
+.tabs .active a:hover{
+  text-decoration: none;
+}
+
+/* -------------------------------------
+ * List view
+ */
+.list-view-row{
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #b0b0b0;
+  padding:16px 14px;
+  height: 1%; /* ie6-7 padding bug hack */
+  position: relative;
+}
+.list-view-title{
+  margin:0 0 2px;
+}
+.list-view-descr{
+  color:#888888;
+}
+.menu-toggler{
+  font-size: 6px;
+  position: absolute;
+  top:50%;
+  margin-top: -9px;
+  right:15px;
+  display: block;
+  width:18px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  background: #eaeaea;
+  background: linear-gradient(#f7f7f7, #dddddd);
+  background: -moz-linear-gradient(#f7f7f7,#dddddd);
+  background: -webkit-linear-gradient(#f7f7f7,#dddddd);
+  -pie-background: linear-gradient(#f7f7f7, #dddddd);
+  border-radius: 4px;
+  behavior:url(./css/PIE.htc);
+}
+.menu-toggler:hover{
+  text-decoration: none;
+}
+.menu-toggler:after{
+  content: '▼';
+}
+.menu-toggler-expanded:after{
+  content: '▲';
+}
+.dropBox{
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden;
+  position: absolute;
+  right:15px;
+  top:-5000px;
+  margin-top:9px;
+  z-index: 1;
+  padding: 5px 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+}
+.dropBox-expanded{
+  top:50%;
+  opacity: 1;
+}
+.dropBox li{
+  font-size: 12px;
+  padding: 0 10px;
+  line-height: 17px;
+}
+.dropBox li:hover{
+  background: #106fa5;
+}
+.dropBox li:hover a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.b-title{
+  background-color: #0b669a;
+  color:#fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 7px 14px 9px;
+  height: 1%; /* ie6-7 padding bug hack */
+}
+
+/* --------------------------------
+ * List view table
+ */
+.lv-table{
+  width: 100%;
+}
+.lv-table td{
+  padding-right: 10px;
+}
+.lv-table-descr{
+  width:60%;
+}
