@@ -13,12 +13,12 @@
 
   <link rel="shortcut icon" href="./favicon.ico" />
 
-  <link rel="stylesheet" href="css/boilerplate_start.css">
+  <link rel="stylesheet" href="css/boilerplate-start.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/loginza.css">
+  <link rel="stylesheet" href="css/addons/loginza.css">
   <link rel="stylesheet" href="css/profile.css">
-  <link rel="stylesheet" href="css/sape.css">
-  <link rel="stylesheet" href="css/boilerplate_end.css">
+  <link rel="stylesheet" href="css/addons/sape.css">
+  <link rel="stylesheet" href="css/boilerplate-end.css">
 
   <script type="text/javascript" src="js/libs/modernizr-2.0.min.js"></script>
   <!--script src="js/libs/respond.min.js"></script-->
@@ -102,9 +102,15 @@
       </div>
     </header>
     <div class="main-wrap trunk clearfix">
+      <ul class="user-mod-menu">
+        <li class="user-mod-menuitem"><a href="#1">Notices</a> (6)</li>
+        <li class="user-mod-menuitem"><a href="#1">Edit</a></li>
+        <li class="user-mod-menuitem"><a href="#1">Ban</a></li>
+        <li class="user-mod-menuitem"><a class="more-icon" href="#1">More</a></li>
+      </ul><!-- admin nav end -->
       <aside class="page-aside-menu">
         <ul class="sidebar-nav">
-          <li class="am-item active"><a class="am-link" href="#1">Home</a></li>
+          <li class="am-item"><a class="am-link" href="#1">Home</a></li>
           <li class="am-item"><a class="am-link" href="#1">Blog</a></li>
           <li class="am-item"><a class="am-link" href="#1">Friends</a></li>
           <li class="am-item"><a class="am-link" href="#1">Photos</a></li>
@@ -117,12 +123,18 @@
         <div class="content">
           <div class="frame-line">
             <ul class="breadcrumbs">
-              <li>Your Profile</li>
+              <li>User Profile</li>
+              <li>Breadcrumb test</li>
             </ul>
           </div>
           <div class="holder">
             <div class="profile-head">
-              <h1 class="page-title">Alexandr (kuka) Makedonskiy</h1>
+              <h1 class="page-title">
+                Alexandr (kuka) Makedonskiy
+                <span class="online-sticker">
+                  online <span class="bottom"><span class="round"><!-- --></span></span>
+                </span>
+              </h1>
               <div class="profile-status">Status text. Connect with the things you care about.</div>
             </div>
             <div class="clearfix">
@@ -134,7 +146,9 @@
                 </ul>
                 <div class="p-widget">
                   <div class="p-widget-head clearfix">
-                    <a class="p-widget-head-link" href="#1"><strong>Albums</strong></a> (23)
+                    <div class="left">
+                      <a class="p-widget-head-link" href="#1"><strong>Albums</strong></a> (23)
+                    </div>
                   </div>
                   <div class="p-widget-content">
                     <ul class="pw-albums clearfix">
@@ -186,7 +200,9 @@
                 </div><!-- module end -->
                 <div class="p-widget">
                   <div class="p-widget-head clearfix">
-                    <a class="p-widget-head-link" href="#1"><strong>Online Friends</strong></a> (23)
+                    <div class="left">
+                      <a class="p-widget-head-link" href="#1"><strong>Online Friends</strong></a> (23)
+                    </div>
                   </div>
                   <div class="p-widget-content">
                     <ul class="pw-friends clearfix">
@@ -204,7 +220,9 @@
                 </div><!-- module end -->
                 <div class="p-widget">
                   <div class="p-widget-head clearfix">
-                    <a class="p-widget-head-link" href="#1"><strong>Common Friends</strong></a> (76)
+                    <div class="left">
+                      <a class="p-widget-head-link" href="#1"><strong>Common Friends</strong></a> (76)
+                    </div>
                   </div>
                   <div class="p-widget-content">
                     <ul class="pw-friends clearfix">
@@ -222,7 +240,9 @@
                 </div><!-- module end -->
                 <div class="p-widget">
                   <div class="p-widget-head clearfix">
-                    <a class="p-widget-head-link" href="#1"><strong>Groups</strong></a> (12)
+                    <div class="left">
+                      <a class="p-widget-head-link" href="#1"><strong>Groups</strong></a> (12)
+                    </div>
                   </div>
                   <div class="p-widget-content">
                     <ul class="pw-groups clearfix">
@@ -238,7 +258,9 @@
                 </div><!-- module end -->
                 <div class="p-widget">
                   <div class="p-widget-head clearfix">
-                    <a class="p-widget-head-link" href="#1"><strong>Blog</strong></a> (23)
+                    <div class="left">
+                      <a class="p-widget-head-link" href="#1"><strong>Blog</strong></a> (23)
+                    </div>
                   </div>
                   <div class="p-widget-content">
                     <ul class="pw-blog clearfix">
@@ -269,17 +291,6 @@
               </div>
               <div class="p-content-wrap">
                 <div class="p-content-right">
-                  <form method="post" action="" class="p-block">
-                    <h3 class="p-block-title">Notepad <a href="#1" class="collapser" data-extra-toggler="-1"><!-- --></a></h3>
-                    <ul>
-                      <li>
-                        <textarea class="pnotepad-text" placeholder="Write something"></textarea>
-                      </li>
-                      <li class="pnotepad-controls">
-                        <input type="submit" value="Saved" class="button" />
-                      </li>
-                    </ul>
-                  </form>
                   <div class="p-block">
                     <h3 class="p-block-title">Basic Information <a href="#1" class="collapser" data-extra-toggler="-1"><!-- --></a></h3>
                     <div class="p-block-content">
@@ -458,7 +469,7 @@
           </div>
         </div>
       </div>
-    </div><!-- /content wrap -->
+    </div>
   </div> <!--! end of #container -->
 
   <footer class="page-footer trunk with-aside-menu-col">
