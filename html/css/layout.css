@@ -507,15 +507,6 @@ a.ub-link{
   margin:0 0 5px;
   display:block;
 }
-.site-theme option,
-.site-lang option{
-  padding:0 0 0 20px;
-}
-.site-theme option.default,
-.site-lang option.default{
-  font-style:italic;
-  padding:0;
-}
 
 /*
  * 
