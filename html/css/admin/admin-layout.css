@@ -3,7 +3,7 @@
 /* page reset
  ------------------------------------------------------------------------------------------------------------ */
 html,body{height:100%;}
-body{background:#fbfbfb;color:#373737;font:14px Arial,sans-serif;}
+body{background:#f8f8f0;color:#373737;font:14px Arial,sans-serif;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,address{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;font-size:inherit;}
 fieldset,img{border:0;}
@@ -39,9 +39,6 @@ li.clearfix{display:list-item;}
 .button{
   background: #034e79;
   background: linear-gradient(#106fa5, #034e79);
-  background: -moz-linear-gradient(#106fa5,#034e79);
-  background: -webkit-linear-gradient(#106fa5,#034e79);
-  -pie-background: linear-gradient(#106fa5, #034e79);
   border:0;
   font-size: 12px;
   font-weight:bold;
@@ -52,14 +49,10 @@ li.clearfix{display:list-item;}
   border-radius:4px;
   cursor:pointer;
   box-sizing:border-box;-moz-box-sizing:border-box;
-  behavior:url(./css/PIE.htc);
 }
 .button:hover{
   background: #035a8c;
   background: linear-gradient(#106fa5, #035a8c);
-  background: -moz-linear-gradient(#106fa5,#035a8c);
-  background: -webkit-linear-gradient(#106fa5,#035a8c);
-  -pie-background: linear-gradient(#106fa5, #035a8c);
   text-decoration:none;
 }
 .button:focus{
@@ -68,17 +61,12 @@ li.clearfix{display:list-item;}
 .button:active{
   background: #0a6090;
   background: linear-gradient(#106fa5, #0a6090);
-  background: -moz-linear-gradient(#106fa5,#0a6090);
-  background: -webkit-linear-gradient(#106fa5,#0a6090);
   box-shadow:0 0 3px #333 inset;
 }
 
 .submit-button{
   background: #4996c2;
   background: linear-gradient(#78b8dd, #1771a4);
-  background: -moz-linear-gradient(#78b8dd,#1771a4);
-  background: -webkit-linear-gradient(#78b8dd,#1771a4);
-  -pie-background: linear-gradient(#78b8dd, #1771a4);
   border:1px solid #4286ad;
   color:#fff;
   font-size: 12px;
@@ -93,9 +81,6 @@ li.clearfix{display:list-item;}
 .submit-button:hover{
   background: #62a8d1;
   background: linear-gradient(#78b8dd, #1a88c7);
-  background: -moz-linear-gradient(#78b8dd,#1a88c7);
-  background: -webkit-linear-gradient(#78b8dd,#1a88c7);
-  -pie-background: linear-gradient(#78b8dd, #1a88c7);
   text-decoration:none;
 }
 .submit-button:focus{
@@ -105,9 +90,6 @@ li.clearfix{display:list-item;}
 .submit-button:active{
   background: #62a8d1;
   background: linear-gradient(#62a8d1, #2a7faf);
-  background: -moz-linear-gradient(#62a8d1,#2a7faf);
-  background: -webkit-linear-gradient(#62a8d1,#2a7faf);
-  -pie-background: linear-gradient(#62a8d1, #2a7faf);
   border-color:#3486b5;
 }
 
@@ -119,7 +101,6 @@ li.clearfix{display:list-item;}
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
-  behavior:url(./css/PIE.htc);
   padding: 4px;
 }
 .form-submit-row{
@@ -158,7 +139,7 @@ li.clearfix{display:list-item;}
   float:left;
 }
 .global-nav a{
-  background-color: #2988be;
+  background-color: #2988BE;
   color:#fff;
   font-weight: bold;
   float: left;
@@ -167,10 +148,9 @@ li.clearfix{display:list-item;}
   line-height: 38px;
   padding: 0 10px;
   border-radius: 4px 4px 0 0;
-  behavior:url(./css/PIE.htc);
 }
 .global-nav .active a{
-  background-color:#fbfbfb;
+  background-color:#F8F8F0;
   color:#2a2a2a;
   cursor: default;
 }
@@ -229,9 +209,9 @@ li.clearfix{display:list-item;}
 .page-sidebar{
   float: left;
   display: inline; /* ie6 double margin hack */
-  margin: 25px 0 0 43px;
+  margin: 25px 0 0 23px;
   position: relative;
-  width: 257px;
+  width: 227px;
 }
 .page-nav a{
   color:#373737;
@@ -248,6 +228,7 @@ li.clearfix{display:list-item;}
   padding:14px 16px 14px 13px;
   right: -1px;
   position: relative;
+  box-shadow: -5px 0 5px -5px #CCC, 0 5px 5px -5px #CCC, 0 -5px 5px -5px #CCC;
 }
 .page-nav-tree dt{
   font-weight: bold;
@@ -268,21 +249,22 @@ li.clearfix{display:list-item;}
   float: left;
   width: 100%;
   display: inline; /* ie6 double margin hack */
-  margin-left: -300px;
+  margin-left: -250px;
 }
 .page-content{
   background-color: #fff;
   border: 1px solid #dcdcdc;
   border-right: 0;
-  margin: 0 0 0 300px;
-  padding: 10px 60px 30px 30px;
+  margin: 0 0 0 250px;
+  padding: 25px 30px 30px 30px;
+  box-shadow: 0 0 5px #CCC
 }
 
 /* --------------------------
  * Footer
  */
 .page-footer{
-  margin: 20px 0 0 300px;
+  margin: 20px 0 0 250px;
 }
 
 /* -------------------------------------
@@ -336,7 +318,6 @@ li.clearfix{display:list-item;}
   line-height: 32px;
   padding:0 12px;
   border-radius: 4px 4px 0 0;
-  behavior:url(./css/PIE.htc);
 }
 .tabs .active a{
   color:#fff;
@@ -377,11 +358,7 @@ li.clearfix{display:list-item;}
   text-align: center;
   background: #eaeaea;
   background: linear-gradient(#f7f7f7, #dddddd);
-  background: -moz-linear-gradient(#f7f7f7,#dddddd);
-  background: -webkit-linear-gradient(#f7f7f7,#dddddd);
-  -pie-background: linear-gradient(#f7f7f7, #dddddd);
   border-radius: 4px;
-  behavior:url(./css/PIE.htc);
 }
 .menu-toggler:hover{
   text-decoration: none;
@@ -444,4 +421,10 @@ li.clearfix{display:list-item;}
 }
 .lv-table-descr{
   width:60%;
+}
+
+
+.copyrights{
+  font-size:12px;
+  padding: 0 30px 10px 0;
 }
