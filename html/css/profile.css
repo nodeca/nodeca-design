@@ -189,10 +189,12 @@
   outline:0;
 }
 .p-block-title .collapser:before{
-  content:'▴';
+/*  content:'▴'; */
+  content:'▲';
 }
 .collapsed .p-block-title .collapser:before{
-  content:'▾';
+/*  content:'▾'; */
+  content:'▼';
 }
 .collapsed .p-block-title .collapser{
   padding:1px 5px 1px;
