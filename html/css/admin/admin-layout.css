@@ -3,7 +3,7 @@
 /* page reset
  ------------------------------------------------------------------------------------------------------------ */
 html,body{height:100%;}
-body{background:#f8f8f0;color:#373737;font:14px Arial,sans-serif;}
+body{background:#f8f8f0;color:#373737;font:13px sans-serif;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,address{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;font-size:inherit;}
 fieldset,img{border:0;}
@@ -301,7 +301,7 @@ li.clearfix{display:list-item;}
  */
 .tabs{
   border-bottom: 2px solid #2988be;
-  font-size: 16px;
+/*  font-size: 16px; */
   height: 32px;
   overflow: hidden;
   padding-left: 14px;
@@ -323,6 +323,7 @@ li.clearfix{display:list-item;}
   color:#fff;
   cursor: default;
   font-weight: bold;
+  font-size: 14px;
   background-color: #2988be;
 }
 .tabs .active a:hover{
@@ -345,8 +346,8 @@ li.clearfix{display:list-item;}
 .list-view-descr{
   color:#888888;
 }
-.menu-toggler{
-  font-size: 6px;
+.menu-pin{
+  font-size: 10px;
   position: absolute;
   top:50%;
   margin-top: -9px;
@@ -354,27 +355,29 @@ li.clearfix{display:list-item;}
   display: block;
   width:18px;
   height: 17px;
-  line-height: 17px;
+  line-height: 12px;
   text-align: center;
+/*  vertical-align: top; */
   background: #eaeaea;
-  background: linear-gradient(#f7f7f7, #dddddd);
-  border-radius: 4px;
+/*  background: linear-gradient(#f7f7f7, #dddddd); */
+  border-radius: 20px;
+  box-shadow: 0 0 1px #CCC;
+  outline:0 !important;
 }
-.menu-toggler:hover{
+.menu-pin:after{
+  content: '⌄';
+}
+.menu-pin:hover{
   text-decoration: none;
 }
-.menu-toggler:after{
-  content: '▼';
+.menu-pin:focus{
 }
-.menu-toggler-expanded:after{
-  content: '▲';
-}
-.dropBox{
-  border: 1px solid #ccc;
+.menu-popup{
+  border: 1px solid #106fa5;
   background-color: #fff;
   overflow: hidden;
   position: absolute;
-  right:15px;
+  right:20px;
   top:-5000px;
   margin-top:9px;
   z-index: 1;
@@ -384,19 +387,21 @@ li.clearfix{display:list-item;}
   -webkit-transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
 }
-.dropBox-expanded{
+.menu-popup-expanded{
   top:50%;
   opacity: 1;
 }
-.dropBox li{
-  font-size: 12px;
-  padding: 0 10px;
+.menu-popup li{
+  padding: 3px 15px;
   line-height: 17px;
 }
-.dropBox li:hover{
+.menu-popup li a{
+  color: #333;
+}
+.menu-popup li:hover{
   background: #106fa5;
 }
-.dropBox li:hover a{
+.menu-popup li:hover a{
   color: #fff;
   text-decoration: none;
 }
