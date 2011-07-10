@@ -377,19 +377,11 @@ li.clearfix{display:list-item;}
   background-color: #fff;
   overflow: hidden;
   position: absolute;
-  right:20px;
-  top:-5000px;
-  margin-top:9px;
+  display: none;
+  right: 20px;
+  margin-top: 9px;
   z-index: 1;
   padding: 5px 0;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  -webkit-transition: opacity 0.5s ease;
-  -moz-transition: opacity 0.5s ease;
-}
-.menu-popup-expanded{
-  top:50%;
-  opacity: 1;
 }
 .menu-popup li{
   padding: 3px 15px;

@@ -141,3 +141,27 @@ window.log = function(){
     return $.extend({}, generic, inline);
   };
 })(jQuery);
+
+
+// adds hidden menu support
+;(function ($, undefined) {
+  $.fn.ndMenu = function () {
+    return this.each(function () {
+      var $world = $(document),
+          $this = $(this),
+          $menu = $this.next(),
+          show = function (evt) {
+            $menu.fadeIn(function () {
+              $world.one('click', hide);
+            });
+          },
+          hide = function () { $menu.fadeOut(); };
+
+      $menu.click(function (evt) {
+        evt.stopPropagation();
+      });
+
+      $this.click(show);
+    });
+  };
+})(jQuery);

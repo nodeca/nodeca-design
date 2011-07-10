@@ -11,6 +11,10 @@ $(window).load(function(){
   // init tipsy elements
   $('.tip').tipsy();
 
+
+  // init hidden menu toggler
+  $('.menu-pin').ndMenu();
+
   // Debug code ===================
   // Add button to switch page width
   var dbg_width_arr = ['', '760px', '80%'], // '' is "default" (as in CSS)
