@@ -123,3 +123,21 @@ window.log = function(){
     });
   };
 })(jQuery);
+
+
+// monkey-patch tipsy
+;(function ($, undefined) {
+  $.fn.tipsy.elementOptions = function elementOptionsPatched(el, generic) {
+    var $el = $(el),
+        inline = {};
+
+    $.each($.fn.tipsy.defaults, function (key) {
+      var val = $el.data('tipsy-' + key);
+      if (val) {
+        inline[key] = val;
+      }
+    });
+
+    return $.extend({}, generic, inline);
+  };
+})(jQuery);
