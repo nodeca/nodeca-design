@@ -8,6 +8,9 @@ $(window).load(function(){
   // init togglers for collapsable elements
   $('.collapser').ndCollapser();
 
+  // init tipsy elements
+  $('.needs-tipsy').tipsy();
+
   // Debug code ===================
   // Add button to switch page width
   var dbg_width_arr = ['', '760px', '80%'], // '' is "default" (as in CSS)
