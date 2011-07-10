@@ -9,7 +9,7 @@ $(window).load(function(){
   $('.collapser').ndCollapser();
 
   // init tipsy elements
-  $('.needs-tipsy').tipsy();
+  $('.tip').tipsy();
 
   // Debug code ===================
   // Add button to switch page width
