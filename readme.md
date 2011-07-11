@@ -7,13 +7,15 @@ License Information
 -------------------
 
 - Copyright: Vitaly Puzrin, vitaly@rcdesign.ru
-- Design: Evgeny Glavnicky, eugene@glavnicky.com
+- Contractors:
+  - Design - <>
+  - HTML - Max Bisserof, biserov.ma@gmail.com
+- Icons:
+  - <>
 
 All materials, except icons, are distributed under Creative Commons [NC-BY-SA](http://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
 [![license logo](http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-
-If you like to get another licence - contact copyright holder.
 
 Discussions
 -----------
