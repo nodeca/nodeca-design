@@ -45,7 +45,7 @@ li.clearfix{display:list-item;}
   color:#fff;
   padding:8px 14px;
   text-align:center;
-  display:inline-block;*display:inline;zoom:1;
+  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
   border-radius:4px;
   cursor:pointer;
   box-sizing:border-box;-moz-box-sizing:border-box;
@@ -73,7 +73,7 @@ li.clearfix{display:list-item;}
   font-weight:bold;
   padding:3px 15px 4px;
   text-align:center;
-  display:inline-block;*display:inline;zoom:1;
+  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
   border-radius:4px;
   cursor:pointer;
   box-sizing:border-box;-moz-box-sizing:border-box;

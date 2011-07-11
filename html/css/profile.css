@@ -13,7 +13,7 @@
 }
 .user-mod-menuitem{
   float:left;
-  display:inline;
+  display:inline;/* double margin hack for ie */
   margin:0 0 0 16px;
 }
 
@@ -33,6 +33,7 @@
   float:left;
   width:100%;
   margin-left:-240px;
+  overflow: hidden; /* !!! quick fix ie6-7 for box-sizing bug */
 }
 .p-content-left{
   float:left;
@@ -85,7 +86,7 @@
 .p-widget-content{
   padding:12px 15px 15px;
   font-size: 13px;
-  height:1%;
+  height:1%; /* make hasLayout for ie */
 }
 /*
  * Albums widget internals
@@ -100,7 +101,7 @@
 }
 a.pw-a-thumb{
   float:left;
-  display:inline;
+  display:inline;/* double margin hack for ie */
   margin:0 13px 0 0;
 }
 img.pw-a-thumb{
@@ -125,7 +126,7 @@ img.pw-a-thumb{
   float:left;
   width:50px;
   margin:10px 29px 0 0;
-  display:inline;
+  display:inline;/* double margin hack for ie */
   overflow:hidden;
   font-size:11px;
   text-align:center;
@@ -311,7 +312,7 @@ li.pw-g-item:after{
 .w-entry-userpic,
 .w-comment-userpic{
   float:left;
-  display:inline;
+  display:inline;/* double margin hack for ie */
   margin:0 11px 0 0;
 }
 .w-entry-userpic img,
