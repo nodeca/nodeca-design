@@ -142,7 +142,7 @@ td.fl-icon-col{
   margin:0 0 5px;
 }
 .fl-cat-head{
-  background: #025c7e;
+  background: #12729f;
   background: linear-gradient(#258ac3, #025c7e);
   background: -moz-linear-gradient(#258ac3,#025c7e);
   background: -webkit-linear-gradient(#258ac3,#025c7e);
@@ -165,7 +165,7 @@ td.fl-icon-col{
   opacity: 0.2;
 }
 .fl-cat-head .collapser{
-  background: #298dc2;
+  background: #41a0d3;
   background: linear-gradient(#5bb6e7, #298dc2);
   background: -moz-linear-gradient(#5bb6e7,#298dc2);
   background: -webkit-linear-gradient(#5bb6e7,#298dc2);
