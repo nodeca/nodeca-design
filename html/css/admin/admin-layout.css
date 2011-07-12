@@ -324,6 +324,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   z-index: 1;
   padding: 5px 0;
   box-shadow: 1px 2px 5px #888888;
+  top:50%;
 }
 .menu-popup li{
   padding: 3px 15px;
@@ -435,9 +436,16 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .lv-table{
   width: 100%;
 }
+.lv-table .textfield,
+.lv-table input[type="file"],
+.lv-table input[type="text"],
+.lv-table input[type="password"]{
+  width: 100%;
+  max-width: 450px;
+}
 .lv-table td{
   padding-right: 10px;
 }
 .lv-table-descr{
-  width:60%;
+  width:50%;
 }
