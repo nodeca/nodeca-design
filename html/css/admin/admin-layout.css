@@ -210,15 +210,15 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   position: relative;
   width: 227px;
 }
-.aside-nav a{
-  color:#373737;
-}
-.aside-nav-section{
+.aside-nav{
   padding: 15px;
   height: 1%; /* ie6-7 padding bug hack */
   line-height: 1.7;
 }
-.aside-nav .active{
+.aside-nav a{
+  color:#373737;
+}
+.aside-nav-active{
   background-color: #fff;
   border: 1px solid #dcdcdc;
   border-right: 0;
@@ -227,16 +227,19 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   position: relative;
   box-shadow: -5px 0 5px -5px #CCC, 0 5px 5px -5px #CCC, 0 -5px 5px -5px #CCC;
 }
-.aside-nav-items dt{
+.aside-nav dt{
   font-weight: bold;
   margin:0 0 5px;
 }
-.aside-nav-items dd{
+.aside-nav dd{
   margin-left: 20px;
 }
-.aside-nav-subitems{
+.aside-subnav dt{
+  font-weight: normal;
+  margin:0;
+}
+.aside-subnav dd{
   font-size: 12px;
-  margin: 2px 0 2px 20px;
 }
 
 /*
@@ -402,6 +405,12 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 .tabs .active a:hover{
   text-decoration: none;
+}
+.tabs-content{
+  display: none;
+}
+.tabs-content-visible{
+  display: block;
 }
 
 /* -------------------------------------

@@ -32,55 +32,45 @@
 
   <div class="page-main clearfix">
     <div class="sidebar">
-      <ul class="aside-nav">
-        <li class="aside-nav-section">
-          <dl class="aside-nav-items">
-            <dt>British History Timeline</dt>
-            <dd><a href="#1">Hands on History</a></dd>
-            <dd><a href="#1">The Battle of Britain</a></dd>
-            <dd><a href="#1">Explore the key events</a></dd>
-            <dd><a href="#1">Timeline</a></dd>
+      <dl class="aside-nav">
+        <dt>British History Timeline</dt>
+        <dd><a href="#1">Hands on History</a></dd>
+        <dd><a href="#1">The Battle of Britain</a></dd>
+        <dd><a href="#1">Explore the key events</a></dd>
+        <dd><a href="#1">Timeline</a></dd>
+      </dl>
+      <dl class="aside-nav aside-nav-active">
+        <dt>History Timeline</dt>
+        <dd><a href="#1">African Railway</a></dd>
+        <dd>
+          <dl class="aside-subnav">
+            <dt><a href="#1">More information</a></dt>
+            <dd><a href="#1">The invasion</a></dd>
+            <dd><a href="#1">The battle begins</a></dd>
+            <dd><a href="#1">October</a></dd>
           </dl>
-        </li>
-        <li class="aside-nav-section active">
-          <dl class="aside-nav-items">
-            <dt>History Timeline</dt>
-            <dd><a href="#1">African Railway</a></dd>
-            <dd>
-              <a href="#1">More information</a>
-              <ul class="aside-nav-subitems">
-                <li><a href="#1">The invasion</a></li>
-                <li><a href="#1">The battle begins</a></li>
-                <li><a href="#1">October</a></li>
-              </ul>
-            </dd>
-            <dd><a href="#1">Explore</a></dd>
-            <dd><a href="#1">Battle of Britain TV</a></dd>
-          </dl>
-        </li>
-        <li class="aside-nav-section">
-          <dl class="aside-nav-items">
-            <dt>Convinced that Fighter</dt>
-            <dd><a href="#1">Although on paper</a></dd>
-            <dd><a href="#1">Hands on History</a></dd>
-            <dd><a href="#1">The Battle of Britain</a></dd>
-            <dd><a href="#1">Explore the key events</a></dd>
-            <dd><a href="#1">Pilots</a></dd>
-            <dd><a href="#1">Two air forces</a></dd>
-          </dl>
-        </li>
-        <li class="aside-nav-section">
-          <dl class="aside-nav-items">
-            <dt>Convinced</dt>
-            <dd><a href="#1">The Battle of Britain</a></dd>
-            <dd><a href="#1">Pilots</a></dd>
-            <dd><a href="#1">Hands on History</a></dd>
-            <dd><a href="#1">Two air forces</a></dd>
-            <dd><a href="#1">Explore the key events</a></dd>
-            <dd><a href="#1">Although on paper</a></dd>
-          </dl>
-        </li>
-      </ul>
+        </dd>
+        <dd><a href="#1">Explore</a></dd>
+        <dd><a href="#1">Battle of Britain TV</a></dd>
+      </dl>
+      <dl class="aside-nav">
+        <dt>Convinced that Fighter</dt>
+        <dd><a href="#1">Although on paper</a></dd>
+        <dd><a href="#1">Hands on History</a></dd>
+        <dd><a href="#1">The Battle of Britain</a></dd>
+        <dd><a href="#1">Explore the key events</a></dd>
+        <dd><a href="#1">Pilots</a></dd>
+        <dd><a href="#1">Two air forces</a></dd>
+      </dl>
+      <dl class="aside-nav">
+        <dt>Convinced</dt>
+        <dd><a href="#1">The Battle of Britain</a></dd>
+        <dd><a href="#1">Pilots</a></dd>
+        <dd><a href="#1">Hands on History</a></dd>
+        <dd><a href="#1">Two air forces</a></dd>
+        <dd><a href="#1">Explore the key events</a></dd>
+        <dd><a href="#1">Although on paper</a></dd>
+      </dl>
     </div><!-- /sidebar -->
     <div class="page-content-wrapper">
       <div class="page-content">
@@ -94,15 +84,15 @@
           <a class="button" href="#1">Add New Setting Group</a>
         </div>
         <ul class="tabs">
-          <li class="active"><a href="#1">System</a></li>
-          <li><a href="#1">Travel</a></li>
-          <li><a href="#1">Content</a></li>
-          <li><a href="#1">Produced</a></li>
-          <li><a href="#1">Partnership</a></li>
-          <li><a href="#1">Lonely</a></li>
-          <li><a href="#1">Planet</a></li>
+          <li class="active"><a class="tab" href="#system_tab">System</a></li>
+          <li><a class="tab" href="#travel_tab">Travel</a></li>
+          <li><a class="tab" href="#1">Content</a></li>
+          <li><a class="tab" href="#1">Produced</a></li>
+          <li><a class="tab" href="#1">Partnership</a></li>
+          <li><a class="tab" href="#1">Lonely</a></li>
+          <li><a class="tab" href="#1">Planet</a></li>
         </ul>
-        <div class="tabs-content">
+        <div class="tabs-content tabs-content-visible" id="system_tab">
           <ul class="list-view c-block">
             <li class="list-view-row">
               <h2 class="list-view-title"><a href="#1"><strong>Dine underwater in the Maldives</strong></a> (13 settings)</h2>
@@ -175,7 +165,84 @@
               <input type="submit" class="submit-button" value="Import" />
             </div>
           </form>
-        </div>
+        </div><!-- /tab-conent -->
+        <div class="tabs-content" id="travel_tab">
+          <ul class="list-view c-block">
+            <li class="list-view-row">
+              <h2 class="list-view-title"><a href="#1"><strong>Latest articles and features</strong></a> (3 settings)</h2>
+              <p class="list-view-descr">Natural beauty and out-of-this-world locations draw millions of visitors a year</p>
+              <a class="menu-pin" href="javascript:void(0)" onclick="toggleDropBox.show(this,'dropBox2');"><!-- --></a>
+              <ul class="menu-popup" id="dropBox2">
+                <li><a href="#1">Edit</a></li>
+                <li><a href="#1">Delete</a></li>
+              </ul>
+            </li><!-- /list-view-row -->
+            <li class="list-view-row">
+              <h2 class="list-view-title"><a href="#1"><strong>Dine underwater</strong></a> (13 settings)</h2>
+              <p class="list-view-descr">Natural beauty and out-of-this-world locations draw millions</p>
+              <a class="menu-pin" href="javascript:void(0)" onclick="toggleDropBox.show(this,'dropBox3');"><!-- --></a>
+              <ul class="menu-popup" id="dropBox3">
+                <li><a href="#1">Edit</a></li>
+                <li><a href="#1">Delete</a></li>
+              </ul>
+            </li><!-- /list-view-row -->
+            <li class="list-view-row">
+              <h2 class="list-view-title"><a href="#1"><strong>Dine underwater in the Maldives</strong></a> (13 settings)</h2>
+              <p class="list-view-descr">Natural beauty and out-of-this-world locations draw millions of visitors a year to these beautiful</p>
+              <a class="menu-pin" href="javascript:void(0)"><!-- --></a>
+              <ul class="menu-popup">
+                <li><a href="#1">Edit</a></li>
+                <li><a href="#1">Delete</a></li>
+              </ul>
+            </li><!-- /list-view-row -->
+            <li class="list-view-row">
+              <h2 class="list-view-title"><a href="#1"><strong>Want more Travel</strong></a> (13 settings)</h2>
+              <p class="list-view-descr">Natural beauty and out-of-this-world locations draw millions of visitors a year to these</p>
+              <a class="menu-pin" href="javascript:void(0)" onclick="toggleDropBox.show(this,'dropBox4');"><!-- --></a>
+              <ul class="menu-popup" id="dropBox4">
+                <li><a href="#1">Edit</a></li>
+                <li><a href="#1">Delete</a></li>
+              </ul>
+            </li><!-- /list-view-row -->
+            <li class="list-view-row">
+              <h2 class="list-view-title"><a href="#1"><strong>Latest articles and features</strong></a> (3 settings)</h2>
+              <p class="list-view-descr">Natural beauty and out-of-this-world locations draw millions of visitors a year</p>
+              <a class="menu-pin" href="javascript:void(0)" onclick="toggleDropBox.show(this,'dropBox2');"><!-- --></a>
+              <ul class="menu-popup" id="dropBox2">
+                <li><a href="#1">Edit</a></li>
+                <li><a href="#1">Delete</a></li>
+              </ul>
+            </li><!-- /list-view-row -->
+            <li class="list-view-row">
+              <h2 class="list-view-title"><a href="#1"><strong>Dine underwater</strong></a> (13 settings)</h2>
+              <p class="list-view-descr">Natural beauty and out-of-this-world locations draw millions</p>
+              <a class="menu-pin" href="javascript:void(0)" onclick="toggleDropBox.show(this,'dropBox3');"><!-- --></a>
+              <ul class="menu-popup" id="dropBox3">
+                <li><a href="#1">Edit</a></li>
+                <li><a href="#1">Delete</a></li>
+              </ul>
+            </li><!-- /list-view-row -->
+            <li class="list-view-row">
+              <h2 class="list-view-title"><a href="#1"><strong>Dine underwater in the Maldives</strong></a> (13 settings)</h2>
+              <p class="list-view-descr">Natural beauty and out-of-this-world locations draw millions of visitors a year to these beautiful</p>
+              <a class="menu-pin" href="javascript:void(0)"><!-- --></a>
+              <ul class="menu-popup">
+                <li><a href="#1">Edit</a></li>
+                <li><a href="#1">Delete</a></li>
+              </ul>
+            </li><!-- /list-view-row -->
+            <li class="list-view-row">
+              <h2 class="list-view-title"><a href="#1"><strong>Want more Travel</strong></a> (13 settings)</h2>
+              <p class="list-view-descr">Natural beauty and out-of-this-world locations draw millions of visitors a year to these</p>
+              <a class="menu-pin" href="javascript:void(0)" onclick="toggleDropBox.show(this,'dropBox4');"><!-- --></a>
+              <ul class="menu-popup" id="dropBox4">
+                <li><a href="#1">Edit</a></li>
+                <li><a href="#1">Delete</a></li>
+              </ul>
+            </li><!-- /list-view-row -->
+          </ul><!-- /list-view -->
+
+        </div><!-- /tab-conent -->
       </div><!-- /page-content -->
     </div><!-- /page-content-wrapper -->
   </div><!-- /page-main -->

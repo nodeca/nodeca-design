@@ -1,5 +1,15 @@
 $(window).load(function(){
 
+  // tab switching
+  $('.tab').click(function(){
+    var tabId = $(this).attr('href');
+    $('.tabs li.active').removeClass('active');
+    $('.tabs-content-visible').removeClass('tabs-content-visible');
+    $(this).parent().addClass('active');
+    $(tabId).addClass('tabs-content-visible');
+    return false;
+  });
+
   // login menu menu
   $('.auth-toggle').click(function(){
     $(this).parent().toggleClass('auth-visible');
