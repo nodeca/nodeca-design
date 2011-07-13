@@ -359,13 +359,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .c-block{
   margin-bottom: 30px;
 }
-
-.textfield{
-  background-color: #ffffff;
-  border: 1px solid #cdcdcd;
-  border-radius: 4px;
-  padding: 4px;
-}
 .form-submit-row{
   background-color: #f3f3f3;
   padding: 14px;
@@ -422,8 +415,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   background-color: #fbfbfb;
   border-bottom: 1px solid #b0b0b0;
   padding:16px 14px;
-  height: 1%; /* ie6-7 padding bug hack */
   position: relative;
+  height: 1%; /* ie6-7 padding bug hack */
+}
+.list-view-highlight{
+  background-color: #fefbea;
 }
 .list-view-title{
   margin:0 0 2px;
@@ -448,15 +444,111 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   width: 100%;
 }
 .lv-table .textfield,
-.lv-table input[type="file"],
-.lv-table input[type="text"],
-.lv-table input[type="password"]{
+.lv-table .combobox{
   width: 100%;
+  _width: 70%; /* ie6 width hack */
   max-width: 450px;
 }
+.lv-table .combobox{
+  color:#015b7d;
+}
 .lv-table td{
-  padding-right: 10px;
+  padding-right: 14px;
+}
+.lv-table td:last-child{
+  padding-right: 0;
 }
 .lv-table-descr{
   width:50%;
+}
+.draggable .lv-table-descr{
+  padding-left: 24px;
+}
+.lv-table-drag{
+  background: url(../../images/drag-icon.png) no-repeat 50%;
+  cursor: move;
+  width: 38px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+.lv-table-actions{
+  font-size: 12px;
+  width: 70px;
+  text-align: right;
+  white-space: nowrap;
+}
+.lv-section-title{
+  background-color: #f3f3f3;
+  padding: 8px 14px;
+  height: 1%; /* ie6-7 padding hack */
+}
+.lv-section-title h4{
+  font-weight: bold;
+}
+
+/* --------------------------------
+ * Notices
+ */
+.hot-msg{
+  background-color: #fff3b2;
+  padding: 12px 40px 12px 12px;
+  height: 1%; /* ie6-7 padding hack */
+  position: relative;
+  margin: 0 0 13px;
+}
+.hot-msg h3{
+  font-weight: bold;
+  margin: 0 0 2px;
+}
+.hot-msg .msg-close{
+  background: #f4eab7;
+  background: linear-gradient(#fefbe9, #ebdc8e);
+  background: -moz-linear-gradient(#fefbe9,#ebdc8e);
+  background: -webkit-linear-gradient(#fefbe9,#ebdc8e);
+  border-color: #fffcec #ece1a9 #d9cf97;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 7px;
+  color:#84762c;
+  text-shadow: 0 1px 0 #fff;
+  position: absolute;
+  display: block;
+  width:14px;
+  height: 14px;
+  right:19px;
+  top:50%;
+  margin-top:-7px;
+  line-height: 13px;
+  text-align: center;
+}
+.hot-msg .msg-close:hover{
+  background: #f7f0c8;
+  background: linear-gradient(#fefbe9, #f0e5a7);
+  background: -moz-linear-gradient(#fefbe9,#f0e5a7);
+  background: -webkit-linear-gradient(#fefbe9,#f0e5a7);
+  border-color: #fffcec #f5edbf #e6db9f;
+  text-decoration: none;
+}
+.radio-yon{
+  overflow: hidden;
+}
+.radio-yon li{
+  float: left;
+  display: inline; /* ie double margin hack */
+  margin-right: 1px;
+  padding: 8px;
+  width:47px;
+  white-space: nowrap;
+}
+.radio-yon input{
+  margin: 0;
+}
+.radio-yon .yes{
+  background-color: #d8f4b9;
+}
+.radio-yon .no{
+  background-color: #ffc3c3;
+  color: #015b7d;
 }

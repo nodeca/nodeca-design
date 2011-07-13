@@ -9,7 +9,7 @@ License Information
 - Copyright: Vitaly Puzrin, vitaly@rcdesign.ru
 - Contractors:
   - Design - <>
-  - HTML - Max Biserof, biserov.ma@gmail.com
+  - HTML - Max Biserov, biserov.ma@gmail.com
 - Icons:
   - <>
 
