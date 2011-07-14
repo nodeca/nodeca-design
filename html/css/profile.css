@@ -20,6 +20,9 @@
 .profile-head{
   margin:0 0 15px;
 }
+.profile-head .page-title{
+  margin: 0;
+}
 .profile-status{
   font-size:12px;
   color: #888;

@@ -1,15 +1,5 @@
 $(window).load(function(){
 
-  // tab switching
-  $('.tab').click(function(){
-    var tabId = $(this).attr('href');
-    $('.tabs li.active').removeClass('active');
-    $('.tabs-content-visible').removeClass('tabs-content-visible');
-    $(this).parent().addClass('active');
-    $(tabId).addClass('tabs-content-visible');
-    return false;
-  });
-
   // login menu menu
   $('.auth-toggle').click(function(){
     $(this).parent().toggleClass('auth-visible');
@@ -43,6 +33,23 @@ $(window).load(function(){
     $('.trunk').css('width', dbg_width_arr[dbg_width_idx]);
   }).appendTo(document.body);
   // Debug code end ================
+
+  // tab switching
+  $('.tab').click(function(){
+    var tabId = $(this).attr('href');
+    $('.tabs li.active').removeClass('active');
+    $('.tabs-content-visible').removeClass('tabs-content-visible');
+    $(this).parent().addClass('active');
+    $(tabId).addClass('tabs-content-visible');
+    return false;
+  });
+
+  // posts list menu collapser
+  $('.pl-popup-collapser').click(function(){
+    $(this).parent().toggleClass('collapsed');
+    $(this).next().slideToggle();
+  });
+
 });
 
 /**
