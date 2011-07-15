@@ -1,0 +1,434 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodeca</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" />
+
+  <link rel="stylesheet" href="css/boilerplate-start.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/addons/loginza.css">
+  <link rel="stylesheet" href="css/forum-posts.css">
+  <link rel="stylesheet" href="css/addons/sape.css">
+  <link rel="stylesheet" href="css/boilerplate-end.css">
+
+  <script type="text/javascript" src="js/libs/modernizr-2.0.min.js"></script>
+  <!--script src="js/libs/respond.min.js"></script-->
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="head">
+      <div class="trunk">
+        <div class="logo"><a href="index.html"><span class="logo-txt-shadow">Nodeca</span><span class="logo-txt">Nodeca</span></a></div>
+        <nav class="global-nav">
+          <ul>
+            <li class="gn-tab"><a class="gn-link" href="#1">Profile</a></li>
+            <li class="gn-tab active"><a class="gn-link" href="#1">Forum</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Blogs</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Maps</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Questions</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Sales</a></li>
+          </ul>
+        </nav><!-- global nav end -->
+        <div class="notify">
+          <a class="notify-picker" href="javascript:void(0)">12</a>
+          <div class="notify-popup">
+            <ul>
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Alexander Kizyachenko" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Alexander Kizyachenko</strong> sending message:<br/>
+                    Hello, have are you?
+                  </span>
+                </a>
+              </li>
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Konstantin Savinov" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Konstantin Savinov</strong> he want add the you friendlist
+                  </span>
+                </a>
+              </li>
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Polina Smirnova" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Polina Smirnova</strong> sending message:<br/>
+                    Im fine, thank you!
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- notifications end -->
+        <ul class="user-bar">
+          <li class="ub-item auth-wrap">
+            <a class="ub-link auth-toggle" href="#1">Authorization</a>
+            <form class="auth-popup" method="post" action="">
+                <ul>
+                  <li class="auth-popup-input"><input type="text" placeholder="E-mail" class="tip" title="Type your Email or Nickname" data-tipsy-gravity="e" data-tipsy-trigger="focus" data-tipsy-fade="1" /></li>
+                  <li class="auth-popup-input"><input type="password" placeholder="Password" class="tip" title="Type your password" data-tipsy-gravity="e" data-tipsy-trigger="focus" data-tipsy-fade="1" /></li>
+                  <li class="auth-popup-submit"><label for="auth-popup-remember">remember</label> <input type="checkbox" checked="checked" id="auth-popup-remember" /> <input type="submit" class="submit button" value="Login" /></li>
+                </ul>
+                <ul>
+                  <li class="loginza">
+                    <p>or via...</p>
+                    <ul class="loginza-buttons">
+                      <li><a href="#1"><img src="images/loginza/vk.png" alt="Вконтакте" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/fb.png" alt="Facebook" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/google.png" alt="Google" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/yandex.png" alt="Яндекс" /></a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </form>
+          </li>
+          <li class="ub-item"><a class="ub-link" href="#1">Registration</a></li>
+        </ul><!-- user nav end -->
+        <form method="post" action="" class="qs">
+          <div class="right">
+            <div class="qs-menu">
+              <a href="javascript:void(0)" class="qs-selection">Forums</a>
+              <div class="qs-popup">
+                <ul>
+                  <li class="qs-popup-title">Search section:</li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-forums" type="radio" checked="checked" /> <label for="search-forums">Forums</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-members" type="radio" /> <label for="search-members">Members</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-help" type="radio" /> <label for="search-help">Help Files</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-blogs" type="radio" /> <label for="search-blogs">Blogs</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-calendar" type="radio" /> <label for="search-calendar">Calendar</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-gallery" type="radio" /> <label for="search-gallery">Gallery</label></li>
+                </ul>
+              </div>
+            </div>
+            <input type="submit" class="qs-submit" value="" />
+          </div>
+          <div class="qs-text-wrap">
+            <input type="text" placeholder="Search" class="qs-text" />
+          </div>
+        </form><!-- Search -->
+      </div>
+    </header>
+    <div class="main-wrap trunk clearfix">
+      <div class="content-wide">
+        <div class="frame-line">
+          <ul class="breadcrumbs">
+            <li>Forum</li><li>Celebrities</li>
+          </ul>
+        </div>
+        <div class="holder">
+
+          <div class="pl-head">
+            <h1 class="page-title">Welcome</h1>
+            <p class="pl-entry">Тема раздела Новичкам в категории <b>Авиамодели - Общий</b>; Привет всем авиаторам! от новичка. На той неделе купил через инет лодку с толкающим винтом. Может садиться на воду, снег, ...</p>
+          </div>
+
+          <div class="pl-controls clearfix">
+            <ul class="pl-pagination">
+              <li><a class="first-page" href="#1"><!-- --></a></li>
+              <li><a class="prev-page" href="#1"><!-- --></a></li>
+              <li><a href="#1">Page 5 of 345</a></li>
+              <li><a class="next-page" href="#1"><!-- --></a></li>
+              <li><a class="last-page" href="#1"><!-- --></a></li>
+            </ul>
+            <ul class="pl-actions">
+              <li class="pl-action"><a class="pl-action-button" href="#1">Follow</a></li>
+              <li class="pl-action"><a class="pl-action-button" href="#1">Close</a></li>
+              <li class="pl-action"><a class="pl-action-button" href="#1">Voting</a></li>
+              <li class="pl-action">
+                <div class="pl-popup-wrap">
+                  <a class="pl-popup-collapser" href="#1"><!-- --></a>
+                  <dl class="pl-popup">
+                    <dd><a href="#1">Open</a></dd>
+                    <dd><a href="#1">Delete</a></dd>
+                    <dt>Moderation</dt>
+                    <dd><a href="#1">Move</a></dd>
+                    <dd><a href="#1">Rename</a></dd>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pl-wrap">
+            <header class="pl-title">
+              <a class="pl-select-link" href="#1">Select</a>
+              <h2>Welcome</h2>
+            </header>
+            <article class="post">
+              <footer class="post-head clearfix">
+                <div class="left">
+                  <a href="#1" class="post-author">Вася (Goblin) Путин</a>
+                </div>
+                <div class="right">
+                  <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z" pubdate>14 May 2011 - 11:39 AM</time></span>
+                  <span class="post-marker">#1 <input type="checkbox" class="post-v" /></span>
+                </div>
+              </footer>
+              <aside class="post-aside">
+                <a class="post-author-pic" href="#1"><img src="images/tmp/bruce.jpg" alt="Вася (Goblin) Путин" /></a>
+                <ul class="post-author-info">
+                  <li>Registration: 12.05.2011</li>
+                  <li>Posts: 455623</li>
+                </ul>
+              </aside>
+              <div class="post-content">
+                <p>Welcome to your new Invision Power Board!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <footer class="post-meta clearfix">
+                <div class="left">
+                  <ul>
+                    <li><a href="#1">Report</a></li>
+                    <li><a href="#1">IP</a></li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li><a href="#1">MultiQuote</a></li>
+                    <li><a href="#1">Reply</a></li>
+                    <li><a href="#1">Edit</a></li>
+                    <li><a href="#1">Unapprove</a></li>
+                    <li class="post-rating"><a class="plus-button" href="#1"><!-- --></a> <a class="minus-button" href="#1"><!-- --></a> <span class="post-rating-count">+34</span></li>
+                  </ul>
+                </div>
+              </footer>
+            </article><!-- /post -->
+            <article class="post">
+              <footer class="post-head clearfix">
+                <div class="left">
+                  <a href="#1" class="post-author">Вася (Goblin) Путин</a>
+                </div>
+                <div class="right">
+                  <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z" pubdate>14 May 2011 - 11:39 AM</time></span>
+                  <span class="post-marker">#1 <input type="checkbox" class="post-v" /></span>
+                </div>
+              </footer>
+              <aside class="post-aside">
+                <a class="post-author-pic" href="#1"><img src="images/user-pic-default.jpg" alt="Вася (Goblin) Путин" /></a>
+                <ul class="post-author-info">
+                  <li>Registration: 12.05.2011</li>
+                  <li>Posts: 455623</li>
+                </ul>
+              </aside>
+              <div class="post-content">
+                <p>Welcome to your new Invision Power Board!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <footer class="post-meta clearfix">
+                <div class="left">
+                  <ul>
+                    <li><a href="#1">Report</a></li>
+                    <li><a href="#1">IP</a></li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li><a href="#1">MultiQuote</a></li>
+                    <li><a href="#1">Reply</a></li>
+                    <li><a href="#1">Edit</a></li>
+                    <li><a href="#1">Unapprove</a></li>
+                    <li class="post-rating"><a class="plus-button" href="#1"><!-- --></a> <a class="minus-button" href="#1"><!-- --></a> <span class="post-rating-count">+34</span></li>
+                  </ul>
+                </div>
+              </footer>
+            </article><!-- /post -->
+            <article class="post">
+              <footer class="post-head clearfix">
+                <div class="left">
+                  <a href="#1" class="post-author">Вася (Goblin) Путин</a>
+                </div>
+                <div class="right">
+                  <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z" pubdate>14 May 2011 - 11:39 AM</time></span>
+                  <span class="post-marker">#1 <input type="checkbox" class="post-v" /></span>
+                </div>
+              </footer>
+              <aside class="post-aside">
+                <a class="post-author-pic" href="#1"><img src="images/tmp/bruce.jpg" alt="Вася (Goblin) Путин" /></a>
+                <ul class="post-author-info">
+                  <li>Registration: 12.05.2011</li>
+                  <li>Posts: 455623</li>
+                </ul>
+              </aside>
+              <div class="post-content">
+                <p>Welcome to your new Invision Power Board!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <footer class="post-meta clearfix">
+                <div class="left">
+                  <ul>
+                    <li><a href="#1">Report</a></li>
+                    <li><a href="#1">IP</a></li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li><a href="#1">MultiQuote</a></li>
+                    <li><a href="#1">Reply</a></li>
+                    <li><a href="#1">Edit</a></li>
+                    <li><a href="#1">Unapprove</a></li>
+                    <li class="post-rating"><a class="plus-button" href="#1"><!-- --></a> <a class="minus-button" href="#1"><!-- --></a> <span class="post-rating-count">+34</span></li>
+                  </ul>
+                </div>
+              </footer>
+            </article><!-- /post -->
+            <ul class="pl-moder-form">
+              <li>
+                <select>
+                  <option>Post moderation</option>
+                </select>
+                <input type="submit" value="With Selected" class="button" />
+              </li>
+              <li>
+                <select>
+                  <option>Topic moderation</option>
+                </select>
+                <input type="submit" value="Ok" class="button" />
+              </li>
+            </ul>
+            <a class="button pl-more-button" href="#1">Older Posts</a>
+          </div>
+
+          <div class="pl-controls clearfix">
+            <ul class="pl-pagination">
+              <li><a class="first-page" href="#1"><!-- --></a></li>
+              <li><a class="prev-page" href="#1"><!-- --></a></li>
+              <li><a href="#1">Page 5 of 345</a></li>
+              <li><a class="next-page" href="#1"><!-- --></a></li>
+              <li><a class="last-page" href="#1"><!-- --></a></li>
+            </ul>
+            <ul class="pl-actions">
+              <li class="pl-action"><a class="pl-action-button" href="#1">Follow</a></li>
+              <li class="pl-action"><a class="pl-action-button" href="#1">Close</a></li>
+              <li class="pl-action"><a class="pl-action-button" href="#1">Voting</a></li>
+              <li class="pl-action">
+                <div class="pl-popup-wrap">
+                  <a class="pl-popup-collapser" href="#1"><!-- --></a>
+                  <dl class="pl-popup">
+                    <dd><a href="#1">Open</a></dd>
+                    <dd><a href="#1">Delete</a></dd>
+                    <dt>Moderation</dt>
+                    <dd><a href="#1">Move</a></dd>
+                    <dd><a href="#1">Rename</a></dd>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pl-title">
+            <h3>Fast Reply</h3>
+          </div>
+          <form method="post" action="" class="pl-fast-reply">
+            <textarea placeholder="Write something"></textarea>
+            <ul class="form-buttons">
+              <li><input type="submit" class="submit-button" value="Post" /></li>
+              <li><input type="button" class="button" value="Full Editor" /></li>
+            </ul>
+          </form>
+
+          <dl class="bull-list">
+            <dt>56 Users are reading this topic</dt>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+          </dl>
+
+          <dl class="bull-list">
+            <dt>Moderators</dt>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+            <dd><a href="#1">Google</a></dd>
+          </dl>
+
+        </div>
+      </div>
+    </div>
+  </div> <!--! end of #container -->
+
+  <footer class="page-footer trunk">
+    <ul class="footer-nav">
+        <li><a href="#1">About</a></li>
+        <li><a href="#1">Contacts</a></li>
+        <li><a href="#1">Terms</a></li>
+        <li><a href="#1">Help</a></li>
+    </ul>
+    <ul class="site-options">
+      <li>
+        <noindex><a href="#1" rel="nofollow"><img src="images/tmp/counter.png" alt="" /></a></noindex>
+      </li>
+      <li>
+        <select class="site-theme">
+          <optgroup label="Change Style">
+            <option selected="selected">Desktop Blue</option>
+            <option>Desktop Ultramarine</option>
+          </optgroup>
+        </select>
+        <select class="site-lang">
+          <optgroup label="Select Language">
+            <option selected="selected">English</option>
+            <option>English GB</option>
+          </optgroup>
+        </select>
+      </li>
+    </ul>
+    <p class="copyrights">Powered by <a href="#1">Nodeca</a>, social platform by <a href="#1">RC Design</a></p>
+    <div class="sape-links">Ads: All <a href="#1">photos jokes</a>, funny jokes as well as. New printers, <a href="#1">buying ink cartridges</a>.</div>
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <link rel="stylesheet" href="css/addons/jquery.tipsy.css" />
+  <script src="js/libs/jquery.tipsy.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+  <!--[if lt IE 7 ]>
+    <script type="text/javascript" src="js/libs/dd_belatedpng.js"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.png_bg'); </script>
+  <![endif]-->
+
+</body>
+</html>
