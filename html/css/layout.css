@@ -239,7 +239,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 header .trunk{
   position:relative;
   height:100%;
-  z-index:1;
+  z-index:11;
 }
 .logo{
   line-height:1;

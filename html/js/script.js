@@ -47,7 +47,7 @@ $(window).load(function(){
   // posts list menu collapser
   $('.pl-popup-collapser').click(function(){
     $(this).parent().toggleClass('collapsed');
-    $(this).next().slideToggle();
+    $(this).next().fadeToggle('fast');
   });
 
 });
