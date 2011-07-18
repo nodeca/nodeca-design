@@ -554,13 +554,13 @@ a.pq-author:before{
   padding-left: 23px;
 }
 .post-atts dd.image-att{
-  background: url(../images/image-att.png) no-repeat 0 50%;
+  background: url(../images/tmp/image-att.png) no-repeat 0 50%;
 }
 .post-atts dd.archive-att{
-  background: url(../images/archive-att.png) no-repeat 0 50%;
+  background: url(../images/tmp/archive-att.png) no-repeat 0 50%;
 }
 .post-atts dd.sound-att{
-  background: url(../images/sound-att.png) no-repeat 0 50%;
+  background: url(../images/tmp/sound-att.png) no-repeat 0 50%;
 }
 
 /* ----------------------------------
