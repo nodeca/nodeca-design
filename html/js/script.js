@@ -9,7 +9,14 @@ $(window).load(function(){
   $('.collapser').ndCollapser();
 
   // init tipsy elements
-  $('.tip').tipsy();
+  var tipGeneric = {};
+  $('.tip').each(function () {
+      // tipsyGeneric is optional, and given here as an idea of how to provide
+      // default options for `.tip` elements only. If you want to override
+      // global tipsy defaults, then just override values of
+      // $.fn.tipsy.defaults object
+      $(this).tipsy($.fn.tipsy.elementDataOptions(this, tipGeneric));
+  });
 
 
   // init hidden menu toggler
