@@ -127,12 +127,21 @@ window.log = function(){
 
 // monkey-patch tipsy
 ;(function ($, undefined) {
-  $.fn.tipsy.elementOptions = function elementOptionsPatched(el, generic) {
+  var get_tipsy_data = function get_tipsy_data($el, key) {
+    key = 'tipsy-' + key;
+    return $el.data(key) || $el.data(key.toLowerCase());
+  }
+
+  // this function can e used as alternative to elementOptions:
+  //   $.fn.tipsy.elementOptions = $.fn.tipsy.elementDataOptions;
+  // we do not override default option getter because we use this
+  // method directly in script.js
+  $.fn.tipsy.elementDataOptions = function elementDataOptions(el, generic) {
     var $el = $(el),
         inline = {};
 
     $.each($.fn.tipsy.defaults, function (key) {
-      var val = $el.data('tipsy-' + key);
+      var val = get_tipsy_data($el, key);
       if (val) {
         inline[key] = val;
       }
