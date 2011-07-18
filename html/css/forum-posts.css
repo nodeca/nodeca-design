@@ -467,28 +467,6 @@ a.minus-button:after{
   font-weight: normal;
 }
 
-.bull-list{
-  margin: 0 0 20px;
-}
-.bull-list:last-child{
-  margin: 0;
-}
-.bull-list dt{
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 0 2px;
-}
-.bull-list dd{
-  display: inline;
-}
-.bull-list dd:after{
-  content: '•';
-  margin: 0 0 0 3px;
-}
-.bull-list dd:last-child:after{
-  content: '';
-}
-
 /* ----------------------------------
  * Post Quote
  */
