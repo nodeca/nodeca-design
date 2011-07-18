@@ -50,6 +50,22 @@ $(window).load(function(){
     $(this).next().fadeToggle('fast');
   });
 
+  var prfMiniTimeOut;
+
+  $('.post-author').hover(function(){
+    var t = $(this).offset().top - $('.prf-mini').height() - 25;
+    var l = $(this).offset().left;
+    $('.prf-mini').css({ top: t, left: l }).fadeIn();
+  },function(){
+    prfMiniTimeOut = setTimeout("$('.prf-mini').fadeOut();", 500);
+  });
+
+  $('.prf-mini').hover(function(){
+    clearTimeout(prfMiniTimeOut);
+  },function(){
+    prfMiniTimeOut = setTimeout("$('.prf-mini').fadeOut();", 500);
+  });
+
 });
 
 /**
