@@ -22,6 +22,8 @@ a:hover{text-decoration:underline;}
 a *{cursor:pointer;}
 textarea{overflow:auto;}
 
+.hidden { display: none; visibility: hidden; }
+
 /* float clearing
  ------------------------------------------------------------------------------------------------------------ */
 .clear{clear:both;border:none;overflow:hidden;display:block;height:0;line-height:0;font-size:0;float:none;margin:0;padding:0;background:transparent;}
@@ -348,148 +350,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 /*
  *
- * Content Styles
- *
- */
- 
-/*================== Need Fixes ====================*/
-
-
-
-.c-block{
-  margin-bottom: 30px;
-}
-.form-submit-row{
-  background-color: #f3f3f3;
-  padding: 14px;
-  height: 1%;
-  text-align: center;
-}
-
-
- 
-/* -------------------------------------
- * Tabs
- */
-.tabs{
-  border-bottom: 2px solid #2988be;
-/*  font-size: 16px; */
-  height: 32px;
-  overflow: hidden;
-  padding-left: 14px;
-  position: relative;
-}
-.tabs li{
-  float:left;
-}
-.tabs a{
-  background-color: #e9e9e9;
-  float:left;
-  display: inline; /* ie6 double margin hack */
-  margin-right: 1px;
-  line-height: 32px;
-  padding:0 12px;
-  border-radius: 4px 4px 0 0;
-}
-.tabs .active a{
-  color:#fff;
-  cursor: default;
-  font-weight: bold;
-  font-size: 14px;
-  background-color: #2988be;
-}
-.tabs .active a:hover{
-  text-decoration: none;
-}
-.tabs-content{
-  display: none;
-}
-.tabs-content-visible{
-  display: block;
-}
-
-/* -------------------------------------
- * List view
- */
-.list-view-row{
-  background-color: #fbfbfb;
-  border-bottom: 1px solid #b0b0b0;
-  padding:16px 14px;
-  position: relative;
-  height: 1%; /* ie6-7 padding bug hack */
-}
-.list-view-highlight{
-  background-color: #fefbea;
-}
-.list-view-title{
-  margin:0 0 2px;
-}
-.list-view-descr{
-  color:#888888;
-}
-
-.b-title{
-  background-color: #0b669a;
-  color:#fff;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 7px 14px 9px;
-  height: 1%; /* ie6-7 padding bug hack */
-}
-
-/* --------------------------------
- * List view table
- */
-.lv-table{
-  width: 100%;
-}
-.lv-table .textfield,
-.lv-table .combobox{
-  width: 100%;
-  _width: 70%; /* ie6 width hack */
-  max-width: 450px;
-}
-.lv-table .combobox{
-  color:#015b7d;
-}
-.lv-table td{
-  padding-right: 14px;
-}
-.lv-table td:last-child{
-  padding-right: 0;
-}
-.lv-table-descr{
-  width:50%;
-}
-.draggable .lv-table-descr{
-  padding-left: 24px;
-}
-.lv-table-drag{
-  background: url(../../images/drag-icon.png) no-repeat 50%;
-  cursor: move;
-  width: 38px;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0;
-}
-.lv-table-actions{
-  font-size: 12px;
-  width: 70px;
-  text-align: right;
-  white-space: nowrap;
-}
-.lv-section-title{
-  background-color: #f3f3f3;
-  padding: 8px 14px;
-  height: 1%; /* ie6-7 padding hack */
-}
-.lv-section-title h4{
-  font-weight: bold;
-}
-
-/* --------------------------------
  * Notices
+ *
  */
 .hot-msg{
   background-color: #fff3b2;
@@ -534,8 +396,136 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 /*
  *
- * Yes/No buttons block in settings
+ * Content Styles
  *
+ */
+.content-section{
+  margin-bottom: 30px;
+}
+
+/*
+ * Tabs
+ */
+.tabs{
+  border-bottom: 2px solid #2988be;
+/*  font-size: 16px; */
+  height: 32px;
+  overflow: hidden;
+  padding-left: 14px;
+  position: relative;
+}
+.tabs li{
+  float:left;
+}
+.tabs a{
+  background-color: #e9e9e9;
+  float:left;
+  display: inline; /* ie6 double margin hack */
+  margin-right: 1px;
+  line-height: 32px;
+  padding:0 12px;
+  border-radius: 4px 4px 0 0;
+}
+.tabs .active a{
+  color:#fff;
+  cursor: default;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #2988be;
+}
+.tabs .active a:hover{
+  text-decoration: none;
+}
+.tabs-content{
+  display: none;
+}
+.tabs-content-visible{
+  display: block;
+}
+
+/*
+ * Single rows (settings, settings groups and so on)
+ */
+.section-header{
+  background-color: #0b669a;
+  color:#fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 7px 14px 9px;
+  height: 1%; /* ie6-7 padding bug hack */
+}
+.section-row{
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #b0b0b0;
+  padding:16px 14px;
+  position: relative;
+  height: 1%; /* ie6-7 padding bug hack */
+}
+.srow-highlight{
+  background-color: #fefbea;
+}
+.srow-title{
+  margin:0 0 2px;
+}
+.srow-descr{
+  color:#888888;
+}
+.srow-submit{
+  background-color: #f3f3f3;
+  padding: 14px;
+  height: 1%;
+  text-align: center;
+}
+
+/* single row elements */
+.srow-parts{
+  width: 100%;
+}
+.srow-parts .textfield,
+.srow-parts .combobox{
+  width: 100%;
+  _width: 70%; /* ie6 width hack */
+  max-width: 450px;
+}
+.srow-parts td{
+  padding-right: 14px;
+}
+.srow-parts td:last-child{
+  padding-right: 0;
+}
+.srow-parts-descr{
+  width:50%;
+}
+.draggable .srow-parts-descr{
+  padding-left: 24px;
+}
+.srow-parts-drag{
+  background: url(../../images/drag-icon.png) no-repeat 50%;
+  cursor: move;
+  width: 38px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+.srow-parts-actions{
+  font-size: 12px;
+  width: 70px;
+  text-align: right;
+  white-space: nowrap;
+}
+/* row header/separator (optional) */
+.srow-header{
+  background-color: #f3f3f3;
+  padding: 8px 14px;
+  height: 1%; /* ie6-7 padding hack */
+}
+.srow-header h4{
+  font-weight: bold;
+}
+
+/*
+ * Yes/No buttons block in settings
  */
 .radio-yesno{
   overflow: hidden;
@@ -550,6 +540,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 .radio-yesno input{
   margin: 0;
+  vertical-align: middle;
 }
 .radio-yesno .yes{
   background-color: #d8f4b9;
@@ -564,6 +555,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   border-radius: 0 4px 4px 0;
 }
 
+/* rollback link for setting */
 .rollback:hover{
   text-decoration:none;
 }
