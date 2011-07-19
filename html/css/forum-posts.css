@@ -373,53 +373,7 @@ a.minus-button:after{
 /* ----------------------------------
  * Post Quote
  */
-.pq{
-  background-color: #f6f6f6;
-  border: 1px solid #aac3d1;
-  border-radius: 4px;
-  color:#424242;
-  font-size: 13px;
-  margin: 10px 10px 10px 30px;
-  position: relative;
-  padding:15px;
-  height: 1%;
-}
-.pq:before,
-.pq:after{
-  top:12px;
-  left: -17px;
-  content: '';
-  position: absolute;
-  display: block;
-  border: 8px solid transparent;
-  border-right-color: #aac3d1;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-.pq:after{
-  border-right-color: #f6f6f6;
-  left: -16px;
-}
-.pq-head{
-  margin: 0 0 5px;
-}
-a.pq-author{
-  font-size: 12px;
-  color:#888;
-  float: left;
-  min-height: 15px;
-}
-a.pq-author:before{
-  content: '↫';
-  padding-right: 10px;
-  text-decoration: none !important;
-}
-.pq-date{
-  color:#adadad;
-  font-size: 11px;
-  float: right;
-}
+
 
 /* ----------------------------------
  * Post Code block
