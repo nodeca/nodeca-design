@@ -191,10 +191,10 @@ a.pl-select-link{
   float: right;
   font-size: 12px;
   color:#fff;
-  opacity: 0;
-  transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  -webkit-transition: opacity 1s ease;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
 }
 a.pl-select-link:after{
   content: '▼';
@@ -255,9 +255,9 @@ a.pl-select-link:after{
   font-size: 12px;
   clear: both;
   padding: 15px 15px 15px 30px;
-  transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  -webkit-transition: opacity 1s ease;
+  transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
   opacity:.2;
 }
 .post:hover .post-meta{
@@ -369,11 +369,6 @@ a.minus-button:after{
   font-size: 12px;
   font-weight: normal;
 }
-
-/* ----------------------------------
- * Post Quote
- */
-
 
 /* ----------------------------------
  * Post Code block
