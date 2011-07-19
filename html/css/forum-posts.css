@@ -339,30 +339,6 @@ a.minus-button:after{
   vertical-align: middle;
 }
 
-.pl-moder-form{
-  background-color: #f3f3f3;
-  padding: 7px 5px;
-  height: 1%;
-  font-size: 12px;
-  text-align: right;
-  margin: 0 0 7px;
-}
-.pl-moder-form li{
-  margin: 0 0 5px;
-}
-.pl-moder-form li:last-child{
-  margin: 0;
-}
-.pl-moder-form select{
-  width: 180px;
-  padding: 2px;
-}
-.pl-moder-form .button{
-  font-weight: normal;
-  width: 100px;
-  padding: 3px;
-}
-
 .pl-more-button{
   font-size: 12px;
   font-weight: normal;
