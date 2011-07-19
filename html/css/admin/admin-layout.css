@@ -552,3 +552,12 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   background-color: #ffc3c3;
   color: #015b7d;
 }
+
+.rollback:hover{
+  text-decoration:none;
+}
+.rollback:before{
+  font-size:16px;
+  text-decoration:none;
+  content:'↺';
+}
