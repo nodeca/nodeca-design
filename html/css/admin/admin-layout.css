@@ -531,10 +531,16 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   border-color: #fffcec #f5edbf #e6db9f;
   text-decoration: none;
 }
-.radio-yon{
+
+/*
+ *
+ * Yes/No buttons block in settings
+ *
+ */
+.radio-yesno{
   overflow: hidden;
 }
-.radio-yon li{
+.radio-yesno li{
   float: left;
   display: inline; /* ie double margin hack */
   margin-right: 1px;
@@ -542,15 +548,20 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   width:47px;
   white-space: nowrap;
 }
-.radio-yon input{
+.radio-yesno input{
   margin: 0;
 }
-.radio-yon .yes{
+.radio-yesno .yes{
   background-color: #d8f4b9;
+  border: 1px solid #AAA;
+  border-right:0;
+  border-radius: 4px 0 0 4px;
 }
-.radio-yon .no{
+.radio-yesno .no{
   background-color: #ffc3c3;
-  color: #015b7d;
+  border: 1px solid #AAA;
+  border-left:0;
+  border-radius: 0 4px 4px 0;
 }
 
 .rollback:hover{
