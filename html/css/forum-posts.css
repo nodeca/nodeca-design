@@ -244,6 +244,7 @@ a.pl-select-link:after{
   font-size: 12px;
   margin-top: 5px;
   line-height: 1.4;
+  color: #AAA;
 }
 .post-content{
   overflow: hidden;
