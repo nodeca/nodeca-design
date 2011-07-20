@@ -651,7 +651,7 @@ a.ub-link{
 .auth-toggle{
   outline: 0;
 }
-.auth-visible .auth-toggle{
+.menu-activated .auth-toggle{
   background: #f4f4f4;
   background-image: linear-gradient(#fff, #ddd, #d6d6d6);
   background-image: -moz-linear-gradient(#fff, #ddd, #d6d6d6);
@@ -671,9 +671,7 @@ a.ub-link{
   z-index:1;
 }
 .auth-popup{
-  transition:opacity 0.5s ease-in-out;
-  -moz-transition:opacity 0.5s ease-in-out;
-  -webkit-transition:opacity 0.5s ease-in-out;
+  display: none;
   background:#f4f4f4;
   background:linear-gradient(#d6d6d6 0, #f4f4f4 30px);
   background:-moz-linear-gradient(#d6d6d6 0, #f4f4f4 30px);
@@ -685,20 +683,12 @@ a.ub-link{
   right:-11px;
   width:200px;
   overflow:hidden;
-  padding:0;
-  height:0;
-  opacity: 0;
-  border:0;
-  border-radius:4px 0 4px 4px;
-}
-.auth-visible .auth-popup{
   border-color:#f3f3f3 #0c4d6c #0c4d6c #f3f3f3;
   border-style:solid;
   border-width:1px;
-  box-shadow:0 0 20px #333;
   padding:15px 10px 0;
-  height:auto;
-  opacity: 1;
+  box-shadow:0 0 20px #333;
+  border-radius:4px 0 4px 4px;
 }
 .auth-popup li {
   margin:0 0 10px;

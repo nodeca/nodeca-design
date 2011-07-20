@@ -1,10 +1,5 @@
 $(window).load(function(){
 
-  // login menu menu
-  $('.auth-toggle').click(function(){
-    $(this).parent().toggleClass('auth-visible');
-  });
-
   // init togglers for collapsable elements
   $('.collapser').ndCollapser();
 
@@ -18,8 +13,7 @@ $(window).load(function(){
       $(this).tipsy($.fn.tipsy.elementDataOptions(this, tipGeneric));
   });
 
-
-  // init hidden menu toggler
+  // init hidden menus
   $('.menu-pin').ndMenu();
 
   // Debug code ===================
