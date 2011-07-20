@@ -165,7 +165,9 @@
   max-width: 600px;
 }
 
-.pl-controls,
+.pl-controls{
+  margin: 0 5px 15px;
+}
 .pl-wrap{
   margin: 0 0 20px;
 }
