@@ -9,7 +9,7 @@ $(window).load(function(){
   $('.collapser').ndCollapser();
 
   // init tipsy elements
-  var tipGeneric = {};
+  var tipGeneric = { fade:true, opacity:"1"};
   $('.tip').each(function () {
       // tipsyGeneric is optional, and given here as an idea of how to provide
       // default options for `.tip` elements only. If you want to override
@@ -69,12 +69,12 @@ $(window).load(function(){
   });
 
   // jump to page form
-  $('.page-jump').click(function(){
+/*  $('.page-jump').click(function(){
     var t = $(this).offset().top + $(this).height();
     var l = $(this).offset().left - 2;
     $('.jump-to-page').css({left: l, top: t}).fadeToggle();
   });
-
+*/
   // posts quick select menu
   $('.post-v').change(function(){
     if ( $(this).is(':checked') ) {

@@ -137,11 +137,17 @@
 
           <nav class="pl-controls above clearfix">
             <ul class="pagination left">
-              <li><a class="first-page tip" href="#1" title="To first page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="prev-page tip" href="#1" title="To previous page, 'Ctrl ←'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="page-jump tip" href="#1" title="Select page number and pagination options" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a></li>
-              <li><a class="next-page tip" href="#1" title="To next page, 'Ctrl →'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="last-page tip" href="#1" title="To last page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="first-page tip" href="#1" title="First page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="prev-page tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="page-jump tip menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a>  <form method="post" action="" class="jump-to-page">
+                  <dl>
+                    <dt>Jump to:</dt>
+                    <dd><input class="page-number tip" type="text" placeholder="Page number" title="Page number" data-tipsy-gravity="e" data-tipsy-trigger="focus" data-tipsy-fade="1" /><input type="submit" value="&rarr;" class="button" /></dd>
+                    <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
+                  </dl>
+                </form></li>
+              <li><a class="next-page tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="last-page tip" href="#1" title="Last page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
             </ul>
             <ul class="pl-actions">
               <li class="pl-action"><a class="pl-action-button" href="#1">Follow</a></li>
@@ -342,11 +348,17 @@ if ( isset($movie->getID()) ) {
 
           <nav class="pl-controls below clearfix">
             <ul class="pagination left">
-              <li><a class="first-page tip" href="#1" title="To first page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="prev-page tip" href="#1" title="To previous page, 'Ctrl ←'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="page-jump tip" href="#1" title="Select page number and pagination options" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a></li>
-              <li><a class="next-page tip" href="#1" title="To next page, 'Ctrl →'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="last-page tip" href="#1" title="To last page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="first-page tip" href="#1" title="First page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="prev-page tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="page-jump tip menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a>  <form method="post" action="" class="jump-to-page">
+                  <dl>
+                    <dt>Jump to:</dt>
+                    <dd><input class="page-number tip" type="text" placeholder="Page number" title="Page number" data-tipsy-gravity="e" data-tipsy-trigger="focus" data-tipsy-fade="1" /><input type="submit" value="&rarr;" class="button" /></dd>
+                    <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
+                  </dl>
+                </form></li>
+              <li><a class="next-page tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="last-page tip" href="#1" title="Last page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
             </ul>
             <ul class="pl-actions">
               <li class="pl-action"><a class="pl-action-button" href="#1">Follow</a></li>
@@ -464,14 +476,6 @@ if ( isset($movie->getID()) ) {
       </div>
     </div>
   </div>
-
-  <form method="post" action="" class="jump-to-page">
-    <dl>
-      <dt>Jump to page</dt>
-      <dd><input class="page-number" type="text" /><input type="submit" value="&rarr;" class="button" /></dd>
-      <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
-    </dl>
-  </form>
 
   <form method="post" action="" class="quick-select">
     <dl>
