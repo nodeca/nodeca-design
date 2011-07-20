@@ -51,12 +51,7 @@ $(window).load(function(){
     return false;
   });
 
-  // posts list menu collapser
-  $('.pl-popup-collapser').click(function(){
-    $(this).parent().toggleClass('collapsed');
-    $(this).next().fadeToggle('fast');
-  });
-
+  // show profile code (temporary)
   var prfMiniTimeOut;
 
   $('.post-author').hover(function(){
@@ -74,18 +69,13 @@ $(window).load(function(){
   });
 
   // jump to page form
-
   $('.page-jump').click(function(){
     var t = $(this).offset().top + $(this).height();
     var l = $(this).offset().left - 2;
     $('.jump-to-page').css({left: l, top: t}).fadeToggle();
   });
 
-  // init hidden menu toggler
-  $('.pl-select-link').ndMenu();
-
   // posts quick select menu
-
   $('.post-v').change(function(){
     if ( $(this).is(':checked') ) {
       $('.quick-select').fadeIn();
@@ -130,18 +120,3 @@ $(window).load(function(){
   });
 
 });
-
-/**
- * ACP popup menu toggler
- */
-
-var toggleDropBox = new function(){
-
-  this.show = function(thisEl,calledEl) {
-
-    $(thisEl).toggleClass('menu-toggler-expanded');
-    $('#'+calledEl).toggleClass('menu-popup-expanded');
-
-  };
-
-}

@@ -159,12 +159,17 @@ window.log = function(){
       var $world = $(document),
           $this = $(this),
           $menu = $this.next(),
+          $parent = $this.parent(),
           show = function (evt) {
+            $parent.addClass('menu-activated');
             $menu.fadeIn(function () {
               $world.one('click', hide);
             });
           },
-          hide = function () { $menu.fadeOut(); };
+          hide = function () {
+            $parent.removeClass('menu-activated');
+            $menu.fadeOut();
+          };
 
       $menu.click(function (evt) {
         evt.stopPropagation();
