@@ -32,6 +32,13 @@
   height: 30px;
   overflow:hidden;
 }
+.pl-popup-collapser:before{
+  font-size: 7px;
+  content:'▼';
+}
+.pl-popup-collapser{
+  line-height:26px;
+}
 .pl-action-button:hover,
 .pl-popup-collapser:hover{
   background: #0e699d;
@@ -79,10 +86,6 @@
   background: linear-gradient(#ab9155, #8a3628);
   background: -moz-linear-gradient(#ab9155,#8a3628);
   background: -webkit-linear-gradient(#ab9155,#8a3628);
-}
-.pl-popup-collapser:before{
-  font-size: 7px;
-  content:'▼';
 }
 .pl-popup-wrap{
   position: relative;

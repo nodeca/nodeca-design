@@ -212,7 +212,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .trunk{
   margin-left:auto;
   margin-right:auto;
-  min-width:800px;
+  min-width:760px;
   
   /* Change to switch page width             */
   /* by default - 960px, for 1024px screens  */
@@ -568,7 +568,7 @@ a.ub-link{
   background:#f3f3f3;
   border:0;
   padding:4px;
-  width:240px;
+  width:200px;
   height:21px;
 }
 .qs .right{
@@ -607,8 +607,8 @@ a.ub-link{
   background-color:#e0e0e0;
   border-radius:4px;
   color:#067ba1;
-  font-size:12px;
-  padding:3px 9px 4px;
+  font-size: 12px;
+  padding:3px 7px 3px;
 }
 .qs-popup{
   position:absolute;
