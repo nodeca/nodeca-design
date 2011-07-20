@@ -162,7 +162,7 @@
             </ul>
           </nav>
 
-          <section class="pl-wrap">
+          <article class="pl-wrap">
             <header class="pl-title">
               <div class="pl-select">
                 <a class="pl-select-link" href="#1">Select</a>
@@ -182,7 +182,7 @@
                 <div class="right">
                   <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></span>
                   <a class="post-marker" href="#1">#1</a>
-                  <input type="checkbox" class="post-v" />
+                  <input type="checkbox" class="post-v" checked="checked" />
                 </div>
               </footer>
               <aside class="post-aside">
@@ -222,7 +222,7 @@
                 </div>
                 <div class="right">
                   <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></span>
-                  <span class="post-marker"><a href="#1">#2</a>
+                  <a class="post-marker" href="#1">#2</a>
                     <input type="checkbox" class="post-v" />
                 </div>
               </footer>
@@ -303,7 +303,7 @@ if ( isset($movie->getID()) ) {
                 </div>
                 <div class="right">
                   <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></span>
-                  <span class="post-marker"><a href="#1">#3</a>
+                  <a class="post-marker" href="#1">#3</a>
                     <input type="checkbox" class="post-v" />
                 </div>
               </footer>
@@ -338,13 +338,13 @@ if ( isset($movie->getID()) ) {
               </footer>
             </article><!-- /post -->
             <a class="button pl-more-button" href="#1">Next Posts</a>
-          </section>
+          </article>
 
           <nav class="pl-controls below clearfix">
             <ul class="pagination left">
               <li><a class="first-page tip" href="#1" title="To first page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
               <li><a class="prev-page tip" href="#1" title="To previous page, 'Ctrl ←'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="tip" href="#1" title="Select page number and pagination options" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a></li>
+              <li><a class="page-jump tip" href="#1" title="Select page number and pagination options" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a></li>
               <li><a class="next-page tip" href="#1" title="To next page, 'Ctrl →'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
               <li><a class="last-page tip" href="#1" title="To last page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
             </ul>
@@ -468,8 +468,17 @@ if ( isset($movie->getID()) ) {
   <form method="post" action="" class="jump-to-page">
     <dl>
       <dt>Jump to page</dt>
-      <dd><input class="page-number" type="text" /><input type="submit" value="Go" class="submit-button" /></dd>
-      <dd class="separator"><input type="button" value="More" class="button" /></dd>
+      <dd><input class="page-number" type="text" /><input type="submit" value="&rarr;" class="button" /></dd>
+      <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
+    </dl>
+  </form>
+
+  <form method="post" action="" class="quick-select">
+    <dl>
+      <dt>(5) selected posts:</dt>
+      <dd><a href="#1" class="quick-select-all">Select all</a></dd>
+      <dd><a href="#1" class="quick-unselect-all">Unselect all</a></dd>
+      <dd><a href="#1" class="quick-invert-selection">Invert selection</a></dd>
     </dl>
   </form>
 

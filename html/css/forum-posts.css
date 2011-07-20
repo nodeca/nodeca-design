@@ -261,6 +261,8 @@ a.pl-select-link:after{
 }
 .post-timestamp{
   color:#8c8c8c;
+  position: relative;
+  top: 1px;
 }
 .post-marker{
   margin-left: 25px;

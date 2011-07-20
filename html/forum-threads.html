@@ -1,0 +1,601 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodeca</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" />
+
+  <link rel="stylesheet" href="css/boilerplate-start.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/addons/loginza.css">
+  <link rel="stylesheet" href="css/forums.css">
+  <link rel="stylesheet" href="css/addons/sape.css">
+  <link rel="stylesheet" href="css/boilerplate-end.css">
+
+  <script type="text/javascript" src="js/libs/modernizr-2.0.min.js"></script>
+  <!--script src="js/libs/respond.min.js"></script-->
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="head">
+      <div class="trunk">
+        <div class="logo"><a href="index.html"><span class="logo-txt-shadow">Nodeca</span><span class="logo-txt">Nodeca</span></a></div>
+        <nav class="global-nav">
+          <ul>
+            <li class="gn-tab"><a class="gn-link" href="#1">Profile</a></li>
+            <li class="gn-tab active"><a class="gn-link" href="#1">Forum</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Blogs</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Maps</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Questions</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Sales</a></li>
+          </ul>
+        </nav><!-- global nav end -->
+        <div class="notify">
+          <a class="notify-picker" href="javascript:void(0)">12</a>
+          <div class="notify-popup">
+            <ul>
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Alexander Kizyachenko" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Alexander Kizyachenko</strong> sending message:<br/>
+                    Hello, have are you?
+                  </span>
+                </a>
+              </li>
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Konstantin Savinov" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Konstantin Savinov</strong> he want add the you friendlist
+                  </span>
+                </a>
+              </li>
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Polina Smirnova" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Polina Smirnova</strong> sending message:<br/>
+                    Im fine, thank you!
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- notifications end -->
+        <ul class="user-bar">
+          <li class="ub-item auth-wrap">
+            <a class="ub-link auth-toggle" href="#1">Authorization</a>
+            <form class="auth-popup" method="post" action="">
+                <ul>
+                  <li class="auth-popup-input"><input type="text" placeholder="E-mail" class="tip" title="Type your Email or Nickname" data-tipsy-gravity="e" data-tipsy-trigger="focus" data-tipsy-fade="1" /></li>
+                  <li class="auth-popup-input"><input type="password" placeholder="Password" class="tip" title="Type your password" data-tipsy-gravity="e" data-tipsy-trigger="focus" data-tipsy-fade="1" /></li>
+                  <li class="auth-popup-submit"><label for="auth-popup-remember">remember</label> <input type="checkbox" checked="checked" id="auth-popup-remember" /> <input type="submit" class="submit button" value="Login" /></li>
+                </ul>
+                <ul>
+                  <li class="loginza">
+                    <p>or via...</p>
+                    <ul class="loginza-buttons">
+                      <li><a href="#1"><img src="images/loginza/vk.png" alt="Вконтакте" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/fb.png" alt="Facebook" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/google.png" alt="Google" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/yandex.png" alt="Яндекс" /></a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </form>
+          </li>
+          <li class="ub-item"><a class="ub-link" href="#1">Registration</a></li>
+        </ul><!-- user nav end -->
+        <form method="post" action="" class="qs">
+          <div class="right">
+            <div class="qs-menu">
+              <a href="javascript:void(0)" class="qs-selection">Forums</a>
+              <div class="qs-popup">
+                <ul>
+                  <li class="qs-popup-title">Search section:</li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-forums" type="radio" checked="checked" /> <label for="search-forums">Forums</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-members" type="radio" /> <label for="search-members">Members</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-help" type="radio" /> <label for="search-help">Help Files</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-blogs" type="radio" /> <label for="search-blogs">Blogs</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-calendar" type="radio" /> <label for="search-calendar">Calendar</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-gallery" type="radio" /> <label for="search-gallery">Gallery</label></li>
+                </ul>
+              </div>
+            </div>
+            <input type="submit" class="qs-submit" value="" />
+          </div>
+          <div class="qs-text-wrap">
+            <input type="text" placeholder="Search" class="qs-text" />
+          </div>
+        </form><!-- Search -->
+      </div>
+    </header>
+    <div class="main-wrap trunk clearfix">
+      <div class="content-wide">
+        <div class="frame-line">
+          <ul class="breadcrumbs">
+            <li>RC Forum</li>
+          </ul>
+        </div>
+        <div class="holder">
+          <div class="fl-content-wrap">
+
+            <article class="fl-category">
+              <header class="fl-cat-head clearfix">
+                <h3 class="fl-cat-title">Special Events</h3>
+                <a href="javascript:void(0)" class="collapser"><!-- --></a>
+              </header>
+              <div class="fl-cat-content">
+                <table class="fl-cat-table">
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">Electric Plane Talk</a></h2>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">3D Flying</a></h2>
+                      <dl class="def-list fl-moderators">
+                        <dt>moderators:</dt>
+                        <dd><a href="#1">Victor</a></dd>
+                        <dd><a href="#1">Jukala</a></dd>
+                        <dd><a href="#1">Ann</a></dd>
+                      </dl>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">Compared with previous-generation iMac and MacBook Pro</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">3D Foamies</a></h2>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">Beginner Training Area (Aircraft-Electric)</a></h2>
+                      <dl class="def-list fl-moderators">
+                        <dt>moderators:</dt>
+                        <dd><a href="#1">Victor</a></dd>
+                        <dd><a href="#1">Jukala</a></dd>
+                        <dd><a href="#1">Ann</a></dd>
+                      </dl>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td colspan="3">
+                      <h2 class="fl-title"><a href="#1">Beginner Training Area (Aircraft-Electric)</a></h2>
+                    </td>
+                  </tr><!-- row end -->
+                </table>
+              </div>
+            </article>
+
+            <article class="fl-category">
+              <header class="fl-cat-head clearfix">
+                <h3 class="fl-cat-title">Aircraft - Electric - General</h3>
+                <a href="javascript:void(0)" class="collapser"><!-- --></a>
+              </header>
+              <div class="fl-cat-content">
+                <table class="fl-cat-table">
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">Electric Plane Talk</a></h2>
+                      <dl class="def-list fl-moderators">
+                        <dt>moderators:</dt>
+                        <dd><a href="#1">Victor</a></dd>
+                        <dd><a href="#1">Jukala</a></dd>
+                        <dd><a href="#1">Ann</a></dd>
+                      </dl>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">3D Flying</a></h2>
+                      <dl class="def-list fl-subforums">
+                        <dt>╰</dt>
+                        <dd><a href="#1">Auto Gyros</a></dd>
+                        <dd><a href="#1">Blimps</a></dd>
+                        <dd><a href="#1">Ornithopters</a></dd>
+                        <dd><a href="#1">RC Kites</a></dd>
+                        <dd><a href="#1">Blimps</a></dd>
+                        <dd><a href="#1">Ornithopters</a></dd>
+                        <dd><a href="#1">RC Kites</a></dd>
+                        <dd><a href="#1">Ornithopters</a></dd>
+                        <dd><a href="#1">RC Kites</a></dd>
+                        <dd><a href="#1">Content</a></dd>
+                      </dl>
+                      <dl class="def-list fl-moderators">
+                        <dt>moderators:</dt>
+                        <dd><a href="#1">Victor</a></dd>
+                        <dd><a href="#1">Jukala</a></dd>
+                        <dd><a href="#1">Ann</a></dd>
+                      </dl>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">3D Foamies</a></h2>
+                      <dl class="def-list fl-moderators">
+                        <dt>moderators:</dt>
+                        <dd><a href="#1">Victor</a></dd>
+                        <dd><a href="#1">Jukala</a></dd>
+                        <dd><a href="#1">Ann</a></dd>
+                      </dl>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">Beginner Training Area (Aircraft-Electric)</a></h2>
+                      <dl class="def-list fl-subforums">
+                        <dt>╰</dt>
+                        <dd><a href="#1">Auto Gyros</a></dd>
+                        <dd><a href="#1">Blimps</a></dd>
+                        <dd><a href="#1">RC Kites</a></dd>
+                        <dd><a href="#1">Content</a></dd>
+                      </dl>
+                      <dl class="def-list fl-moderators">
+                        <dt>moderators:</dt>
+                        <dd><a href="#1">Victor</a></dd>
+                        <dd><a href="#1">Jukala</a></dd>
+                        <dd><a href="#1">Ann</a></dd>
+                      </dl>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">3D Flying</a></h2>
+                      <dl class="def-list fl-moderators">
+                        <dt>moderators:</dt>
+                        <dd><a href="#1">Victor</a></dd>
+                        <dd><a href="#1">Jukala</a></dd>
+                        <dd><a href="#1">Ann</a></dd>
+                      </dl>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                  <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">High Performance</a></h2>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">3D Foamies</a></h2>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                <tr>
+                    <td class="fl-icon-col">
+                      <div class="fl-icon fl-icon-new"><!-- --></div>
+                    </td>
+                    <td class="fl-summary-col">
+                      <h2 class="fl-title"><a href="#1">Beginner Training Area</a></h2>
+                    </td>
+                    <td class="fl-total-col">
+                      <ul class="fl-info-list">
+                        <li><strong>848</strong> topics</li>
+                        <li><strong>47 829</strong> replies</li>
+                      </ul>
+                    </td>
+                    <td class="fl-last-post-col">
+                      <ul class="fl-info-list">
+                        <li class="fl-last-post-title"><a href="#1">iPad2 News and Features</a></li>
+                        <li class="fl-last-post-author">by <a href="#1">Gipotalamus</a></li>
+                        <li class="fl-last-post-date"><time datetime="2011-04-21">21 April 2011</time></li>
+                      </ul>
+                    </td>
+                  </tr><!-- row end -->
+                </table>
+              </div>
+            </article>
+
+            <div class="fl-markread">
+              <a href="#1">Mark read</a>
+            </div>
+            
+          </div>
+
+          <footer class="page-summary">
+            <section>
+              <h3>710 active users in the past 30 minutes</h3>
+              <p>128 members, 576 guests, 6 anonymous users:</p>
+              <ul class="hlist page-summary-users">
+                <li><a href="#1">Google</a></li>
+                <li><a href="#1">Asso</a></li>
+                <li><a href="#1">Warfo</a></li>
+                <li><a href="#1">ibra</a></li>
+                <li><a href="#1">qolize</a></li>
+                <li><a href="#1">Brandon D</a></li>
+                <li><a href="#1">hao-sama</a></li>
+                <li><a href="#1">Lesovsky</a></li>
+                <li><a href="#1">RUAHusker</a></li>
+                <li><a href="#1">MSN/Bing</a></li>
+                <li><a href="#1">Benj Benj Benj</a></li>
+                <li><a href="#1">Google</a></li>
+                <li><a href="#1">Asso</a></li>
+                <li><a href="#1">Warfo</a></li>
+                <li><a href="#1">ibra</a></li>
+                <li><a href="#1">qolize</a></li>
+                <li><a href="#1">Brandon D</a></li>
+                <li><a href="#1">hao-sama</a></li>
+                <li><a href="#1">Lesovsky</a></li>
+                <li><a href="#1">RUAHusker</a></li>
+                <li><a href="#1">MSN/Bing</a></li>
+                <li><a href="#1">Benj Benj Benj</a></li>
+                <li><a href="#1">Google</a></li>
+                <li><a href="#1">Asso</a></li>
+                <li><a href="#1">Warfo</a></li>
+                <li><a href="#1">ibra</a></li>
+                <li><a href="#1">qolize</a></li>
+                <li><a href="#1">Brandon D</a></li>
+                <li><a href="#1">hao-sama</a></li>
+                <li><a href="#1">Lesovsky</a></li>
+                <li><a href="#1">RUAHusker</a></li>
+                <li><a href="#1">MSN/Bing</a></li>
+                <li><a href="#1">Benj Benj Benj</a></li>
+                <li><a href="#1">Google</a></li>
+                <li><a href="#1">Asso</a></li>
+                <li><a href="#1">Warfo</a></li>
+                <li><a href="#1">ibrahimfaraj</a></li>
+                <li><a href="#1">qolize</a></li>
+                <li><a href="#1">Brandon D</a></li>
+                <li><a href="#1">hao-sama</a></li>
+                <li><a href="#1">Lesovsky</a></li>
+                <li><a href="#1">RUAHusker</a></li>
+                <li><a href="#1">MSN/Bing</a></li>
+                <li><a href="#1">Benj Benj Benj</a></li>
+              </ul>
+            </section>
+            <section>
+              <h3>Statistics</h3>
+              <ul class="global-stats">
+                <li>Total Posts: <strong>456 949</strong></li>
+                <li>Total Members: <strong>269 270</strong></li>
+                <li>Max Online: <strong>1 246</strong> (<time datetime="2010-05-06">06 May 2010</time>)</li>
+              </ul>
+            </section>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </div> <!--! end of #container -->
+
+  <footer class="page-footer trunk">
+    <ul class="footer-nav">
+        <li><a href="#1">About</a></li>
+        <li><a href="#1">Contacts</a></li>
+        <li><a href="#1">Terms</a></li>
+        <li><a href="#1">Help</a></li>
+    </ul>
+    <ul class="site-options">
+      <li>
+        <noindex><a href="#1" rel="nofollow"><img src="images/tmp/counter.png" alt="" /></a></noindex>
+      </li>
+      <li>
+        <select class="site-theme">
+          <optgroup label="Change Style">
+            <option selected="selected">Desktop Blue</option>
+            <option>Desktop Ultramarine</option>
+          </optgroup>
+        </select>
+        <select class="site-lang">
+          <optgroup label="Select Language">
+            <option selected="selected">English</option>
+            <option>English GB</option>
+          </optgroup>
+        </select>
+      </li>
+    </ul>
+    <p class="copyrights">Powered by <a href="#1">Nodeca</a>, social platform by <a href="#1">RC Design</a></p>
+    <div class="sape-links">Ads: All <a href="#1">photos jokes</a>, funny jokes as well as. New printers, <a href="#1">buying ink cartridges</a>.</div>
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <link rel="stylesheet" href="css/addons/jquery.tipsy.css" />
+  <script src="js/libs/jquery.tipsy.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+  <!--[if lt IE 7 ]>
+    <script type="text/javascript" src="js/libs/dd_belatedpng.js"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.png_bg'); </script>
+  <![endif]-->
+
+</body>
+</html>

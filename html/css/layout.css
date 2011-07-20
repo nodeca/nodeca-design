@@ -889,7 +889,7 @@ a.ub-link{
   z-index: 999;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 7px 10px;
   box-shadow: 0 2px 5px #666;
   margin-top: 7px;
 }
@@ -902,21 +902,42 @@ a.ub-link{
   padding: 3px;
   width:100px;
   margin-right: 4px;
+  vertical-align: middle;
 }
-.jump-to-page .button,
-.jump-to-page .submit-button{
+.jump-to-page .button{
   font-weight: normal;
-  padding: 3px 10px;
+  padding: 2px 10px 4px;
+  vertical-align: middle;
 }
 .jump-to-page .separator{
-  padding: 10px 10px 0;
+  padding: 5px 10px 0;
   margin: 10px -10px 0;
   position: relative;
   border-top: 1px solid #ccc;
+  position: relative;
 }
-.jump-to-page .separator .button{
+.jump-to-page .separator input,
+.jump-to-page .separator label{
   font-size: 12px;
+  vertical-align: middle;
+}
+.jump-to-page .separator:after{
+  content: '';
+  position: absolute;
+  display: block;
   width:100%;
+  left:0;
+  top:-1px;
+  height: 1px;
+  line-height: 1;
+  font-size: 0;
+  overflow: hidden;
+  box-shadow: 20px 0 20px -20px #ffffff inset,
+              20px 0 20px -20px #ffffff inset,
+              20px 0 20px -20px #ffffff inset,
+             -20px 0 20px -20px #ffffff inset,
+             -20px 0 20px -20px #ffffff inset,
+             -20px 0 20px -20px #ffffff inset;
 }
 
 /* ----------------------------------
@@ -937,6 +958,29 @@ a.ub-link{
  * Markup styles
  *
  */
+.quick-select{
+  position: fixed;
+  left:50%;
+  top:-12px;
+  background-color: #fff;
+  color:#1d1d1d;
+  display: none;
+  z-index: 9999;
+  padding: 7px 10px;
+  box-shadow: 0 2px 5px #666;
+  font-size: 12px;
+  margin-top: -12px;
+  _position: absolute; /* ie6 position fixed hack */
+  _top: expression(document.getElementsByTagName("body")[-12].scrollTop + "px"); /* ie6 position fixed hack */
+}
+.quick-select dt,
+.quick-select dd{
+  line-height: 24px;
+}
+.quick-select dd{
+  display: none;
+}
+
 .quote{
   background-color: #f6f6f6;
   border: 1px solid #aac3d1;

@@ -77,12 +77,57 @@ $(window).load(function(){
 
   $('.page-jump').click(function(){
     var t = $(this).offset().top + $(this).height();
-    var l = $(this).offset().left - 10;
+    var l = $(this).offset().left - 2;
     $('.jump-to-page').css({left: l, top: t}).fadeToggle();
   });
 
   // init hidden menu toggler
   $('.pl-select-link').ndMenu();
+
+  // posts quick select menu
+
+  $('.post-v').change(function(){
+    if ( $(this).is(':checked') ) {
+      $('.quick-select').fadeIn();
+      var w = $('.quick-select').width() + $(this).width() + 10;
+      var t = $(this).offset().top - $(window).scrollTop();
+      var l = $(this).offset().left - w;
+      $('.quick-select').css({left: l, marginTop: t});
+    }
+    if ( $('.post-v:checked').length < 1 ) {
+      $('.quick-select').fadeOut();
+    }
+  });
+
+  $('.quick-select').hover(function(){
+    $(this).find('dd').show();
+  }, function(){
+    $(this).find('dd').hide();
+  });
+
+  $('.quick-select a').click(function(){
+
+    var type = $(this).attr('class');
+
+    switch(type){
+      case 'quick-select-all':
+        $('.post-v').each(function(){
+          if (!$(this).is(':checked')) {$(this).click();}
+        });
+        break;
+      case 'quick-unselect-all':
+        $('.post-v').each(function(){
+          if ($(this).is(':checked')) {$(this).click();}
+        });
+        break;
+      case 'quick-invert-selection':
+        $('.post-v').click();
+        break;
+      default:
+        alert('error');
+    }
+
+  });
 
 });
 
