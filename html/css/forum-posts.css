@@ -10,6 +10,9 @@
   display: inline; /* ie double margin hack */
   margin-right: 7px;
 }
+.pl-action:last-child{
+  margin-right: 0;
+}
 
 .pl-action-button,
 .pl-popup-collapser{
@@ -25,7 +28,7 @@
   float:left;
   border-radius:4px;
   cursor:pointer;
-  line-height: 30px;
+  line-height: 28px;
   height: 30px;
   overflow:hidden;
 }
@@ -181,15 +184,12 @@
   position:relative;
   line-height:45px;
   height:45px;
-  overflow: hidden;
   white-space: nowrap;
 }
 .pl-title:hover a.pl-select-link{
   opacity: 1;
 }
 a.pl-select-link{
-  float: right;
-  font-size: 12px;
   color:#fff;
   opacity: 0.3;
   transition: opacity 0.5s ease;
@@ -204,6 +204,39 @@ a.pl-select-link:after{
   top:-1px;
 }
 
+
+.pl-select{
+  font-size: 12px;
+  float: right;
+  position: relative;
+}
+.pl-select-menu{
+  background-color: #fff;
+  overflow: hidden;
+  position: absolute;
+  display: none;
+  right: 0px;
+  z-index: 111;
+  padding: 5px 0;
+  box-shadow: 1px 2px 5px #888888;
+  top:50%;
+  margin-top: 10px;
+}
+.pl-select-menu li{
+  padding: 3px 15px;
+  line-height: 17px;
+}
+.pl-select-menu li a{
+  color: #333;
+}
+.pl-select-menu li:hover{
+  background: #106fa5;
+}
+.pl-select-menu li:hover a{
+  color: #fff;
+  text-decoration: none;
+}
+
 /* ----------------------------------
  * Post
  */
@@ -213,6 +246,7 @@ a.pl-select-link:after{
 .post-head{
   background-color: #d2e4ee;
   padding: 11px 15px;
+  line-height: 19px;
 }
 .post-head .left{
   float: left;
@@ -230,6 +264,10 @@ a.pl-select-link:after{
 }
 .post-marker{
   margin-left: 25px;
+  vertical-align: middle;
+}
+.post-v{
+  vertical-align: middle;
 }
 .post-aside{
   float: left;
@@ -344,10 +382,13 @@ a.vote-down:after{
 }
 
 .pl-fast-reply{
+  margin-bottom: 20px;
+}
+.pl-fast-reply form{
   background-color: #d2e4ee;
   padding: 15px;
   height: 1%;
-  margin: 1px 0 20px;
+  margin-top: 1px;
 }
 .pl-fast-reply textarea{
   font-size: 12px;
@@ -360,22 +401,6 @@ a.vote-down:after{
 .pl-fast-reply .form-buttons input{
   font-size: 12px;
   font-weight: normal;
-}
-
-/* ----------------------------------
- * Post Code block
- */
-.code-block{
-  background-color: #f6f6f6;
-  color:#1d1d1d;
-  font: 12px/2 'Bitstream Vera Sans Mono','Courier New',monospace;
-  padding: 10px 20px;
-  margin: 20px 10px 20px 0;
-  height: 1%;
-}
-.code-block li{
-  list-style: decimal;
-  margin-left: 30px;
 }
 
 .post-image{

@@ -73,6 +73,17 @@ $(window).load(function(){
     prfMiniTimeOut = setTimeout("$('.prf-mini').fadeOut();", 500);
   });
 
+  // jump to page form
+
+  $('.page-jump').click(function(){
+    var t = $(this).offset().top + $(this).height();
+    var l = $(this).offset().left - 10;
+    $('.jump-to-page').css({left: l, top: t}).fadeToggle();
+  });
+
+  // init hidden menu toggler
+  $('.pl-select-link').ndMenu();
+
 });
 
 /**

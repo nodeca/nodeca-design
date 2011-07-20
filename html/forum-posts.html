@@ -130,16 +130,16 @@
         </div>
         <div class="holder">
 
-          <div class="pl-head">
+          <header class="pl-head">
             <h1 class="page-title">Welcome</h1>
             <p class="pl-entry">Subject Category Beginners Section <b>Model aircraft - General</b>; Hi all aviators! from a novice. This week bought a boat with Inet pusher propeller. Can sit on the water, snow, ...</p>
-          </div>
+          </header>
 
-          <div class="pl-controls above clearfix">
+          <nav class="pl-controls above clearfix">
             <ul class="pagination left">
               <li><a class="first-page tip" href="#1" title="To first page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
               <li><a class="prev-page tip" href="#1" title="To previous page, 'Ctrl ←'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="tip" href="#1" title="Select page number and pagination options" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a></li>
+              <li><a class="page-jump tip" href="#1" title="Select page number and pagination options" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a></li>
               <li><a class="next-page tip" href="#1" title="To next page, 'Ctrl →'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
               <li><a class="last-page tip" href="#1" title="To last page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
             </ul>
@@ -160,11 +160,18 @@
                 </div>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="pl-wrap">
+          <section class="pl-wrap">
             <header class="pl-title">
-              <a class="pl-select-link" href="#1">Select</a>
+              <div class="pl-select">
+                <a class="pl-select-link" href="#1">Select</a>
+                <ul class="pl-select-menu">
+                  <li><a href="#1">Select all</a></li>
+                  <li><a href="#1">Unselect all</a></li>
+                  <li><a href="#1">Invert selection</a></li>
+                </ul>
+              </div>
               <h2>Welcome</h2>
             </header>
             <article class="post">
@@ -174,7 +181,8 @@
                 </div>
                 <div class="right">
                   <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></span>
-                  <span class="post-marker">#1 <input type="checkbox" class="post-v" /></span>
+                  <a class="post-marker" href="#1">#1</a>
+                  <input type="checkbox" class="post-v" />
                 </div>
               </footer>
               <aside class="post-aside">
@@ -214,7 +222,8 @@
                 </div>
                 <div class="right">
                   <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></span>
-                  <span class="post-marker">#2 <input type="checkbox" class="post-v" /></span>
+                  <span class="post-marker"><a href="#1">#2</a>
+                    <input type="checkbox" class="post-v" />
                 </div>
               </footer>
               <aside class="post-aside">
@@ -234,17 +243,27 @@
                   <p>Duis aute irure dolor in excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </blockquote><!-- /post quote -->
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <ol class="code-block">
-                  <li>&lt;?php</li>
-                  <li></li>
-                  <li>require_once MAX_PATH . '/lib/OA.php';</li>
-                  <li>require_once MAX_PATH . '/lib/max/Plugin/Common.php';</li>
-                  <li>require_once LIB_PATH . '/Extension/bannerTypeText/bannerTypeText.php';</li>
-                  <li>require_once MAX_PATH . '/lib/max/Plugin/Translation.php';</li>
-                  <li></li>
-                  <li>class Plugins_BannerTypeText_oxMarkedText_oxMarkedTextComponent extends</li>
-                  <li>Plugins_BannerTypeText</li>
-                </ol>
+<pre class="code">
+&lt;?php
+
+require_once MAX_PATH . '/lib/OA.php';
+require_once MAX_PATH . '/lib/max/Plugin/Common.php';
+require_once LIB_PATH . '/Extension/bannerTypeText/bannerTypeText.php';
+require_once MAX_PATH . '/lib/max/Plugin/Translation.php';
+
+class Plugins_BannerTypeText_oxMarkedText_oxMarkedTextComponent extends
+Plugins_BannerTypeText
+
+if ( isset($movie->getID()) ) {
+
+    require_once LIB_PATH . '/Extension/bannerTypeText/bannerTypeText.php';
+    require_once MAX_PATH . '/lib/max/Plugin/Translation.php';
+
+    class Plugins_BannerTypeText_oxMarkedText_oxMarkedTextComponent extends
+    Plugins_BannerTypeText
+
+}
+</pre>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="post-image">
                   <img src="images/tmp/post-img.jpg" alt="" />
@@ -284,7 +303,8 @@
                 </div>
                 <div class="right">
                   <span class="post-timestamp">Posted <time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></span>
-                  <span class="post-marker">#3 <input type="checkbox" class="post-v" /></span>
+                  <span class="post-marker"><a href="#1">#3</a>
+                    <input type="checkbox" class="post-v" />
                 </div>
               </footer>
               <aside class="post-aside">
@@ -318,9 +338,9 @@
               </footer>
             </article><!-- /post -->
             <a class="button pl-more-button" href="#1">Next Posts</a>
-          </div>
+          </section>
 
-          <div class="pl-controls below clearfix">
+          <nav class="pl-controls below clearfix">
             <ul class="pagination left">
               <li><a class="first-page tip" href="#1" title="To first page" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
               <li><a class="prev-page tip" href="#1" title="To previous page, 'Ctrl ←'" data-tipsy-fade="true" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
@@ -345,45 +365,49 @@
                 </div>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="pl-title">
-            <h3>Fast Reply</h3>
-          </div>
-          <form method="post" action="" class="pl-fast-reply">
-            <textarea placeholder="Write something"></textarea>
-            <ul class="form-buttons">
-              <li><input type="submit" class="submit-button" value="Post" /></li>
-              <li><input type="button" class="button" value="Full Editor" /></li>
-            </ul>
-          </form>
+          <footer>
+            <div class="pl-fast-reply">
+              <div class="pl-title">
+                <h3>Fast Reply</h3>
+              </div>
+              <form method="post" action="">
+                <textarea placeholder="Write something"></textarea>
+                <ul class="form-buttons">
+                  <li><input type="submit" class="submit-button" value="Post" /></li>
+                  <li><input type="button" class="button" value="Full Editor" /></li>
+                </ul>
+              </form>
+            </div>
 
-          <div class="page-summary">
-            <section>
-              <h3>12 Users are reading this topic:</h3>
-              <ul class="hlist page-summary-users">
-                <li><a href="#1">Google</a></li>
-                <li><a href="#1">Asso</a></li>
-                <li><a href="#1">Warfo</a></li>
-                <li><a href="#1">ibra</a></li>
-                <li><a href="#1">qolize</a></li>
-                <li><a href="#1">Brandon D</a></li>
-                <li><a href="#1">hao-sama</a></li>
-                <li><a href="#1">Lesovsky</a></li>
-                <li><a href="#1">RUAHusker</a></li>
-                <li><a href="#1">MSN/Bing</a></li>
-                <li><a href="#1">Benj Benj Benj</a></li>
-              </ul>
-            </section>
-            <section>
-              <h3>Moderators:</h3>
-              <ul class="hlist page-summary-users">
-                <li><a href="#1">ibra</a></li>
-                <li><a href="#1">qolize</a></li>
-                <li><a href="#1">Brandon D</a></li>
-              </ul>
-            </section>
-          </div>
+            <div class="page-summary">
+              <section>
+                <h3>12 Users are reading this topic:</h3>
+                <ul class="hlist page-summary-users">
+                  <li><a href="#1">Google</a></li>
+                  <li><a href="#1">Asso</a></li>
+                  <li><a href="#1">Warfo</a></li>
+                  <li><a href="#1">ibra</a></li>
+                  <li><a href="#1">qolize</a></li>
+                  <li><a href="#1">Brandon D</a></li>
+                  <li><a href="#1">hao-sama</a></li>
+                  <li><a href="#1">Lesovsky</a></li>
+                  <li><a href="#1">RUAHusker</a></li>
+                  <li><a href="#1">MSN/Bing</a></li>
+                  <li><a href="#1">Benj Benj Benj</a></li>
+                </ul>
+              </section>
+              <section>
+                <h3>Moderators:</h3>
+                <ul class="hlist page-summary-users">
+                  <li><a href="#1">ibra</a></li>
+                  <li><a href="#1">qolize</a></li>
+                  <li><a href="#1">Brandon D</a></li>
+                </ul>
+              </section>
+            </div>
+          </footer>
         </div>
       </div>
     </div>
@@ -440,6 +464,14 @@
       </div>
     </div>
   </div>
+
+  <form method="post" action="" class="jump-to-page">
+    <dl>
+      <dt>Jump to page</dt>
+      <dd><input class="page-number" type="text" /><input type="submit" value="Go" class="submit-button" /></dd>
+      <dd class="separator"><input type="button" value="More" class="button" /></dd>
+    </dl>
+  </form>
 
   <!-- JavaScript at the bottom for fast page loading -->
 

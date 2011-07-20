@@ -879,6 +879,59 @@ a.ub-link{
   content: '»';
 }
 
+.jump-to-page{
+  background-color: #fff;
+  color:#1d1d1d;
+  display: none;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 999;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 0 2px 5px #666;
+  margin-top: 7px;
+}
+.jump-to-page dt{
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+.jump-to-page .page-number{
+  padding: 3px;
+  width:100px;
+  margin-right: 4px;
+}
+.jump-to-page .button,
+.jump-to-page .submit-button{
+  font-weight: normal;
+  padding: 3px 10px;
+}
+.jump-to-page .separator{
+  padding: 10px 10px 0;
+  margin: 10px -10px 0;
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+.jump-to-page .separator .button{
+  font-size: 12px;
+  width:100%;
+}
+
+/* ----------------------------------
+ * Post Code block
+ */
+.code{
+  background-color: #f6f6f6;
+  color:#1d1d1d;
+  font: 12px/2 'Bitstream Vera Sans Mono','Courier New',monospace;
+  padding: 10px 20px 10px 30px;
+  margin: 20px 10px 20px 0;
+  overflow: auto;
+  max-height: 400px;
+}
+
 /*
  *
  * Markup styles
