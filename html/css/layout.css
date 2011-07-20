@@ -944,6 +944,7 @@ a.ub-link{
   margin: 20px 10px 20px 0;
   overflow: auto;
   max-height: 400px;
+  line-height:1.1em;
 }
 
 /*
