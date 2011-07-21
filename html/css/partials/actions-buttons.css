@@ -79,7 +79,7 @@
   content:'▼';
 }
 .mod-button:hover{
-  text-decoration:none;*/
+  text-decoration:none;
   background: #b0824f;
   background: linear-gradient(#ccae66, #ae4633);
   background: -moz-linear-gradient(#ccae66,#ae4633);
