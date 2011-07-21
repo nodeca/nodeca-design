@@ -1,0 +1,68 @@
+/*
+ * 
+ * Login menu styles
+ * 
+ */
+.auth-wrap{
+  position:relative;
+}
+.auth-toggle{
+  outline: 0;
+}
+.menu-activated .auth-toggle{
+  background: #f4f4f4;
+  background-image: linear-gradient(#fff, #ddd, #d6d6d6);
+  background-image: -moz-linear-gradient(#fff, #ddd, #d6d6d6);
+  background-image: -webkit-linear-gradient(#fff, #ddd, #d6d6d6);
+  border-radius:4px 4px 0 0;
+  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
+  padding:0 11px;
+  margin:-12px -11px 0;
+  *margin:-12px -5px 0;/* ie6-7 hack */
+  height:37px;
+  line-height:35px;
+  color:#015b7d;
+  border-color:#f4f4f4 #0c4d6c transparent #f3f3f3;
+  border-style:solid;
+  border-width:1px 1px 0;
+  position:relative;
+  z-index:1;
+}
+.auth-popup{
+  display: none;
+  background:#f4f4f4;
+  background:linear-gradient(#d6d6d6 0, #f4f4f4 30px);
+  background:-moz-linear-gradient(#d6d6d6 0, #f4f4f4 30px);
+  background:-webkit-linear-gradient(#d6d6d6 0, #f4f4f4 30px);
+  color:#373737;
+  position:absolute;
+  *top:26px;/* ie6-7 hack */
+  top:27px;
+  right:-11px;
+  width:200px;
+  overflow:hidden;
+  border-color:#f3f3f3 #0c4d6c #0c4d6c #f3f3f3;
+  border-style:solid;
+  border-width:1px;
+  padding:15px 10px 0;
+  box-shadow:0 0 20px #333;
+  border-radius:4px 0 4px 4px;
+}
+.auth-popup li {
+  margin:0 0 10px;
+}
+.auth-popup-input input {
+  width:100%;
+}
+.auth-popup-submit {
+  text-align: right;
+}
+.auth-popup-submit label {
+  font-size:12px;
+  color:#999;
+  vertical-align: middle;
+}
+#auth-popup-remember{
+  margin:0 10px 0 0;
+  vertical-align: middle;
+}
