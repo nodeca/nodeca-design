@@ -83,8 +83,8 @@
             <a class="ub-link auth-toggle _menu-pin" href="#1">Authorization</a>
             <form class="auth-popup" method="post" action="">
                 <ul>
-                  <li class="auth-popup-input"><input type="text" placeholder="E-mail" class="tip" title="Type your Email or Nickname" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
-                  <li class="auth-popup-input"><input type="password" placeholder="Password" class="tip" title="Type your password" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
+                  <li class="auth-popup-input"><input type="text" placeholder="E-mail" class="_tip" title="Type your Email or Nickname" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
+                  <li class="auth-popup-input"><input type="password" placeholder="Password" class="_tip" title="Type your password" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
                   <li class="auth-popup-submit"><label for="auth-popup-remember">remember</label> <input type="checkbox" checked="checked" id="auth-popup-remember" /> <input type="submit" class="submit button" value="Login" /></li>
                 </ul>
                 <ul>
@@ -142,17 +142,17 @@
 
           <nav class="pl-controls above clearfix">
             <ul class="pagination left">
-              <li><a class="first-page tip" href="#1" title="First page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="prev-page tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="page-jump tip _menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a>  <form method="post" action="" class="pgn-popup">
+              <li><a class="first-page _tip" href="#1" title="First page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="prev-page _tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="page-jump _tip _menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a>  <form method="post" action="" class="pgn-popup">
                   <dl>
-                    <dt>Jump to:</dt>
-                    <dd><input class="page-number tip" type="text" placeholder="Page number" title="Page number" data-tipsy-gravity="e" data-tipsy-trigger="focus" /><input type="submit" value="&rarr;" class="button" /></dd>
+                    <dt class="hidden">Jump to:</dt>
+                    <dd>Jump to<input class="page-number _tip" type="text" placeholder="page" title="Page number" data-tipsy-gravity="n" data-tipsy-trigger="focus" /><input type="submit" value="&rarr;" class="button" /></dd>
                     <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
                   </dl>
                 </form></li>
-              <li><a class="next-page tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="last-page tip" href="#1" title="Last page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="next-page _tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="last-page _tip" href="#1" title="Last page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
             </ul>
             <ul class="actions-list">
               <li class="actions-item"><a class="action-button" href="#1">Follow</a></li>
@@ -227,7 +227,7 @@
                     <li><a href="#1">Reply</a></li>
                     <li><a href="#1">Edit</a></li>
                     <li><a href="#1">Unapprove</a></li>
-                    <li class="votes"><a class="vote-up tip" href="#1"  title="Thanks author" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a> <span class="votes-count">+34</span> <a class="vote-down tip" href="#1" title="Vote Down" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a></li>
+                    <li class="votes"><a class="vote-up _tip" href="#1"  title="Thanks author" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a> <span class="votes-count">+34</span> <a class="vote-down _tip" href="#1" title="Vote Down" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a></li>
                   </ul>
                 </div>
               </footer>
@@ -327,7 +327,7 @@ if ( isset($movie->getID()) ) {
                     <li><a href="#1">Reply</a></li>
                     <li><a href="#1">Edit</a></li>
                     <li><a href="#1">Unapprove</a></li>
-                    <li class="votes"><a class="vote-up tip" href="#1"  title="Thanks author" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a> <span class="votes-count">+34</span> <a class="vote-down tip" href="#1" title="Vote Down" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a></li>
+                    <li class="votes"><a class="vote-up _tip" href="#1"  title="Thanks author" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a> <span class="votes-count">+34</span> <a class="vote-down _tip" href="#1" title="Vote Down" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a></li>
                   </ul>
                 </div>
               </footer>
@@ -368,7 +368,7 @@ if ( isset($movie->getID()) ) {
                     <li><a href="#1">Reply</a></li>
                     <li><a href="#1">Edit</a></li>
                     <li><a href="#1">Unapprove</a></li>
-                    <li class="votes"><a class="vote-up tip" href="#1"  title="Thanks author" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a> <span class="votes-count">+34</span> <a class="vote-down tip" href="#1" title="Vote Down" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a></li>
+                    <li class="votes"><a class="vote-up _tip" href="#1"  title="Thanks author" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a> <span class="votes-count">+34</span> <a class="vote-down _tip" href="#1" title="Vote Down" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a></li>
                   </ul>
                 </div>
               </footer>
@@ -378,17 +378,17 @@ if ( isset($movie->getID()) ) {
 
           <nav class="pl-controls below clearfix">
             <ul class="pagination left">
-              <li><a class="first-page tip" href="#1" title="First page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="prev-page tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="page-jump tip _menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a>  <form method="post" action="" class="pgn-popup">
+              <li><a class="first-page _tip" href="#1" title="First page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="prev-page _tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="page-jump _tip _menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a>  <form method="post" action="" class="pgn-popup">
                   <dl>
-                    <dt>Jump to:</dt>
-                    <dd><input class="page-number tip" type="text" placeholder="Page number" title="Page number" data-tipsy-gravity="e" data-tipsy-trigger="focus" /><input type="submit" value="&rarr;" class="button" /></dd>
+                    <dt class="hidden">Jump to:</dt>
+                    <dd>Jump to<input class="page-number _tip" type="text" placeholder="page" title="Page number" data-tipsy-gravity="e" data-tipsy-trigger="focus" /><input type="submit" value="&rarr;" class="button" /></dd>
                     <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
                   </dl>
                 </form></li>
-              <li><a class="next-page tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
-              <li><a class="last-page tip" href="#1" title="Last page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="next-page _tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
+              <li><a class="last-page _tip" href="#1" title="Last page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
             </ul>
             <ul class="actions-list">
               <li class="actions-item"><a class="action-button" href="#1">Follow</a></li>

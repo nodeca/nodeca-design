@@ -94,8 +94,9 @@
 }
 .pgn-popup .page-number{
   padding: 3px;
-  width:120px;
+  width: 60px;
   margin-right: 4px;
+  margin-left: 4px;
   vertical-align: middle;
 }
 .pgn-popup .button{
