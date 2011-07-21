@@ -9,7 +9,7 @@ window.log = function(){
   }
 };
 // make it safe to use console.log always
-(function(b){function c(){}for(var d="assert,count,debug,dir,dirxml,error,exception,group,groupCollapsed,groupEnd,info,log,markTimeline,profile,profileEnd,time,timeEnd,trace,warn".split(","),a;a=d.pop();)b[a]=b[a]||c})(window.console=window.console||{});
+(function(b){function c(){}for(var d="assert,count,debug,dir,dirxml,error,exception,group,groupСollapsed,groupEnd,info,log,markTimeline,profile,profileEnd,time,timeEnd,trace,warn".split(","),a;a=d.pop();)b[a]=b[a]||c})(window.console=window.console||{});
 
 
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
@@ -66,13 +66,13 @@ window.log = function(){
   //      <span id="t" data-toggle="#foobar, #xoxoxo">O</span>
   //
   //  - notify (Number|String): Specifies element that will be notified (via
-  //    toggling CSS class "collapsed". "-2" by default.
+  //    toggling CSS class "_collapsed". "-2" by default.
   //
   //    When given as a String, element will be found by selector, e.g.:
   //
   //      <span id="t" data-notify="#foobar">...
   //
-  //    will add `collapsed` class to element found by #foobar, when span#t
+  //    will add `_collapsed` class to element found by #foobar, when span#t
   //    will collapse container (see toggle), and remove this class on
   //    uncollapse.
   //
@@ -81,7 +81,7 @@ window.log = function(){
   //      <div id="abc">
   //      <h1> ... <span id="t" data-notify=2>...
   //
-  //    will add `collapsed` to div#abc, when span#t is clicked.
+  //    will add `_collapsed` to div#abc, when span#t is clicked.
   //
   //    By default, equals 2.
   //
@@ -116,7 +116,7 @@ window.log = function(){
 
       $togglers.click(function (evt) {
         evt.stopPropagation();
-        $notify.toggleClass('collapsed');
+        $notify.toggleClass('_collapsed');
         $slave.slideToggle();
 
       });
@@ -161,13 +161,13 @@ window.log = function(){
           $menu = $this.next(),
           $parent = $this.parent(),
           show = function (evt) {
-            $parent.addClass('menu-activated');
+            $parent.addClass('_menu-activated');
             $menu.fadeIn(function () {
               $world.one('click', hide);
             });
           },
           hide = function () {
-            $parent.removeClass('menu-activated');
+            $parent.removeClass('_menu-activated');
             $menu.fadeOut();
           };
 

@@ -183,7 +183,7 @@ li.pw-g-item:after{
 }
 
 /* Toggler for title */
-.p-block-title .collapser{
+.p-block-title ._collapser{
   background: #f3f3f3;
   background: linear-gradient(#fff, #e7e7e7);
   background: -moz-linear-gradient(#fff,#e7e7e7);
@@ -195,19 +195,19 @@ li.pw-g-item:after{
   display:inline-block;
   font-size: 9px;
 }
-.p-block-title .collapser:hover{
+.p-block-title ._collapser:hover{
   text-decoration:none;
 }
-.p-block-title .collapser:focus{
+.p-block-title ._collapser:focus{
   outline:0;
 }
-.p-block-title .collapser:before{
+.p-block-title ._collapser:before{
   content:'▲';
 }
-.collapsed .p-block-title .collapser:before{
+._collapsed .p-block-title ._collapser:before{
   content:'▼';
 }
-.collapsed .p-block-title .collapser{
+._collapsed .p-block-title ._collapser{
   padding:3px 5px;
 }
 
@@ -238,7 +238,7 @@ li.pw-g-item:after{
 }
 
 /* Toggler in subblock */
-.p-info-collapser .collapser{
+.p-info-collapser ._collapser{
   background: #f3f3f3;
   background: linear-gradient(#fff, #e7e7e7);
   background: -moz-linear-gradient(#fff,#e7e7e7);
@@ -250,19 +250,19 @@ li.pw-g-item:after{
   display:inline-block;
   font-size: 7px;
 }
-.p-info-collapser .collapser:hover{
+.p-info-collapser ._collapser:hover{
   text-decoration:none;
 }
-.p-info-collapser .collapser:focus{
+.p-info-collapser ._collapser:focus{
   outline:0;
 }
-.p-info-collapser .collapser:before{
+.p-info-collapser ._collapser:before{
   content:'▲';
 }
-.collapsed .p-info-collapser .collapser:before{
+._collapsed .p-info-collapser ._collapser:before{
   content:'▼';
 }
-.collapsed .p-info-collapser .collapser{
+._collapsed .p-info-collapser ._collapser{
   padding:3px 5px;
 }
 

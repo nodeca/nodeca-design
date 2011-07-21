@@ -1,11 +1,11 @@
 $(window).load(function(){
 
   // init togglers for collapsable elements
-  $('.collapser').ndCollapser();
+  $('._collapser').ndCollapser();
 
   // init tipsy elements
   var tipGeneric = { fade:true, opacity:"1"};
-  $('.tip').each(function () {
+  $('._tip').each(function () {
       // tipsyGeneric is optional, and given here as an idea of how to provide
       // default options for `.tip` elements only. If you want to override
       // global tipsy defaults, then just override values of
@@ -14,7 +14,7 @@ $(window).load(function(){
   });
 
   // init hidden menus
-  $('.menu-pin').ndMenu();
+  $('._menu-pin').ndMenu();
 
   // Debug code ===================
   // Add button to switch page width

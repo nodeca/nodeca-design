@@ -85,7 +85,7 @@
   background: -moz-linear-gradient(#ccae66,#ae4633);
   background: -webkit-linear-gradient(#ccae66,#ae4633);
 }
-.menu-activated .mod-button:hover{
+._menu-activated .mod-button:hover{
   background: #b0824f;
   background: linear-gradient(#ccae66, #963c2c);
   background: -moz-linear-gradient(#ccae66,#963c2c);
@@ -95,16 +95,16 @@
   outline:0;
 }
 
-.menu-activated .mod-button{
+._menu-activated .mod-button{
   border-radius: 4px 4px 0 0;
 }
-.below .menu-activated .mod-button{
+.below ._menu-activated .mod-button{
   border-radius: 0 0 4px 4px;
   background: linear-gradient(#963c2c, #bca05e);
   background: -moz-linear-gradient(#963c2c, #bca05e);
   background: -webkit-linear-gradient(#963c2c, #bca05e);
 }
-.menu-activated .mod-button:after{
+._menu-activated .mod-button:after{
   background: #963c2c;
   content: ' ';
   display: block;

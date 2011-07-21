@@ -9,7 +9,7 @@
 .auth-toggle{
   outline: 0;
 }
-.menu-activated .auth-toggle{
+._menu-activated .auth-toggle{
   background: #f4f4f4;
   background-image: linear-gradient(#fff, #ddd, #d6d6d6);
   background-image: -moz-linear-gradient(#fff, #ddd, #d6d6d6);
