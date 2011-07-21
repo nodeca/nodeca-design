@@ -1,0 +1,22 @@
+.filter{
+  font-size: 12px;
+  display: inline;
+  margin: 0 15px 0 0;
+  float: left;
+}
+.filter:last-child{
+  margin-right: 0;
+}
+a.filter-btn{
+  display: inline-block;
+  *display: inline; zoom: 1; /* ie6-7 display:inline-block hack */
+  line-height: 1;
+  color: #fff;
+}
+.active .filter-btn{
+  background: #244156;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+  font-weight: bold;
+  padding: 3px 10px 5px;
+}

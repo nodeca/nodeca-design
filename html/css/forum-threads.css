@@ -1,0 +1,92 @@
+.tl-wrap,
+.tl-controls{
+  margin: 0 0 20px;
+}
+.tl-title{
+  background: #12729f;
+  background: linear-gradient(#258ac3, #025c7e);
+  background: -moz-linear-gradient(#258ac3,#025c7e);
+  background: -webkit-linear-gradient(#258ac3,#025c7e);
+  border-radius:4px 4px 0 0;
+  color:#fff;
+  font-size:12px;
+  font-weight:normal;
+  text-align:left;
+  padding:0 15px;
+  position:relative;
+  line-height:45px;
+  height:45px;
+  white-space: nowrap;
+}
+.tl-title a{
+  color:#fff;
+}
+.tl-title h2{
+  float: left;
+  font-size: 16px;
+  display: inline;
+  margin: 0 20px 0 0;
+  overflow: hidden;
+  max-width: 50%;
+}
+.tl-last-post{
+  float: right;
+  width: 210px;
+}
+
+.tl-table{
+  width: 100%;
+}
+.tl-table td{
+  padding: 15px 15px 15px 8px;
+  border-bottom: 1px solid #b0b0b0;
+  vertical-align: middle;
+}
+.thread-icon-cell{
+  padding: 0!important;
+  width: 42px;
+}
+.my-replies{
+  background: #caffa3;
+}
+.thread-icon{
+  border-radius: 3px;
+  height: 22px;
+  width: 22px;
+  margin: auto;
+}
+.unread .thread-icon{
+  background: #015b7d;
+}
+.closed .thread-icon{
+  background: url(../images/thread-closed.png) no-repeat 50% 50%;
+}
+.moved .thread-icon{
+  background: url(../images/thread-moved.png) no-repeat 50% 50%;
+}
+.thread-preview{
+  width: 50%;
+}
+.thread-collapser{
+  max-width: 60px;
+  min-width: 60px;
+  width: 60px;
+  text-align: center;
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+.thread-views{
+  min-width: 160px;
+  white-space: nowrap;
+}
+.thread-last-post{
+  min-width: 170px;
+}
+.thread-mark{
+  max-width: 40px;
+  min-width: 40px;
+  width: 40px;
+  text-align: center;
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
