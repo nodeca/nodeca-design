@@ -33,8 +33,35 @@
   height:45px;
   white-space: nowrap;
 }
-.pl-title:hover a.pl-select-link{
-  opacity: 1;
+.pl-title h2{
+  overflow: hidden;
+}
+.pl-title .right{
+  margin-left: 10px;
+  display: inline;
+}
+
+.pl-filter{
+  font-size: 12px;
+  display: inline;
+  margin: 0 15px 0 0;
+  float: left;
+}
+.pl-filter:last-child{
+  margin-right: 0;
+}
+a.pl-filter-btn{
+  display: inline-block;
+  *display: inline; zoom: 1; /* ie6-7 display:inline-block hack */
+  line-height: 1;
+  color: #fff;
+}
+.active .pl-filter-btn{
+  background: #244156;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+  font-weight: bold;
+  padding: 4px 10px;
 }
 a.pl-select-link{
   color:#fff;
@@ -50,11 +77,10 @@ a.pl-select-link:after{
   position: relative;
   top:-1px;
 }
-
-
+.pl-title:hover a.pl-select-link{
+  opacity: 1;
+}
 .pl-select{
-  font-size: 12px;
-  float: right;
   position: relative;
 }
 .pl-select-menu{
@@ -184,6 +210,8 @@ a.pl-select-link:after{
   top:-7px;
   overflow:hidden; /* IE6 hack */
   border-radius: 4px;
+  margin-top:-12px!important;
+  top: 6px;
 }
 .votes-count{
   vertical-align: middle;

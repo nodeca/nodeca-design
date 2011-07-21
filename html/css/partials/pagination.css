@@ -79,13 +79,13 @@
   position: absolute;
   left:-2px;
   top:22px;
-  width:185px;
   z-index: 999;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 7px 10px;
   box-shadow: 1px 2px 5px #333;
   margin-top: 7px;
+  white-space: nowrap;
 }
 .pgn-popup dt{
   font-size: 12px;
@@ -107,8 +107,6 @@
   padding: 5px 10px 0;
   margin: 10px -10px 0;
   position: relative;
-  border-top: 1px solid #ccc;
-  position: relative;
 }
 .pgn-popup .separator input,
 .pgn-popup .separator label{
@@ -126,10 +124,8 @@
   line-height: 1;
   font-size: 0;
   overflow: hidden;
-  box-shadow: 20px 0 20px -20px #ffffff inset,
-              20px 0 20px -20px #ffffff inset,
-              20px 0 20px -20px #ffffff inset,
-             -20px 0 20px -20px #ffffff inset,
-             -20px 0 20px -20px #ffffff inset,
-             -20px 0 20px -20px #ffffff inset;
+  background: #ccc;
+  background: linear-gradient(top right, #fff, #ccc, #fff);
+  background: -moz-linear-gradient(top right, #fff, #ccc, #fff);
+  background: -webkit-linear-gradient(left top, left right, #ffffff, #cccccc, #ffffff);
 }
