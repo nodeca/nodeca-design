@@ -82,28 +82,17 @@ $(window).load(function(){
     $(this).find('dd').hide();
   });
 
-  $('.quick-select a').click(function(){
-
-    var type = $(this).attr('class');
-
-    switch(type){
-      case 'quick-select-all':
-        $('.post-v').each(function(){
-          if (!$(this).is(':checked')) {$(this).click();}
-        });
-        break;
-      case 'quick-unselect-all':
-        $('.post-v').each(function(){
-          if ($(this).is(':checked')) {$(this).click();}
-        });
-        break;
-      case 'quick-invert-selection':
-        $('.post-v').click();
-        break;
-      default:
-        alert('error');
-    }
-
+  $('.quick-select-all').click(function(){
+    $('.post-v').each(function(){
+      if (!$(this).is(':checked')) {$(this).click();}
+    });
   });
-
-});
+  $('.quick-unselect-all').click(function(){
+    $('.post-v').each(function(){
+      if ($(this).is(':checked')) {$(this).click();}
+    });
+  });
+  $('.quick-invert-selection').click(function(){
+    $('.post-v').click();
+    });
+  });

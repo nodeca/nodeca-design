@@ -175,9 +175,9 @@
               <div class="pl-select">
                 <a class="pl-select-link menu-pin" href="#1">Select</a>
                 <ul class="pl-select-menu">
-                  <li><a href="#1">Select all</a></li>
-                  <li><a href="#1">Unselect all</a></li>
-                  <li><a href="#1">Invert selection</a></li>
+                  <li><a href="#1" class="quick-select-all">Select all</a></li>
+                  <li><a href="#1" class="quick-unselect-all">Unselect all</a></li>
+                  <li><a href="#1" class="quick-invert-selection">Invert selection</a></li>
                 </ul>
               </div>
               <h2>Welcome</h2>
@@ -501,9 +501,13 @@ if ( isset($movie->getID()) ) {
   <form method="post" action="" class="quick-select">
     <dl>
       <dt>(5) selected posts:</dt>
-      <dd><a href="#1" class="quick-select-all">Select all</a></dd>
-      <dd><a href="#1" class="quick-unselect-all">Unselect all</a></dd>
-      <dd><a href="#1" class="quick-invert-selection">Invert selection</a></dd>
+      <dd><a href="#1">Delete</a></dd>
+      <dd><a href="#1">Copy</a></dd>
+      <dd><a href="#1">Split</a></dd>
+      <dd><a href="#1">Move</a></dd>
+      <dd><a href="#1">Validate</a></dd>
+      <dd><a href="#1">Unvalidate</a></dd>
+      <dd><a href="#1" class="quick-unselect-all">Unselect</a></dd>
     </dl>
   </form>
 
