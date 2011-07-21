@@ -62,13 +62,6 @@ $(window).load(function(){
     prfMiniTimeOut = setTimeout("$('.prf-mini').fadeOut();", 500);
   });
 
-  // jump to page form
-/*  $('.page-jump').click(function(){
-    var t = $(this).offset().top + $(this).height();
-    var l = $(this).offset().left - 2;
-    $('.jump-to-page').css({left: l, top: t}).fadeToggle();
-  });
-*/
   // posts quick select menu
   $('.post-v').change(function(){
     if ( $(this).is(':checked') ) {
