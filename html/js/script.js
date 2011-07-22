@@ -63,7 +63,7 @@ $(window).load(function(){
   });
 
   // posts quick select menu
-  $('.post-v').change(function(){
+  $('.post-v, .thread-mark input').change(function(){
     if ( $(this).is(':checked') ) {
       $('.quick-select').fadeIn();
       var w = $('.quick-select').width() + $(this).width() + 10;
@@ -71,7 +71,7 @@ $(window).load(function(){
       var l = $(this).offset().left - w;
       $('.quick-select').css({left: l, marginTop: t});
     }
-    if ( $('.post-v:checked').length < 1 ) {
+    if ( $('.post-v:checked, .thread-mark input:checked').length < 1 ) {
       $('.quick-select').fadeOut();
     }
   });

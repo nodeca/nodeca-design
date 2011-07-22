@@ -10,9 +10,9 @@
 a.filter-btn{
   display: inline-block;
   *display: inline; zoom: 1; /* ie6-7 display:inline-block hack */
-  line-height: 1;
+  line-height: 13px;
   color: #fff;
-  padding: 3px 10px 5px;
+  padding: 4px 10px;
 }
 a.filter-btn:hover{
   background: #315977;
