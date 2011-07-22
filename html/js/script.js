@@ -83,17 +83,17 @@ $(window).load(function(){
   });
 
   $('.quick-select-all').click(function(){
-    $('.post-v').each(function(){
+    $('.post-v, .thread-mark input').each(function(){
       if (!$(this).is(':checked')) {$(this).click();}
     });
   });
   $('.quick-unselect-all').click(function(){
-    $('.post-v').each(function(){
+    $('.post-v, .thread-mark input').each(function(){
       if ($(this).is(':checked')) {$(this).click();}
     });
   });
   $('.quick-invert-selection').click(function(){
-    $('.post-v').click();
+    $('.post-v, .thread-mark input').click();
     });
   $('.thread-pin').click(function(){
     $(this).parent().toggleClass('collapsed').parent().next('.thread-posts-row').toggle();
