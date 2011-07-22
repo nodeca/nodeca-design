@@ -45,9 +45,6 @@
   max-width: 42px;
   min-width: 42px;
 }
-.my-replies{
-  background: #caffa3;
-}
 .thread-icon{
   border-radius: 3px;
   height: 22px;
@@ -59,19 +56,7 @@
   color:#d4d4d4;
   font-size: 27px;
 }
-.unread .thread-icon{
-  background: #015b7d;
-}
-.closed .thread-icon,
-.moved .thread-icon{
-  background: transparent;
-}
-.closed .thread-icon:after{
-  content: '✗';
-}
-.moved .thread-icon:after{
-  content: '↶';
-}
+
 .thread-preview{
   width: 50%;
 }
@@ -92,15 +77,13 @@
   min-width: 150px;
 }
 .last-post-info{
-  font-size: 12px;
+  font-size: 13px;
 }
 .last-post-date{
-  color:#888;
-  font-size: 11px;
   margin-bottom: 2px;
 }
-.last-post-date a{
-  color:#888;
+.last-post-author a{
+  color: #333;
 }
 .thread-mark{
   max-width: 40px;
@@ -113,7 +96,8 @@
 
 .thread-title h2{
   display: inline;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: normal;
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -129,9 +113,13 @@
   padding: 1px 5px;
   margin-right: 2px;
 }
-.thread-author,
+.thread-author {
+  color:#aaa;
+  margin-left:5px;
+  font-size:13px;
+}
 .thread-author a{
-  color:#b0b0b0;
+  color:#aaa;
 }
 
 .thread-pin{
@@ -213,3 +201,39 @@
   font-weight:normal;
   margin-right: 4px;
 }
+
+/*
+ *
+ * State marks
+ *
+ */
+.mark-unread .thread-icon{
+  background: #015b7d;
+  height: 15px;
+  width: 15px;
+}
+.mark-unread .thread-title h2{
+  font-weight: bold;
+}
+.mark-closed .thread-icon {
+  color: #888;
+}
+.mark-closed .thread-icon:after{
+  content: '✗';
+}
+.mark-closed .thread-title a{
+  color: #888;
+}
+.mark-moved .thread-icon{
+  color: #888;
+}
+.mark-moved .thread-icon:after{
+  content: '↶';
+}
+.mark-moved .thread-title a{
+  color: #888;
+}
+.mark-posted .thread-icon-cell{
+  background: #caffa3;
+}
+
