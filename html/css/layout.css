@@ -732,3 +732,26 @@ a.quote-author:before{
   font-size: 11px;
   float: right;
 }
+
+.to-top{
+  background: #ececec;
+  position: fixed;
+  right: 0;
+  top:50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  margin-top: -25px;
+  z-index: 999;
+  text-align: center;
+  font-size: 24px;
+  display: none;
+}
+.to-top:after{
+  content: '▲';
+}
+.to-top:hover{
+  background: #efefef;
+  text-decoration: none;
+}

@@ -230,3 +230,7 @@ td.fl-icon-col{
   text-align:center;
   padding:10px 0;
 }
+.fl-markread li{
+  display: inline;
+  margin: 0 10px;
+}

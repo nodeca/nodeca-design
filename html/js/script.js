@@ -98,4 +98,20 @@ $(window).load(function(){
   $('.thread-pin').click(function(){
     $(this).parent().toggleClass('collapsed').parent().next('.thread-posts-row').toggle();
     });
+  showQuickScroll();
+  $(window).scroll(function(){
+    showQuickScroll();
   });
+  });
+
+function showQuickScroll(){
+  var s = $(window).scrollTop();
+  var h = $(window).height() / 2;
+  var el = $('.to-top');
+  if ( s > h && !el.is(':visible') ) {
+    $('.to-top').fadeIn();
+  }
+  if ( s <= h && el.is(':visible') ) {
+    $('.to-top').fadeOut();
+  }
+}
