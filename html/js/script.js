@@ -97,12 +97,6 @@ $(window).load(function(){
     $('.post-v, .tl-select-col input').click();
     });
 
-/*    
-  $('.tl-preview-ctl').click(function(){
-    $(this).parent().toggleClass('collapsed').parent().next('.tl-preview-row').toggle();
-    });
-*/
-
   // Scroller
   $(window).scroll(function(){
     var s = $(window).scrollTop();
