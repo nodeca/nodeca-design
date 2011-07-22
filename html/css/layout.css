@@ -749,7 +749,7 @@ a.quote-author:before{
   display: none;
 }
 .to-top:after{
-  content: '▲';
+  content: '⇪';
 }
 .to-top:hover{
   background: #efefef;
