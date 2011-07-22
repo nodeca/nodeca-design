@@ -53,15 +53,24 @@
   height: 22px;
   width: 22px;
   margin: auto;
+  text-align: center;
+  line-height: 22px;
+  overflow: hidden;
+  color:#d4d4d4;
+  font-size: 27px;
 }
 .unread .thread-icon{
   background: #015b7d;
 }
-.closed .thread-icon{
-  background: url(../images/thread-closed.png) no-repeat 50% 50%;
-}
+.closed .thread-icon,
 .moved .thread-icon{
-  background: url(../images/thread-moved.png) no-repeat 50% 50%;
+  background: transparent;
+}
+.closed .thread-icon:after{
+  content: '✗';
+}
+.moved .thread-icon:after{
+  content: '↶';
 }
 .thread-preview{
   width: 50%;
