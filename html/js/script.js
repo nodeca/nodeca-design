@@ -2,6 +2,7 @@ $(window).load(function(){
 
   // init togglers for collapsable elements
   $('._collapser').ndCollapser();
+  $('._expander').ndExpander();
 
   // init tipsy elements
   var tipGeneric = { fade:true, opacity:"1"};
@@ -95,9 +96,12 @@ $(window).load(function(){
   $('.quick-invert-selection').click(function(){
     $('.post-v, .tl-select-col input').click();
     });
-  $('.thread-pin').click(function(){
+
+/*    
+  $('.tl-preview-ctl').click(function(){
     $(this).parent().toggleClass('collapsed').parent().next('.tl-preview-row').toggle();
     });
+*/
 
   // Scroller
   $(window).scroll(function(){
@@ -120,6 +124,7 @@ $(window).load(function(){
   // toggle filter button
   $('.filter-btn').click(function(){
     $(this).parent().toggleClass('_filter-active');
+    return false;
   });
 });
 

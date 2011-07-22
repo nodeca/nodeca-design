@@ -115,13 +115,38 @@ window.log = function(){
       }
 
       $togglers.click(function (evt) {
-        evt.stopPropagation();
         $notify.toggleClass('_collapsed');
         $slave.slideToggle();
-
+        return false;
       });
     });
   };
+  $.fn.ndExpander = function () {
+    return this.each(function () {
+      var $this = $(this),
+          $togglers = $this, // by default bind click on toggler only
+          $notify = (undefined === $this.data('notify'))
+                    ? $this.parent().parent()
+                    : get_related_el($this, 'notify'),
+          $slave = $this.data('toggle')
+                    ? $($this.data('toggle'))
+                    : $this.parent().next();
+
+      if (undefined !== $this.data('extra-toggler')) {
+        (function ($extra_toggler) {
+          $extra_toggler.css('cursor', 'pointer');
+          $togglers = $this.add($extra_toggler);
+        })(get_related_el($this, 'extra-toggler'));
+      }
+
+      $togglers.click(function (evt) {
+        $notify.toggleClass('_expanded');
+        $slave.slideToggle();
+        return false;
+      });
+    });
+  };
+
 })(jQuery);
 
 
@@ -172,7 +197,7 @@ window.log = function(){
           };
 
       $menu.click(function (evt) {
-        evt.stopPropagation();
+        return false;
       });
 
       $this.click(show);
