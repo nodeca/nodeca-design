@@ -98,20 +98,30 @@ $(window).load(function(){
   $('.thread-pin').click(function(){
     $(this).parent().toggleClass('collapsed').parent().next('.thread-posts-row').toggle();
     });
-  showQuickScroll();
+
+  // Scroller
   $(window).scroll(function(){
-    showQuickScroll();
+    var s = $(window).scrollTop();
+    //var h = $(window).height() / 2;
+    var h = 300;
+
+    var el = $('._scroll-top');
+    if ( s > h && !el.is(':visible') ) {
+      el.fadeIn();
+    } else if ( s <= h && el.is(':visible') ) {
+      el.fadeOut();
+    }
   });
+  $('._scroll-top').click(function(e){
+    e.preventDefault();
+    $('html,body').animate({scrollTop: 0}, 'fast');
   });
 
-function showQuickScroll(){
-  var s = $(window).scrollTop();
-  var h = $(window).height() / 2;
-  var el = $('.to-top');
-  if ( s > h && !el.is(':visible') ) {
-    $('.to-top').fadeIn();
-  }
-  if ( s <= h && el.is(':visible') ) {
-    $('.to-top').fadeOut();
-  }
-}
+});
+
+
+// Activate scroller if page already in scrolled atate after load.
+$(window).load(function(){
+  $(window).scroll();
+});
+

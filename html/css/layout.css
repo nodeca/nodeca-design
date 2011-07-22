@@ -733,7 +733,7 @@ a.quote-author:before{
   float: right;
 }
 
-.to-top{
+._scroll-top{
   background: #ececec;
   position: fixed;
   right: 0;
@@ -748,10 +748,13 @@ a.quote-author:before{
   font-size: 24px;
   display: none;
 }
-.to-top:after{
+._scroll-top:after{
   content: '⇪';
 }
-.to-top:hover{
+._scroll-top:hover{
   background: #efefef;
   text-decoration: none;
+}
+._scroll-top:focus{
+  outline: 0;
 }
