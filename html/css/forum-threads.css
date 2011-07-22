@@ -2,7 +2,7 @@
 .tl-controls{
   margin: 0 0 20px;
 }
-.tl-title{
+.tl-head{
   background: #12729f;
   background: linear-gradient(#258ac3, #025c7e);
   background: -moz-linear-gradient(#258ac3,#025c7e);
@@ -18,14 +18,14 @@
   height:45px;
   white-space: nowrap;
 }
-.tl-title a{
+.tl-head a{
   color:#fff;
 }
-.tl-title h2{
+.tl-head h2{
   font-size: 16px;
   overflow: hidden;
 }
-.tl-title .right{
+.tl-head .right{
   display: inline;
   margin-left: 20px;
 }
@@ -39,7 +39,7 @@
   border-bottom: 1px solid #b0b0b0;
   vertical-align: middle;
 }
-.thread-icon-cell{
+.tl-icon-col{
   padding: 0!important;
   width: 42px;
   max-width: 42px;
@@ -57,10 +57,10 @@
   font-size: 27px;
 }
 
-.thread-preview{
-  width: 50%;
+.tl-summary-col{
+  width: 70%;
 }
-.thread-collapser{
+.tl-tools-col{
   max-width: 60px;
   min-width: 60px;
   width: 60px;
@@ -68,13 +68,13 @@
   padding-left: 0!important;
   padding-right: 0!important;
 }
-.thread-views{
+.tl-total-col{
   font-size: 12px;
-  min-width: 140px;
+  min-width: 110px;
   white-space: nowrap;
 }
-.thread-last-post{
-  min-width: 150px;
+.tl-last-post-col{
+  min-width: 130px;
 }
 .last-post-info{
   font-size: 13px;
@@ -85,7 +85,7 @@
 .last-post-author a{
   color: #333;
 }
-.thread-mark{
+.tl-select-col{
   max-width: 40px;
   min-width: 40px;
   width: 40px;
@@ -94,31 +94,32 @@
   padding-right: 0!important;
 }
 
-.thread-title h2{
+.tl-title h2{
   display: inline;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   margin-right: 10px;
   vertical-align: middle;
 }
-.thread-pagination,
-.thread-pagination li{
+.tl-pagination,
+.tl-pagination li{
   display: inline;
 }
-.thread-pagination a{
-  border: 1px solid #d0d0d0;
+.tl-pagination a{
+/*  border: 1px solid #d0d0d0; */
+  border: 1px solid #E8E8E8; 
   border-radius: 3px;
   background: #f3f3f3;
   font-size: 11px;
-  padding: 1px 5px;
+  padding: 0px 5px;
   margin-right: 2px;
 }
-.thread-author {
+.tl-starter {
   color:#aaa;
   margin-left:5px;
   font-size:13px;
 }
-.thread-author a{
+.tl-starter a{
   color:#aaa;
 }
 
@@ -146,7 +147,7 @@
   content: '×';
 }
 
-.thread-posts-row{
+.tl-preview-row{
   display: none;
   padding: 9px!important;
 }
@@ -212,8 +213,9 @@
   height: 15px;
   width: 15px;
 }
-.mark-unread .thread-title h2{
+.mark-unread .tl-title h2{
   font-weight: bold;
+/*  font-size: 14px; */
 }
 .mark-closed .thread-icon {
   color: #888;
@@ -221,7 +223,7 @@
 .mark-closed .thread-icon:after{
   content: '✗';
 }
-.mark-closed .thread-title a{
+.mark-closed .tl-title a{
   color: #888;
 }
 .mark-moved .thread-icon{
@@ -230,10 +232,10 @@
 .mark-moved .thread-icon:after{
   content: '↶';
 }
-.mark-moved .thread-title a{
+.mark-moved .tl-title a{
   color: #888;
 }
-.mark-posted .thread-icon-cell{
+.mark-posted .tl-icon-col{
   background: #caffa3;
 }
 
