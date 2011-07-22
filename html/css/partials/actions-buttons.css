@@ -28,7 +28,7 @@
   float:left;
   border-radius:4px;
   cursor:pointer;
-  line-height: 28px;
+  line-height: 30px;
   height: 30px;
   overflow:hidden;
 }
@@ -70,7 +70,7 @@
   float:left;
   border-radius:4px;
   cursor:pointer;
-  line-height: 26px;
+  line-height: 28px;
   height: 30px;
   overflow:hidden;
 }

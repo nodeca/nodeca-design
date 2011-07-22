@@ -22,19 +22,16 @@
   color:#fff;
 }
 .tl-title h2{
-  float: left;
   font-size: 16px;
-  display: inline;
-  margin: 0 20px 0 0;
   overflow: hidden;
-  max-width: 50%;
 }
-.tl-last-post{
-  float: right;
-  width: 210px;
+.tl-title .right{
+  display: inline;
+  margin-left: 20px;
 }
 
 .tl-table{
+  background: #fbfbfb;
   width: 100%;
 }
 .tl-table td{
@@ -45,6 +42,8 @@
 .thread-icon-cell{
   padding: 0!important;
   width: 42px;
+  max-width: 42px;
+  min-width: 42px;
 }
 .my-replies{
   background: #caffa3;
@@ -89,4 +88,107 @@
   text-align: center;
   padding-left: 0!important;
   padding-right: 0!important;
+}
+
+.thread-title h2{
+  display: inline;
+  font-size: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.thread-pagination,
+.thread-pagination li{
+  display: inline;
+}
+.thread-pagination a{
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  background: #f3f3f3;
+  font-size: 11px;
+  padding: 1px 5px;
+  margin-right: 2px;
+}
+.thread-author,
+.thread-author a{
+  color:#b0b0b0;
+}
+
+.thread-pin{
+  background: #d6d6d6;
+  border-radius: 14px;
+  display: block;
+  height: 14px;
+  width: 14px;
+  margin: auto;
+  color:#6b6b6b;
+  line-height: 14px;
+}
+.collapsed .thread-pin{
+  background: #6b6b6b;
+  color:#fff;
+}
+.thread-pin:hover{
+  text-decoration: none;
+}
+.thread-pin:after{
+  content: '▾';
+}
+.collapsed .thread-pin:after{
+  content: '×';
+}
+
+.thread-posts-row{
+  display: none;
+  padding: 9px!important;
+}
+.thread-posts{
+  background: #fff;
+  padding: 20px 40px;
+  height: 1%;
+}
+.thread-post{
+  overflow: hidden;
+  zoom:1;
+  margin-bottom: 17px;
+}
+.thread-post-thumb{
+  float: left;
+  display: inline;
+  margin: 0 13px 0 0;
+  width: 70px;
+  border-radius: 4px;
+}
+.thread-post-content{
+  font-size: 13px;
+  overflow: hidden;
+  zoom:1;
+  line-height: 1.3;
+}
+.thread-post-content header{
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.thread-posts-actions a{
+  font-size: 13px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.thread-posts-actions .action-button{
+  float: none;
+  display: inline-block;
+  *display:inline;zoom:1;
+}
+
+.tl-more-button{
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 10px;
+  width: 100%;
+}
+.tl-more-button:before{
+  font-size: 14px;
+  content: '↓';
+  font-weight:normal;
+  margin-right: 4px;
 }
