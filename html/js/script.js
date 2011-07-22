@@ -95,4 +95,7 @@ $(window).load(function(){
   $('.quick-invert-selection').click(function(){
     $('.post-v').click();
     });
+  $('.thread-pin').click(function(){
+    $(this).parent().toggleClass('collapsed').parent().next('.thread-posts-row').toggle();
+    });
   });
