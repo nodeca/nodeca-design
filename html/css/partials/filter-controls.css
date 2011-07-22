@@ -20,7 +20,10 @@ a.filter-btn:hover{
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
   text-decoration: none;
 }
-.active .filter-btn{
+a.filter-btn:focus{
+  outline:0;
+}
+._filter-active .filter-btn{
   background: #244156;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;

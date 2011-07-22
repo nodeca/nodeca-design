@@ -4,6 +4,7 @@ a.list-qs-link{
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
+  padding-left: 10px;
 }
 a.list-qs-link:after{
   content: '▼';

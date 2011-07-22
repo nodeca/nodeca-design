@@ -117,6 +117,10 @@ $(window).load(function(){
     $('html,body').animate({scrollTop: 0}, 'fast');
   });
 
+  // toggle filter button
+  $('.filter-btn').click(function(){
+    $(this).parent().toggleClass('_filter-active');
+  });
 });
 
 
