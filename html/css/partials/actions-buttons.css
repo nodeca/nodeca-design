@@ -15,6 +15,15 @@
   margin-right: 0;
 }
 
+.action-mark-read{
+  font-size: 12px;
+  padding:0 7px;
+  float:left;
+  line-height: 30px;
+  height: 30px;
+  overflow:hidden;
+}
+
 .action-button{
   background: #0a6090;
   background: linear-gradient(#106fa5, #034e79);
@@ -57,10 +66,16 @@
 }
 
 .mod-button{
+  background: #0a6090;
+  background: linear-gradient(#106fa5, #034e79);
+  background: -moz-linear-gradient(#106fa5,#034e79);
+  background: -webkit-linear-gradient(#106fa5,#034e79);
+/*
   background: #a76943;
   background: linear-gradient(#bca05e, #963c2c);
   background: -moz-linear-gradient(#bca05e,#963c2c);
   background: -webkit-linear-gradient(#bca05e,#963c2c);
+*/
   padding: 0 12px;
   box-shadow: none;
   border:0;
@@ -80,11 +95,16 @@
 }
 .mod-button:hover{
   text-decoration:none;
-  background: #b0824f;
+/*  background: #b0824f;
   background: linear-gradient(#ccae66, #ae4633);
   background: -moz-linear-gradient(#ccae66,#ae4633);
-  background: -webkit-linear-gradient(#ccae66,#ae4633);
+  background: -webkit-linear-gradient(#ccae66,#ae4633);*/
+  background: #0e699d;
+  background: linear-gradient(#1381bf, #095d8d);
+  background: -moz-linear-gradient(#1381bf,#095d8d);
+  background: -webkit-linear-gradient(#1381bf,#095d8d);
 }
+._menu-activated .mod-button,
 ._menu-activated .mod-button:hover{
   background: #b0824f;
   background: linear-gradient(#ccae66, #963c2c);

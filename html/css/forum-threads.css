@@ -278,11 +278,27 @@ a.mark-i-unread {
   overflow: hidden;
   font-size: 20px;
   text-decoration: none !important;
+  opacity: 0.5;
 }
 .mark-i-posted:after{
   content: '✓';
   /*content: '☀';*/
-  color:#666;
+  color:#888;
 }
-.mark-posted {}
+.mark-i-attach {
+  float: right;
+  height: 16px;
+  width: 16px;
+  background: url(../images/tmp/paperclip.png) no-repeat 0 50%;
+  margin-left: 10px;
+/*  overflow: hidden; */
+  text-decoration: none !important;
+  opacity: 0.5;
+}
+/*
+.mark-i-attach:after{
+  content: '❐';
+  color:#888;
+}
+*/
 

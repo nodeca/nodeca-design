@@ -156,18 +156,20 @@
               <li><a class="last-page _tip" href="#1" title="Last page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
             </ul>
             <ul class="actions-list">
-              <li class="actions-item"><a class="action-button" href="#1">Follow</a></li>
-              <li class="actions-item"><a class="action-button" href="#1">Close</a></li>
-              <li class="actions-item"><a class="action-button" href="#1">Voting</a></li>
+              <li class="actions-item"><a class="action-button" href="#1">Reply</a></li>
               <li class="actions-item">
                 <div class="mod-menu-wrap">
                   <a class="mod-button _menu-pin" href="#1"><!-- --></a>
                   <dl class="mod-popup">
-                    <dd><a href="#1">Open</a></dd>
+                    <dd><a href="#1">Subscribe</a></dd>
+                    <dt>&nbsp;</dt>
                     <dd><a href="#1">Delete</a></dd>
-                    <dt>Moderation</dt>
-                    <dd><a href="#1">Move</a></dd>
-                    <dd><a href="#1">Rename</a></dd>
+                    <dd><a href="#1">Close</a></dd>
+                    <dt>&nbsp;</dt>
+                    <dd><a href="#1">Approve</a></dd>
+                    <dd><a href="#1">Pin</a></dd>
+                    <dd><a href="#1">Merge</a></dd>
+                    <dd><a href="#1">History</a></dd>
                   </dl>
                 </div>
               </li>
@@ -384,7 +386,7 @@ if ( isset($movie->getID()) ) {
               <li><a class="page-jump _tip _menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-gravity="sw" data-tipsy-delayIn="500">Page 5 of 345</a>  <form method="post" action="" class="pgn-popup">
                   <dl>
                     <dt class="hidden">Jump to:</dt>
-                    <dd>Jump to<input class="page-number _tip" type="text" placeholder="page" title="Page number" data-tipsy-gravity="e" data-tipsy-trigger="focus" /><input type="submit" value="&rarr;" class="button" /></dd>
+                    <dd>Jump to<input class="page-number _tip" type="text" placeholder="page" title="Page number" data-tipsy-gravity="n" data-tipsy-trigger="focus" /><input type="submit" value="&rarr;" class="button" /></dd>
                     <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
                   </dl>
                 </form></li>
@@ -392,18 +394,20 @@ if ( isset($movie->getID()) ) {
               <li><a class="last-page _tip" href="#1" title="Last page" data-tipsy-gravity="sw" data-tipsy-delayIn="500"><!-- --></a></li>
             </ul>
             <ul class="actions-list">
-              <li class="actions-item"><a class="action-button" href="#1">Follow</a></li>
-              <li class="actions-item"><a class="action-button" href="#1">Close</a></li>
-              <li class="actions-item"><a class="action-button" href="#1">Voting</a></li>
+              <li class="actions-item"><a class="action-button" href="#1">Reply</a></li>
               <li class="actions-item">
                 <div class="mod-menu-wrap">
                   <a class="mod-button _menu-pin" href="#1"><!-- --></a>
                   <dl class="mod-popup">
-                    <dd><a href="#1">Open</a></dd>
+                    <dd><a href="#1">Subscribe</a></dd>
+                    <dt>&nbsp;</dt>
                     <dd><a href="#1">Delete</a></dd>
-                    <dt>Moderation</dt>
-                    <dd><a href="#1">Move</a></dd>
-                    <dd><a href="#1">Rename</a></dd>
+                    <dd><a href="#1">Close</a></dd>
+                    <dt>&nbsp;</dt>
+                    <dd><a href="#1">Approve</a></dd>
+                    <dd><a href="#1">Pin</a></dd>
+                    <dd><a href="#1">Merge</a></dd>
+                    <dd><a href="#1">History</a></dd>
                   </dl>
                 </div>
               </li>
@@ -512,14 +516,16 @@ if ( isset($movie->getID()) ) {
 
   <form method="post" action="" class="quick-select">
     <dl>
-      <dt>(5) selected posts:</dt>
+      <dt>(5) selected</dt>
       <dd><a href="#1">Delete</a></dd>
-      <dd><a href="#1">Copy</a></dd>
-      <dd><a href="#1">Split</a></dd>
+      <dd><a href="#1">Approve</a></dd>
+      <dd><a href="#1" class="quick-unselect-all">Unselect All</a></dd>
+      <dt>Other</dt>
+      <dd><a href="#1">Restore</a></dd>
+      <dd><a href="#1">Unapprove</a></dd>
       <dd><a href="#1">Move</a></dd>
-      <dd><a href="#1">Validate</a></dd>
-      <dd><a href="#1">Unvalidate</a></dd>
-      <dd><a href="#1" class="quick-unselect-all">Unselect</a></dd>
+      <dd><a href="#1">Merge</a></dd>
+      <dd><a href="#1">Split</a></dd>
     </dl>
   </form>
 
