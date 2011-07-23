@@ -76,6 +76,7 @@ td.tl-summary-col{
   font-size: 12px;
   min-width: 110px;
   white-space: nowrap;
+  color: #888;
 }
 .tl-last-post-col{
   min-width: 130px;
@@ -276,9 +277,11 @@ a.mark-i-unread {
   line-height: 15px;
   overflow: hidden;
   font-size: 20px;
+  text-decoration: none !important;
 }
 .mark-i-posted:after{
   content: '✓';
+  /*content: '☀';*/
   color:#666;
 }
 .mark-posted {}
