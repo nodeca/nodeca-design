@@ -50,7 +50,8 @@
 .pagination a.last-page{
   padding-left: 9px;
   padding-right: 9px;
-  line-height: 20px;
+  line-height: 22px;
+  font-size: 16px;
 }
 .pagination a.prev-page,
 .pagination a.next-page{
@@ -58,16 +59,20 @@
   padding-right: 18px;
 }
 .pagination a.prev-page:after{
-  content: '‹';
+/*  content: '‹';*/
+  content: '←';
 }
 .pagination a.next-page:after{
-  content: '›';
+/*  content: '›';*/
+  content: '→';
 }
 .pagination a.first-page:after{
-  content: '«';
+/*  content: '«'; */
+  content: '⇤';
 }
 .pagination a.last-page:after{
-  content: '»';
+/*  content: '»'; */
+  content: '⇥';
 }
 .pagination li{
   position:relative;

@@ -197,7 +197,8 @@ window.log = function(){
           };
 
       $menu.click(function (evt) {
-        return false;
+          evt.stopPropagation();
+//        return false;
       });
 
       $this.click(show);
