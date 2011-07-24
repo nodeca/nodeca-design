@@ -79,8 +79,9 @@ td.tl-summary-col{
   color: #888;
 }
 .tl-last-post-col{
-  width: 150px;
   max-width: 150px;
+  min-width: 150px;
+  width: 150px;
 }
 .last-post-info{
   font-size: 13px;
@@ -88,21 +89,23 @@ td.tl-summary-col{
 .last-post-date{
   margin-bottom: 2px;
 }
-.last-post-author a{
-  color: #333;
-}
 .last-post-author {
   font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
 }
+.last-post-author,
+.last-post-author a{
+  color: #555;
+}
 .tl-select-col{
-  max-width: 40px;
-  min-width: 40px;
-  width: 40px;
+  max-width: 30px;
+  min-width: 30px;
+  width: 30px;
   text-align: center;
   padding-left: 0!important;
   padding-right: 0!important;
+  margin-left: 0;
 }
 
 .tl-title h2{
