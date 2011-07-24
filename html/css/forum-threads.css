@@ -79,7 +79,8 @@ td.tl-summary-col{
   color: #888;
 }
 .tl-last-post-col{
-  min-width: 130px;
+  width: 150px;
+  max-width: 150px;
 }
 .last-post-info{
   font-size: 13px;
@@ -89,6 +90,11 @@ td.tl-summary-col{
 }
 .last-post-author a{
   color: #333;
+}
+.last-post-author {
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .tl-select-col{
   max-width: 40px;
