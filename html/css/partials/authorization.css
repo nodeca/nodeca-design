@@ -57,12 +57,9 @@
 .auth-popup-submit {
   text-align: right;
 }
-.auth-popup-submit label {
+.auth-popup-submit .forgot-pwd {
   font-size:12px;
   color:#999;
   vertical-align: middle;
-}
-#auth-popup-remember{
-  margin:0 10px 0 0;
-  vertical-align: middle;
+  margin:0 5px 0 0;
 }

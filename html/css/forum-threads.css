@@ -93,21 +93,42 @@ td.tl-summary-col{
   font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
+  position: relative;
 }
 .last-post-author,
 .last-post-author a{
   color: #555;
 }
-.tl-select-col{
-  max-width: 30px;
-  min-width: 30px;
+.last-post-author:after{
+  background: linear-gradient(center left, rgba(251,251,251,0), #FBFBFB);
+  background: -moz-linear-gradient(center left, rgba(251,251,251,0), #FBFBFB);
+  background: -webkit-linear-gradient(top left,  rgba(251,251,251,0),#FBFBFB);
+  position: absolute;
+  display: block;
+  content: '';
+  height: 100%;
   width: 30px;
+  right: 0;
+  top:0;
+}
+._expanded .last-post-author:after{
+  background: linear-gradient(center left, rgba(255,255,240,0), #FFFFF0);
+  background: -moz-linear-gradient(center left, rgba(255,255,240,0), #FFFFF0);
+  background: -webkit-linear-gradient(top left, rgba(255,255,240,0), #FFFFF0);
+}
+.tl-select-col{
+  max-width: 1%;
+  min-width: 1%;
+  width: 1%;
   text-align: center;
   padding-left: 0!important;
-  padding-right: 0!important;
+  padding-right: 15px!important;
   margin-left: 0;
 }
 
+.tl-title{
+  margin: 0 0 2px;
+}
 .tl-title h2{
   display: inline;
   font-size: 15px;
@@ -135,6 +156,18 @@ td.tl-summary-col{
 }
 .tl-starter a{
   color:#aaa;
+}
+.tl-start-date{
+  transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -webkit-transition: opacity 0.6s ease;
+  color:#aaa;
+  opacity: 0;
+  margin-left: 5px;
+  font-size: 11px;
+}
+.tl-row:hover .tl-start-date{
+  opacity: 1;
 }
 
 .tl-preview-ctl{

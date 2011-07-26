@@ -494,6 +494,9 @@ a.ub-link{
   color:#898989;
   white-space:nowrap;
 }
+.breadcrumbs a{
+  color:#898989;
+}
 .breadcrumbs li{
   display:inline;
   margin:0 4px 0 0;

@@ -1,7 +1,7 @@
 .filter{
   font-size: 12px;
   display: inline;
-  margin: 0 5px 0 0;
+  margin: 0 10px 0 0;
   float: left;
 }
 .filter:last-child{
@@ -28,4 +28,7 @@ a.filter-btn:focus{
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
   font-weight: bold;
+}
+.global-select{
+  vertical-align: middle;
 }

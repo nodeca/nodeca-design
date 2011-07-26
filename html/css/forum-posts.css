@@ -48,6 +48,9 @@
 .post{
   background-color: #fbfbfb;
 }
+.post-last{
+  border-bottom: 1px solid #E0E0E0;
+}
 .post-head{
   background-color: #d2e4ee;
   padding: 11px 15px;
@@ -182,7 +185,7 @@ a.vote-down:after{
   font-size: 12px;
   font-weight: normal;
   width: 100%;
-  
+  margin-top: 10px;
 }
 .pl-more-button:before{
   font-size: 14px;
