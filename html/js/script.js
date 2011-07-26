@@ -83,19 +83,11 @@ $(window).load(function(){
     $(this).find('dd').hide();
   });
 
-  $('.quick-select-all').click(function(){
-    $('.post-v, .tl-select-col input').each(function(){
-      if (!$(this).is(':checked')) {$(this).click();}
-    });
-  });
   $('.quick-unselect-all').click(function(){
     $('.post-v, .tl-select-col input').each(function(){
       if ($(this).is(':checked')) {$(this).click();}
     });
   });
-  $('.quick-invert-selection').click(function(){
-    $('.post-v, .tl-select-col input').click();
-    });
 
   // Scroller
   $(window).scroll(function(){
