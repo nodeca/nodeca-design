@@ -431,13 +431,19 @@ a.gn-link{
   right:15px;
   z-index:1;
 }
-.ub-item{
+.ub-item,
+.ub-item-dimmed
+{
   float:left;
   display:inline;/* double margin hack for ie */
   margin:0 0 0 16px;
   color:#fff;
 }
-a.ub-link{
+a.ub-link {
+  color:#fff;
+}
+.ub-item-dimmed,
+a.ub-link-dimmed{
   color:#77c8f3;
 }
 
