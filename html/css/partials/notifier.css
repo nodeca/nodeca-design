@@ -9,25 +9,27 @@
 }
 .notify-picker{
   font-weight: bold;
+  line-height: 1;
 }
 .notify-picker:before{
   content: '✉';
   margin-right: 3px;
-/*  font-size: 18px;
-  height:16px;
-  line-height:16px;
-*/
+  font-size: 17px;
+  vertical-align: middle;
 }
 
 .notify-picker:focus{
   outline: 0;
 }
 .notify-popup{
+  background-color: #F4EE95;
   position:absolute;
   display: none;
   right: 0;
   top: 25px;
-  box-shadow: 0 0 20px #333
+  box-shadow: 0 0 20px #333;
+  border:1px solid #0a425c;
+  border-radius: 4px;
 }
 .notify-popup:before{
   content:'';
@@ -37,7 +39,7 @@
   height:0;
   width:0;
   position:absolute;
-  top:-7px;
+  top:-8px;
   right:10px;
   display:block;
 }
@@ -49,15 +51,12 @@
   height:0;
   width:0;
   position:absolute;
-  top:-6px;
+  top:-7px;
   right:10px;
   display:block;
 }
 
 .notify-msg{
-  border-left:1px solid #0a425c;
-  border-right:1px solid #0a425c;
-  background-color:#f4ee95;
   border-top:1px solid #fffccc;
   border-bottom:1px solid #d6ca5f;
   float:left;
@@ -66,11 +65,11 @@
 }
 .notify-msg:first-child{
   border-radius:4px 4px 0 0;
-  border-top:1px solid #0a425c;
+  border-top: 0;
 }
 .notify-msg:last-child{
   border-radius:0 0 4px 4px;
-  border-bottom:1px solid #0a425c;
+  border-bottom:0;
 }
 .notify-msg:nth-child(2n){
   background-color:#fffccc;
