@@ -1,0 +1,95 @@
+/*
+ *
+ *  Notifications picker & popup
+ *
+ */
+.notify{
+  position: relative;
+  z-index: 1;
+}
+.notify-picker{
+  font-weight: bold;
+}
+.notify-picker:before{
+  content: '✉';
+  margin-right: 3px;
+/*  font-size: 18px;
+  height:16px;
+  line-height:16px;
+*/
+}
+
+.notify-picker:focus{
+  outline: 0;
+}
+.notify-popup{
+  position:absolute;
+  display: none;
+  right: 0;
+  top: 25px;
+  box-shadow: 0 0 20px #333
+}
+.notify-popup:before{
+  content:'';
+  border-color: transparent transparent #0a425c;
+  border-style: solid;
+  border-width: 0 7px 7px;
+  height:0;
+  width:0;
+  position:absolute;
+  top:-7px;
+  right:10px;
+  display:block;
+}
+.notify-popup:after{
+  content:'';
+  border-color: transparent transparent #f4ee95;
+  border-style: solid;
+  border-width: 0 7px 7px;
+  height:0;
+  width:0;
+  position:absolute;
+  top:-6px;
+  right:10px;
+  display:block;
+}
+
+.notify-msg{
+  border-left:1px solid #0a425c;
+  border-right:1px solid #0a425c;
+  background-color:#f4ee95;
+  border-top:1px solid #fffccc;
+  border-bottom:1px solid #d6ca5f;
+  float:left;
+  width:321px;
+  padding:11px 9px;
+}
+.notify-msg:first-child{
+  border-radius:4px 4px 0 0;
+  border-top:1px solid #0a425c;
+}
+.notify-msg:last-child{
+  border-radius:0 0 4px 4px;
+  border-bottom:1px solid #0a425c;
+}
+.notify-msg:nth-child(2n){
+  background-color:#fffccc;
+}
+.notify-msg-link{
+  float:left;
+  width:321px;
+  height:1%; /* make hasLayout for ie */
+}
+.notify-userpic{
+  float:left;
+  display:inline;/* double margin hack for ie */
+  margin:0 10px 0 0;
+  vertical-align:top;
+}
+.notify-msg-content{
+  overflow:hidden;
+  display:block;
+  zoom:1;
+  font-size:13px;
+  height:50px;
+}
