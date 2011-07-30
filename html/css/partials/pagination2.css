@@ -1,0 +1,164 @@
+/*
+ *
+ * Pagination buttons
+ *
+ */
+.pagination li{
+  float:left;
+  display: inline; /* ie double margin hack */
+  margin-right: 2px;
+}
+.pagination a{
+/*  background: #f3f3f3;
+  background: linear-gradient(#fff, #e7e7e7);
+  background: -moz-linear-gradient(#fff,#e7e7e7);
+  background: -webkit-linear-gradient(#fff,#e7e7e7);
+  border:1px solid #CCC;
+*/
+  font-size: 14px;
+  color:#015b7d;
+  padding:0 7px;
+  text-align:center;
+  float:left;
+  border-radius:3px;
+  cursor:pointer;
+  line-height: 23px;
+  height: 23px;
+  text-decoration:underline;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+}
+.pagination a:hover{
+  opacity: 1;
+}
+/*
+.pagination a:hover{
+  background: #f9f9f9;
+  background: linear-gradient(#fff, #ddd);
+  background: -moz-linear-gradient(#fff,#ddd);
+  background: -webkit-linear-gradient(#fff,#ddd);
+  text-decoration:none;
+}
+*/
+/*
+.pagination a:focus{
+  border-color:#AAA;
+  outline:0;
+}
+.pagination a:active{
+  background: #EEE;
+  background: linear-gradient(#fff, #eee);
+  background: -moz-linear-gradient(#fff,#eee);
+  background: -webkit-linear-gradient(#fff,#eee);
+  border-color:#CCC;
+  box-shadow:0 0 3px #ccc inset;
+}
+*/
+/*
+.pagination a.prev-page,
+.pagination a.next-page,
+.pagination a.first-page,
+.pagination a.last-page{
+  padding-left: 9px;
+  padding-right: 9px;
+  line-height: 22px;
+  font-size: 16px;
+}
+.pagination a.prev-page,
+.pagination a.next-page{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.pagination a.prev-page:after{
+  content: '←';
+}
+.pagination a.next-page:after{
+  content: '→';
+}
+*/
+.pagination a.first-page:after{
+  content: '⇤';
+}
+.pagination a.last-page:after{
+  content: '⇥';
+}
+.pagination li{
+  position:relative;
+}
+a.page-jump {
+  font-size:16px;
+  text-decoration: none;
+  font-weight:bold;
+  opacity:1;
+  background: #f3f3f3;
+/*  background: linear-gradient(#fff, #e7e7e7);
+  background: -moz-linear-gradient(#fff,#e7e7e7);
+  background: -webkit-linear-gradient(#fff,#e7e7e7);*/
+  border:1px solid #CCC;
+
+}
+.page-jump .details{
+  font-size:12px;
+  font-weight:normal;
+}
+
+.pgn-popup{
+  background-color: #fff;
+  color:#1d1d1d;
+  display: none;
+  position: absolute;
+  left:-2px;
+  top:22px;
+  z-index: 999;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  box-shadow: 1px 2px 5px #333;
+  margin-top: 7px;
+  white-space: nowrap;
+}
+.pgn-popup dt{
+  font-size: 12px;
+/*  font-weight: bold; */
+  margin: 0 0 5px;
+}
+.pgn-popup .page-number{
+  padding: 3px;
+  width: 60px;
+  margin-right: 4px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.pgn-popup .button{
+  font-weight: normal;
+  padding: 2px 10px 4px;
+  vertical-align: middle;
+}
+.pgn-popup .separator{
+  padding: 5px 10px 0;
+  margin: 10px -10px 0;
+  position: relative;
+}
+.pgn-popup .separator input,
+.pgn-popup .separator label{
+  font-size: 12px;
+  vertical-align: middle;
+}
+.pgn-popup .separator:after{
+  content: '';
+  position: absolute;
+  display: block;
+  width:100%;
+  left:0;
+  top:-1px;
+  height: 1px;
+  line-height: 1;
+  font-size: 0;
+  overflow: hidden;
+  background: #ccc;
+  background: linear-gradient(top right, #fff, #ccc, #fff);
+  background: -moz-linear-gradient(top right, #fff, #ccc, #fff);
+  background: -webkit-linear-gradient(left top, left right, #ffffff, #cccccc, #ffffff);
+}
