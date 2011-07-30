@@ -67,10 +67,12 @@
   float: right;
   font-size: 12px;
 }
+a.post-timestamp,
 .post-timestamp{
   color:#8c8c8c;
   position: relative;
   top: 1px;
+  margin-right: 5px;
 }
 .post-marker{
   margin-left: 25px;
