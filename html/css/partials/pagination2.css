@@ -3,10 +3,14 @@
  * Pagination buttons
  *
  */
+.pagination{
+  margin-top: 2px;
+}
 .pagination li{
   float:left;
   display: inline; /* ie double margin hack */
   margin-right: 2px;
+  line-height: 23px;
 }
 .pagination a{
 /*  background: #f3f3f3;
@@ -22,7 +26,6 @@
   float:left;
   border-radius:3px;
   cursor:pointer;
-  line-height: 23px;
   height: 23px;
   text-decoration:underline;
   opacity: 0.6;
@@ -78,6 +81,12 @@
   content: '→';
 }
 */
+.pagination a.first-page,
+.pagination a.last-page{
+  font-size: 18px;
+  line-height: 17px;
+  overflow: hidden;
+}
 .pagination a.first-page:after{
   content: '⇤';
 }
@@ -97,7 +106,7 @@ a.page-jump {
   background: -moz-linear-gradient(#fff,#e7e7e7);
   background: -webkit-linear-gradient(#fff,#e7e7e7);*/
   border:1px solid #CCC;
-
+  margin-top:-1px;
 }
 .page-jump .details{
   font-size:12px;
