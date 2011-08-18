@@ -34,7 +34,6 @@ a *{cursor:pointer;}
   border:1px solid #CCC;
   font-weight:bold;
   color:#015b7d;
-  text-shadow: 1px 1px 0 #FFFFFF;
   padding:6px 11px; 
   text-align:center;
   display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
@@ -120,6 +119,36 @@ input[type="text"], input[type="password"], textarea, select {
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   border: 1px solid #C53;
   box-shadow: 1px 1px 1px #EEE, 0 0 2px #C53 inset;
+}
+
+.more-button{
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  
+  font-size: 12px;
+  font-weight: normal;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #ffffe0;
+  padding:9px 11px; 
+  text-align:center;
+  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
+  border-radius:4px;
+  cursor:pointer;
+  box-sizing:border-box;-moz-box-sizing:border-box;
+}
+.more-button:before{
+  font-size: 14px;
+  content: '↓';
+  font-weight:normal;
+}
+.more-button:hover{
+  background: #ffffc0;
+  text-decoration:none;
+}
+.more-button:focus{
+  outline:0;
 }
 
 /*
