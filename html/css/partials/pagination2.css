@@ -102,10 +102,7 @@ a.page-jump {
   font-weight:bold;
   opacity:1;
   background: #f3f3f3;
-/*  background: linear-gradient(#fff, #e7e7e7);
-  background: -moz-linear-gradient(#fff,#e7e7e7);
-  background: -webkit-linear-gradient(#fff,#e7e7e7);*/
-  border:1px solid #CCC;
+  border:1px solid #e0e0e0;
   margin-top:-1px;
 }
 .page-jump .details{
