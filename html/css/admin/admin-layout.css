@@ -225,10 +225,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   background-color: #fff;
   border: 1px solid #dcdcdc;
   border-right: 0;
-  padding:14px 16px 14px 13px;
+  padding:14px 16px 14px 16px;
   right: -1px;
   position: relative;
   box-shadow: -5px 0 5px -5px #CCC, 0 5px 5px -5px #CCC, 0 -5px 5px -5px #CCC;
+  border-radius: 5px 0 0 5px;
 }
 .aside-nav dt{
   font-weight: bold;
@@ -263,7 +264,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   margin: 0 0 0 250px;
   padding: 25px 30px 30px 30px;
   min-height: 600px;
-  box-shadow: 0 0 5px #CCC
+  box-shadow: 0 0 5px #CCC;
+  border-radius: 5px 0 0 5px;
 }
 
 /* breadcrumbs */
