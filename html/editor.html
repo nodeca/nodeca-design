@@ -1,0 +1,310 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodeca</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" />
+
+  <link rel="stylesheet" href="css/boilerplate-start.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/addons/loginza.css">
+  <link rel="stylesheet" href="css/partials/notifier.css">
+  <link rel="stylesheet" href="css/partials/filter-controls.css">
+  <link rel="stylesheet" href="css/partials/actions-buttons.css">
+  <link rel="stylesheet" href="css/partials/pagination2.css">
+  <link rel="stylesheet" href="css/partials/quick-search.css">
+  <link rel="stylesheet" href="css/partials/authorization.css">
+  <link rel="stylesheet" href="css/forum-posts.css">
+  <link rel="stylesheet" href="css/partials/editor.css">
+  <link rel="stylesheet" href="css/addons/sape.css">
+  <link rel="stylesheet" href="css/boilerplate-end.css">
+
+  <script type="text/javascript" src="js/libs/modernizr-2.0.min.js"></script>
+  <!--script src="js/libs/respond.min.js"></script-->
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="head" id="top"><!-- for quick scroll -->
+      <div class="trunk">
+        <div class="logo"><a href="index.html"><span class="logo-txt-shadow">Nodeca</span><span class="logo-txt">Nodeca</span></a></div>
+        <nav class="global-nav">
+          <ul>
+            <li class="gn-tab"><a class="gn-link" href="#1">Profile</a></li>
+            <li class="gn-tab active"><a class="gn-link" href="#1">Forum</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Blogs</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Maps</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Questions</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Sales</a></li>
+          </ul>
+        </nav><!-- global nav end -->
+        <ul class="user-bar">
+          <li class="ub-item notify">
+            <a class="ub-link notify-picker _menu-pin" href="javascript:void(0)">12</a>
+            <ul class="notify-popup">
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Alexander Kizyachenko" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Alexander Kizyachenko</strong> sending message:<br/>
+                    Hello, have are you?
+                  </span>
+                </a>
+              </li>
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Konstantin Savinov" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Konstantin Savinov</strong> he want add the you friendlist
+                  </span>
+                </a>
+              </li>
+              <li class="notify-msg">
+                <a href="#1" class="notify-msg-link">
+                  <img src="images/tmp/upic.jpg" alt="Polina Smirnova" class="notify-userpic" />
+                  <span class="notify-msg-content">
+                    <strong>Polina Smirnova</strong> sending message:<br/>
+                    Im fine, thank you!
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li><!-- notifications end -->
+          <li class="ub-item auth-wrap">
+            <a class="ub-link auth-toggle _menu-pin" href="#1">Authorization</a>
+            <form class="auth-popup" method="post" action="">
+                <ul>
+                  <li class="auth-popup-input"><input type="text" placeholder="E-mail" class="_tip" title="Type your Email or Nickname" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
+                  <li class="auth-popup-input"><input type="password" placeholder="Password" class="_tip" title="Type your password" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
+                  <li class="auth-popup-submit"><a href="#1" class="forgot-pwd">forgot password?</a> <input type="submit" class="submit button" value="Login" /></li>
+                </ul>
+                <ul>
+                  <li class="loginza">
+                    <p>or via...</p>
+                    <ul class="loginza-buttons">
+                      <li><a href="#1"><img src="images/loginza/vk.png" alt="Вконтакте" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/fb.png" alt="Facebook" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/google.png" alt="Google" /></a></li>
+                      <li><a href="#1"><img src="images/loginza/yandex.png" alt="Яндекс" /></a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </form>
+          </li>
+          <li class="ub-item"><a class="ub-link-dimmed" href="#1">Registration</a></li>
+        </ul><!-- user nav end -->
+        <form method="post" action="" class="qs">
+          <div class="right">
+            <div class="qs-menu">
+              <a href="javascript:void(0)" class="qs-selection">Forums</a>
+              <div class="qs-popup">
+                <ul>
+                  <li class="qs-popup-title">Search section:</li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-forums" type="radio" checked="checked" /> <label for="search-forums">Forums</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-members" type="radio" /> <label for="search-members">Members</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-help" type="radio" /> <label for="search-help">Help Files</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-blogs" type="radio" /> <label for="search-blogs">Blogs</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-calendar" type="radio" /> <label for="search-calendar">Calendar</label></li>
+                  <li class="qs-popup-section"><input name="search-section" id="search-gallery" type="radio" /> <label for="search-gallery">Gallery</label></li>
+                </ul>
+              </div>
+            </div>
+            <input type="submit" class="qs-submit" value="" />
+          </div>
+          <div class="qs-text-wrap">
+            <input type="text" placeholder="Search" class="qs-text" />
+          </div>
+        </form><!-- Search -->
+      </div>
+    </header>
+    <div class="main-wrap trunk clearfix">
+      <div class="content-wide">
+        <div class="frame-line">
+          <ul class="breadcrumbs">
+            <li><a href="#1">Forum</a></li><li><a href="#1">Celebrities</a></li>
+          </ul>
+        </div>
+        <div class="holder">
+
+          <form method="post" action="" class="editor">
+            <div class="editor-frame clearfix">
+              <div class="editor-area">
+                <div class="indent">
+                  <input type="text" class="editor-theme" placeholder="Theme" />
+                  <textarea class="editor-msg" placeholder="Write something"></textarea>
+                </div>
+              </div>
+              <aside class="editor-sidebar">
+                <dl>
+                  <dt>Post Options</dt>
+                  <dd><input type="checkbox" /> <label><strong>Enable</strong> emoticons?</label></dd>
+                  <dd><input type="checkbox" /> <label><strong>Enable</strong> signature?</label></dd>
+                  <dd><input type="checkbox" /> <label>Follow this topic?</label></dd>
+                  <dt>Post Options 1</dt>
+                  <dd><input type="checkbox" /> <label><strong>Enable</strong> signature?</label></dd>
+                  <dd><input type="checkbox" /> <label>Follow this topic?</label></dd>
+                  <dd><input type="checkbox" /> <label><strong>Enable</strong> emoticons?</label></dd>
+                </dl>
+              </aside>
+            </div>
+            <div class="editor-buttons">
+              <input type="submit" class="submit-button" value="Post" />
+              <input type="button" class="button" value="Full Editor" />
+            </div>
+          </form>
+
+          <article class="pl-wrap pl-short">
+            <header class="pl-title">
+              <h2>Topic All</h2>
+            </header>
+            <article class="post">
+              <footer class="post-head clearfix">
+                <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
+                <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
+              </footer>
+              <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </article><!-- /post -->
+            <article class="post">
+              <footer class="post-head clearfix">
+                <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
+                <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
+              </footer>
+              <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </article><!-- /post -->
+            <article class="post">
+              <footer class="post-head clearfix">
+                <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
+                <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
+              </footer>
+              <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </article><!-- /post -->
+            <article class="post">
+              <footer class="post-head clearfix">
+                <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
+                <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
+              </footer>
+              <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </article><!-- /post -->
+            <a class="more-button" href="#1">Review the complete topic</a>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div> <!--! end of #container -->
+
+  <footer class="page-footer trunk">
+    <ul class="footer-nav">
+        <li><a href="#1">About</a></li>
+        <li><a href="#1">Contacts</a></li>
+        <li><a href="#1">Terms</a></li>
+        <li><a href="#1">Help</a></li>
+    </ul>
+    <ul class="site-options">
+      <li>
+        <noindex><a href="#1" rel="nofollow"><img src="images/tmp/counter.png" alt="" /></a></noindex>
+      </li>
+      <li>
+        <select class="site-theme">
+          <optgroup label="Change Style">
+            <option selected="selected">Desktop Blue</option>
+            <option>Desktop Ultramarine</option>
+          </optgroup>
+        </select>
+        <select class="site-lang">
+          <optgroup label="Select Language">
+            <option selected="selected">English</option>
+            <option>English GB</option>
+          </optgroup>
+        </select>
+      </li>
+    </ul>
+    <p class="copyrights">Powered by <a href="#1">Nodeca</a>, social platform by <a href="#1">RC Design</a></p>
+    <div class="sape-links">Ads: All <a href="#1">photos jokes</a>, funny jokes as well as. New printers, <a href="#1">buying ink cartridges</a>.</div>
+  </footer>
+
+  <a class="_scroll-top" href="#top"><!-- --></a>
+
+  <div class="prf-mini">
+    <div class="prf-mini-head">Alexander (Goblin) Pupkin</div>
+    <div class="prf-mini-wrap clearfix">
+      <aside class="prf-mini-sidebar">
+        <a href="#1" class="prf-mini-author"><img alt="Alexander (Goblin) Pupkin" src="images/user-pic-default.jpg"></a>
+        <ul class="prf-mini-actions">
+          <li><a href="#1" class="button">Find content</a></li>
+          <li><a href="#1" class="button">Send message</a></li>
+        </ul>
+      </aside>
+      <div class="prf-mini-content">
+        <ul class="prf-mini-info">
+          <li><div class="label">Group</div><div class="nofloat"><a href="#1">CNN Staff</a></div></li>
+          <li><div class="label">Active Posts</div><div class="nofloat">539</div></li>
+          <li><div class="label">Member since</div><div class="nofloat"><time datetime="2004-09-23">23 September 04</time></div></li>
+          <li><div class="label">Last active</div><div class="nofloat">Online <time datetime="2011-06-03T21:18Z">Jun 03 2011 09:18 PM</time></div></li>
+          <li><div class="label">Currently</div><div class="nofloat">Offline</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <form method="post" action="" class="quick-select">
+    <dl>
+      <dt>(5) selected</dt>
+      <dd><a href="#1">Delete</a></dd>
+      <dd><a href="#1">Approve</a></dd>
+      <dd><a href="#1" class="quick-unselect-all">Unselect All</a></dd>
+      <dt>Other</dt>
+      <dd><a href="#1">Restore</a></dd>
+      <dd><a href="#1">Unapprove</a></dd>
+      <dd><a href="#1">Move</a></dd>
+      <dd><a href="#1">Merge</a></dd>
+      <dd><a href="#1">Split</a></dd>
+    </dl>
+  </form>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <link rel="stylesheet" href="css/addons/jquery.tipsy.css" />
+  <script src="js/libs/jquery.tipsy.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+  <!--[if lt IE 7 ]>
+    <script type="text/javascript" src="js/libs/dd_belatedpng.js"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.png_bg'); </script>
+  <![endif]-->
+
+</body>
+</html>

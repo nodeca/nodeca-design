@@ -1,0 +1,75 @@
+/*
+ *
+ *  Editor
+ *
+ */
+.editor{
+  border-radius: 4px;
+  padding: 15px;
+  height: 1%; /* ie padding bug hack */
+  background: #d2e4ee;
+  margin: 0 0 30px;
+}
+.editor-frame{
+  padding: 15px;
+  background: #e7f0f5;
+}
+.editor-area{
+  float: left;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.editor-area .indent{
+  margin-right: 165px;
+}
+input.editor-theme,
+.editor-msg{
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #9abacc;
+  border-radius: 0;
+}
+.editor-msg{
+  margin-top: 12px;
+  height: 205px;
+}
+.editor-sidebar{
+  float: left;
+  display: inline; /* ie double margin hack */
+  margin: 0 0 0 -150px;
+  width: 150px;
+  font-size: 13px;
+}
+.editor-sidebar dt{
+  font-weight: bold;
+  margin: 10px 0;
+}
+.editor-sidebar dt:first-child{
+  margin-top: 0;
+}
+.editor-sidebar dd{
+  margin: 0 0 5px;
+}
+.editor-sidebar dd:last-child{
+  margin-bottom: 0;
+}
+.editor-sidebar input[type="checkbox"]{
+  vertical-align: middle;
+}
+.editor-sidebar label{
+  vertical-align: middle;
+}
+.editor-buttons{
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+.editor-buttons .submit-button,
+.editor-buttons .button{
+  font-weight: normal;
+}
