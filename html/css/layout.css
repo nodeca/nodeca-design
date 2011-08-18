@@ -432,6 +432,15 @@ a.ub-link-dimmed{
 .content-wide .holder{
   padding:20px 0 30px 30px;
 }
+.gray-box{
+  background-color: #F7F7F7;
+  padding: 25px;
+  height: 1%; /* ie padding hack */
+}
+.narrow-column{
+  margin: auto;
+  width:656px;
+}
 
 /*
  *
@@ -576,6 +585,46 @@ a.ub-link-dimmed{
   overflow: auto;
   max-height: 400px;
   line-height:1.1em;
+}
+
+/*
+ *
+ * Cutted text
+ *
+ */
+.cutted-text{
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: right;
+  margin: 0 0 30px;
+}
+.cutted-area{
+  text-align: left;
+  overflow: hidden;
+  height: 100px;
+  position: relative;
+  margin: 0 0 10px;
+}
+.cutted-area p{
+  margin-bottom: 7px;
+}
+.cutted-area:after{
+  background: linear-gradient(rgba(255,255,255,0), #fff);
+  background: -moz-linear-gradient(rgba(255,255,255,0), #fff);
+  background: -webkit-linear-gradient(rgba(255,255,255,0), #fff);
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height: 40px;
+  overflow: hidden;
+}
+.gray-box .cutted-area:after{
+  background: linear-gradient(rgba(255,255,255,0), #f7f7f7);
+  background: -moz-linear-gradient(rgba(255,255,255,0), #f7f7f7);
+  background: -webkit-linear-gradient(rgba(255,255,255,0), #f7f7f7);
 }
 
 /*

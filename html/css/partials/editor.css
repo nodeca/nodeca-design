@@ -28,9 +28,6 @@ input.editor-theme,
 .editor-msg{
   display: block;
   width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   border-color: #9abacc;
   border-radius: 0;
 }
