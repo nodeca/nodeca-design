@@ -605,6 +605,9 @@ a.ub-link-dimmed{
   position: relative;
   margin: 0 0 10px;
 }
+._expanded .cutted-area{
+  height: auto;
+}
 .cutted-area p{
   margin-bottom: 7px;
 }
@@ -625,6 +628,9 @@ a.ub-link-dimmed{
   background: linear-gradient(rgba(255,255,255,0), #f7f7f7);
   background: -moz-linear-gradient(rgba(255,255,255,0), #f7f7f7);
   background: -webkit-linear-gradient(rgba(255,255,255,0), #f7f7f7);
+}
+._expanded .cutted-area:after{
+  display: none;
 }
 
 /*

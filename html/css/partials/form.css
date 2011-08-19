@@ -23,6 +23,7 @@
   display: inline; /* ie double margin hack */
   margin-left: -15px;
   width: 15px;
+  line-height: 34px;
 }
 .form-textfield,
 .form-textarea{
@@ -61,4 +62,29 @@
 .form textarea.error{
   border-color: #e49292;
   background: #fae9e9;
+}
+
+/* form tip */
+.form-tip{
+  background: #f3f3f3;
+  background: linear-gradient(#fff, #e7e7e7);
+  background: -moz-linear-gradient(#fff,#e7e7e7);
+  background: -webkit-linear-gradient(#fff,#e7e7e7);
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px #aaa;
+  padding:2px 5px;
+  vertical-align: baseline;
+  display:inline-block;
+  font-size: 12px;
+  line-height: 1;
+  text-shadow: 1px 1px 0 #fff;
+}
+.form-tip:hover{
+  text-decoration:none;
+}
+.form-tip:focus{
+  outline:0;
+}
+.form-tip:before{
+  content:'?';
 }

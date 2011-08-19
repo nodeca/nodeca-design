@@ -112,6 +112,12 @@ $(window).load(function(){
     $(this).parent().toggleClass('_filter-active');
     return false;
   });
+
+  // toggle filter button
+  $('.cutted-text .toggler').click(function(){
+    $(this).parent().toggleClass('_expanded');
+    return false;
+  });
 });
 
 
