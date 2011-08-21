@@ -130,8 +130,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   font-weight: normal;
   width: 100%;
   margin-top: 10px;
-  background-color: #ffffe0;
-  padding:9px 11px; 
+  background-color: #f3f3f3;
+  padding:9px 11px;
   text-align:center;
   display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
   border-radius:4px;
@@ -144,7 +144,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   font-weight:normal;
 }
 .more-button:hover{
-  background: #ffffc0;
+  background: #f0f0f0;
   text-decoration:none;
 }
 .more-button:focus{
