@@ -26,9 +26,15 @@
 
 .action-button{
   background: #0a6090;
+/*
   background: linear-gradient(#106fa5, #034e79);
   background: -moz-linear-gradient(#106fa5,#034e79);
   background: -webkit-linear-gradient(#106fa5,#034e79);
+*/
+  background: linear-gradient(#1f83b8, #0c6598);
+  background: -moz-linear-gradient(#1f83b8,#0c6598);
+  background: -webkit-linear-gradient(#1f83b8,#0c6598);
+
   border:0;
   font-size: 12px;
   font-weight: bold;
@@ -54,9 +60,15 @@
 }
 .action-button:active{
   background: #05527f;
-  background: linear-gradient(#106fa5, #03456b);
-  background: -moz-linear-gradient(#106fa5,#03456b);
-  background: -webkit-linear-gradient(#106fa5,#03456b);
+/*
+  background: linear-gradient(#106fa5, #034e79);
+  background: -moz-linear-gradient(#106fa5,#034e79);
+  background: -webkit-linear-gradient(#106fa5,#034e79);
+*/
+  background: linear-gradient(#1f83b8, #0c6598);
+  background: -moz-linear-gradient(#1f83b8,#0c6598);
+  background: -webkit-linear-gradient(#1f83b8,#0c6598);
+
   box-shadow:0 0 3px #000 inset;
 }
 
@@ -67,15 +79,15 @@
 
 .mod-button{
   background: #0a6090;
+/*
   background: linear-gradient(#106fa5, #034e79);
   background: -moz-linear-gradient(#106fa5,#034e79);
   background: -webkit-linear-gradient(#106fa5,#034e79);
-/*
-  background: #a76943;
-  background: linear-gradient(#bca05e, #963c2c);
-  background: -moz-linear-gradient(#bca05e,#963c2c);
-  background: -webkit-linear-gradient(#bca05e,#963c2c);
 */
+  background: linear-gradient(#1f83b8, #0c6598);
+  background: -moz-linear-gradient(#1f83b8,#0c6598);
+  background: -webkit-linear-gradient(#1f83b8,#0c6598);
+
   padding: 0 12px;
   box-shadow: none;
   border:0;
@@ -95,10 +107,6 @@
 }
 .mod-button:hover{
   text-decoration:none;
-/*  background: #b0824f;
-  background: linear-gradient(#ccae66, #ae4633);
-  background: -moz-linear-gradient(#ccae66,#ae4633);
-  background: -webkit-linear-gradient(#ccae66,#ae4633);*/
   background: #0e699d;
   background: linear-gradient(#1381bf, #095d8d);
   background: -moz-linear-gradient(#1381bf,#095d8d);
