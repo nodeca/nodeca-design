@@ -26,7 +26,8 @@
   line-height: 34px;
 }
 .form-textfield,
-.form-textarea{
+.form-textarea,
+.form-combobox{
   width: 100%;
 }
 .form-textarea{
@@ -62,6 +63,19 @@
 .form textarea.error{
   border-color: #e49292;
   background: #fae9e9;
+}
+
+.without-extra .form-label{
+  width: 100px;
+}
+.without-extra .form-liquid{
+  margin-left: -100px;
+}
+.without-extra .form-liquid .indent{
+  margin: 0 0 0 110px;
+}
+.without-extra .form-buttons-row{
+  margin-left: 110px;
 }
 
 /* form tip */
