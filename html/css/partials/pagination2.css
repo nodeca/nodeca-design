@@ -86,6 +86,7 @@
   font-size: 18px;
   line-height: 17px;
   overflow: hidden;
+  margin-top: 1px;
 }
 .pagination a.first-page:after{
   content: '⇤';
