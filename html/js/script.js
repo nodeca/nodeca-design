@@ -150,17 +150,6 @@ $(window).load(function(){
     $('.pp').fadeOut();
   });
 
-  // dialog showing
-
-  $('._dialog-pin').click(function(){
-    $('.dialog').show();
-  });
-
-  $('._dialog-close').click(function(){
-    $('.dialog').hide();
-    return false;
-  });
-
 });
 
 

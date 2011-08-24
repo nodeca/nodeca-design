@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="css/forum-posts.css">
   <link rel="stylesheet" href="css/partials/editor.css">
   <link rel="stylesheet" href="css/partials/popup.css">
+  <link rel="stylesheet" href="css/partials/dialog.css">
+  <link rel="stylesheet" href="css/partials/form.css">
   <link rel="stylesheet" href="css/addons/sape.css">
   <link rel="stylesheet" href="css/boilerplate-end.css">
 
@@ -154,6 +156,7 @@
                   <dd><input type="checkbox" /> <label><strong>Enable</strong> signature?</label></dd>
                   <dd><input type="checkbox" /> <label>Follow this topic?</label></dd>
                   <dd><input type="checkbox" /> <label><strong>Enable</strong> emoticons?</label></dd>
+                  <dd><a href="#1" class="button _dialog-pin">Open dialog</a></dd>
                 </dl>
               </aside>
             </div>
@@ -175,7 +178,7 @@
                 <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
               </footer>
               <div class="post-content">
-                <p>Lorem ipsum dolor sit amet, elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, <a href="#1" class="_pp-hover">show popup</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
@@ -290,38 +293,124 @@
     </dl>
   </form>
 
-  <div class="pp reply-theme-pp">
-    <div class="pp-title">Similar themes</div>
-    <div class="similar-theme clearfix">
-      <ul class="similar-theme-activity">
-        <li>Replies: 234</li>
-        <li>Updating: 14 May 2011</li>
-      </ul>
-      <div class="similar-theme-info">
-        <h4><a href="#1">Welcome to your new Revision Tower Board</a></h4>
-        <div class="theme-type">Administrator Documentation</div>
+  <div class="pp">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+    galley of type and scrambled it to make a type specimen book. It has survived not only five
+    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <p>It was popularised in the 1960s with the release of Letraset sheets containing</p>
+  </div>
+
+  <div class="dialog" style="display: block;">
+    <div class="dialog-frame">
+      <div class="dialog-head">
+        <div class="dialog-title">Import NHL Settings</div>
+        <ul class="dialog-tabs tabs clearfix">
+          <li class="active"><a href="#tab1" class="tab">Main menu</a></li>
+          <li><a href="#tab2" class="tab">Order by votes</a></li>
+          <li><a href="#tab3" class="tab">Hide images</a></li>
+        </ul>
       </div>
-    </div><!-- /similar-theme -->
-    <div class="similar-theme clearfix">
-      <ul class="similar-theme-activity">
-        <li>Replies: 234</li>
-        <li>Updating: 14 May 2011</li>
-      </ul>
-      <div class="similar-theme-info">
-        <h4><a href="#1">Welcome to your Revision Tower</a></h4>
-        <div class="theme-type">Documentation</div>
+      <div class="dialog-content">
+        <div class="tabs-content tabs-content-visible" id="tab1">
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <form class="form without-extra" method="post" action="">
+            <div class="form-row clearfix">
+              <div class="form-label">Email</div>
+              <div class="form-liquid">
+                <div class="indent">
+                  <input type="text" class="form-textfield" placeholder="example@nodeca.com" />
+                </div>
+              </div>
+            </div><!-- /form-row -->
+            <div class="form-row clearfix">
+              <div class="form-label">Country</div>
+              <div class="form-liquid">
+                <div class="indent">
+                  <select class="form-combobox">
+                    <option>Russian Federation</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- /form-row -->
+            <div class="form-buttons-row">
+              <input type="submit" class="button" value="Cancel" />
+              <input type="submit" class="submit-button" value="Ok" />
+            </div><!-- /form-row -->
+          </form>
+        </div>
+        <div class="tabs-content" id="tab2">
+          <p>Lorem Ipsum has been the industry's </p>
+          <form class="form without-extra" method="post" action="">
+            <div class="form-row clearfix">
+              <div class="form-label">Email</div>
+              <div class="form-liquid">
+                <div class="indent">
+                  <input type="text" class="form-textfield" placeholder="example@nodeca.com" />
+                </div>
+              </div>
+            </div><!-- /form-row -->
+            <div class="form-buttons-row">
+              <input type="submit" class="button" value="Cancel" />
+              <input type="submit" class="submit-button" value="Ok" />
+            </div><!-- /form-row -->
+          </form>
+        </div>
+        <div class="tabs-content" id="tab3">
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s industry's standard dummy text ever since the 1500s</p>
+          <form class="form without-extra" method="post" action="">
+            <div class="form-row clearfix">
+              <div class="form-label">Country</div>
+              <div class="form-liquid">
+                <div class="indent">
+                  <select class="form-combobox">
+                    <option>Russian Federation</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- /form-row -->
+            <div class="form-buttons-row">
+              <input type="submit" class="button" value="Cancel" />
+              <input type="submit" class="submit-button" value="Ok" />
+            </div><!-- /form-row -->
+          </form>
+        </div>
       </div>
-    </div><!-- /similar-theme -->
-    <div class="similar-theme clearfix">
-      <ul class="similar-theme-activity">
-        <li>Replies: 234</li>
-        <li>Updating: 14 May 2011</li>
-      </ul>
-      <div class="similar-theme-info">
-        <h4><a href="#1">Welcome to your new Revision Tower</a></h4>
-        <div class="theme-type">Administrator Documentation Open</div>
+    </div>
+
+    <div class="dialog-frame" style="top:440px;">
+      <div class="dialog-head">
+        <div class="dialog-title">Import NHL Settings</div>
       </div>
-    </div><!-- /similar-theme -->
+      <div class="dialog-content">
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <form class="form without-extra" method="post" action="">
+          <div class="form-row clearfix">
+            <div class="form-label">Email</div>
+            <div class="form-liquid">
+              <div class="indent">
+                <input type="text" class="form-textfield" placeholder="example@nodeca.com" />
+              </div>
+            </div>
+          </div><!-- /form-row -->
+          <div class="form-row clearfix">
+            <div class="form-label">Country</div>
+            <div class="form-liquid">
+              <div class="indent">
+                <select class="form-combobox">
+                  <option>Russian Federation</option>
+                </select>
+              </div>
+            </div>
+          </div><!-- /form-row -->
+          <div class="form-buttons-row">
+            <input type="submit" class="button" value="Cancel" />
+            <input type="submit" class="submit-button" value="Ok" />
+          </div><!-- /form-row -->
+        </form>
+      </div>
+    </div>
+
   </div>
 
   <!-- JavaScript at the bottom for fast page loading -->

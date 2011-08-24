@@ -53,7 +53,7 @@
   font-weight: bold;
   float: left;
   height: 28px;
-  line-height: 26px;
+  line-height: 28px;
   padding: 0 12px;
 }
 .dialog-tabs .active .tab{
@@ -69,4 +69,10 @@
 }
 .dialog-content .form{
   margin: 15px 0 0;
+}
+
+.dialog .form-buttons-row,
+.dialog .without-extra .form-buttons-row{
+  margin-left: 0;
+  text-align: right;
 }
