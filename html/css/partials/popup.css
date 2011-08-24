@@ -98,6 +98,7 @@
 }
 
 .similar-theme{
+  font-size: 13px;
   margin-top: 15px;
 }
 .similar-theme-activity{
@@ -105,7 +106,6 @@
   width: 150px;
 }
 .similar-theme-info{
-  font-size: 13px;
   overflow: hidden;
   zoom:1;/* overflow:hidden hack for ie */
 }
