@@ -6,10 +6,10 @@ Screenshots for nodeca pages + [html mockups](http://nodeca.github.com/nodeca-de
 License Information
 -------------------
 
-- Copyright: Vitaly Puzrin, vitaly@rcdesign.ru
+- Copyright: Vitaly Puzrin <vitaly@rcdesign.ru>
 - Contractors:
-  - Design - <>
-  - HTML - Max Biserov, biserov.ma@gmail.com
+  - Design - Sergey Netreba <sernetik@yandex.ru> 
+  - HTML - Max Biserov <biserov.ma@gmail.com>
 - Icons:
   - <>
 
