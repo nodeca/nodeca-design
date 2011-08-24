@@ -10,7 +10,7 @@
   border: 3px solid #11729f;
   border-radius: 4px;
   background: #fff;
-  box-shadow: 0 -30px 30px -30px #ddd inset;
+  box-shadow: 0 -30px 30px -30px #ddd inset, 0 0 20px #000;
   margin: -20px 0 0;
   display: none;
   z-index: 9999;
