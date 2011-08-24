@@ -32,6 +32,10 @@
   border-color: #efefef transparent transparent;
   bottom: -15px;
 }
+.reply-theme-pp{
+  width: 525px;
+  margin-left: 125px !important;
+}
 /*
  * arrow top
  */
@@ -85,4 +89,29 @@
 .pp-arrow-right:after{
   border-color: transparent transparent transparent #fff;
   right:-15px;
+}
+
+.pp-title{
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.similar-theme{
+  margin-top: 15px;
+}
+.similar-theme-activity{
+  float: right;
+  width: 150px;
+}
+.similar-theme-info{
+  font-size: 13px;
+  overflow: hidden;
+  zoom:1;/* overflow:hidden hack for ie */
+}
+.similar-theme-info h4{
+  margin-bottom: 3px;
+}
+.similar-theme-info .theme-type{
+  color:#8c8c8c;
 }
