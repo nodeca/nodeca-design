@@ -25,8 +25,8 @@
 .s-submit{
   float: left;
   display: inline; /* double margin hack for ie */
-  margin-left: -90px;
-  width: 90px;
+  margin-left: -92px;
+  width: 92px;
   overflow: hidden;
 }
 .s-submit .submit-button{
@@ -37,7 +37,8 @@
   font-size: 11px;
   display: block;
   margin: 7px 0 0;
-  text-align: center;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .s-res-wrap{
@@ -48,6 +49,7 @@
   margin-left: -150px;
   position: relative;
   width: 100%;
+  _overflow:hidden;
 }
 .s-sidebar{
   float: left;
@@ -109,9 +111,6 @@
 .s-res-filter li.active a:hover{
   cursor: default;
   text-decoration: none;
-}
-.s-res-filter li.all{
-  margin-top: 20px;
 }
 
 .s-res-sorting{
