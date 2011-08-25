@@ -40,8 +40,12 @@ a *{cursor:pointer;}
   border-radius:4px;
   cursor:pointer;
   box-sizing:border-box;-moz-box-sizing:border-box;
-  line-height: 34px;
+  line-height: 32px;
   height: 34px;
+}
+input.button,
+input.submit-button{
+  padding-top: 1px;
 }
 .button:hover{
   background: #f9f9f9;
@@ -77,7 +81,7 @@ a *{cursor:pointer;}
   border-radius:4px;
   cursor:pointer;
   box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
-  line-height: 34px;
+  line-height: 32px;
   height: 34px;
 }
 .submit-button:hover{
