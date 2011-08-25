@@ -34,12 +34,14 @@ a *{cursor:pointer;}
   border:1px solid #CCC;
   font-weight:bold;
   color:#015b7d;
-  padding:6px 11px; 
+  padding:0 14px;
   text-align:center;
   display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
   border-radius:4px;
   cursor:pointer;
   box-sizing:border-box;-moz-box-sizing:border-box;
+  line-height: 34px;
+  height: 34px;
 }
 .button:hover{
   background: #f9f9f9;
@@ -62,33 +64,39 @@ a *{cursor:pointer;}
 }
 
 .submit-button{
-  background: #13719e;
-  background: linear-gradient(#2489c1, #045d81);
-  background: -moz-linear-gradient(#2489c1,#045d81);
-  background: -webkit-linear-gradient(#2489c1,#045d81);
-  border:1px solid #2a6982;
+  background: #0a6090;
+  background: linear-gradient(#1f83b8, #0c6598);
+  background: -moz-linear-gradient(#1f83b8,#0c6598);
+  background: -webkit-linear-gradient(#1f83b8,#0c6598);
+  border:0;
   font-weight:bold;
   color:#fff;
-  padding:6px 11px;
+  padding:0 14px;
   text-align:center;
   display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
   border-radius:4px;
   cursor:pointer;
-  box-sizing:border-box;-moz-box-sizing:border-box;
+  box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+  line-height: 34px;
+  height: 34px;
 }
 .submit-button:hover{
-  opacity: .8;
+  background: #0e699d;
+  background: linear-gradient(#1381bf, #095d8d);
+  background: -moz-linear-gradient(#1381bf,#095d8d);
+  background: -webkit-linear-gradient(#1381bf,#095d8d);
   text-decoration:none;
 }
 .submit-button:focus{
-  border-color:#1f4c5e;
+  box-shadow:0 0 1px #000 inset;
   outline:0;
-  opacity: 1;
 }
 .submit-button:active{
-  border-color:#1f4c5e;
-  box-shadow:0 0 2px #000 inset;
-  opacity: 1;
+  background: #05527f;
+  background: linear-gradient(#1f83b8, #0c6598);
+  background: -moz-linear-gradient(#1f83b8,#0c6598);
+  background: -webkit-linear-gradient(#1f83b8,#0c6598);
+  box-shadow:0 0 3px #000 inset;
 }
 
 .form-buttons{
@@ -105,7 +113,7 @@ input:-moz-placeholder  {color:#999;font-style:italic;}
 textarea:-moz-placeholder {color:#999;font-style:italic;}
 
 input[type="text"], input[type="password"], textarea, select {
-  box-sizing:border-box;-moz-box-sizing:border-box;
+  box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
   padding: 8px;
   border: 1px solid #AAA;
   border-radius:4px;
