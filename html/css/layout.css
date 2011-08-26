@@ -47,6 +47,9 @@ input.button,
 input.submit-button{
   padding-top: 1px;
 }
+a.submit-button{
+  color:#fff;
+}
 .button:hover{
   background: #f9f9f9;
   background: linear-gradient(#fff, #ddd);
@@ -393,7 +396,7 @@ a.ub-link-dimmed{
 /* --------------------------------------
  * content
  */
-.main-wrap{padding-bottom:120px;}
+.main-wrap{padding-bottom:140px;}
 .content-wrap{
   float:left;
   width:100%;
@@ -439,6 +442,17 @@ a.ub-link-dimmed{
 .breadcrumbs li:last-child:after{
   content:'';
   margin:0;
+}
+.actions-global{
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top:20px;
+}
+.actions-global li{
+  float: left;
+  display: inline; /* double margin hack for ie */
+  margin-left: 15px;
 }
 .content .holder,
 .content-wide .holder{
@@ -755,4 +769,8 @@ a.quote-author:before{
 }
 ._scroll-top:focus{
   outline: 0;
+}
+.nofloat{
+  overflow: hidden;
+  zoom:1; /* ie hack */
 }
