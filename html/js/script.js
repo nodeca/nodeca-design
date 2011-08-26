@@ -28,8 +28,8 @@ $(window).load(function(){
     left: '5px',
     opacity: .3,
     fontSize: '12px',
-    padding: '3px 5px'
-    
+/*    padding: '3px 5px', */
+
   }).click(function () {
     if (dbg_width_max < ++dbg_width_idx) { dbg_width_idx = 0; }
     $('.trunk').css('width', dbg_width_arr[dbg_width_idx]);
