@@ -383,7 +383,7 @@ a.ub-link-dimmed{
   float:left;
   display:inline;/* double margin hack for ie */
   margin:38px 0 0;
-  width:150px;
+  width:100px;
   position:relative;
 }
 .am-item{
@@ -400,12 +400,12 @@ a.ub-link-dimmed{
 .content-wrap{
   float:left;
   width:100%;
-  margin-left:-150px;
+  margin-left:-100px;
 }
 .content{
   border-bottom:1px solid #b0b0b0;
   border-left:1px solid #b0b0b0;
-  margin:17px 0 0 179px;
+  margin:17px 0 0 129px;
 }
 .content-wide{
   border-bottom:1px solid #b0b0b0;
