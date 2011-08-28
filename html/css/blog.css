@@ -250,6 +250,7 @@ a.vote-down:after{
 }
 .blog-recent-comments{
   margin: 0 0 -15px;
+  font-size:13px;
 }
 .blog-recent-comments li{
   margin: 0 0 15px;
@@ -257,7 +258,7 @@ a.vote-down:after{
 .blog-recent-comments .author-pic{
   float: left;
   display: inline;/* ie double margin hack */
-  margin:3px 20px 0 0;
+  margin:3px 15px 0 0;
   height: 30px;
   width: 30px;
   border-radius: 4px;
