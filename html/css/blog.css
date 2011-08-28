@@ -184,12 +184,13 @@ a.vote-down:after{
 
 .blog-right-title{
   color:#000;
-  font-size: 15px;
+/*  font-size: 15px; */
   margin:0 0 15px -20px;
 }
 .blog-categories-list{
-  line-height: 20px;
+  line-height: 1.5em;
   margin: 0 0 30px;
+  font-size: 13px;
 }
 .blog-categories-list ul{
   margin-left: 20px;
