@@ -36,8 +36,8 @@
 
 <body>
 
-  <div class="container">
-    <header class="head" id="top"><!-- for quick scroll -->
+  <div class="global-wrap">
+    <header class="header" id="top"><!-- for quick scroll -->
       <div class="trunk">
         <div class="logo"><a href="index.html"><span class="logo-txt-shadow">Nodeca</span><span class="logo-txt">Nodeca</span></a></div>
         <nav class="global-nav">
@@ -129,102 +129,100 @@
         </form><!-- Search -->
       </div>
     </header>
-    <div class="main-wrap trunk clearfix">
-      <div class="content-wide">
-        <div class="frame-line">
-          <ul class="breadcrumbs">
+    <div class="container trunk clearfix">
+      <article class="content styled">
+        <nav class="breadcrumbs">
+          <ul>
             <li><a href="#1">Forum</a></li><li><a href="#1">Celebrities</a></li>
           </ul>
-        </div>
-        <div class="holder">
+        </nav>
 
-          <form method="post" action="" class="editor">
-            <div class="editor-frame clearfix">
-              <div class="editor-area">
-                <div class="indent">
-                  <input type="text" class="editor-theme _pp-focus" placeholder="Theme" />
-                  <textarea class="editor-msg" placeholder="Write something"></textarea>
-                </div>
+        <form method="post" action="" class="editor">
+          <div class="editor-frame clearfix">
+            <div class="editor-area">
+              <div class="indent">
+                <input type="text" class="editor-theme _pp-focus" placeholder="Theme" />
+                <textarea class="editor-msg" placeholder="Write something"></textarea>
               </div>
-              <aside class="editor-sidebar">
-                <dl>
-                  <dt>Post Options</dt>
-                  <dd><input type="checkbox" /> <label><strong>Enable</strong> emoticons?</label></dd>
-                  <dd><input type="checkbox" /> <label><strong>Enable</strong> signature?</label></dd>
-                  <dd><input type="checkbox" /> <label>Follow this topic?</label></dd>
-                  <dt>Post Options 1</dt>
-                  <dd><input type="checkbox" /> <label><strong>Enable</strong> signature?</label></dd>
-                  <dd><input type="checkbox" /> <label>Follow this topic?</label></dd>
-                  <dd><input type="checkbox" /> <label><strong>Enable</strong> emoticons?</label></dd>
-                  <dd><a href="#1" class="button _dialog-pin">Open dialog</a></dd>
-                </dl>
-              </aside>
             </div>
-            <div class="editor-buttons">
-              <input type="submit" class="submit-button" value="Post" />
-              <input type="button" class="button" value="Full Editor" />
-            </div>
-          </form>
+            <aside class="editor-sidebar">
+              <dl>
+                <dt>Post Options</dt>
+                <dd><input type="checkbox" /> <label><strong>Enable</strong> emoticons?</label></dd>
+                <dd><input type="checkbox" /> <label><strong>Enable</strong> signature?</label></dd>
+                <dd><input type="checkbox" /> <label>Follow this topic?</label></dd>
+                <dt>Post Options 1</dt>
+                <dd><input type="checkbox" /> <label><strong>Enable</strong> signature?</label></dd>
+                <dd><input type="checkbox" /> <label>Follow this topic?</label></dd>
+                <dd><input type="checkbox" /> <label><strong>Enable</strong> emoticons?</label></dd>
+                <dd><a href="#1" class="button _dialog-pin">Open dialog</a></dd>
+              </dl>
+            </aside>
+          </div>
+          <div class="editor-buttons">
+            <input type="submit" class="submit-button" value="Post" />
+            <input type="button" class="button" value="Full Editor" />
+          </div>
+        </form>
 
-          <article class="pl-wrap pl-short">
+        <article class="pl-wrap pl-short">
 <!--
-            <header class="pl-title">
-              <h2>Topic All</h2>
-            </header>
+          <header class="pl-title">
+            <h2>Topic All</h2>
+          </header>
 -->
-            <article class="post">
-              <footer class="post-head clearfix">
-                <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
-                <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
-              </footer>
-              <div class="post-content">
-                <p>Lorem ipsum dolor sit amet, <a href="#1" class="_pp-hover">show popup</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </article><!-- /post -->
-            <article class="post">
-              <footer class="post-head clearfix">
-                <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
-                <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
-              </footer>
-              <div class="post-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </article><!-- /post -->
-            <article class="post">
-              <footer class="post-head clearfix">
-                <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
-                <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
-              </footer>
-              <div class="post-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </article><!-- /post -->
-            <article class="post">
-              <footer class="post-head clearfix">
-                <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
-                <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
-              </footer>
-              <div class="post-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </article><!-- /post -->
-            <a class="more-button" href="#1">Review the complete topic</a>
-          </article>
+          <article class="post">
+            <footer class="post-head clearfix">
+              <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
+              <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
+            </footer>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, <a href="#1" class="_pp-hover">show popup</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </article><!-- /post -->
+          <article class="post">
+            <footer class="post-head clearfix">
+              <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
+              <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
+            </footer>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </article><!-- /post -->
+          <article class="post">
+            <footer class="post-head clearfix">
+              <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
+              <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
+            </footer>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </article><!-- /post -->
+          <article class="post">
+            <footer class="post-head clearfix">
+              <a href="#1" class="post-author left">Vova (Goblin) Pupkin</a>
+              <a class="post-timestamp right" href="#1"><time datetime="2011-05-14T11:39Z">14 May 2011 - 11:39 AM</time></a>
+            </footer>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </article><!-- /post -->
+          <a class="more-button" href="#1">Review the complete topic</a>
+        </article>
 
-        </div>
-      </div>
+      </article>
     </div>
-  </div> <!--! end of #container -->
+  </div> <!-- /global-wrap -->
 
-  <footer class="page-footer trunk">
+  <footer class="footer trunk">
     <ul class="footer-nav">
         <li><a href="#1">About</a></li>
         <li><a href="#1">Contacts</a></li>

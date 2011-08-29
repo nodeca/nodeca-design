@@ -1,5 +1,39 @@
 /*
  *
+ * Profile layout
+ *
+ */
+.profile .sidebar{
+  margin: 38px 0 0;
+  width:100px;
+}
+.profile .sidebar-nav{
+  line-height:24px;
+}
+.profile .sidebar-nav .active a{
+  font-weight:bold;
+}
+.profile .content{
+  margin-left: 120px;
+}
+
+.profile .widgets{
+  float:left;
+  width:240px;
+  position: relative;
+}
+.profile .sub-content-wrap{
+  float: left;
+  width: 100%;
+  margin-left: -240px;
+  display: inline;
+}
+.profile .sub-content{
+  margin:0 0 0 270px;
+}
+
+/*
+ *
  * user moderation quick links
  * 
  */
@@ -26,25 +60,6 @@
 .profile-status{
   font-size:12px;
   color: #888;
-}
-/*
- *
- * Profile content columns
- *
- */
-.p-content-wrap{
-  float:left;
-  width:100%;
-  margin-left:-240px;
-  overflow: hidden; /* !!! quick fix ie6-7 for box-sizing bug */
-}
-.p-content-left{
-  float:left;
-  width:240px;
-  position:relative;
-}
-.p-content-right{
-  margin:0 0 0 270px;
 }
 
 /*
@@ -216,7 +231,7 @@ li.pw-g-item:after{
   margin:20px 0;
 }
 .p-info-box dd{
-  clear:both;
+  clear: both;
   min-height:17px;
   _height:17px;
 }

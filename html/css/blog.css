@@ -3,28 +3,26 @@
  *  Search
  *
  */
-.blog-layout{
+.blog{
   position: relative;
-  padding: 57px 0 0;
 }
-.blog-layout .breadcrumbs{
+.blog .breadcrumbs{
   top:20px;
-  left:0;
+  left:15px;
 }
-.blog-left{
-  float: left;
-  width: 100%;
-}
-.blog-left-prepend{
+.blog .content{
+  margin-top: 56px;
   margin-right: 293px;
+  border: 0;
+  padding: 0;
 }
-.blog-right{
-  float: left;
+.blog .sidebar{
+  float: right;
   width: 232px;
   border-left: 1px solid #b0b0b0;
   padding: 20px 0 5px 40px;
   display: inline;/* double margin hack for ie */
-  margin: 13px 0 0 -273px;
+  margin: 73px 0 0 0;
 }
 
 .blog-head{

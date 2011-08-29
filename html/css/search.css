@@ -46,17 +46,11 @@
 .s-res-wrap{
   margin: 0 0 0 150px;
 }
-.s-res{
-  float: left;
-  margin-left: -150px;
-  position: relative;
-  width: 100%;
-  _overflow:hidden;
+.search .sub-content{
+  margin-right: 150px;
 }
-.s-sidebar{
-  float: left;
-  display: inline; /* double margin hack for ie */
-  margin-left: 30px;
+.search .sidebar{
+  float: right;
   width: 120px;
 }
 
