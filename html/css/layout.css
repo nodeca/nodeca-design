@@ -242,7 +242,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   margin-bottom: 15px;
 }
 .title h1{
-  font-size:24px;
+  margin: 0;
 }
 .title .subtitle{
   font-size:12px;
