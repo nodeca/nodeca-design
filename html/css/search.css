@@ -38,8 +38,7 @@
   width: 83px;
   overflow: hidden;
 }
-.s-submit .submit-button{
-  padding: 0;
+.s-submit .btn{
   width: 100%;
 }
 

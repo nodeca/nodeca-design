@@ -22,7 +22,7 @@ $(window).load(function(){
   var dbg_width_arr = ['', '760px', '80%'], // '' is "default" (as in CSS)
       dbg_width_idx = 0, // current width index
       dbg_width_max = dbg_width_arr.length - 1; // upper bound
-  $('<a class="button">resize</a>').css({
+  $('<a class="btn">resize</a>').css({
     position: 'absolute',
     top: '5px',
     left: '5px',
