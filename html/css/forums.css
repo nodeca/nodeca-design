@@ -8,7 +8,7 @@
  * 
  */
 .fl-cat-table td{
-  padding:15px;
+  padding:15px 15px 15px 0;
   border-bottom:1px solid #e0e0e0;
   vertical-align:middle;
 }
@@ -18,7 +18,7 @@
 }
 */
 .fl-cat-table tr:first-child td{
-  border-top:1px solid #e0e0e0;
+  border-top:2px solid #aaa;
 }
 
 /* first column + icon */
@@ -26,6 +26,7 @@ td.fl-icon-col{
   padding-left:0;
   padding-right:0;
   width:1%;
+/*  border-bottom: 0; */
 }
 .fl-icon{
   border-radius:4px;
@@ -34,16 +35,16 @@ td.fl-icon-col{
 }
     /* icon-specific styles, modify on your needs */
 .fl-icon-default{
-  background:#d2e4ee url(../images/forum.png) no-repeat 50% 50%;
+  background: url(../images/forum.png) no-repeat 0% 50%;
 }
 .fl-icon-new{
-  background:#d2e4ee url(../images/forum-new.png) no-repeat 50% 50%;
+  background: url(../images/forum-new.png) no-repeat 0% 50%;
 }
 .fl-icon-closed{
-  background:#d2e4ee url(../images/forum-closed.png) no-repeat 50% 50%;
+  background: url(../images/forum-closed.png) no-repeat 0% 50%;
 }
 .fl-icon-link{
-  background:#d2e4ee url(../images/forum-link.png) no-repeat 50% 50%;
+  background: url(../images/forum-link.png) no-repeat 0% 50%;
 }
 
 /* forum title, moderators, description */
@@ -144,7 +145,7 @@ td.fl-icon-col{
  * 
  */ 
 .fl-category{
-  margin:0 0 5px;
+/*  margin:0 0 5px; */
 }
 .fl-cat-head{
 /*  background: #12729f;
