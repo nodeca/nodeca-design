@@ -172,3 +172,45 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   border-color: #339bb9 #339bb9 #22697d;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
+
+.btn.menu:before{
+  font-size: 7px;
+  content:'▼';
+  line-height: 1;
+}
+._menu-activated .btn.menu,
+._menu-activated .btn.menu:hover{
+  background: #b0824f;
+  background: linear-gradient(#ccae66, #963c2c);
+  background: -moz-linear-gradient(#ccae66,#963c2c);
+  background: -webkit-linear-gradient(#ccae66,#963c2c);
+}
+.above ._menu-activated .btn.menu{
+  border-bottom-color: #963c2c;
+}
+._menu-activated .btn.menu{
+  border-radius: 4px 4px 0 0;
+}
+.below ._menu-activated .btn.menu{
+  border-radius: 0 0 4px 4px;
+  background: linear-gradient(#963c2c, #bca05e);
+  background: -moz-linear-gradient(#963c2c, #bca05e);
+  background: -webkit-linear-gradient(#963c2c, #bca05e);
+  border-top-color: #963c2c;
+  box-shadow: none;
+}
+._menu-activated .btn.menu:after{
+  background: #963c2c;
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 6px;
+  left: 0;
+  top:36px;
+}
+.below .btn.menu:after{
+  top:-6px;
+}

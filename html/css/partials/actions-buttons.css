@@ -3,9 +3,6 @@
  * Genegic action buttons, popup menu & wrapper
  * 
  */
-.actions-list{
-  float: right;
-}
 .actions-item{
   float:left;
   display: inline; /* ie double margin hack */
@@ -19,8 +16,8 @@
   font-size: 12px;
   padding:0 7px;
   float:left;
-  line-height: 30px;
-  height: 30px;
+  line-height: 36px;
+  height: 36px;
   overflow:hidden;
 }
 
@@ -155,14 +152,14 @@
   font-weight: bold;
   position: absolute;
   right: 0;
-  top:36px;
+  top:42px;
   display: none;
   width:138px;
 }
 .below .mod-popup{
   border-radius: 4px 4px 0 4px;
   top:auto;
-  bottom:6px;
+  bottom:42px;
 }
 .mod-popup a{
   color:#ffffff;

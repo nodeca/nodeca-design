@@ -17,6 +17,9 @@
 .s-query{
   width: 100%;
 }
+.s-title{
+  font-size: 15px;
+}
 .s-info{
   padding: 7px 0 0 9px;
   height: 1%;
