@@ -193,8 +193,8 @@ li.pw-g-item:after{
   margin:0 0 20px;
 }
 .p-block-title{
-  font-size: 16px;
-  font-weight: bold;
+/*  font-size: 16px;
+  font-weight: bold;*/
 }
 
 /* Toggler for title */
@@ -205,7 +205,7 @@ li.pw-g-item:after{
   background: -webkit-linear-gradient(#fff,#e7e7e7);
   border-radius: 4px;
   box-shadow: 1px 1px 3px #CCC;
-  padding:2px 5px 4px;
+  padding:4px 5px 4px;
   vertical-align: top;
   display:inline-block;
   font-size: 9px;

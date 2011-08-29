@@ -3,9 +3,10 @@
  * Genegic action buttons, popup menu & wrapper
  * 
  */
+/*
 .actions-item{
   float:left;
-  display: inline; /* ie double margin hack */
+  display: inline; /* ie double margin hack */ /*
   margin-right: 7px;
 }
 .actions-item:last-child{
@@ -20,14 +21,10 @@
   height: 36px;
   overflow:hidden;
 }
-
+*/
+/*
 .action-button{
   background: #0a6090;
-/*
-  background: linear-gradient(#106fa5, #034e79);
-  background: -moz-linear-gradient(#106fa5,#034e79);
-  background: -webkit-linear-gradient(#106fa5,#034e79);
-*/
   background: linear-gradient(#1f83b8, #0c6598);
   background: -moz-linear-gradient(#1f83b8,#0c6598);
   background: -webkit-linear-gradient(#1f83b8,#0c6598);
@@ -57,11 +54,6 @@
 }
 .action-button:active{
   background: #05527f;
-/*
-  background: linear-gradient(#106fa5, #034e79);
-  background: -moz-linear-gradient(#106fa5,#034e79);
-  background: -webkit-linear-gradient(#106fa5,#034e79);
-*/
   background: linear-gradient(#1f83b8, #0c6598);
   background: -moz-linear-gradient(#1f83b8,#0c6598);
   background: -webkit-linear-gradient(#1f83b8,#0c6598);
@@ -76,11 +68,6 @@
 
 .mod-button{
   background: #0a6090;
-/*
-  background: linear-gradient(#106fa5, #034e79);
-  background: -moz-linear-gradient(#106fa5,#034e79);
-  background: -webkit-linear-gradient(#106fa5,#034e79);
-*/
   background: linear-gradient(#1f83b8, #0c6598);
   background: -moz-linear-gradient(#1f83b8,#0c6598);
   background: -webkit-linear-gradient(#1f83b8,#0c6598);
@@ -152,7 +139,7 @@
   font-weight: bold;
   position: absolute;
   right: 0;
-  top:42px;
+  top:39px;
   display: none;
   width:138px;
 }
@@ -182,3 +169,4 @@
 nav.below{
   margin-bottom:40px;
 }
+*/

@@ -12,8 +12,13 @@
   border-bottom:1px solid #e0e0e0;
   vertical-align:middle;
 }
+/*
 .fl-cat-table tr:last-child td{
   border:0;
+}
+*/
+.fl-cat-table tr:first-child td{
+  border-top:1px solid #e0e0e0;
 }
 
 /* first column + icon */
@@ -48,7 +53,7 @@ td.fl-icon-col{
 
 .fl-title{
   font-size:16px;
-  font-weight:bold;
+  font-family: sans-serif;
 }
 
 /* counters */
@@ -142,14 +147,14 @@ td.fl-icon-col{
   margin:0 0 5px;
 }
 .fl-cat-head{
-  background: #12729f;
+/*  background: #12729f;
   background: linear-gradient(#258ac3, #025c7e);
   background: -moz-linear-gradient(#258ac3,#025c7e);
   background: -webkit-linear-gradient(#258ac3,#025c7e);
   border-radius:4px;
   color:#fff;
+  font-weight:normal; */
   font-size:16px;
-  font-weight:normal;
   text-align:left;
   padding:15px;
   position:relative;
@@ -157,6 +162,7 @@ td.fl-icon-col{
   transition: opacity 1s ease;
   -moz-transition: opacity 1s ease;
   -webkit-transition: opacity 1s ease;
+  padding: 30px 0 10px 0;
 }
 ._collapsed .fl-cat-head:hover{
   opacity: 0.7;
@@ -188,7 +194,8 @@ td.fl-icon-col{
   opacity:0;
 }
 .fl-cat-title{
-  font-weight:bold;
+/*  font-size:20px;
+  font-family: sans-serif;*/
   margin:0 25px 0 0;
 }
 .fl-cat-head:hover ._collapser{

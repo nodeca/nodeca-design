@@ -1,5 +1,5 @@
 .tl-wrap{
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 .tl-head{
   background: #12729f;
@@ -19,10 +19,6 @@
 }
 .tl-head a{
   color:#fff;
-}
-.tl-head h2{
-  font-size: 16px;
-  overflow: hidden;
 }
 .tl-head .right{
   display: inline;
@@ -132,6 +128,7 @@ td.tl-summary-col{
   display: inline;
   font-size: 15px;
   font-weight: normal;
+  font-family: sans-serif;
   margin-right: 10px;
   vertical-align: middle;
 }

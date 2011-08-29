@@ -6,9 +6,6 @@
 .pagination{
   margin-top: 2px;
 }
-.pagination-bottom{
-  margin-top:20px;
-}
 .pagination li{
   float:left;
   display: inline; /* ie double margin hack */
@@ -16,12 +13,6 @@
   line-height: 23px;
 }
 .pagination a{
-/*  background: #f3f3f3;
-  background: linear-gradient(#fff, #e7e7e7);
-  background: -moz-linear-gradient(#fff,#e7e7e7);
-  background: -webkit-linear-gradient(#fff,#e7e7e7);
-  border:1px solid #CCC;
-*/
   font-size: 14px;
   color:#015b7d;
   padding:0 7px;
@@ -39,66 +30,7 @@
 .pagination a:hover{
   opacity: 1;
 }
-/*
-.pagination a:hover{
-  background: #f9f9f9;
-  background: linear-gradient(#fff, #ddd);
-  background: -moz-linear-gradient(#fff,#ddd);
-  background: -webkit-linear-gradient(#fff,#ddd);
-  text-decoration:none;
-}
-*/
-/*
-.pagination a:focus{
-  border-color:#AAA;
-  outline:0;
-}
-.pagination a:active{
-  background: #EEE;
-  background: linear-gradient(#fff, #eee);
-  background: -moz-linear-gradient(#fff,#eee);
-  background: -webkit-linear-gradient(#fff,#eee);
-  border-color:#CCC;
-  box-shadow:0 0 3px #ccc inset;
-}
-*/
-/*
-.pagination a.prev-page,
-.pagination a.next-page,
-.pagination a.first-page,
-.pagination a.last-page{
-  padding-left: 9px;
-  padding-right: 9px;
-  line-height: 22px;
-  font-size: 16px;
-}
-.pagination a.prev-page,
-.pagination a.next-page{
-  padding-left: 18px;
-  padding-right: 18px;
-}
-.pagination a.prev-page:after{
-  content: '←';
-}
-.pagination a.next-page:after{
-  content: '→';
-}
-*/
 
-/*
-.pagination a.first-page,
-.pagination a.last-page{
-  font-size: 18px;
-  line-height: 17px;
-  overflow: hidden;
-}
-.pagination a.first-page:after{
-  content: '⇤';
-}
-.pagination a.last-page:after{
-  content: '⇥';
-}
-*/
 .pagination ul{
   padding-top:3px;
 }
@@ -106,21 +38,13 @@
   position:relative;
 }
 a.page-jump {
-/*  font-size:16px; */
   text-decoration: none;
   font-weight:bold;
   opacity:1;
   background: #eee;
   border-color: #e0e0e0;
   border-radius:2px;
-/*  margin-top:-1px; */
 }
-/*
-.page-jump .details{
-  font-size:12px;
-  font-weight:normal;
-}
-*/
 .pgn-popup{
   background-color: #fff;
   color:#1d1d1d;
@@ -139,7 +63,6 @@ a.page-jump {
 }
 .pgn-popup dt{
   font-size: 12px;
-/*  font-weight: bold; */
   margin: 0 0 5px;
 }
 .pgn-popup .page-number{

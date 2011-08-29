@@ -15,6 +15,8 @@
 
   <link rel="stylesheet" href="css/boilerplate-start.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/partials/buttons.css">
+  <link rel="stylesheet" href="css/partials/typography.css">
   <link rel="stylesheet" href="css/addons/loginza.css">
   <link rel="stylesheet" href="css/partials/notifier.css">
   <link rel="stylesheet" href="css/partials/actions-buttons.css">
@@ -22,10 +24,8 @@
   <link rel="stylesheet" href="css/partials/pagination2.css">
   <link rel="stylesheet" href="css/partials/quick-search.css">
   <link rel="stylesheet" href="css/partials/authorization.css">
-  <link rel="stylesheet" href="css/partials/buttons.css">
-  <link rel="stylesheet" href="css/partials/typography.css">
-  <link rel="stylesheet" href="css/forum-threads.css">
   <link rel="stylesheet" href="css/addons/sape.css">
+  <link rel="stylesheet" href="css/forum-threads.css">
   <link rel="stylesheet" href="css/boilerplate-end.css">
 
   <script type="text/javascript" src="js/libs/modernizr-2.0.min.js"></script>
@@ -86,7 +86,7 @@
                 <ul>
                   <li class="auth-popup-input"><input type="text" placeholder="E-mail" class="_tip" title="Type your Email or Nickname" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
                   <li class="auth-popup-input"><input type="password" placeholder="Password" class="_tip" title="Type your password" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
-                  <li class="auth-popup-submit"><a href="#1" class="forgot-pwd">forgot password?</a> <input type="submit" class="submit button" value="Login" /></li>
+                  <li class="auth-popup-submit"><a href="#1" class="forgot-pwd">forgot password?</a> <input type="submit" class="btn primary" value="Login" /></li>
                 </ul>
                 <ul>
                   <li class="loginza">
@@ -140,12 +140,9 @@
         </header>
 
         <nav class="page-controls above clearfix">
-          <ul class="pagination left">
+          <ul class="pagination">
             <li><a href="#1">1</a></li>
             <li>...</li>
-            <li><a href="#1">9</a></li>
-            <li><a href="#1">10</a></li>
-            <li><a href="#1">11</a></li>
             <li><a href="#1">12</a></li>
             <li><a href="#1">13</a></li>
             <li><a class="prev-page _tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500">14</a></li>
@@ -159,20 +156,17 @@
             <li><a class="next-page _tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500">16</a></li>
             <li><a href="#1">17</a></li>
             <li><a href="#1">18</a></li>
-            <li><a href="#1">19</a></li>
-            <li><a href="#1">20</a></li>
             <li>...</li>
             <li><a href="#1">345</a></li>
           </ul>
-          <ul class="actions-list right">
-            <li class="actions-item"><a class="action-mark-read" href="#1">Mark all read</a></li>
-            <li class="actions-item"><a class="btn primary" href="#1">New Topic</a></li>
-            <li class="actions-item">
+          <ul class="buttons">
+            <li><a class="btn _tip" href="#1"title="Mark all read" data-tipsy-gravity="sw" data-tipsy-delayIn="500">✔</a></li>
+            <li><a class="btn primary" href="#1">New Topic</a></li>
+            <li class="subscribe"><a class="btn" href="#1">24</a></li>
+            <li>
               <div class="mod-menu-wrap">
-                <a class="btn primary menu _menu-pin" href="#1"><!-- --></a>
+                <a class="btn menu _menu-pin" href="#1"><!-- --></a>
                 <dl class="mod-popup">
-                  <dd><a href="#1">Subscribe</a></dd>
-                  <dt>&nbsp;</dt>
                   <dd><a href="#1">Announce</a></dd>
                   <dd><a href="#1">Add moderator</a></dd>
                   <dd><a href="#1">Mass Move</a></dd>
@@ -191,7 +185,6 @@
                 <li class="filter"><input type="checkbox" class="global-select" /></li>
               </ul>
             </div>
-            <h2>A Test Forum</h2>
           </header>
           <table class="tl-table">
             <tr class="tl-row mark-unread">
@@ -638,12 +631,9 @@
         </div>
 
         <nav class="page-controls below clearfix">
-          <ul class="pagination left">
+          <ul class="pagination">
             <li><a href="#1">1</a></li>
             <li>...</li>
-            <li><a href="#1">9</a></li>
-            <li><a href="#1">10</a></li>
-            <li><a href="#1">11</a></li>
             <li><a href="#1">12</a></li>
             <li><a href="#1">13</a></li>
             <li><a class="prev-page _tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500">14</a></li>
@@ -657,20 +647,17 @@
             <li><a class="next-page _tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500">16</a></li>
             <li><a href="#1">17</a></li>
             <li><a href="#1">18</a></li>
-            <li><a href="#1">19</a></li>
-            <li><a href="#1">20</a></li>
             <li>...</li>
             <li><a href="#1">345</a></li>
           </ul>
-          <ul class="actions-list right">
-            <li class="actions-item"><a class="action-mark-read" href="#1">Mark all read</a></li>
-            <li class="actions-item"><a class="btn primary" href="#1">New Topic</a></li>
-            <li class="actions-item">
+          <ul class="buttons">
+            <li><a class="btn _tip" href="#1"title="Mark all read" data-tipsy-gravity="sw" data-tipsy-delayIn="500">✔</a></li>
+            <li><a class="btn primary" href="#1">New Topic</a></li>
+            <li class="subscribe"><a class="btn" href="#1">24</a></li>
+            <li>
               <div class="mod-menu-wrap">
-                <a class="btn primary menu _menu-pin" href="#1"><!-- --></a>
+                <a class="btn menu _menu-pin" href="#1"><!-- --></a>
                 <dl class="mod-popup">
-                  <dd><a href="#1">Subscribe</a></dd>
-                  <dt>&nbsp;</dt>
                   <dd><a href="#1">Announce</a></dd>
                   <dd><a href="#1">Add moderator</a></dd>
                   <dd><a href="#1">Mass Move</a></dd>
@@ -685,7 +672,7 @@
 
           <div class="page-summary">
             <section>
-              <h3>12 Users are reading this topic:</h3>
+              <h5>12 Users are reading this topic:</h5>
               <ul class="hlist page-summary-users">
                 <li><a href="#1">Google</a></li>
                 <li><a href="#1">Asso</a></li>
@@ -701,7 +688,7 @@
               </ul>
             </section>
             <section>
-              <h3>Moderators:</h3>
+              <h5>Moderators:</h5>
               <ul class="hlist page-summary-users">
                 <li><a href="#1">ibra</a></li>
                 <li><a href="#1">qolize</a></li>

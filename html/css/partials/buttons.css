@@ -3,6 +3,9 @@
  *  Buttons
  *
  */
+a.btn {
+  color: #333;
+}
 .btn {
   display: inline-block;
   background-color: #e6e6e6;
@@ -15,7 +18,6 @@
   background-image: linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
   padding: 8px 14px;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  color: #333;
   line-height: 18px;
   border: 1px solid #ccc;
   border-bottom-color: #bbb;
@@ -25,6 +27,8 @@
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-size: 12px;
+  line-height: normal;
 }
 .btn:hover {
   background-position: 0 -15px;
@@ -45,6 +49,7 @@
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid #004b9a;
   border-bottom-color: #003f81;
+  font-weight: bold;
 }
 .primary:hover {
   color: #fff;
@@ -184,9 +189,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   background: linear-gradient(#ccae66, #963c2c);
   background: -moz-linear-gradient(#ccae66,#963c2c);
   background: -webkit-linear-gradient(#ccae66,#963c2c);
+  color: #fff;
 }
 .above ._menu-activated .btn.menu{
-  border-bottom-color: #963c2c;
+  border-color: #963c2c;
 }
 ._menu-activated .btn.menu{
   border-radius: 4px 4px 0 0;
@@ -196,7 +202,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   background: linear-gradient(#963c2c, #bca05e);
   background: -moz-linear-gradient(#963c2c, #bca05e);
   background: -webkit-linear-gradient(#963c2c, #bca05e);
-  border-top-color: #963c2c;
+  border-color: #963c2c;
   box-shadow: none;
 }
 ._menu-activated .btn.menu:after{
@@ -209,8 +215,107 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   box-sizing: border-box;
   height: 6px;
   left: 0;
-  top:36px;
+  top:33px;
 }
 .below .btn.menu:after{
   top:-6px;
+}
+
+.mod-menu-wrap{
+  position: relative;
+  z-index: 1;
+}
+
+.mod-popup{
+  background: #963c2c;
+  border-radius: 4px 0 4px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top:39px;
+  display: none;
+  min-width:150px;
+}
+.below .mod-popup{
+  border-radius: 4px 4px 0 4px;
+  top:auto;
+  bottom:39px;
+}
+.mod-popup a{
+  color:#ffffff;
+  white-space: nowrap;
+}
+.mod-popup dd{
+  border-bottom: 1px solid #873121;
+  box-shadow: 0 1px 0 #b17452;
+  padding: 13px 15px;
+}
+.mod-popup dd:last-child{
+  border: 0;
+  box-shadow: none;
+}
+.mod-popup dt{
+  background-color: #873121;
+  color:#c7a372;
+  padding: 5px 15px 6px;
+  text-align: right;
+}
+nav.below{
+  margin-bottom:40px;
+}
+
+
+
+/* 
+ * pseudo icon for 'subscribe' button
+ *
+ * (!) this class should be applied to parent (!)
+ */
+.subscribe {
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+
+.subscribe a {
+    padding-left:33px;
+}
+.subscribe a:before, 
+.subscribe a:after {
+    content:"";
+    position:absolute;
+    top:50%;
+    background:#666;
+}
+
+.subscribe a:before {
+    left:14px;
+    width:16px;
+    height:5px;
+    margin-top:1px;
+    /* css3 */
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+    -moz-border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;        
+}
+.subscribe a:after {
+    left:19px;
+    width:6px;
+    height:10px;
+    margin-top:-7px;
+    /* css3 */
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px 10px;
+    -webkit-border-bottom-left-radius:5px 10px;
+    -moz-border-radius:5px 5px 5px 5px / 5px 5px 10px 10px;
+    border-radius:5px 5px 5px 5px / 5px 5px 10px 10px;
+}
+
+.btn.active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
