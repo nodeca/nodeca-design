@@ -97,12 +97,14 @@ a.post-timestamp,
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
   opacity:.2;
+  color: #333;
+  text-decoration: underline;
 }
 /*.post-meta .votes-count{
   opacity: 1;
 }*/
 .post:hover .post-meta a{
-  opacity: .7;
+  opacity: .8;
 }
 .post-meta:hover a{
   opacity:1 !important;

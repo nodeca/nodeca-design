@@ -2,6 +2,10 @@
   margin:0 0 20px;
 }
 
+.content.forums {
+  padding-top: 1px;
+}
+
 /*
  * 
  * Forum list tables
@@ -18,7 +22,7 @@
 }
 */
 .fl-cat-table tr:first-child td{
-  border-top:2px solid #aaa;
+/*  border-top:2px solid #aaa; */
 }
 
 /* first column + icon */
@@ -157,13 +161,14 @@ td.fl-icon-col{
   font-weight:normal; */
   font-size:16px;
   text-align:left;
-  padding:15px;
   position:relative;
   line-height:21px;
   transition: opacity 1s ease;
   -moz-transition: opacity 1s ease;
   -webkit-transition: opacity 1s ease;
-  padding: 30px 0 10px 0;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  border-bottom:2px solid #aaa;
 }
 ._collapsed .fl-cat-head:hover{
   opacity: 0.7;
@@ -173,16 +178,17 @@ td.fl-icon-col{
 }
 .fl-cat-head ._collapser{
   background: #41a0d3;
-  background: linear-gradient(#5bb6e7, #298dc2);
-  background: -moz-linear-gradient(#5bb6e7,#298dc2);
-  background: -webkit-linear-gradient(#5bb6e7,#298dc2);
+  background-image: linear-gradient(#aaa, #666);
+  background-image: -moz-linear-gradient(#aaa,#666);
+  background-image: -webkit-linear-gradient(#aaa,#666);
   transition: opacity 0.6s ease;
   -moz-transition: opacity 0.6s ease;
   -webkit-transition: opacity 0.6s ease;
   display:block;
-  position:absolute;
+  float: left;
+  position:relative;
   right:13px;
-  top:13px;
+  top:-2px;
   height:24px;
   width:24px;
   line-height: 22px;
@@ -197,7 +203,8 @@ td.fl-icon-col{
 .fl-cat-title{
 /*  font-size:20px;
   font-family: sans-serif;*/
-  margin:0 25px 0 0;
+  margin:0 25px 0 10px;
+  float: left;
 }
 .fl-cat-head:hover ._collapser{
   opacity:1;
