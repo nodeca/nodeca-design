@@ -467,21 +467,20 @@ a.ub-link-dimmed{
 .page-controls.below {
   margin:15px 5px 15px;
 }
-.page-controls .buttons,
-.page-controls .filters {
-  float: right;
-}
-.page-controls .buttons li{
-  float: left;
-  display: inline; /* ie double margin hack */
-  margin-left: 7px; 
-}
 .page-controls.above .pagination{
   padding-top:5px;
   float:left;
 }
 .page-controls .more-button{
   margin: 0 0 10px;
+}
+.buttons {
+  float: right;
+}
+.buttons li{
+  float: left;
+  display: inline; /* ie double margin hack */
+  margin-left: 7px; 
 }
 
 .actions-global{
