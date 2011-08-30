@@ -6,12 +6,12 @@
 
 .blog-comments-wrapper{
 /*  background: #f6f6f6; */
-  padding:20px;
+  padding:0 20px;
   margin: 0 -20px;
   border-left: 1px solid #ddd;
 }
 .blog-comments-title{
-  margin: 30px 0 5px;
+  margin: 30px 0 20px;
 }
 .blog-comments{
   line-height: 20px;
