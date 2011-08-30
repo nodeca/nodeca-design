@@ -33,22 +33,22 @@ td.fl-icon-col{
 /*  border-bottom: 0; */
 }
 .fl-icon{
-  border-radius:4px;
   height:50px;
   width:50px;
 }
     /* icon-specific styles, modify on your needs */
 .fl-icon-default{
-  background: url(../images/forum.png) no-repeat 0% 50%;
+  background: url(../images/forum-new2.png) no-repeat 50% 50%;
+  opacity: .5;
 }
 .fl-icon-new{
-  background: url(../images/forum-new.png) no-repeat 0% 50%;
+  background: url(../images/forum-new2.png) no-repeat 50% 50%;
 }
 .fl-icon-closed{
-  background: url(../images/forum-closed.png) no-repeat 0% 50%;
+  background: url(../images/forum-closed.png) no-repeat 50% 50%;
 }
 .fl-icon-link{
-  background: url(../images/forum-link.png) no-repeat 0% 50%;
+  background: url(../images/forum-link.png) no-repeat 50% 50%;
 }
 
 /* forum title, moderators, description */
@@ -59,6 +59,10 @@ td.fl-icon-col{
 .fl-title{
   font-size:16px;
   font-family: sans-serif;
+}
+
+.fl-summary-col a{
+  color: #333;
 }
 
 /* counters */
@@ -128,6 +132,7 @@ td.fl-icon-col{
 .fl-subforums dd a{
   margin-right:2px;
   font-weight: bold;
+  opacity: .8;
 }
 
 /*
@@ -141,6 +146,7 @@ td.fl-icon-col{
 .fl-moderators a{
   color:#888;
   font-size: 12px;
+  margin-top: 3px;
 }
 
 /*
