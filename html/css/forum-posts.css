@@ -1,5 +1,8 @@
 .pl-wrap{
   margin: 0 0 10px;
+  padding-top: 5px;
+  border-top: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
 }
 
 .pl-title{
@@ -29,20 +32,18 @@
 .post{
   background-color: #fbfbfb;
 }
-.post-last{
-  border-bottom: 1px solid #E0E0E0;
-}
 .post-head{
-  background-color: #e1e7ea;
+  background-color: #efefef;
   padding: 11px 15px;
   line-height: 19px;
 }
 .post-head .left{
   float: left;
 }
-.post-author{
+a.post-author{
   font-size: 16px;
   font-weight: bold;
+  color: #333;
 }
 .post-head .right{
   float: right;

@@ -33,12 +33,17 @@ a.filter-btn:focus{
   vertical-align: middle;
 }*/
 .filters{
-  margin: 7px 0 2px;
+/*  margin: 5px 0;*/
+  float:right;
+  clear:left;
 }
+
 .filter{
   font-size: 12px;
-  display: inline;
-  margin: 0 10px 0 0;
+/*  display: inline;
+  margin: 0 10px 0 0; */
+  text-align: right;
+  margin: 5px 0;
 }
 .filter:last-child{
   margin-right: 0;
@@ -46,14 +51,14 @@ a.filter-btn:focus{
 a.filter-btn:hover{
   text-decoration: none;
 }
-a.filter-btn:before{
-  background: #004B9A;
+a.filter-btn:after{
+  background: #CCC;
   content: '';
   display: inline-block;
   height: 9px;
   width: 9px;
-  margin-right: 3px;
+  margin-left: 3px;
 }
-._filter-active .filter-btn:before{
+._filter-active .filter-btn:after{
   background: #C43C35;
 }
