@@ -1,4 +1,4 @@
-.filter{
+/*.filter{
   font-size: 12px;
   display: inline;
   margin: 0 10px 0 0;
@@ -9,7 +9,7 @@
 }
 a.filter-btn{
   display: inline-block;
-  *display: inline; zoom: 1; /* ie6-7 display:inline-block hack */
+  *display: inline; zoom: 1;
   line-height: 13px;
   color: #fff;
   padding: 4px 10px;
@@ -31,4 +31,29 @@ a.filter-btn:focus{
 }
 .global-select{
   vertical-align: middle;
+}*/
+.filters{
+  margin: 7px 0 2px;
+}
+.filter{
+  font-size: 12px;
+  display: inline;
+  margin: 0 10px 0 0;
+}
+.filter:last-child{
+  margin-right: 0;
+}
+a.filter-btn:hover{
+  text-decoration: none;
+}
+a.filter-btn:before{
+  background: #004B9A;
+  content: '';
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  margin-right: 3px;
+}
+._filter-active .filter-btn:before{
+  background: #C43C35;
 }

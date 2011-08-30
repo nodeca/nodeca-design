@@ -4,7 +4,7 @@
  * 
  */
 
-.clearfix:after { clear: none!important; overflow: hidden; width: 50%; } /* clearfix fix for fluid layout */
+.clearfix:after { clear: none!important; overflow: hidden; width: 100%; } /* clearfix fix for fluid layout */
 
 html,body{height:100%;}
 body { color:#373737; font:14px/1.231 sans-serif; }
@@ -471,12 +471,11 @@ a.ub-link-dimmed{
   display: inline; /* ie double margin hack */
   margin-left: 7px; 
 }
-.page-controls .buttons{
-  float: right;
-}
 .page-controls .pagination{
-  float: left;
   padding-top:5px;
+}
+.page-controls .more-button{
+  margin: 0 0 10px;
 }
 
 
