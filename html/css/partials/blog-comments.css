@@ -5,8 +5,9 @@
  */
 
 .blog-comments-wrapper{
-  background: #fbfbfb;
-  padding-top:20px;
+  background: #f6f6f6;
+  padding:20px;
+  margin: 0 -20px;
 }
 .blog-comments-title{
   margin: 0 0 20px;

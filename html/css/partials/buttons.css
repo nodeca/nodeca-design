@@ -244,12 +244,14 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 .mod-popup a{
   color:#ffffff;
+  display: block;
+  padding: 13px 15px;
+  height: 1%;
   white-space: nowrap;
 }
 .mod-popup dd{
   border-bottom: 1px solid #873121;
   box-shadow: 0 1px 0 #b17452;
-  padding: 13px 15px;
 }
 .mod-popup dd:last-child{
   border: 0;

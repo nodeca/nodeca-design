@@ -11,7 +11,7 @@
   left:15px;
 }
 .blog .content{
-  margin-top: 56px;
+  margin-top: 55px;
   margin-right: 293px;
   border: 0;
   padding: 0;
@@ -22,9 +22,13 @@
   border-left: 1px solid #b0b0b0;
   padding: 20px 0 5px 40px;
   display: inline;/* double margin hack for ie */
-  margin: 73px 0 0 0;
+  margin: 55px 0 0 0;
 }
-
+.new-post-link{
+  position: absolute;
+  right:0;
+  top:-36px;
+}
 .blog-head{
   margin: 0 0 25px;
 }
@@ -38,7 +42,8 @@
 }
 .blog-head h1{
   font-size: 24px;
-  margin: 0 0 2px;
+  line-height: 33px;
+  margin: 0;
 }
 .blog-head .timestamp{
   color:#888;
@@ -66,7 +71,7 @@
 .blog-meta .tags:before{
   background: url(../images/tag.png) no-repeat 0 50%;
   content: ' ';
-  margin-right: 7px;
+  margin: 0 7px 0 0;
   display: inline-block;
   height: 7px;
   width: 10px;
@@ -106,26 +111,20 @@
 .blog-meta .actions{
   margin-top:30px;
 }
-.blog-meta .actions li{
-  float: left;
-  display: inline;/* ie double margin hack */
-  margin:0 15px 0 0;
-  line-height: 17px;
+.blog-meta .scroll{
+  text-align: center;
+  margin: 15px 0 0;
 }
-.blog-meta .actions .edit-link,
-.blog-meta .actions .delete-link{
-  font-size: 12px;
+.blog-meta .scroll a{
+  margin: 0 10px;
 }
-.blog-meta .actions .right li{
-  margin:0 0 0 15px;
-}
-.blog-meta .actions .prev-post:before{
+.blog-meta .scroll .prev-post:before{
   content: '← ';
 }
-.blog-meta .actions .next-post:after{
+.blog-meta .next-post:after{
   content: ' →';
 }
-.blog-meta .actions .disabled{
+.blog-meta .disabled{
   color:#8c8c8c;
 }
 
@@ -178,33 +177,36 @@ a.vote-down:after{
   content: '⇩';
 }
 
-.blog-right-title{
+.widget{
+  margin:0 0 30px;
+}
+.widget-title{
   margin:0 0 15px -20px;
 }
-.blog-categories-list{
+.cat-list-wgt{
   line-height: 1.5em;
-  margin: 0 0 30px;
   font-size: 13px;
 }
-.blog-categories-list ul{
+.cat-list-wgt ul{
   margin-left: 20px;
 }
-.blog-calendar{
+.calendar-wgt{
+  background: #f6f6f6;
+  border-radius: 4px;
   width: 100%;
-  margin: 0 0 40px;
 }
-.blog-calendar th{
+.calendar-wgt th{
   font-size: 13px;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 5px 0 10px;
 }
-.blog-calendar .prev-month,
-.blog-calendar .next-month{
+.calendar-wgt .prev-month,
+.calendar-wgt .next-month{
   width: 1%;
 }
-.blog-calendar .prev-month a,
-.blog-calendar .next-month a{
-  background: #e9e9e9;
+.calendar-wgt .prev-month a,
+.calendar-wgt .next-month a{
+  background: #e0e0e0;
   color:#8c8c8c;
   display: block;
   height: 13px;
@@ -212,44 +214,48 @@ a.vote-down:after{
   border-radius: 3px;
   line-height: 13px;
   font-size: 7px;
+  margin: auto;
 }
-.blog-calendar .prev-month a:after{
+.calendar-wgt .prev-month a:after{
   content: '◄';
 }
-.blog-calendar .next-month a:after{
+.calendar-wgt .next-month a:after{
   content: '►';
 }
-.blog-calendar td{
+.calendar-wgt td{
   font-size: 11px;
   height: 22px;
   width: 1%;
   vertical-align: middle;
+  text-align: center;
 }
-.blog-calendar td.archive{
+.calendar-wgt td.archive{
   font-size: 12px;
   text-align: right;
-  padding: 15px 20px 0 0;
+  padding: 5px 10px 5px 0;
 }
-.blog-calendar td.archive a:after{
+.calendar-wgt td.archive a:after{
   font-size: 14px;
   content: ' ›';
 }
-.blog-calendar td .today{
+.calendar-wgt td .today{
+  display: inline-block;
   background: #067ba1;
   color:#fff;
   border-radius: 3px;
   padding: 4px 5px 3px;
+  margin: 0 0 0 -10px;
   position: relative;
-  margin-left:-5px;
+  left: 5px;
 }
-.blog-recent-comments{
+.recent-comments-wgt{
   margin: 0 0 -15px;
   font-size:13px;
 }
-.blog-recent-comments li{
+.recent-comments-wgt li{
   margin: 0 0 15px;
 }
-.blog-recent-comments .author-pic{
+.recent-comments-wgt .author-pic{
   float: left;
   display: inline;/* ie double margin hack */
   margin:3px 15px 0 0;
@@ -257,13 +263,36 @@ a.vote-down:after{
   width: 30px;
   border-radius: 4px;
 }
-.blog-recent-comments .author-name{
+.recent-comments-wgt .author-name{
   color:#8c8c8c;
   font-size: 11px;
 }
-.blog-recent-comments time{
+.recent-comments-wgt time{
   color:#8c8c8c;
   font-size: 11px;
   display: block;
   text-align: right;
+}
+
+.edit-link,
+.delete-link{
+  transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  opacity: .2;
+}
+.edit-link:before{
+  content: '✎';
+  font-size: 21px;
+  line-height: 21px;
+  margin-left: 5px;
+}
+.delete-link:before{
+  content: '✖';
+  font-size: 17px;
+  line-height: 17px;
+}
+.blog-entry:hover .edit-link,
+.blog-entry:hover .delete-link{
+  opacity: 1;
 }

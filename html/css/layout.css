@@ -4,6 +4,8 @@
  * 
  */
 
+.clearfix:after { clear: none!important; overflow: hidden; width: 50%; } /* clearfix fix for fluid layout */
+
 html,body{height:100%;}
 body { color:#373737; font:14px/1.231 sans-serif; }
 
@@ -481,8 +483,8 @@ a.ub-link-dimmed{
 .actions-global{
   font-size: 12px;
   position: absolute;
-  right: 0;
-  top:20px;
+  right: 15px;
+  top: 20px;
 }
 .actions-global li{
   float: left;
