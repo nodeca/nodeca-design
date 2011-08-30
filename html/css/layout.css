@@ -12,10 +12,15 @@ body { color:#373737; font:14px/1.231 sans-serif; }
 ul,ol{margin:0;}
 li{list-style:none;}
 
+/*
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { color: #015b7d;text-decoration:none; }
 a:hover { color: #015b7d;text-decoration:underline; }
 a *{cursor:pointer;}
+*/
+a, a:active, a:visited { text-decoration:none; }
+
+
 
 .normal {font-weight: normal;}
 .nodisplay {display:none;}
@@ -28,7 +33,7 @@ a *{cursor:pointer;}
  * Buttons & form fieldset
  *
  */
-.button{
+/*.button{
   background: #f3f3f3;
   background: linear-gradient(#fff, #e7e7e7);
   background: -moz-linear-gradient(#fff,#e7e7e7);
@@ -38,7 +43,7 @@ a *{cursor:pointer;}
   color:#015b7d;
   padding:0 14px;
   text-align:center;
-  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
+  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */ /*
   border-radius:4px;
   cursor:pointer;
   box-sizing:border-box;-moz-box-sizing:border-box;
@@ -82,7 +87,7 @@ a.submit-button{
   color:#fff;
   padding:0 14px;
   text-align:center;
-  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
+  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */ /*
   border-radius:4px;
   cursor:pointer;
   box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
@@ -107,7 +112,7 @@ a.submit-button{
   background: -webkit-linear-gradient(#1f83b8,#0c6598);
   box-shadow:0 0 3px #000 inset;
 }
-
+*/
 .form-buttons{
   text-align: center;
 }
@@ -465,7 +470,7 @@ a.ub-link-dimmed{
   margin:0 5px 15px;
 }
 .page-controls.below {
-  margin:15px 5px 15px;
+  margin:0px 5px 15px;
 }
 .page-controls.above .pagination{
   padding-top:5px;

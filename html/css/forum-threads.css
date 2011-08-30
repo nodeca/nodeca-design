@@ -1,5 +1,5 @@
 .tl-wrap{
-  margin: 0 0 10px;
+/*  margin: 0 0 10px; */
 }
 .tl-head{
   background: #12729f;
@@ -26,14 +26,21 @@
 }
 
 .tl-table{
-  background: #fbfbfb;
-  border-top: 2px solid #aaa;
-  border-bottom: 2px solid #aaa;
+/*  background: #fbfbfb; */
+/*  border-top: 2px solid #ccc; */
+/*  border-bottom: 2px solid #aaa; */
   width: 100%;
+}
+
+.tl-row {
+  border-top: 1px solid #e0e0e0;
+}
+.tl-row:first-child {
+  border-top: 2px solid #e0e0e0;  
 }
 .tl-table td{
   padding: 15px 8px 15px 8px;
-  border-bottom: 1px solid #e0e0e0;
+/*  border-bottom: 1px solid #e0e0e0; */
   vertical-align: middle;
 }
 .tl-icon-col{
@@ -57,6 +64,12 @@
 .tl-summary-col{
   width: 70%;
 }
+.tl-summary-col a{
+  color: #333;
+}
+.tl-summary-col a:hover{
+  color: #036;
+}
 td.tl-summary-col{
   padding-left: 0;
   padding-right: 0;
@@ -73,7 +86,7 @@ td.tl-summary-col{
   font-size: 12px;
   min-width: 110px;
   white-space: nowrap;
-  color: #888;
+  color: #666;
 }
 .tl-last-post-col{
   max-width: 150px;
@@ -94,7 +107,7 @@ td.tl-summary-col{
 }
 .last-post-author,
 .last-post-author a{
-  color: #555;
+  color: #333;
 }
 .last-post-author:after{
   background: linear-gradient(center left, rgba(251,251,251,0), #FBFBFB);
@@ -270,7 +283,7 @@ td.tl-summary-col{
   font-weight: bold;
 }
 a.mark-i-unread {
-  background: #015b7d;
+  background: #888;
   display: block;
   margin: 3px auto;
   height: 15px;
@@ -291,7 +304,8 @@ a.mark-i-unread {
   content: '♯';
 }
 .mark-closed .tl-title a{
-  color: #888;
+/*  color: #888; */
+  opacity: .6;
 }
 .mark-i-moved {
   color: #888;

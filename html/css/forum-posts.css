@@ -1,8 +1,9 @@
 .pl-wrap{
-  margin: 0 0 10px;
+/*  margin: 0 0 10px;
   padding-top: 5px;
   border-top: 2px solid #aaa;
   border-bottom: 2px solid #aaa;
+*/
 }
 
 .pl-title{
@@ -30,7 +31,7 @@
  * Post
  */
 .post{
-  background-color: #fbfbfb;
+/*  background-color: #fbfbfb; */
 }
 .post-head{
   background-color: #efefef;
@@ -45,16 +46,23 @@ a.post-author{
   font-weight: bold;
   color: #333;
 }
+a.post-author:hover{
+  font-size: 16px;
+  font-weight: bold;
+  color: #036;
+}
 .post-head .right{
   float: right;
   font-size: 12px;
 }
-a.post-timestamp,
-.post-timestamp{
-  color:#8c8c8c;
+a.post-timestamp {
+  color:#888;
   position: relative;
   top: 1px;
   margin-right: 5px;
+}
+a.post-timestamp:hover {
+  color: #036;
 }
 .post-marker{
   margin-left: 25px;

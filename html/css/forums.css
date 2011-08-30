@@ -64,6 +64,9 @@ td.fl-icon-col{
 .fl-summary-col a{
   color: #333;
 }
+.fl-summary-col a:hover{
+  color: #036;
+}
 
 /* counters */
 .fl-total-col {
