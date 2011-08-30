@@ -22,14 +22,9 @@
   width:240px;
   position: relative;
 }
-.profile .sub-content-wrap{
-  float: left;
-  width: 100%;
-  margin-left: -240px;
-  display: inline;
-}
 .profile .sub-content{
   margin:0 0 0 270px;
+  *overflow:hidden;
 }
 
 /*
@@ -231,7 +226,6 @@ li.pw-g-item:after{
   margin:20px 0;
 }
 .p-info-box dd{
-  clear: both;
   min-height:17px;
   _height:17px;
 }
