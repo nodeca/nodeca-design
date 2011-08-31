@@ -140,8 +140,11 @@ a.post-timestamp:hover {
  *
  */
 .votes{
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   font-size: 14px;
-  background-color: #EEE;
+/*  background-color: #EEE; */
   padding:6px;
   position:relative;
   top:-7px;
@@ -149,6 +152,9 @@ a.post-timestamp:hover {
   border-radius: 4px;
   margin-top:-12px!important;
   top: 6px;
+}
+.post:hover .votes{
+  background-color: #EEE;
 }
 .votes-count{
   vertical-align: middle;
