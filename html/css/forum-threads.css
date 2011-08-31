@@ -82,6 +82,7 @@ td.tl-summary-col{
   text-align: center;
   padding-left: 0!important;
   padding-right: 0!important;
+  vertical-align: middle;
 }
 .tl-total-col{
   font-size: 12px;
@@ -218,11 +219,11 @@ td.tl-summary-col{
   padding: 9px!important;
 }
 ._expanded.tl-row {
-  background-color: #FFFFF0
+/*  background-color: #FFFFF0 */
 }
 .thread-posts{
   background: #fff;
-  padding: 20px 40px;
+  padding: 20px 60px;
   height: 1%;
 }
 .thread-post{
