@@ -10,6 +10,13 @@
 .profile .sidebar-nav{
   line-height:24px;
 }
+.profile .sidebar-nav a{
+  color: #333;
+}
+.profile .sidebar-nav a:hover{
+  color: #036;
+  text-decoration: underline;
+}
 .profile .sidebar-nav .active a{
   font-weight:bold;
 }

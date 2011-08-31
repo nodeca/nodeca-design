@@ -205,6 +205,13 @@ a.vote-down:after{
   line-height: 1.5em;
   font-size: 13px;
 }
+.cat-list-wgt a {
+  color: #333;
+}
+.blog .widget a:hover {
+  color: #036;
+  text-decoration: underline;
+}
 .cat-list-wgt ul{
   margin-left: 20px;
 }
@@ -269,6 +276,9 @@ a.vote-down:after{
 .recent-comments-wgt{
   margin: 0 0 -15px;
   font-size:13px;
+}
+.recent-comments-wgt a {
+  color: #333;
 }
 .recent-comments-wgt li{
   margin: 0 0 15px;
