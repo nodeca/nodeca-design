@@ -140,6 +140,7 @@ a.post-timestamp:hover {
  *
  */
 .votes{
+
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -153,9 +154,11 @@ a.post-timestamp:hover {
   margin-top:-12px!important;
   top: 6px;
 }
+
 .post:hover .votes{
   background-color: #EEE;
 }
+
 .votes-count{
   vertical-align: middle;
 }
@@ -172,6 +175,7 @@ a.vote-down{
   overflow: hidden;
   text-align: center;
   vertical-align: middle;
+  text-decoration: none!important;
 }
 a.vote-up:hover,
 a.vote-down:hover{
