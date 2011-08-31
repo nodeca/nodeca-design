@@ -336,3 +336,10 @@ nav.below{
     position: relative;
     top: 1px;
 }
+.btn.markread:before{
+  content: '✔';
+    font-size: 18px;
+    line-height: 12px;
+    position: relative;
+    top: 2px;
+}
