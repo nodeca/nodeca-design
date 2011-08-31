@@ -74,6 +74,7 @@
   height:1%; /* make hasLayout for ie */
   box-shadow:0 6px 6px #999;
   border:1px solid #D5DDE5;
+  border-radius: 4px;
   font-size:12px;
 }
 .qs-popup-title{

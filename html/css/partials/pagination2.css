@@ -57,9 +57,11 @@ a.page-jump {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 7px 10px;
-  box-shadow: 1px 2px 5px #333;
+  box-shadow: 1px 1px 6px #333;
   margin-top: 7px;
   white-space: nowrap;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .pgn-popup dt{
   font-size: 12px;
