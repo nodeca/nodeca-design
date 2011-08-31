@@ -42,9 +42,11 @@ td.fl-icon-col{
 }*/
 .fl-icon{
   width:20px;
+  height:50px
 }
 .fl-icon-col{
-  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
     /* icon-specific styles, modify on your needs */
 /*.fl-icon-default{
