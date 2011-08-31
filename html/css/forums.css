@@ -1,3 +1,7 @@
+.forums .page-controls {
+  margin-top: 30px;
+}
+
 .fl-content-wrap{
   margin:0 0 20px;
 }
@@ -11,20 +15,19 @@
  * Forum list tables
  * 
  */
+.fl-cat-table{
+  margin-top:15px;
+}
 .fl-cat-table td{
-  padding:15px 15px 15px 0;
-  border-bottom:1px solid #e0e0e0;
-  vertical-align:middle;
+  padding:10px 15px 10px 0;
+/*  vertical-align:middle; */
 }
-/*
-.fl-cat-table tr:last-child td{
-  border:0;
+.fl-cat-table tr{
+/*  border-bottom:1px solid #ccc;*/
 }
-*/
-.fl-cat-table tr:first-child td{
-/*  border-top:2px solid #aaa; */
+.fl-cat-table tr:last-child {
+  border: 0;
 }
-
 /* first column + icon */
 td.fl-icon-col{
   padding-left:0;
@@ -32,12 +35,19 @@ td.fl-icon-col{
   width:1%;
 /*  border-bottom: 0; */
 }
-.fl-icon{
+
+/*.fl-icon{
   height:50px;
   width:50px;
+}*/
+.fl-icon{
+  width:20px;
+}
+.fl-icon-col{
+  padding: 0px;
 }
     /* icon-specific styles, modify on your needs */
-.fl-icon-default{
+/*.fl-icon-default{
   background: url(../images/forum-new2.png) no-repeat 50% 50%;
   opacity: .5;
 }
@@ -50,11 +60,8 @@ td.fl-icon-col{
 .fl-icon-link{
   background: url(../images/forum-link.png) no-repeat 50% 50%;
 }
-
+*/
 /* forum title, moderators, description */
-/*.fl-summary-col{
-  width:67%;
-}*/
 
 .fl-title{
   font-size:16px;
@@ -71,7 +78,7 @@ td.fl-icon-col{
 /* counters */
 .fl-total-col {
   font-size: 12px;
-  color: #444;
+  color: #666;
   min-width:80px;
   width:12%;
 }
@@ -120,7 +127,7 @@ td.fl-icon-col{
  * Subforums @ forums list (use with .def-list)
  */
 .fl-subforums {
-  margin-left:17px;
+  margin-left:25px;
 }
 .fl-subforums dt{
   margin-right:3px;
@@ -135,7 +142,7 @@ td.fl-icon-col{
 .fl-subforums dd a{
   margin-right:2px;
   font-weight: bold;
-  opacity: .8;
+  opacity: .6;
 }
 
 /*
@@ -161,13 +168,6 @@ td.fl-icon-col{
 /*  margin:0 0 5px; */
 }
 .fl-cat-head{
-/*  background: #12729f;
-  background: linear-gradient(#258ac3, #025c7e);
-  background: -moz-linear-gradient(#258ac3,#025c7e);
-  background: -webkit-linear-gradient(#258ac3,#025c7e);
-  border-radius:4px;
-  color:#fff;
-  font-weight:normal; */
   font-size:16px;
   text-align:left;
   position:relative;
@@ -210,8 +210,8 @@ td.fl-icon-col{
   opacity:0;
 }
 .fl-cat-title{
-/*  font-size:20px;
-  font-family: sans-serif;*/
+/*  font-size:20px; 
+  font-family: sans-serif; */
   margin:0 25px 0 10px;
   float: left;
 }
@@ -242,19 +242,4 @@ td.fl-icon-col{
 }
 ._collapsed .fl-cat-content{
   opacity:0;
-}
-
-/*
- * 
- * Other
- * 
-*/
-.fl-markread{
-  border-top:1px solid #b0b0b0;
-  text-align:center;
-  padding:10px 0;
-}
-.fl-markread li{
-  display: inline;
-  margin: 0 10px;
 }
