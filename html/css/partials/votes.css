@@ -15,24 +15,30 @@ a.vote-down{
 }
 a.vote-up,
 a.vote-down{
-  color:#8c8c8c;
+  color:#666;
   opacity: 0.2!important;
   transition: 0.5s ease;
   -moz-transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   text-decoration: none!important;
 }
+
 a.vote-up{
   padding-right: 3px;
+  padding-left: 6px;
 }
 a.vote-down{
   padding-left: 3px;
+  padding-right: 6px;
 }
 a.vote-up:after{
   content: '↑';
 }
 a.vote-down:after{
   content: '↓';
+}
+.votes-count{
+  font-size:12px;
 }
 .votable:hover a.vote-up,
 .votable:hover a.vote-down{
@@ -43,16 +49,16 @@ a.vote-down:after{
   text-decoration: none;
 }
 .votes:hover a.vote-up{
-  color:#62961d;
+/*  color:#62961d; */
+  color:#080;
 }
 .votes:hover a.vote-down{
-  color:#f00;
+  color:#c00;
 }
 
 
 .votes.large{
   font-size: 14px;
-  padding:0 6px;
   position:relative;
   top:-7px;
   overflow:hidden; /* IE6 hack */
@@ -65,16 +71,12 @@ a.vote-down:after{
 .votable:hover .votes.large{
   background-color: #EEE;
 }
-.large a.vote-up,
-.large a.vote-down{
-  color: #777;
-  font-weight: bold;
-  font-size:14px;
-  padding: 0;
-}
-.large a.vote-up:after{
+.votes.large a.vote-up:after{
   content: '⇧';
 }
-.large a.vote-down:after{
+.votes.large a.vote-down:after{
   content: '⇩';
+}
+.votes.large .votes-count{
+  font-size:12px;
 }
