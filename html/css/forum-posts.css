@@ -102,7 +102,7 @@ a.post-timestamp:hover {
   padding: 10px 15px 10px 30px;
   line-height: 30px;
 }
-.post-meta a{
+.post-meta a.action{
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
@@ -113,10 +113,10 @@ a.post-timestamp:hover {
 /*.post-meta .votes-count{
   opacity: 1;
 }*/
-.post:hover .post-meta a{
+.post:hover .post-meta a.action{
   opacity: .8;
 }
-.post-meta:hover a{
+.post-meta:hover a.action{
   opacity:1 !important;
 }
 
