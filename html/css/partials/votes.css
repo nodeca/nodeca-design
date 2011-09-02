@@ -52,13 +52,15 @@ a.vote-down:after{
 
 .votes.large{
   font-size: 14px;
-  padding:6px;
+  padding:0 6px;
   position:relative;
   top:-7px;
   overflow:hidden; /* IE6 hack */
   border-radius: 4px;
   margin-top:-12px!important;
   top: 6px;
+  line-height: 30px;
+  height: 30px;
 }
 .votable:hover .votes.large{
   background-color: #EEE;
@@ -66,16 +68,9 @@ a.vote-down:after{
 .large a.vote-up,
 .large a.vote-down{
   color: #777;
-  display: inline-block;
-  *display: inline;zoom:1; /* ie6-7 inline-block hack */
-  width: 12px;
-  height: 12px;
   font-weight: bold;
   font-size:14px;
-  line-height: 12px;
-  overflow: hidden;
-  text-align: center;
-  vertical-align: middle;
+  padding: 0;
 }
 .large a.vote-up:after{
   content: '⇧';
