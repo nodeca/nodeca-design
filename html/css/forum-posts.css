@@ -134,65 +134,6 @@ a.post-timestamp:hover {
   margin:0 0 0 15px;
 }
 
-/*
- *
- * Votes control
- *
- */
-.votes{
-
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  font-size: 14px;
-/*  background-color: #EEE; */
-  padding:6px;
-  position:relative;
-  top:-7px;
-  overflow:hidden; /* IE6 hack */
-  border-radius: 4px;
-  margin-top:-12px!important;
-  top: 6px;
-}
-
-.post:hover .votes{
-  background-color: #EEE;
-}
-
-.votes-count{
-  vertical-align: middle;
-}
-a.vote-up,
-a.vote-down{
-  color: #777; 
-  display: inline-block;
-  *display: inline;zoom:1; /* ie6-7 inline-block hack */
-  width: 12px;
-  height: 12px;
-  font-weight: bold;
-  font-size:14px;
-  line-height: 12px; 
-  overflow: hidden;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none!important;
-}
-a.vote-up:hover,
-a.vote-down:hover{
-  text-decoration: none;
-  opacity: .8;
-}
-a.vote-up{
-}
-a.vote-up:after{
-  content: '⇧';
-}
-a.vote-down{
-}
-a.vote-down:after{
-  content: '⇩';
-}
-
 .pl-more-button{
   font-size: 12px;
   font-weight: normal;

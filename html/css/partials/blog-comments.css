@@ -89,19 +89,6 @@
   text-decoration: underline;
 }
 
-.comment-vote-down:before{
-  content: '↓';
-  color:#8c8c8c;
-}
-.comment-vote-up:before{
-  content: '↑';
-  color:#8c8c8c;
-}
-.comment-vote-down:hover,
-.comment-vote-up:hover{
-  text-decoration: none;
-}
-
 .blog-reply-form{
   margin-top: 15px;
 }

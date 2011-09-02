@@ -1,0 +1,56 @@
+/*
+ *
+ *  Votes
+ *
+ */
+.votes-count,
+.vote-up,
+.vote-down{
+  vertical-align: middle;
+}
+.vote-up:hover,
+.vote-down:hover{
+  text-decoration: none;
+  opacity: .8;
+}
+.vote-up:after{
+  color:#8c8c8c;
+  content: '↑';
+}
+.vote-down:after{
+  color:#8c8c8c;
+  content: '↓';
+}
+
+
+.votes.large{
+  font-size: 14px;
+  background-color: #EEE;
+  padding:6px;
+  position:relative;
+  top:-7px;
+  overflow:hidden; /* IE6 hack */
+  border-radius: 4px;
+  margin-top:-12px!important;
+  top: 6px;
+}
+.large .vote-up,
+.large .vote-down{
+  color: #777;
+  display: inline-block;
+  *display: inline;zoom:1; /* ie6-7 inline-block hack */
+  width: 12px;
+  height: 12px;
+  font-weight: bold;
+  font-size:14px;
+  line-height: 12px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+.large .vote-up:after{
+  content: '⇧';
+}
+.large .vote-down:after{
+  content: '⇩';
+}
