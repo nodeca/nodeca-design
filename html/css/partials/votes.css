@@ -3,29 +3,54 @@
  *  Votes
  *
  */
+.votes{
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+}
 .votes-count,
-.vote-up,
-.vote-down{
+a.vote-up,
+a.vote-down{
   vertical-align: middle;
 }
-.vote-up:hover,
-.vote-down:hover{
-  text-decoration: none;
-  opacity: .8;
-}
-.vote-up:after{
+a.vote-up,
+a.vote-down{
   color:#8c8c8c;
+  opacity: 0.2!important;
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+}
+a.vote-up{
+  padding-right: 3px;
+}
+a.vote-down{
+  padding-left: 3px;
+}
+a.vote-up:after{
   content: '↑';
 }
-.vote-down:after{
-  color:#8c8c8c;
+a.vote-down:after{
   content: '↓';
+}
+.votable:hover a.vote-up,
+.votable:hover a.vote-down{
+  opacity: 1!important;
+}
+.votable:hover a.vote-up:hover,
+.votable:hover a.vote-down:hover{
+  text-decoration: none;
+}
+.votes:hover a.vote-up{
+  color:#62961d;
+}
+.votes:hover a.vote-down{
+  color:#f00;
 }
 
 
 .votes.large{
   font-size: 14px;
-  background-color: #EEE;
   padding:6px;
   position:relative;
   top:-7px;
@@ -34,8 +59,11 @@
   margin-top:-12px!important;
   top: 6px;
 }
-.large .vote-up,
-.large .vote-down{
+.votable:hover .votes.large{
+  background-color: #EEE;
+}
+.large a.vote-up,
+.large a.vote-down{
   color: #777;
   display: inline-block;
   *display: inline;zoom:1; /* ie6-7 inline-block hack */
@@ -48,9 +76,9 @@
   text-align: center;
   vertical-align: middle;
 }
-.large .vote-up:after{
+.large a.vote-up:after{
   content: '⇧';
 }
-.large .vote-down:after{
+.large a.vote-down:after{
   content: '⇩';
 }

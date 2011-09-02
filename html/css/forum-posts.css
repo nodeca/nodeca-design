@@ -99,7 +99,8 @@ a.post-timestamp:hover {
 .post-meta {
 /*  font-size: 12px; */
   clear: both;
-  padding: 15px 15px 15px 30px;
+  padding: 10px 15px 10px 30px;
+  line-height: 30px;
 }
 .post-meta a{
   transition: opacity 0.5s ease;
@@ -132,6 +133,13 @@ a.post-timestamp:hover {
 }
 .post-meta .right li{
   margin:0 0 0 15px;
+}
+
+.post-meta .votes.large{
+  margin-top: 0!important;
+  top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .pl-more-button{

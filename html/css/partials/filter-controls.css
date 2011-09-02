@@ -38,7 +38,7 @@ a.filter-btn:focus{
 }
 .has-filters .filters{
   position: absolute;
-  right: 5px;
+  right: 6px;
   bottom: 0;
 }
 
