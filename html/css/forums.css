@@ -23,7 +23,7 @@
 /*  vertical-align:middle; */
 }
 .fl-cat-table tr{
-/*  border-bottom:1px solid #ccc;*/
+  border-bottom:1px solid #f8f8f8;
 }
 .fl-cat-table tr:last-child {
   border: 0;
