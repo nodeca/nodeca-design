@@ -32,18 +32,20 @@ a.filter-btn:focus{
 .global-select{
   vertical-align: middle;
 }*/
-.filters{
-/*  margin: 5px 0;*/
-  float:right;
-  clear:left;
+.has-filters{
+  position: relative;
+  padding-right: 150px;
+}
+.has-filters .filters{
+  position: absolute;
+  right: 5px;
+  bottom: 0;
 }
 
 .filter{
   font-size: 12px;
-/*  display: inline;
-  margin: 0 10px 0 0; */
   text-align: right;
-  margin: 5px 0;
+  margin: 5px 0 0;
 }
 .filter:last-child{
   margin-right: 0;

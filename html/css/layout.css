@@ -258,6 +258,9 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   color: #888;
   max-width: 60%;
 }
+.title.has-filters .subtitle{
+  max-width: 75%;
+}
 
 /* Helps to keep footer near window bottom */
 .global-wrap{
