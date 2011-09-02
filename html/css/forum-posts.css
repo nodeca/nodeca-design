@@ -142,18 +142,6 @@ a.post-timestamp:hover {
   padding-bottom: 0;
 }
 
-.pl-more-button{
-  font-size: 12px;
-  font-weight: normal;
-  width: 100%;
-  margin-top: 10px;
-}
-.pl-more-button:before{
-  font-size: 14px;
-  content: '↓';
-  font-weight:normal;
-}
-
 .pl-fast-reply{
   margin-bottom: 20px;
 }

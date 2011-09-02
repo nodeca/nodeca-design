@@ -260,19 +260,6 @@ td.tl-summary-col{
   *display:inline;zoom:1;
 }
 
-.tl-more-button{
-  font-weight: normal;
-  font-size: 12px;
-  margin-top: 10px;
-  width: 100%;
-}
-.tl-more-button:before{
-  font-size: 14px;
-  content: '↓';
-  font-weight:normal;
-  margin-right: 4px;
-}
-
 /*
  *
  * State marks

@@ -478,13 +478,6 @@ li.pw-g-item:after{
   line-height: 14px;
 /*  margin:3px 0 0; */
 }
-.w-more-button{
-  width:100%;
-}
-.w-more-button:before{
-  content: '↓';
-  font-weight:normal;
-}
 
 /*
  * 

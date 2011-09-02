@@ -9,14 +9,14 @@ a.btn {
 .btn {
   display: inline-block;
   background-color: #e6e6e6;
-  background-repeat: no-repeat;
+/*  background-repeat: no-repeat;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(0.25, #ffffff), to(#e6e6e6));
   background-image: -webkit-linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
   background-image: -ms-linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
   background-image: linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
-  padding: 8px 14px;
+*/  padding: 8px 14px;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   line-height: 18px;
   border: 1px solid #ccc;
@@ -31,8 +31,9 @@ a.btn {
   line-height: normal;
 }
 .btn:hover {
-  background-position: 0 -15px;
-  color: #333;
+/*  background-position: 0 -15px;
+  color: #333; */
+  opacity: .9;
   text-decoration: none;
 }
 .primary {
@@ -329,6 +330,7 @@ nav.below{
     position: relative;
     top: 3px;
 }
+
 .btn.delete:before{
   content: '×';
     font-size: 18px;
@@ -336,10 +338,20 @@ nav.below{
     position: relative;
     top: 1px;
 }
+
 .btn.markread:before{
   content: '✔';
     font-size: 18px;
     line-height: 12px;
     position: relative;
     top: 2px;
+}
+
+.btn.more{
+  width: 100%;
+  text-align:center;
+  box-sizing:border-box;-moz-box-sizing:border-box;
+}
+.btn.more:before{
+  content: '↓';
 }
