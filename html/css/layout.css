@@ -205,15 +205,10 @@ header .trunk{
 .logo a:hover{
   text-decoration:none;
 }
-.logo .logo-txt,
-.logo .logo-txt-shadow{
+.logo .logo-txt {
   position:absolute;
   left:15px;
-  top:32px;
-}
-.logo .logo-txt-shadow{
-  color:#00374c;
-  top:31px;
+  bottom:8px;
 }
 
 /*
