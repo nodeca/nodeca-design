@@ -37,8 +37,9 @@ a.btn {
   text-decoration: none;
 }
 .primary {
-  background-color: #0064cd;
-  background-repeat: repeat-x;
+/*  background-color: #0064cd; */
+  background-color: #0066bb;
+/*  background-repeat: repeat-x;
   background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
   background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
   background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
@@ -46,6 +47,7 @@ a.btn {
   background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
   background-image: -o-linear-gradient(top, #049cdb, #0064cd);
   background-image: linear-gradient(top, #049cdb, #0064cd);
+*/
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid #004b9a;
@@ -355,4 +357,5 @@ nav.below{
 }
 .btn.more:before{
   content: '↓';
+  margin-right: 3px;
 }
