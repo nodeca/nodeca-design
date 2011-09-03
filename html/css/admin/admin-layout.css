@@ -38,62 +38,6 @@ li.clearfix{display:list-item;}
  * Buttons & forms fieldsets
  *
  */
-.button{
-  background: #034e79;
-  background: linear-gradient(#106fa5, #034e79);
-  border:0;
-  font-size: 13px;
-  font-weight:bold;
-  color:#fff;
-  padding:8px 14px;
-  text-align:center;
-  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
-  border-radius:4px;
-  cursor:pointer;
-  box-sizing:border-box;-moz-box-sizing:border-box;
-}
-.button:hover{
-  background: #035a8c;
-  background: linear-gradient(#106fa5, #035a8c);
-  text-decoration:none;
-}
-.button:focus{
-  outline:0;
-}
-.button:active{
-  background: #0a6090;
-  background: linear-gradient(#106fa5, #0a6090);
-  box-shadow:0 0 3px #333 inset;
-}
-/* submit button style */
-.submit-button{
-  background: #4996c2;
-  background: linear-gradient(#78b8dd, #1771a4);
-  border:1px solid #4286ad;
-  color:#fff;
-  font-size: 12px;
-  font-weight:bold;
-  padding:3px 15px 4px;
-  text-align:center;
-  display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
-  border-radius:4px;
-  cursor:pointer;
-  box-sizing:border-box;-moz-box-sizing:border-box;
-}
-.submit-button:hover{
-  background: #62a8d1;
-  background: linear-gradient(#78b8dd, #1a88c7);
-  text-decoration:none;
-}
-.submit-button:focus{
-  border-color:#3a799e;
-  outline:0;
-}
-.submit-button:active{
-  background: #62a8d1;
-  background: linear-gradient(#62a8d1, #2a7faf);
-  border-color:#3486b5;
-}
 /* form fields */
 input::-webkit-input-placeholder  {color:#999;font-style:italic;}
 textarea::-webkit-input-placeholder  {color:#999;font-style:italic;}
@@ -290,10 +234,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .page-title h1{
   font-size: 24px;
 }
-.page-title .button{
-  position: absolute;
-  right:0;
-  top:0;
+.page-title .page-controls {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /*
@@ -479,6 +423,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 .srow-descr{
   color:#888888;
+  margin-left: 5px;
 }
 .srow-submit{
   background-color: #f3f3f3;
