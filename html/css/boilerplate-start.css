@@ -114,7 +114,7 @@ button, input, select, textarea { width: auto; overflow: visible; margin: 0; fon
 
 /* 1) Remove default scrollbar in IE: www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/
    2) Align to text-top */
-textarea { overflow: auto; vertical-align:text-top; }
+textarea { overflow: auto; vertical-align:text-top; resize: vertical;}
 
 /* Hand cursor on clickable input elements */
 label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }

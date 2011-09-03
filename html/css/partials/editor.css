@@ -4,12 +4,11 @@
  *
  */
 .editor{
-  height: 1%; /* ie padding bug hack */
   margin: 0 0 30px;
 }
 .editor-frame{
   margin:auto;
-  max-width: 800px;
+  max-width: 1024px;
 }
 .editor-area{
   float: left;
@@ -35,17 +34,17 @@ input.editor-theme,
   display: inline; /* ie double margin hack */
   margin: 0 0 0 -150px;
   width: 150px;
-  font-size: 13px;
 }
 .editor-sidebar dt{
-  font-weight: bold;
-  margin: 10px 0;
+/*  font-weight: bold; */
+  margin: 20px 0 10px;
 }
 .editor-sidebar dt:first-child{
   margin-top: 0;
 }
 .editor-sidebar dd{
   margin: 0 0 5px;
+  font-size: 12px; 
 }
 .editor-sidebar dd:last-child{
   margin-bottom: 0;
@@ -57,7 +56,6 @@ input.editor-theme,
   vertical-align: middle;
 }
 .editor-buttons{
-  font-size: 12px;
   margin-top: 15px;
   text-align: right;
 }
