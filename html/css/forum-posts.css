@@ -192,11 +192,3 @@ a.post-timestamp:hover {
 .post-atts dd.sound-att{
   background: url(../images/tmp/sound-att.png) no-repeat 0 50%;
 }
-
-.post-signature{
-  font-size: 12px;
-  color:#393b3b;
-  margin: 10px 0 0;
-  padding: 10px 0 0;
-  border-top: 1px solid #deebf2;
-}
