@@ -4,15 +4,12 @@
  *
  */
 .editor{
-  border-radius: 4px;
-  padding: 15px;
   height: 1%; /* ie padding bug hack */
-  background: #d2e4ee;
   margin: 0 0 30px;
 }
 .editor-frame{
-  padding: 15px;
-  background: #e7f0f5;
+  margin:auto;
+  max-width: 800px;
 }
 .editor-area{
   float: left;
@@ -28,8 +25,6 @@ input.editor-theme,
 .editor-msg{
   display: block;
   width: 100%;
-  border-color: #9abacc;
-  border-radius: 0;
 }
 .editor-msg{
   margin-top: 12px;
@@ -64,9 +59,5 @@ input.editor-theme,
 .editor-buttons{
   font-size: 12px;
   margin-top: 15px;
-  text-align: center;
-}
-.editor-buttons .submit-button,
-.editor-buttons .button{
-  font-weight: normal;
+  text-align: right;
 }

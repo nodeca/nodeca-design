@@ -137,12 +137,16 @@
           </ul>
         </nav>
 
-        <form method="post" action="" class="editor">
-          <div class="editor-frame clearfix">
+        <form method="post" action="" class="editor clearfix">
+          <div class="editor-frame">
             <div class="editor-area">
               <div class="indent">
-                <input type="text" class="editor-theme _pp-focus" placeholder="Theme" />
-                <textarea class="editor-msg" placeholder="Write something"></textarea>
+                <input type="text" class="editor-theme _pp-focus" placeholder="Topic title" />
+                <textarea class="editor-msg" placeholder="Message"></textarea>
+                <div class="editor-buttons">
+                  <input type="button" class="btn" value="Preview" />
+                  <input type="submit" class="btn primary" value="Post" />
+                </div>
               </div>
             </div>
             <aside class="editor-sidebar">
@@ -157,10 +161,6 @@
                 <dd><input type="checkbox" /> <label><strong>Enable</strong> emoticons?</label></dd>
               </dl>
             </aside>
-          </div>
-          <div class="editor-buttons">
-            <input type="submit" class="btn primary" value="Post" />
-            <input type="button" class="btn" value="Full Editor" />
           </div>
         </form>
 
