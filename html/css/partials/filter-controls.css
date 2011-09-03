@@ -50,8 +50,12 @@ a.filter-btn:focus{
 .filter:last-child{
   margin-right: 0;
 }
+a.filter-btn {
+  color: #555;
+}
 a.filter-btn:hover{
   text-decoration: none;
+  color: #036;
 }
 a.filter-btn:after{
   background: #CCC;

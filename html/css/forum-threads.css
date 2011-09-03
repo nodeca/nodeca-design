@@ -36,7 +36,7 @@
 /*  border-top: 1px solid #e0e0e0; */
 }
 .tl-row:first-child {
-  border-top: 2px solid #e0e0e0;  
+  border-top: 1px solid #aaa;
 }
 .tl-table td{
   padding: 15px 8px 15px 8px;
