@@ -223,7 +223,7 @@ td.tl-summary-col{
 }
 .thread-posts{
   background: #fff;
-  padding: 20px 60px;
+  padding: 0 60px 20px;
   height: 1%;
 }
 .thread-post{

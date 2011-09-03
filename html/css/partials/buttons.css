@@ -191,6 +191,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   background: -moz-linear-gradient(#ccae66,#963c2c);
   background: -webkit-linear-gradient(#ccae66,#963c2c);
   color: #fff;
+  opacity:1;
 }
 .above ._menu-activated .btn.menu{
   border-color: #963c2c;

@@ -15,7 +15,6 @@
 }
 .profile .sidebar-nav a:hover{
   color: #036;
-  text-decoration: underline;
 }
 .profile .sidebar-nav .active a{
   font-weight:bold;
