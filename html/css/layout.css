@@ -145,6 +145,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 h1.title{
   margin: 0;
   font-family: serif;
+  font-size:26px;
 }
 h1.title{
   margin-bottom: 15px;
