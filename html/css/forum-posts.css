@@ -1,27 +1,6 @@
 .pl-wrap{
 }
 
-.pl-title{
-  background: #12729f;
-  background: linear-gradient(#258ac3, #025c7e);
-  background: -moz-linear-gradient(#258ac3,#025c7e);
-  background: -webkit-linear-gradient(#258ac3,#025c7e);
-  border-radius:4px 4px 0 0;
-  color:#fff;
-  font-size:12px;
-  font-weight:normal;
-  text-align:left;
-  padding:0 15px;
-  position:relative;
-  line-height:45px;
-  height:45px;
-  white-space: nowrap;
-}
-.pl-title .right{
-  margin-left: 10px;
-  display: inline;
-}
-
 /* ----------------------------------
  * Post
  */
@@ -105,9 +84,6 @@ a.post-timestamp:hover {
   color: #333;
   text-decoration: underline;
 }
-/*.post-meta .votes-count{
-  opacity: 1;
-}*/
 .post:hover .post-meta a.action{
   opacity: .8;
 }
@@ -115,12 +91,6 @@ a.post-timestamp:hover {
   opacity:1 !important;
 }
 
-.post-meta .left{
-  float: left;
-}
-.post-meta .right{
-  float: right;
-}
 .post-meta li{
   float: left;
   display: inline;/* ie double margin hack */
@@ -129,13 +99,13 @@ a.post-timestamp:hover {
 .post-meta .right li{
   margin:0 0 0 15px;
 }
-
 .post-meta .votes.large{
   margin-top: 0!important;
   top: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
+
 
 .post-image{
   margin: 20px 0;
