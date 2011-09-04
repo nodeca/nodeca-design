@@ -299,52 +299,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 /*
  *
- * Notices
- *
- */
-.hot-msg{
-  background-color: #fff3b2;
-  padding: 12px 40px 12px 12px;
-  height: 1%; /* ie6-7 padding hack */
-  position: relative;
-  margin: 0 0 13px;
-}
-.hot-msg h3{
-  font-weight: bold;
-  margin: 0 0 2px;
-}
-.hot-msg .msg-close{
-  background: #f4eab7;
-  background: linear-gradient(#fefbe9, #ebdc8e);
-  background: -moz-linear-gradient(#fefbe9,#ebdc8e);
-  background: -webkit-linear-gradient(#fefbe9,#ebdc8e);
-  border-color: #fffcec #ece1a9 #d9cf97;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 7px;
-  color:#84762c;
-  text-shadow: 0 1px 0 #fff;
-  position: absolute;
-  display: block;
-  width:14px;
-  height: 14px;
-  right:19px;
-  top:50%;
-  margin-top:-7px;
-  line-height: 13px;
-  text-align: center;
-}
-.hot-msg .msg-close:hover{
-  background: #f7f0c8;
-  background: linear-gradient(#fefbe9, #f0e5a7);
-  background: -moz-linear-gradient(#fefbe9,#f0e5a7);
-  background: -webkit-linear-gradient(#fefbe9,#f0e5a7);
-  border-color: #fffcec #f5edbf #e6db9f;
-  text-decoration: none;
-}
-
-/*
- *
  * Content Styles
  *
  */
