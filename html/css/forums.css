@@ -215,6 +215,7 @@ td.fl-icon-col{
 /*  font-size:20px; 
   font-family: sans-serif; */
   margin:0 25px 0 10px;
+  font-family: serif;
   float: left;
 }
 .fl-cat-head:hover ._collapser{
