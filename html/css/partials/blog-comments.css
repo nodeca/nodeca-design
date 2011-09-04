@@ -30,11 +30,11 @@
   margin-left: 30px;
 }
 .blog-author-comment{
-  background: #fff8f0;
-  box-shadow: 0 1px 2px #aaa;
+  background: #FFF8F0;
+/*  box-shadow: 0 1px 2px #aaa; */
   padding: 10px;
   margin: 10px -10px 20px;
-  border: 0!important;
+  border: 1px solid #fceec1 !important;
   border-radius: 6px;
 }
 .blog-comment-head{

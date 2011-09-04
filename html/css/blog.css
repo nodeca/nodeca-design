@@ -20,7 +20,7 @@
   float: right;
   width: 232px;
   border-left: 1px solid #b0b0b0;
-  padding: 20px 0 5px 40px;
+  padding: 20px 0 5px 30px;
   display: inline;/* double margin hack for ie */
   margin: 55px 0 0 0;
 }
@@ -30,7 +30,7 @@
   top:-36px;
 }
 .blog-entry {
-  border-bottom: 2px solid #aaa;
+  border-bottom: 1px solid #ccc;
 }
 
 .blog-head{
@@ -153,18 +153,22 @@
  *
  */
 
-.widget{
+.blog-widget{
   margin:0 0 30px;
+/*
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+*/
 }
-.widget-title{
-  margin:0 0 15px -20px;
+.blog-widget-title{
+  margin:0 0 10px -15px;
 }
+
 .cat-list-wgt{
   line-height: 1.5em;
   font-size: 13px;
 }
 .cat-list-wgt a {
-  color: #333;
+  color: #666;
 }
 .blog .widget a:hover {
   color: #036;
@@ -235,9 +239,9 @@
   margin: 0 0 -15px;
   font-size:13px;
 }
-.recent-comments-wgt a {
+/*.recent-comments-wgt a {
   color: #333;
-}
+}*/
 .recent-comments-wgt li{
   margin: 0 0 15px;
 }
@@ -250,7 +254,7 @@
   border-radius: 4px;
 }
 .recent-comments-wgt .author-name{
-  color:#8c8c8c;
+  color:#333;
   font-size: 11px;
 }
 .recent-comments-wgt time{
