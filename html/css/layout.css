@@ -694,6 +694,7 @@ a.quote-author:before{
   top:50%;
   height: 50px;
   width: 50px;
+  border-radius:4px 0 0 4px;
   line-height: 50px;
   overflow: hidden;
   margin-top: -25px;
