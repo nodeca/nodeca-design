@@ -44,15 +44,14 @@ a.vote-down:after{
 .votable:hover a.vote-down{
   opacity: 1!important;
 }
-.votable:hover a.vote-up:hover,
-.votable:hover a.vote-down:hover{
+a.vote-up:hover,
+a.vote-down:hover{
   text-decoration: none;
 }
-.votes:hover a.vote-up{
-/*  color:#62961d; */
+/*.votes:hover*/ a.vote-up{
   color:#080;
 }
-.votes:hover a.vote-down{
+/*.votes:hover*/ a.vote-down{
   color:#c00;
 }
 
@@ -71,6 +70,7 @@ a.vote-down:after{
 .votable:hover .votes.large{
   background-color: #EEE;
 }
+/*
 .votes.large a.vote-up:after{
   content: '⇧';
 }
@@ -80,3 +80,4 @@ a.vote-down:after{
 .votes.large .votes-count{
   font-size:12px;
 }
+*/
