@@ -187,7 +187,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   background: -webkit-linear-gradient(#258ac4, #00597b);
   box-shadow:0 0 30px #aaa;
   border-bottom:1px solid #fff;
-*/  height:63px;
+*/  height:70px;
   background: #444;
   border-bottom:1px solid #CCCCCC;
   box-shadow:0 0 3px #333333;
@@ -263,7 +263,7 @@ a.gn-link{
  */
 .user-bar{
   position:absolute;
-  top:7px;
+  top:10px;
   left:182px;
   z-index:1;
   font-size:11px;

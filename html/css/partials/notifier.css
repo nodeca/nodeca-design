@@ -14,8 +14,10 @@
 .notify-picker:before{
   content: '✉';
   margin-right: 3px;
-  font-size: 17px;
+  font-size: 15px;
   vertical-align: middle;
+  position:relative;
+  bottom:1px;
 }
 
 .notify-picker:focus{
