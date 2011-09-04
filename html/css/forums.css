@@ -105,8 +105,11 @@ td.fl-icon-col{
   font-size: 11px;
   padding-left: 3px;
 }
+.fl-last-post-author {
+ font-size: 11px;
+}
 .fl-last-post-author a{
-  color:#373737;
+  color:#333;
 }
 .fl-last-post-title{
   position:relative;
