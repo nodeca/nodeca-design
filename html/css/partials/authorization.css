@@ -17,7 +17,7 @@
   border-radius:4px 4px 0 0;
   display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
   padding:0 11px;
-  margin:-12px -11px 0;
+  margin:-12px -13px 0 -11px;
   *margin:-12px -5px 0;/* ie6-7 hack */
   height:37px;
   line-height:35px;
@@ -37,8 +37,8 @@
   color:#373737;
   position:absolute;
   *top:26px;/* ie6-7 hack */
-  top:27px;
-  right:-11px;
+  top:25px;
+  right:-13px;
   width:200px;
   overflow:hidden;
   border-color:#f3f3f3 #0c4d6c #0c4d6c #f3f3f3;
