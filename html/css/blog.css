@@ -162,70 +162,55 @@
 .blog-widget-title{
   margin:0 0 10px -15px;
 }
+.blog-widget a:hover {
+  color: #036;
+}
 
-.cat-list-wgt{
+.blog-cat-list{
   line-height: 1.5em;
   font-size: 13px;
 }
-.cat-list-wgt a {
+.blog-cat-list a {
   color: #666;
 }
-.blog .widget a:hover {
-  color: #036;
-  text-decoration: underline;
-}
-.cat-list-wgt ul{
+.blog-cat-list ul{
   margin-left: 20px;
 }
-.calendar-wgt{
+.blog-calendar{
   background: #f6f6f6;
   border-radius: 4px;
   width: 100%;
 }
-.calendar-wgt th{
+.blog-calendar th{
   font-size: 13px;
   text-align: center;
   padding: 5px 0 10px;
 }
-.calendar-wgt .prev-month,
-.calendar-wgt .next-month{
+.blog-calendar .prev,
+.blog-calendar .next{
   width: 1%;
 }
-.calendar-wgt .prev-month a,
-.calendar-wgt .next-month a{
-  background: #e0e0e0;
-  color:#8c8c8c;
-  display: block;
-  height: 13px;
-  width: 13px;
-  border-radius: 3px;
-  line-height: 13px;
-  font-size: 7px;
-  margin: auto;
+.blog-calendar .prev-month a:after{
+  content: '←';
 }
-.calendar-wgt .prev-month a:after{
-  content: '◄';
+.blog-calendar .next-month a:after{
+  content: '→';
 }
-.calendar-wgt .next-month a:after{
-  content: '►';
-}
-.calendar-wgt td{
-  font-size: 11px;
+.blog-calendar td{
+  font-size: 12px;
   height: 22px;
   width: 1%;
   vertical-align: middle;
   text-align: center;
 }
-.calendar-wgt td.archive{
+.blog-archive{
   font-size: 12px;
   text-align: right;
   padding: 5px 10px 5px 0;
+  display: block;
 }
-.calendar-wgt td.archive a:after{
-  font-size: 14px;
-  content: ' ›';
-}
-.calendar-wgt td .today{
+
+.blog-calendar td .today{
   display: inline-block;
   background: #067ba1;
   color:#fff;
@@ -248,7 +233,7 @@
 .recent-comments-wgt .author-pic{
   float: left;
   display: inline;/* ie double margin hack */
-  margin:3px 15px 0 0;
+  margin:3px 10px 0 0;
   height: 30px;
   width: 30px;
   border-radius: 4px;

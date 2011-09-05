@@ -77,7 +77,7 @@ h6 {
 }
 a.quote-author{
   font-size: 12px;
-/*  color:#888; */
+  color:#888;
   float: left;
   min-height: 15px;
 }

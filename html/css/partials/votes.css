@@ -55,7 +55,7 @@ a.vote-down:hover{
   font-size: 14px;
   overflow:hidden; /* IE6 hack */
   border-radius: 4px;
-  line-height: 28px;
+  line-height: 30px;
   height: 30px;
 }
 .votable:hover .votes.large{
