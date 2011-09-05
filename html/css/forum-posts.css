@@ -59,6 +59,7 @@ a.post-timestamp:hover {
   margin-top: 5px;
   line-height: 1.4;
   color: #AAA;
+  display: none;
 }
 .post-content{
   overflow: hidden;
