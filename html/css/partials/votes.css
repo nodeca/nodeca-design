@@ -8,11 +8,6 @@
   -moz-transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
 }
-.votes-count,
-a.vote-up,
-a.vote-down{
-  vertical-align: middle;
-}
 a.vote-up,
 a.vote-down{
   color:#666;
@@ -58,13 +53,9 @@ a.vote-down:hover{
 
 .votes.large{
   font-size: 14px;
-  position:relative;
-  top:-7px;
   overflow:hidden; /* IE6 hack */
   border-radius: 4px;
-  margin-top:-12px!important;
-  top: 6px;
-  line-height: 30px;
+  line-height: 28px;
   height: 30px;
 }
 .votable:hover .votes.large{
