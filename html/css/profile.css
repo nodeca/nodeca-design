@@ -112,7 +112,7 @@
   
 /*  border-radius:4px 4px 0 0; */
 }
-.p-widget-head .right {
+.p-widget-head .small {
  font-size: 12px;
 }
 
@@ -484,17 +484,16 @@ li.pw-g-item:after{
  * 
  */
 .online-sticker{
-  position:absolute;
-  margin:-12px 0 0 4px;
-  font-size:11px;
-  border-radius:4px 4px 4px 0;
   background: #b7db47;
   background: linear-gradient(#9fc42d, #b7db47, #b7db47);
   background: -moz-linear-gradient(#9fc42d, #b7db47, #b7db47);
   background: -webkit-linear-gradient(#9fc42d, #b7db47, #b7db47);
   color:#fff;
+  border-radius:4px 4px 4px 0;
+  font:11px/15px sans-serif;;
+  position:absolute;
+  margin:-12px 0 0 4px;
   padding:0 5px;
-  line-height:15px;
   height:17px;
 }
 .online-sticker .bottom{
