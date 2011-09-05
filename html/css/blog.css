@@ -75,7 +75,7 @@
   max-width: 70%;
 }
 .blog-meta .tags{
-	margin:0;
+	margin:4px 0 0 0;
 	padding:0;
 	list-style:none;
 }
@@ -181,8 +181,17 @@
   border-radius: 4px;
   width: 100%;
 }
+a.blog-calendar-date {
+  color: #333;
+  text-decoration: underline;
+}
+a.blog-calendar-date:hover {
+  color: #607890;
+}
+
 .blog-calendar th{
   font-size: 13px;
+  font-weight: normal;
   text-align: center;
   padding: 5px 0 10px;
 }
@@ -190,14 +199,16 @@
 .blog-calendar .next{
   width: 1%;
 }
-.blog-calendar .prev-month a:after{
+.blog-calendar .prev a:after{
   content: '←';
 }
-.blog-calendar .next-month a:after{
+.blog-calendar .next a:after{
   content: '→';
 }
+
 .blog-calendar td{
   font-size: 12px;
+  color: #888;
   height: 22px;
   width: 1%;
   vertical-align: middle;
@@ -210,11 +221,11 @@
   display: block;
 }
 
-.blog-calendar td .today{
+.blog-calendar .today{
   display: inline-block;
-  background: #067ba1;
+  background: #666;
   color:#fff;
-  border-radius: 3px;
+/*  border-radius: 3px; */
   padding: 4px 5px 3px;
   margin: 0 0 0 -10px;
   position: relative;
