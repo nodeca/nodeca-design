@@ -62,3 +62,32 @@ h6 {
   padding: 10px 0 0;
   border-top: 1px solid #eee;
 }
+
+.quote{
+  background-color: #f8f8f8;
+  border-left: 3px solid #aaa;
+  color:#444;
+  font-size: 13px;
+  margin: 10px 10px 10px 20px;
+  padding:15px;
+  height: 1%;
+}
+.quote-head{
+  margin: 0 0 5px;
+}
+a.quote-author{
+  font-size: 12px;
+/*  color:#888; */
+  float: left;
+  min-height: 15px;
+}
+a.quote-author:before{
+  content: '↰';
+  padding-right: 10px;
+  text-decoration: none !important;
+}
+.quote-date{
+  color:#adadad;
+  font-size: 11px;
+  float: right;
+}
