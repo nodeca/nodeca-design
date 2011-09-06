@@ -198,6 +198,9 @@ h1.title{
   border-bottom:1px solid #CCCCCC;
   box-shadow:0 0 3px #333333;
 }
+.header.small{
+  height: 38px;
+}
 header .trunk{
   position:relative;
   height:100%;
@@ -217,7 +220,7 @@ header .trunk{
 .logo .logo-txt {
   position:absolute;
   left:15px;
-  bottom:8px;
+  bottom:7px;
 }
 
 /*
@@ -269,10 +272,14 @@ a.gn-link{
  */
 .user-bar{
   position:absolute;
-  top:10px;
+  top:11px;
   left:182px;
   z-index:1;
   font-size:11px;
+}
+.small .user-bar{
+  left: auto;
+  right: 0;
 }
 .ub-item,
 .ub-item-dimmed
