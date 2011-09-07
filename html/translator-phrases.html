@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/partials/notifier.css">
   <link rel="stylesheet" href="css/partials/quick-search.css">
   <link rel="stylesheet" href="css/partials/authorization.css">
+  <link rel="stylesheet" href="css/partials/votes.css">
   <link rel="stylesheet" href="css/partials/tabs.css">
   <link rel="stylesheet" href="css/partials/translator-phrases.css">
   <link rel="stylesheet" href="css/addons/sape.css">
@@ -97,7 +98,7 @@
 
         <div id="translator-main" class="tabs-content">Main</div>
         <div id="translator-phrases" class="tabs-content tabs-content-visible">
-          <div class="filters clearfix">
+          <div class="list-filters clearfix">
             <div class="left">
               <label>Show:</label>
               <select>
@@ -120,6 +121,82 @@
               <li style="width: 20%;" class="pink"></li>
             </ul>
           </div>
+          <article class="phrases">
+            <article class="phrase translated">
+              It was popularised in the 1960s with the release of Letraset sheets containing
+              <article class="translations">
+                <article class="translation votable">
+                  <div class="votes">
+                    <a href="#1" class="vote-up"></a>
+                    <span class="votes-count">34</span>
+                    <a href="#1" class="vote-down"></a>
+                  </div>
+                  <div class="nofloat">
+                    When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <footer class="meta clearfix">
+                      <ul class="actions left">
+                        <li><a href="#1">Approve</a></li>
+                        <li><a href="#1">Reject</a></li>
+                        <li><a href="#1">Delete</a></li>
+                      </ul>
+                      <div class="author right">by <a href="#1">oldarney</a>, the <time datetime="2011-08-20T10:42Z">20 Aug 11 at 10:42</time></div>
+                    </footer>
+                  </div>
+                </article><!-- translation -->
+                <article class="translation votable">
+                  <div class="votes">
+                    <a href="#1" class="vote-up"></a>
+                    <span class="votes-count">34</span>
+                    <a href="#1" class="vote-down"></a>
+                  </div>
+                  <div class="nofloat">
+                    Galley of type and scrambled it to make a type specimen book.
+                    <footer class="meta clearfix">
+                      <ul class="actions left">
+                        <li><a href="#1">Approve</a></li>
+                        <li><a href="#1">Reject</a></li>
+                        <li><a href="#1">Delete</a></li>
+                      </ul>
+                      <div class="author right">by <a href="#1">oldarney</a>, the <time datetime="2011-08-20T10:42Z">20 Aug 11 at 10:42</time></div>
+                    </footer>
+                  </div>
+                </article><!-- translation -->
+                <article class="translation votable">
+                  <div class="votes">
+                    <a href="#1" class="vote-up"></a>
+                    <span class="votes-count">34</span>
+                    <a href="#1" class="vote-down"></a>
+                  </div>
+                  <div class="nofloat">
+                    Printer took a galley of type and scrambled it to make a type specimen book.
+                    <footer class="meta clearfix">
+                      <ul class="actions left">
+                        <li><a href="#1">Approve</a></li>
+                        <li><a href="#1">Reject</a></li>
+                        <li><a href="#1">Delete</a></li>
+                      </ul>
+                      <div class="author right">by <a href="#1">oldarney</a>, the <time datetime="2011-08-20T10:42Z">20 Aug 11 at 10:42</time></div>
+                    </footer>
+                  </div>
+                </article><!-- translation -->
+              </article><!-- translations -->
+              <form class="new-translation" method="post" action="">
+                <input type="text" placeholder="Add new translation" />
+              </form>
+            </article><!-- phrase -->
+            <article class="phrase pending">
+              There are many variations of passages of Lorem Ipsum available
+              <form class="new-translation" method="post" action="">
+                <input type="text" placeholder="Add new translation" />
+              </form>
+            </article><!-- phrase -->
+            <article class="phrase missing">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+              <form class="new-translation" method="post" action="">
+                <input type="text" placeholder="Add new translation" />
+              </form>
+            </article><!-- phrase -->
+          </article><!-- phrases -->
         </div><!-- Phrases -->
         <div id="translator-moderation" class="tabs-content">Moderation</div>
         <div id="translator-admin" class="tabs-content">Admin</div>
