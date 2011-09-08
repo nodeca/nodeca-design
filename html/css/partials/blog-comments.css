@@ -19,7 +19,7 @@
 .new-comment-link{
   margin-left: 10px;
 }
-.blog-comment-prepend{
+.blog-comment-inner{
   margin: 0 0 10px;
   padding: 0 0 10px;
 }
@@ -73,18 +73,18 @@
   display: inline;
   margin-left: 10px;
 }
-.blog-comment-prepend .id,
-.blog-comment-prepend .actions a{
+.blog-comment-inner .id,
+.blog-comment-inner .actions a{
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
   opacity:.3;
 }
-.blog-comment-prepend:hover .id,
-.blog-comment-prepend:hover .actions a{
+.blog-comment-inner:hover .id,
+.blog-comment-inner:hover .actions a{
   opacity:1;
 }
-.blog-comment-prepend .actions a{
+.blog-comment-inner .actions a{
   color:#333;
   text-decoration: underline;
 }
