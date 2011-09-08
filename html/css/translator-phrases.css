@@ -32,6 +32,7 @@
   border-width: 1px 0;
   height: 28px;
   float: left;
+  clear:right;
 }
 .ratio .bars li.green{
   background-color: #c1f081;
