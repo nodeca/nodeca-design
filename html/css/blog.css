@@ -85,7 +85,10 @@
 	line-height:20px;
 	position:relative;
 	font-size:11px;
-}  
+}
+.blog-meta .tags li{
+  margin: 3px 0 2px;
+}
 .blog-meta .tags a{
 	margin-left:20px;
 	padding:0 10px 0 12px;
