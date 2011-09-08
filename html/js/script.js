@@ -37,7 +37,7 @@ $(window).load(function(){
   // Debug code end ================
 
   // tab switching
-  $('.tab').click(function(){
+  $('._tab-pin').click(function(){
     var tabId = $(this).attr('href');
     $('.tabs li.active').removeClass('active');
     $('.tabs-content-visible').removeClass('tabs-content-visible');
