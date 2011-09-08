@@ -6,6 +6,7 @@
  */
 .post{
 /*  background-color: #fbfbfb; */
+  padding-bottom: 30px;
 }
 .post-head{
   background-color: #efefef;
@@ -49,10 +50,13 @@ a.post-timestamp:hover {
   float: left;
   display: inline; /* ie double margin hack */
   margin: 30px 30px 0;
+  width: 150px;
+  text-align: center;
 }
 .post-author-pic img{
   border-radius: 4px;
   vertical-align: top;
+  max-width: 150px;
 }
 .post-author-info{
   font-size: 12px;
@@ -65,17 +69,29 @@ a.post-timestamp:hover {
   overflow: hidden;
   zoom:1; /* ie hack */
   margin: 30px 15px 0 0;
+  padding-bottom: 40px;
   line-height: 1.4;
 }
 .pl-short .post-content{
-  margin: 15px 15px 0;
-  padding: 0 0 15px;
+  margin: 15px 15px -15px;
+  padding: 0;
 }
 .post-meta {
 /*  font-size: 12px; */
   clear: both;
-  padding: 10px 15px 10px 30px;
+  margin: 0 0 0 210px;
   line-height: 30px;
+  position: relative;
+}
+.post-meta .left,
+.post-meta .right{
+  position: absolute;
+  left:0;
+  top: -30px;
+}
+.post-meta .right{
+  left: auto;
+  right: 0;
 }
 .post-meta a.action{
   transition: opacity 0.5s ease;
