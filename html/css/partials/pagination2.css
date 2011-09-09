@@ -13,12 +13,16 @@
   line-height: 23px;
 }
 .pagination a{
+  -webkit-transition: 0.1s ease-in-out all;
+  -moz-transition: 0.1s ease-in-out  all;
+  transition: 0.1s ease-in-out all;
+
   font-size: 12px;
-  color:#666;
+  color:#333;
   padding:0 7px;
   text-align:center;
   float:left;
-  border: 1px solid transparent;
+/*  border: 1px solid transparent; */
   cursor:pointer;
   height: 23px;
 /*  text-decoration:underline;
@@ -26,9 +30,11 @@
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease; */
+  border-radius: 2px;
+  min-width: 20px;
 }
 .pagination a:hover{
-  color: #036;
+  background: #ccc;
 }
 .pagination ul{
   padding-top:3px;
@@ -39,10 +45,13 @@
 a.page-jump {
   text-decoration: none;
   font-weight:bold;
-  background: #eee;
-  border-color: #e0e0e0;
-  border-radius:2px;
-  color: #333;
+  background: #333;
+/*  border-color: #e0e0e0; */
+  box-shadow: 0 0 1px #333;
+  color: #fff;
+}
+a.page-jump:hover {
+  background: #666;
 }
 .pgn-popup{
   background-color: #fff;
