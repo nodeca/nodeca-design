@@ -36,11 +36,14 @@
 /*  border-top: 1px solid #e0e0e0; */
 }
 .tl-row:first-child {
-  border-top: 1px solid #aaa;
+  border-top: 1px solid #ccc;
 }
 .tl-table td{
   padding: 15px 8px 15px 8px;
 /*  vertical-align: middle; */
+}
+.tl-row:first-child td {
+  padding-top: 25px;
 }
 .tl-icon-col{
 /*  padding: 0!important;*/
