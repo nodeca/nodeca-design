@@ -137,7 +137,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .title h1,
 h1.title{
   margin: 0;
-  font-family: serif;
+/*  font-family: serif; */
   font-size:26px;
 }
 h1.title{
@@ -358,7 +358,7 @@ a.ub-link-dimmed{
   margin:0px 5px 15px;
 }
 .page-controls.above .pagination{
-  padding-top:5px;
+  margin-top:5px;
   float:left;
 }
 .page-controls .btn.more{

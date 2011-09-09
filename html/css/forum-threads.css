@@ -39,7 +39,7 @@
   border-top: 1px solid #ccc;
 }
 .tl-table td{
-  padding: 15px 8px 15px 8px;
+  padding: 13px 8px 15px 8px;
 /*  vertical-align: middle; */
 }
 .tl-row:first-child td {
@@ -146,7 +146,7 @@ td.tl-summary-col{
 }
 .tl-title h2{
   display: inline;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   font-family: sans-serif;
   margin-right: 10px;
@@ -273,33 +273,32 @@ td.tl-summary-col{
  */
 .tl-icon-col a {
   color:#fff;
-  font-size:15px;
+  font-size:16px;
   padding: 0 10px;
 }
 .tl-icon-col a:before {
   content:'➟';
-  content:'→';
-  content:'•';
   content:'‣';
-  content:'⭐';
+  content:'✳';
+  content:'→';
+  content:'✚';
+  content:'❏';
+
 }
-.mark-unread .tl-title h2{
-  font-weight: bold;
+.mark-unread .tl-title a{
+/*  font-weight: bold;*/
+  color: #333;
 }
 .mark-unread .tl-icon-col a {
   color: #c43c35;
-  color: #666;
-  color: #c43c35;
+  color: #800;
 }
+/*
+.mark-unread .tl-title h2 a:before{
+  content:'☀ ';
+}*/
 
-a.mark-i-unread {
-  background: #888;
-  display: block;
-  margin: 3px auto;
-  height: 15px;
-  width: 15px;
-  border-radius: 3px;
-}
+
 .mark-i-closed {
   color: #888;
   color: #888;
