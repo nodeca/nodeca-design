@@ -8,17 +8,21 @@
   position:absolute;
   bottom:10px;
   right:15px;
-  background:#f3f3f3;
-  border:0;
-  padding:4px;
   width:200px;
-  height:21px;
 }
 .qs .right{
+  background:#f3f3f3;
+  border-radius: 0 4px 4px 0;
+  height: 21px;
+  padding: 4px 4px 4px 0;
   float:right;
   position:relative;
 }
 .qs-text-wrap{
+  background:#f3f3f3;
+  border-radius: 4px 0 0 4px;
+  height: 21px;
+  padding: 4px;
   overflow:hidden;zoom:1;
 }
 .qs-text{
@@ -82,4 +86,13 @@
 }
 .qs-popup-section{
   margin:10px 0 0;
+}
+.adv-s{
+  clear: both;
+  text-align: right;
+  font-size: 11px;
+  margin: 2px 0 0;
+}
+.adv-s a{
+  color:#fff;
 }
