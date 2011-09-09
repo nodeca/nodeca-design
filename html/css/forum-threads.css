@@ -33,7 +33,7 @@
 }
 
 .tl-row {
-/*  border-top: 1px solid #e0e0e0; */
+  border-top: 1px solid #f8f8f8;
 }
 .tl-row:first-child {
   border-top: 1px solid #ccc;
@@ -43,15 +43,15 @@
 /*  vertical-align: middle; */
 }
 .tl-row:first-child td {
-  padding-top: 25px;
+  padding-top: 30px;
 }
 .tl-icon-col{
 /*  padding: 0!important;*/
   padding-left: 0 !important;
   padding-right: 0 !important;
-  width: 42px;
+/*  width: 42px;
   max-width: 42px;
-  min-width: 42px;
+  min-width: 42px;*/
 }
 .thread-icon{
   border-radius: 3px;
@@ -271,9 +271,27 @@ td.tl-summary-col{
  *   Icon is defined with "mark-i-*STATE*"
  * 
  */
+.tl-icon-col a {
+  color:#fff;
+  font-size:15px;
+  padding: 0 10px;
+}
+.tl-icon-col a:before {
+  content:'➟';
+  content:'→';
+  content:'•';
+  content:'‣';
+  content:'⭐';
+}
 .mark-unread .tl-title h2{
   font-weight: bold;
 }
+.mark-unread .tl-icon-col a {
+  color: #c43c35;
+  color: #666;
+  color: #c43c35;
+}
+
 a.mark-i-unread {
   background: #888;
   display: block;

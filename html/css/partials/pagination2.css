@@ -42,6 +42,17 @@
 .pagination li{
   position:relative;
 }
+.pagination a.next,
+.pagination a.prev {
+/*  background: #eee;  */
+/* border: 1px solid #ccc; */
+}
+.pagination a.next:before {
+  content:'→';
+}
+.pagination a.prev:before {
+  content:'←';
+}
 a.page-jump {
   text-decoration: none;
   font-weight:bold;
