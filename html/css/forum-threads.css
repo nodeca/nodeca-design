@@ -170,7 +170,7 @@ td.tl-summary-col{
 }
 .tl-starter {
   color:#aaa;
-  margin-left:5px;
+  margin-left:10px;
   font-size:13px;
 }
 .tl-starter a{
@@ -303,7 +303,7 @@ td.tl-summary-col{
   margin-left: 15px;
 }
 .mark-unread .tl-starter {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .mark-unread .status-mark {
   float:left;
