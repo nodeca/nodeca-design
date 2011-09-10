@@ -18,9 +18,9 @@
 }
 .blog .sidebar{
   float: right;
-  width: 232px;
+  width: 262px;
   border-left: 1px solid #b0b0b0;
-  padding: 20px 0 5px 30px;
+  padding: 20px 0 5px;
   display: inline;/* double margin hack for ie */
   margin: 55px 0 0 0;
 }
@@ -157,7 +157,7 @@
  */
 
 .blog-widget{
-  margin:0 0 30px;
+  margin:0 0 30px 30px;
 /*
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 */
