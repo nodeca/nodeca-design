@@ -258,11 +258,17 @@ h3.fl-title {
 .fl-title a:before {
   position: absolute;
   content: '';
-  width: 6px;
-  height: 18px;
+  width: 4px;
+  height: 19px;
   background: #ddd;
   left: -20px;
 }
 .unread .fl-title a:before {
   background: #c33;
+  width: 6px;
+}
+.redirect .fl-title a:after {
+  content:'→';
+  color: #aaa;
+  margin-left: 10px;
 }
