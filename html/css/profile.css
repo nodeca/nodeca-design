@@ -113,7 +113,8 @@
 /*  border-radius:4px 4px 0 0; */
 }
 .p-widget-head .small {
- font-size: 12px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .p-widget-content{
@@ -121,6 +122,10 @@
   font-size: 13px;
   height:1%; /* make hasLayout for ie */
 }
+.p-widget-content a{
+  color: #333;
+}
+
 /*
  * Albums widget internals
  */
@@ -147,7 +152,8 @@ img.pw-a-thumb{
 .pw-a-desc .ts{
   font-size:11px;
   display:block;
-  margin:2px 0 0;
+  margin:2px 0 0 5px;
+  color: #aaa;
 }
 /*
  * Friends widget internals
@@ -171,6 +177,9 @@ img.pw-a-thumb{
 .pw-f-name{
   display:block;
   margin:5px 0 0;
+}
+.pw-f-name:hover{
+  text-decoration: underline;
 }
 /*
  * Groups widget internals
@@ -205,7 +214,7 @@ li.pw-g-item:after{
  * 
  */
 .p-block{
-  margin:0 0 20px;
+  margin:0 0 30px;
 }
 .p-block-title{
   transition: all 0.5s ease;
@@ -213,6 +222,7 @@ li.pw-g-item:after{
   -webkit-transition: all 0.5s ease;
 /*  font-size: 16px;
   font-weight: bold;*/
+  margin: 0 0 10px -15px;
 }
 ._collapsed .p-block-title{
   color: #ccc;
@@ -252,7 +262,7 @@ li.pw-g-item:after{
 
 /* user statictics subblocks */
 .p-info-box{
-  margin:20px 0;
+  margin-bottom:15px;
 }
 .p-info-box dd{
   min-height:17px;
@@ -312,7 +322,6 @@ li.pw-g-item:after{
 .pnotepad-text{
   height:150px;
   width:100%;
-  margin-top: 10px;
 }
 .pnotepad-controls{
   text-align:right;
