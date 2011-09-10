@@ -309,7 +309,7 @@ td.tl-summary-col{
   float:left;
   height: 18px;
   width: 7px;
-  background: #c43c35;
+  background: #c33;
 }
 
 
@@ -351,16 +351,16 @@ td.tl-summary-col{
   height: 15px;
   margin-left: 10px;
   text-align: center;
-  line-height: 15px;
+  line-height: 16px;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none !important;
   opacity: 0.5;
 }
 .mark-i-posted:after{
-  content: '✓';
-  /*content: '☀';*/
-  color:#888;
+  content: '⚫';
+  content: '✱';
+  color:#6a6;
 }
 .mark-i-attach {
   float: right;
