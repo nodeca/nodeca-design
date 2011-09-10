@@ -288,9 +288,8 @@ td.tl-summary-col{
   content:'❏';
 
 }
-.mark-unread .tl-title a{
-/*  font-weight: bold;*/
-  color: #333; *
+.mark-unread .tl-title h2{
+  font-weight: bold;
 }
 .mark-unread .tl-icon-col a {
 /*  color: #c43c35;
