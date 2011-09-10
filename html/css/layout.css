@@ -232,13 +232,14 @@ header .trunk{
   margin:0 1px 0 0;
 }
 a.gn-link{
-/*  background: #54b0e1;
-  color:#fff;*/
   color: #ccc;
   float:left;
   padding:0 8px;
   height:33px;
   line-height:33px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+
 }
 .active a.gn-link,
 .active a.gn-link:hover {
@@ -247,7 +248,6 @@ a.gn-link{
   border-right:1px solid #fff;
   border-radius:4px 4px 0 0; 
   color:#333;
-  padding:0 7px;
   height:38px;
   text-decoration:none;
   cursor:default;
