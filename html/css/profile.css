@@ -208,8 +208,17 @@ li.pw-g-item:after{
   margin:0 0 20px;
 }
 .p-block-title{
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 /*  font-size: 16px;
   font-weight: bold;*/
+}
+._collapsed .p-block-title{
+  color: #ccc;
+}
+._collapsed .p-block-title:hover{
+  color: #888;
 }
 
 /* Toggler for title */
