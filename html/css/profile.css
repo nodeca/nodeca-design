@@ -39,15 +39,13 @@
  * 
  */
 .user-mod-menu{
-  float:right;
-  position:relative;
+  position:absolute;
   font-size:12px;
-  height:20px;
-  margin:-20px 0 0;
-  top:30px;
+  top:-7px;
+  right:0px;
+  white-space:nowrap;
 }
 .user-mod-menuitem{
-  float:left;
   display:inline;/* double margin hack for ie */
   margin:0 0 0 16px;
 }
