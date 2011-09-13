@@ -87,12 +87,12 @@
 .qs-popup-section{
   margin:10px 0 0;
 }
-.adv-s{
+.qs-advanced{
   clear: both;
   text-align: right;
   font-size: 11px;
   margin: 2px 0 0;
 }
-.adv-s a{
-  color:#fff;
+.qs-advanced a{
+  color:#ccc;
 }
