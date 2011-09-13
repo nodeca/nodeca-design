@@ -33,22 +33,26 @@
 }
 
 .tl-row {
-/*  border-top: 1px solid #e0e0e0; */
+  border-top: 1px solid #f8f8f8;
 }
 .tl-row:first-child {
-  border-top: 1px solid #aaa;
+  border-top: 2px solid #ccc;
 }
 .tl-table td{
-  padding: 15px 8px 15px 8px;
+  padding: 10px 8px;
 /*  vertical-align: middle; */
+}
+.tl-row:first-child td {
+  padding-top: 20px;
 }
 .tl-icon-col{
 /*  padding: 0!important;*/
   padding-left: 0 !important;
   padding-right: 0 !important;
-  width: 42px;
+/*  width: 42px;
   max-width: 42px;
-  min-width: 42px;
+  min-width: 42px;*/
+  display: none;
 }
 .thread-icon{
   border-radius: 3px;
@@ -74,6 +78,8 @@
 td.tl-summary-col{
   padding-left: 0;
   padding-right: 0;
+  
+  padding-left: 15px;
 }
 .tl-tools-col{
   max-width: 60px;
@@ -143,7 +149,7 @@ td.tl-summary-col{
 }
 .tl-title h2{
   display: inline;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   font-family: sans-serif;
   margin-right: 10px;
@@ -158,13 +164,13 @@ td.tl-summary-col{
   border: 1px solid #E8E8E8; 
   border-radius: 3px;
   background: #f3f3f3;
-  font-size: 11px;
+  font-size: 9px;
   padding: 0px 5px;
   margin-right: 2px;
 }
 .tl-starter {
   color:#aaa;
-  margin-left:5px;
+  margin-left:10px;
   font-size:13px;
 }
 .tl-starter a{
@@ -268,17 +274,45 @@ td.tl-summary-col{
  *   Icon is defined with "mark-i-*STATE*"
  * 
  */
+.tl-icon-col a {
+  color:#fff;
+  font-size:16px;
+  padding: 0 10px;
+}
+.tl-icon-col a:before {
+  content:'➟';
+  content:'‣';
+  content:'✳';
+  content:'→';
+  content:'✚';
+  content:'❏';
+
+}
 .mark-unread .tl-title h2{
   font-weight: bold;
 }
-a.mark-i-unread {
-  background: #888;
-  display: block;
-  margin: 3px auto;
-  height: 15px;
-  width: 15px;
-  border-radius: 3px;
+.mark-unread .tl-icon-col a {
+/*  color: #c43c35;
+  color: #800; */
 }
+/*
+.mark-unread .tl-title h2 a:before{
+  content:'☀ ';
+}*/
+.mark-unread .tl-title {
+  margin-left: 15px;
+}
+.mark-unread .tl-starter {
+  margin-left: 25px;
+}
+.mark-unread .status-mark {
+  float:left;
+  height: 18px;
+  width: 7px;
+  background: #c33;
+}
+
+
 .mark-i-closed {
   color: #888;
   color: #888;
@@ -317,16 +351,16 @@ a.mark-i-unread {
   height: 15px;
   margin-left: 10px;
   text-align: center;
-  line-height: 15px;
+  line-height: 16px;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none !important;
   opacity: 0.5;
 }
 .mark-i-posted:after{
-  content: '✓';
-  /*content: '☀';*/
-  color:#888;
+  content: '⚫';
+  content: '✱';
+  color:#6a6;
 }
 .mark-i-attach {
   float: right;
@@ -344,4 +378,3 @@ a.mark-i-unread {
   color:#888;
 }
 */
-

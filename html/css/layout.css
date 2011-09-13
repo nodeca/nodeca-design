@@ -7,7 +7,7 @@
 .clearfix:after { clear: none!important; overflow: hidden; width: 100%; } /* clearfix fix for fluid layout */
 
 html,body{height:100%;}
-body { color:#373737; font:14px/1.231 sans-serif; }
+body { color:#333; font:14px/1.231 sans-serif; }
 
 ul,ol{margin:0;}
 li{list-style:none;}
@@ -19,7 +19,7 @@ a:hover { color: #015b7d;text-decoration:underline; }
 a *{cursor:pointer;}
 */
 a, a:active, a:visited { text-decoration:none; }
-
+a:hover { text-decoration:underline; }
 
 
 .normal {font-weight: normal;}
@@ -33,13 +33,6 @@ a, a:active, a:visited { text-decoration:none; }
  * Buttons & form fieldset
  *
  */
-.form-buttons{
-  text-align: center;
-}
-.form-buttons li{
-  display: inline;
-  margin: 0 2px;
-}
 
 input::-webkit-input-placeholder  {color:#999;font-style:italic;}
 textarea::-webkit-input-placeholder  {color:#999;font-style:italic;}
@@ -144,7 +137,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .title h1,
 h1.title{
   margin: 0;
-  font-family: serif;
+/*  font-family: serif; */
   font-size:26px;
 }
 h1.title{
@@ -239,29 +232,22 @@ header .trunk{
   margin:0 1px 0 0;
 }
 a.gn-link{
-/*  background: #54b0e1;
-  background: linear-gradient(#5bb6e7, #268bc0);
-  background: -moz-linear-gradient(#5bb6e7,#5bb6e7, #268bc0);
-  background: -webkit-linear-gradient(#5bb6e7,#5bb6e7, #268bc0);
-  border-radius:4px 4px 0 0; 
-  color:#fff;*/
   color: #ccc;
   float:left;
   padding:0 8px;
   height:33px;
   line-height:33px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+
 }
 .active a.gn-link,
 .active a.gn-link:hover {
   background: #fff;
-/*  background: linear-gradient(#fff, #f2f2f2, #d6d6d6);
-  background: -moz-linear-gradient(#fff,#d6d6d6);
-  background: -webkit-linear-gradient(#fff,#d6d6d6); */
   border-left:1px solid #fff;
   border-right:1px solid #fff;
   border-radius:4px 4px 0 0; 
   color:#333;
-  padding:0 7px;
   height:38px;
   text-decoration:none;
   cursor:default;
@@ -338,17 +324,7 @@ a.ub-link-dimmed{
   left: 0;
   top: 0;
 }
-.content-wide{
-  border-bottom:1px solid #b0b0b0;
-  border-left:1px solid #b0b0b0;
-  margin:17px 0 0;
-}
-.content .frame-line,
-.content-wide .frame-line{
-  border-top:1px solid #b0b0b0;
-  width:14px;
-  position:relative;
-}
+
 .breadcrumbs{
   position:absolute;
   left:30px;
@@ -382,7 +358,7 @@ a.ub-link-dimmed{
   margin:0px 5px 15px;
 }
 .page-controls.above .pagination{
-  padding-top:5px;
+  margin-top:5px;
   float:left;
 }
 .page-controls .btn.more{
@@ -397,22 +373,6 @@ a.ub-link-dimmed{
   margin-left: 7px; 
 }
 
-.actions-global{
-  font-size: 12px;
-  position: absolute;
-  right: 15px;
-  top: 20px;
-}
-.actions-global li{
-  float: left;
-  display: inline; /* double margin hack for ie */
-  margin-left: 15px;
-}
-
-.content .holder,
-.content-wide .holder{
-  padding:30px 0 30px 30px;
-}
 .gray-box{
   background-color: #F7F7F7;
   padding: 25px;
@@ -444,7 +404,7 @@ a.ub-link-dimmed{
 }
 .with-aside-menu-col .footer-nav,
 .with-aside-menu-col .copyrights{
-  padding-left:180px;
+  padding-left:120px;
 }
 .site-options{
   position:absolute;
@@ -562,20 +522,6 @@ a.ub-link-dimmed{
 }
 .tabs-content-visible{
   display: block;
-}
-
-/* ----------------------------------
- * Post Code block
- */
-.code{
-  background-color: #f6f6f6;
-  color:#1d1d1d;
-  font: 12px/2 'Bitstream Vera Sans Mono','Courier New',monospace;
-  padding: 10px 20px 10px 30px;
-  margin: 20px 10px 20px 0;
-  overflow: auto;
-  max-height: 400px;
-  line-height:1.1em;
 }
 
 /*

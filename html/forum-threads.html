@@ -146,11 +146,12 @@
 
         <nav class="page-controls clearfix above">
           <ul class="pagination">
+            <li><a class="prev _tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"></a></li>
             <li><a href="#1">1</a></li>
             <li>...</li>
             <li><a href="#1">12</a></li>
             <li><a href="#1">13</a></li>
-            <li><a class="prev-page _tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500">14</a></li>
+            <li><a href="#1">14</a></li>
             <li><a class="page-jump _tip _menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-gravity="sw" data-tipsy-delayIn="500">15</a>  <form method="post" action="" class="pgn-popup">
                 <dl>
                   <dt class="hidden">Jump to:</dt>
@@ -158,11 +159,12 @@
                   <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
                 </dl>
               </form></li>
-            <li><a class="next-page _tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500">16</a></li>
+            <li><a href="#1">16</a></li>
             <li><a href="#1">17</a></li>
             <li><a href="#1">18</a></li>
             <li>...</li>
             <li><a href="#1">345</a></li>
+            <li><a class="next _tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"></a></li>
           </ul>
           <ul class="buttons">
             <li><a class="btn primary" href="#1">New Topic</a></li>
@@ -184,11 +186,12 @@
 
         <div class="tl-wrap">
           <table class="tl-table">
-            <tr class="tl-row mark-unread">
+            <tr class="tl-row">
               <td class="tl-icon-col">
-                <a class="mark-i-unread _tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
               </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Ut enim ad minim veniam, quis nostrud exercitation ullamco </a></h2>
                   <ul class="tl-pagination">
@@ -216,9 +219,10 @@
             </tr><!-- tr end -->
             <tr class="tl-row mark-unread">
               <td class="tl-icon-col">
-                  <a class="mark-i-unread _tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
               </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <a class="mark-i-posted _tip" href="#" title="Show my posts" data-tipsy-gravity="sw"><!-- --></a>
                   <a class="mark-i-attach _tip" href="#" title="512 attached images/files" data-tipsy-gravity="sw"><!-- --></a>
@@ -248,9 +252,10 @@
             </tr><!-- tr end -->
             <tr class="tl-row mark-unread">
               <td class="tl-icon-col">
-                <a class="mark-i-unread _tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
               </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Ad minim veniam, quis nostrud Electric Plane Talk</a></h2>
                   <ul class="tl-pagination">
@@ -277,8 +282,11 @@
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
             <tr class="tl-row mark-posted _expanded">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <a class="mark-i-posted _tip" href="#" title="Show my posts" data-tipsy-gravity="sw"><!-- --></a>
                   <h2><a href="#1">Electric Plane Talk</a></h2>
@@ -327,8 +335,11 @@
               </td>
             </tr><!-- thread posts row -->
             <tr class="tl-row">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Donec adipiscing diam mattis orci eleifend tempor</a></h2>
                 </div>
@@ -351,9 +362,12 @@
               </td>
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
-            <tr class="tl-row">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+            <tr class="tl-row mark-unread">
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Mauris gravida tincidunt malesuada</a></h2>
                 </div>
@@ -377,8 +391,11 @@
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
             <tr class="tl-row">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Proin rutrum, magna id semper viverra</a></h2>
                 </div>
@@ -402,8 +419,11 @@
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
             <tr class="tl-row mark-posted">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <a class="mark-i-posted _tip" href="#" title="Show my posts" data-tipsy-gravity="sw"><!-- --></a>
                   <h2><a href="#1">Nulla suscipit consequat sodales</a></h2>
@@ -428,8 +448,11 @@
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
             <tr class="tl-row">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <a class="mark-i-attach _tip" href="#" title="512 attached images/files" data-tipsy-gravity="sw"><!-- --></a>
                   <h2><a href="#1">Sed venenatis sollicitudin metus</a></h2>
@@ -455,9 +478,10 @@
             </tr><!-- tr end -->
             <tr class="tl-row mark-closed">
               <td class="tl-icon-col">
-                  <div class="mark-i-closed _tip" title="Closed" data-tipsy-gravity="sw"><!-- --></div>
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
               </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Donec nec egestas diam</a></h2>
                 </div>
@@ -481,8 +505,11 @@
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
             <tr class="tl-row">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Proin tincidunt venenatis</a></h2>
                 </div>
@@ -507,9 +534,10 @@
             </tr><!-- tr end -->
             <tr class="tl-row mark-closed">
               <td class="tl-icon-col">
-                <div class="mark-i-closed _tip" title="Closed" data-tipsy-gravity="sw"><!-- --></div>
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
               </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Electric Ut enim ad minim veniam, quis nostrud</a></h2>
                 </div>
@@ -533,8 +561,11 @@
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
             <tr class="tl-row">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Nulla erat elit, mattis quis</a></h2>
                 </div>
@@ -559,9 +590,10 @@
             </tr><!-- tr end -->
             <tr class="tl-row mark-moved">
               <td class="tl-icon-col">
-                <div class="mark-i-moved _tip" title="Мoved" data-tipsy-gravity="sw"><!-- --></div>
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
               </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Enim ad minim veniam, quis nostrud </a></h2>
                 </div>
@@ -574,8 +606,11 @@
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
             <tr class="tl-row">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Quisque faucibus elit eu</a></h2>
                 </div>
@@ -599,8 +634,11 @@
               <td class="tl-select-col"><input type="checkbox" /></td>
             </tr><!-- tr end -->
             <tr class="tl-row">
-              <td class="tl-icon-col"><div class="thread-icon"><!-- --></div></td>
+              <td class="tl-icon-col">
+                <a class="_tip" href="#" title="Mark read" data-tipsy-gravity="sw"><!-- --></a>
+              </td>
               <td class="tl-summary-col">
+                <div class="status-mark"></div>
                 <div class="tl-title">
                   <h2><a href="#1">Ut posuere tortor vitae purus pretium eu vehicula</a></h2>
                 </div>
@@ -631,12 +669,13 @@
           <a class="btn more" href="#1">Next Posts</a>
 
           <div class="clearfix">
-            <ul class="pagination left">
+            <ul class="pagination">
+              <li><a class="prev _tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"></a></li>
               <li><a href="#1">1</a></li>
               <li>...</li>
               <li><a href="#1">12</a></li>
               <li><a href="#1">13</a></li>
-              <li><a class="prev-page _tip" href="#1" title="Previous page, 'Ctrl ←'" data-tipsy-gravity="sw" data-tipsy-delayIn="500">14</a></li>
+              <li><a href="#1">14</a></li>
               <li><a class="page-jump _tip _menu-pin" href="#1" title="Select page number and pagination options" data-tipsy-gravity="sw" data-tipsy-delayIn="500">15</a>  <form method="post" action="" class="pgn-popup">
                   <dl>
                     <dt class="hidden">Jump to:</dt>
@@ -644,13 +683,14 @@
                     <dd class="separator"><input type="checkbox" id="more-btns" /> <label for="more-btns">more buttons</label></dd>
                   </dl>
                 </form></li>
-              <li><a class="next-page _tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500">16</a></li>
+              <li><a href="#1">16</a></li>
               <li><a href="#1">17</a></li>
               <li><a href="#1">18</a></li>
               <li>...</li>
               <li><a href="#1">345</a></li>
+              <li><a class="next _tip" href="#1" title="Next page, 'Ctrl →'" data-tipsy-gravity="sw" data-tipsy-delayIn="500"></a></li>
             </ul>
-            <ul class="buttons right">
+            <ul class="buttons">
               <li><a class="btn primary" href="#1">New Topic</a></li>
               <li><a class="btn markread _tip" href="#1"title="Mark all read" data-tipsy-gravity="sw" data-tipsy-delayIn="500"></a></li>
               <li class="subscribe"><a class="btn" href="#1">24</a></li>

@@ -1,0 +1,182 @@
+/* 
+ * 
+ * Wall styles
+ * 
+ */
+.w-editor {
+  margin:10px 0 15px;
+}
+
+*+html .w-content{
+  margin:0 0 15px;
+}
+.wall-text{
+  height:50px;
+  width:100%;
+}
+.w-entry,
+.w-comment{
+  float:left;
+  width:100%;
+  line-height: 1.4em;
+}
+
+.w-entry {
+  margin-bottom:15px;
+}
+.w-comment {
+  margin-top:10px;
+}
+
+/*
+ * entry/comment footers (for links)
+ */
+.w-entry-footer,
+.w-comment-footer{
+  margin-top: 2px;
+  font-size:11px;
+  line-height: 14px;
+}
+.w-entry-footer .controls,
+.w-comment-footer .controls {
+  float: left;
+}
+.w-entry-footer .controls.alt,
+.w-comment-footer .controls.alt {
+  float: right;
+}
+.w-entry-footer .controls a,
+.w-comment-footer .controls a {
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  color: #036;
+  text-decoration: underline;
+  margin-left: 15px;
+}
+.w-entry-footer .controls.alt a,
+.w-comment-footer .controls.alt a {
+  color: #036;
+  margin-left: 2px;
+  text-decoration: none;
+}
+a.w-like-link {
+  text-decoration: underline !important;
+}
+
+/*
+ * entry/comment header (for links)
+ */
+.w-entry-head a,
+.w-comment-head a {
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+/*
+ * User avatars
+ */
+.w-entry-userpic,
+.w-comment-userpic{
+  float:left;
+  display:inline;/* double margin hack for ie */
+  margin:4px 11px 0 0;
+}
+
+/*
+ * Header
+ */
+.w-entry-head,
+.w-comment-head{
+  margin:0 0 2px;
+  font-size: 12px;
+  overflow:hidden;
+}
+
+.w-delete{
+  float:right;
+  opacity:0;
+}
+.w-delete:after{
+  font-size:14px;
+  content:'✖';
+}
+.w-delete:hover{
+  text-decoration:none;
+}
+.w-entry-head .ts,
+.w-comment-head .ts{
+  color:#aaa;
+  margin-left: 20px;
+  font-size:10px; 
+}
+
+/* comments offset */
+.w-comments{
+  margin:0 0 0 60px;
+}
+
+/* disable text flow under avatar */
+.w-entry-inner,
+.w-comment-inner{
+  overflow:hidden;
+}
+
+/*
+ * Links animations
+ */
+
+/* left link under text */
+.w-entry .controls,
+.w-comment .controls {
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  opacity: 0;
+}
+.w-entry .controls.alt,
+.w-comment .controls.alt {
+  opacity: 1;
+}
+.w-entry:hover .w-entry-footer .controls,
+.w-comment:hover .controls {
+  opacity: 1;
+}
+/* delete */
+.w-entry-inner:hover .w-delete,
+.w-comment:hover .w-delete{
+  opacity: 1;
+}
+/* likes */
+.w-like-link,
+.w-like-heart {
+  opacity: 0;
+}
+.voted .w-like-heart {
+  opacity: 0.3;
+}
+.myvoted .w-like-heart {
+  opacity: 1 !important;
+}
+.w-entry:hover .w-like-link {
+  opacity: 1;
+}
+.w-entry:hover .w-like-heart {
+  opacity: 0.3;
+}
+.w-like-controls:hover .w-like-heart {
+  opacity: 1;
+}
+
+.w-entry-userpic img,
+.w-comment-userpic img{
+  width:50px;
+  height:50px;
+  vertical-align:top;
+  border-radius:2px;
+}
+.w-comment-userpic img{
+  width:30px;
+  height:30px;
+}

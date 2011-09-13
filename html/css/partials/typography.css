@@ -91,3 +91,14 @@ a.quote-author:before{
   font-size: 11px;
   float: right;
 }
+
+.code{
+  background-color: #f6f6f6;
+  color:#1d1d1d;
+  font: 12px/2 'Bitstream Vera Sans Mono','Courier New',monospace;
+  padding: 10px 20px 10px 30px;
+  margin: 20px 10px 20px 0;
+  overflow: auto;
+  max-height: 400px;
+  line-height:1.1em;
+}
