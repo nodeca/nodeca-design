@@ -32,14 +32,14 @@
   width: 100%;
 }
 
-.tl-row {
+/*.tl-row {
   border-top: 1px solid #f8f8f8;
-}
+}*/
 .tl-row:first-child {
   border-top: 2px solid #ccc;
 }
 .tl-table td{
-  padding: 10px 8px;
+  padding: 11px 8px;
 /*  vertical-align: middle; */
 }
 .tl-row:first-child td {
@@ -171,7 +171,7 @@ td.tl-summary-col{
 .tl-starter {
   color:#aaa;
   margin-left:10px;
-  font-size:13px;
+  font-size:11px;
 }
 .tl-starter a{
   color:#aaa;
