@@ -357,10 +357,7 @@ a.ub-link-dimmed{
 .page-controls.below {
   margin:0px 5px 15px;
 }
-.page-controls.above .pagination{
-  margin-top:5px;
-  float:left;
-}
+
 .page-controls .btn.more{
   margin: 0 0 10px;
 }
