@@ -56,6 +56,7 @@ a.post-timestamp:hover {
 .post-author-pic img{
   border-radius: 4px;
   vertical-align: top;
+  max-height: 150px;
   max-width: 150px;
 }
 .post-author-info{
@@ -66,32 +67,26 @@ a.post-timestamp:hover {
   display: none;
 }
 .post-content{
-  overflow: hidden;
-  zoom:1; /* ie hack */
-  margin: 30px 15px 0 0;
-  padding-bottom: 40px;
+  margin: 30px 15px 0 210px;
+  padding-bottom: 30px;
   line-height: 1.4;
+  position: relative;
+  min-height: 120px;
+  _height: 120px; /* ie6 min-height hack */
 }
 .pl-short .post-content{
   margin: 15px 15px -15px;
   padding: 0;
+  min-height: 1px;
+  _height: 1px; /* ie6 min-height hack */
 }
 .post-meta {
 /*  font-size: 12px; */
-  clear: both;
-  margin: 0 0 0 210px;
   line-height: 30px;
-  position: relative;
-}
-.post-meta .left,
-.post-meta .right{
   position: absolute;
-  left:0;
-  top: -30px;
-}
-.post-meta .right{
-  left: auto;
-  right: 0;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
 }
 .post-meta a.action{
   transition: opacity 0.5s ease;
