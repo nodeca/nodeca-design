@@ -7,7 +7,7 @@
   position: absolute;
   width: 455px;
   padding: 20px;
-  border: 3px solid #11729f;
+  border: 3px solid #666;
   border-radius: 6px;
   background: #fff;
   box-shadow: 0 -30px 30px -30px #ddd inset, 0 0 20px #000;
@@ -21,7 +21,7 @@
   display: block;
   width: 0;
   height: 0;
-  border-color: #11729f transparent transparent;
+  border-color: #666 transparent transparent;
   border-style: solid;
   border-width: 15px 15px 0;
   position: absolute;
@@ -44,7 +44,7 @@
 }
 .pp-arrow-top:before,
 .pp-arrow-top:after{
-  border-color: transparent transparent #11729f;
+  border-color: transparent transparent #666;
   border-width: 0 15px 15px;
   bottom: auto;
   top:-18px;
@@ -61,7 +61,7 @@
 }
 .pp-arrow-left:before,
 .pp-arrow-left:after{
-  border-color: transparent #11729f transparent transparent;
+  border-color: transparent #666 transparent transparent;
   border-width: 15px 15px 15px 0;
   bottom: auto;
   left:-18px;
@@ -79,7 +79,7 @@
 }
 .pp-arrow-right:before,
 .pp-arrow-right:after{
-  border-color: transparent transparent transparent #11729f;
+  border-color: transparent transparent transparent #666;
   border-width: 15px 0 15px 15px;
   bottom: auto;
   left:auto;
@@ -87,7 +87,7 @@
   top:20px;
 }
 .pp-arrow-right:after{
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent #666;
   right:-15px;
 }
 
@@ -113,5 +113,5 @@
   margin-bottom: 3px;
 }
 .similar-theme-info .theme-type{
-  color:#8c8c8c;
+  color:#888;
 }
