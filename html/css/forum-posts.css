@@ -22,8 +22,6 @@ a.post-author{
   color: #333;
 }
 a.post-author:hover{
-  font-size: 16px;
-  font-weight: bold;
   color: #036;
 }
 .post-head .right{

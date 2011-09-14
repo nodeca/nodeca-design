@@ -430,9 +430,9 @@ a.ub-link-dimmed{
  */
 .prf-mini{
   display: none;
-  background-color: #12729f;
+  background-color: #333;
   border-radius:4px;
-  color:#1d1d1d;
+/*  color:#1d1d1d; */
   position: absolute;
   left:0;
   top:0;
@@ -450,14 +450,14 @@ a.ub-link-dimmed{
   position: absolute;
   left:20px;
   border: 15px solid transparent;
-  border-top-color: #015b7d;
+  border-top-color: #333;
   bottom: -30px;
   width:0;
   height: 0;
   overflow: hidden;
 }
 .prf-mini:after{
-  border-top-color: #fbfbfb;
+  border-top-color: #fff;
   bottom: -25px;
 }
 .prf-mini-head{
@@ -467,7 +467,7 @@ a.ub-link-dimmed{
   line-height: 44px;
 }
 .prf-mini-wrap{
-  background-color: #fbfbfb;
+  background-color: #fff;
   padding: 7px;
   height: 1%;
 }
