@@ -65,12 +65,12 @@ a.post-timestamp:hover {
   display: none;
 }
 .post-content{
-  margin: 30px 15px 0 210px;
+  margin: 26px 15px 0 210px;
   padding-bottom: 30px;
   line-height: 1.4;
   position: relative;
-  min-height: 120px;
-  _height: 120px; /* ie6 min-height hack */
+  min-height: 125px;
+  _height: 125px; /* ie6 min-height hack */
 }
 .pl-short .post-content{
   margin: 15px 15px -15px;
@@ -83,7 +83,7 @@ a.post-timestamp:hover {
   line-height: 30px;
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -12px;
   width: 100%;
 }
 .post-meta a.action{
