@@ -199,17 +199,24 @@ header .trunk{
   height:100%;
   z-index:11;
 }
+.header a, .header a:hover {
+  color: #ccc;
+}
 .logo{
   position: absolute;
   bottom: 7px;
   line-height: 28px;
   font-size:28px;
 }
+.header.small .logo{
+  bottom:5px;
+}
 .logo a{
   color:#fff;
 }
 .logo a:hover{
   text-decoration:none;
+  color:#fff;
 }
 
 /*
@@ -228,7 +235,6 @@ header .trunk{
   margin:0 1px 0 0;
 }
 a.gn-link{
-  color: #ccc;
   float:left;
   padding:0 8px;
   height:33px;
@@ -263,21 +269,14 @@ a.gn-link{
   left: auto;
   right: 0;
 }
-.ub-item,
-.ub-item-dimmed
-{
+.ub-item {
   float:left;
   display:inline;/* double margin hack for ie */
   margin:0 16px 0 0;
-  color:#fff;
 }
-a.ub-link {
-  color:#fff;
-}
-.ub-item-dimmed,
-a.ub-link-dimmed{
-  color: #ccc;
-/*  color:#77c8f3; */
+.ub-item.highlight a {
+  /*color:#fff;*/
+  font-weight: bold;
 }
 
 /*
