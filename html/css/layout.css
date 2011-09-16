@@ -200,20 +200,16 @@ header .trunk{
   z-index:11;
 }
 .logo{
-  line-height:1;
+  position: absolute;
+  bottom: 7px;
+  line-height: 28px;
+  font-size:28px;
 }
 .logo a{
   color:#fff;
-  font-size:28px;
-  font-weight:normal;
 }
 .logo a:hover{
   text-decoration:none;
-}
-.logo .logo-txt {
-  position:absolute;
-  left:15px;
-  bottom:7px;
 }
 
 /*
