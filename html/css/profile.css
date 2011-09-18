@@ -335,9 +335,10 @@ li.pw-g-item:last-child:after{
  */
 .online-sticker{
   background: #b7db47;
-  background: linear-gradient(#9fc42d, #b7db47, #b7db47);
+/*  background: linear-gradient(#9fc42d, #b7db47, #b7db47);
   background: -moz-linear-gradient(#9fc42d, #b7db47, #b7db47);
   background: -webkit-linear-gradient(#9fc42d, #b7db47, #b7db47);
+  */
   color:#fff;
   border-radius:4px 4px 4px 0;
   font:11px/15px sans-serif;;
@@ -345,6 +346,7 @@ li.pw-g-item:last-child:after{
   margin:-12px 0 0 4px;
   padding:0 5px;
   height:17px;
+  text-shadow: 0 0 4px #333333;
 }
 .online-sticker:before {
 /*  background-color:#b7db47; */
