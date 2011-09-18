@@ -94,8 +94,9 @@ a.quote-author:before{
   background-color: #f6f6f6;
   color:#222;
   font-size: 13px;
-  padding: 10px 20px 10px 30px;
-  margin: 20px 10px 20px 0;
+  line-height:1.2em;
+  padding: 10px 15px;
+  margin: 20px 0 20px 0;
   overflow: auto;
   max-height: 400px;
   white-space:pre;
