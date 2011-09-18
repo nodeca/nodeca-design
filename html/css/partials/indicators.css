@@ -7,15 +7,20 @@
   position: relative;
   z-index: 1;
 }
-a.notify-picker{
-/*  font-weight: bold; */
-/*  line-height: 1;*/
+.indicator {
   height: 20px;
   width:29px;
   display: block;
-  background: url(../../images/mail-active.png);
+  background: url(../../images/indicator-mail.png) no-repeat;
 }
-.notify-picker[data-count]:after{
+.indicator.event {
+  height: 20px;
+  width:24px;
+  display: none;
+/*  background: url(../../images/indicator-event.png) no-repeat;*/
+}
+
+.indicator[data-count]:after{
   background-color:#e10;
   color: #fff;
   content: attr(data-count);
@@ -33,8 +38,25 @@ a.notify-picker{
   right:-8px;
   bottom:-6px;
 }
+.indicator[data-count="0"]:after {
+  display: none;
+}
 
-.notify-picker:focus{
+.indicator.mail[data-count] {
+  background: url(../../images/indicator-mail-new.png) no-repeat;
+}
+.indicator.mail[data-count="0"] {
+  background: url(../../images/indicator-mail.png) no-repeat;
+}
+.indicator.event[data-count] {
+  background: url(../../images/indicator-event-new.png) no-repeat;
+  display:block;
+}
+.indicator.event[data-count="0"] {
+  display:none;
+}
+
+.indicator:focus{
   outline: 0;
 }
 .notify-popup{
