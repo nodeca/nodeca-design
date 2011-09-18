@@ -220,7 +220,7 @@ a.gn-link{
   font-size: 13px
 }
 .aside-nav a{
-  color:#373737;
+  color:#666;
 }
 .aside-nav-active{
   background-color: #fff;
@@ -235,6 +235,7 @@ a.gn-link{
 .aside-nav dt{
   font-weight: bold;
   margin:0 0 5px;
+  color: #666;
 }
 .aside-nav dd{
   margin-left: 20px;
