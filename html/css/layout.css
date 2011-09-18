@@ -281,19 +281,22 @@ a.gn-link{
  */
 .user-bar{
   position:absolute;
-  top:11px;
-  left:182px;
+  top:7px;
+  left:184px;
   z-index:1;
   font-size:11px;
 }
 .small .user-bar{
   left: auto;
   right: 0;
+  top:10px;
 }
 .ub-item {
   float:left;
   display:inline;/* double margin hack for ie */
   margin:0 16px 0 0;
+  height: 20px;
+  line-height: 20px;
 }
 .ub-item.highlight a {
   /*color:#fff;*/
