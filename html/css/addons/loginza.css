@@ -1,12 +1,14 @@
 .loginza{
   text-align:center;
+  font-size:12px;
   margin:20px 0 10px !important;
 }
 .loginza-buttons{
-  background: #fff;
-  background-image: linear-gradient(#fff, #e7e7e7);
+  background: #f8f8f8;
+/*  background-image: linear-gradient(#fff, #e7e7e7);
   background-image: -moz-linear-gradient(#fff, #e7e7e7);
   background-image: -webkit-linear-gradient(#fff, #e7e7e7);
+*/
   border-radius:4px;
   border:1px solid #CCC;
   display:inline-block;
