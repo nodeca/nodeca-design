@@ -68,21 +68,28 @@ a.qs-selection{
   width:140px;
 }
 .qs-menu:hover .qs-popup{
-  top:20px;
+  top:22px;
   bottom:auto;
   opacity:1;
 }
 .qs-popup ul{
   background-color:#fff;
-  padding:15px 10px;
+  background: linear-gradient(left, #eee, #fff 20%);
+  background: -moz-linear-gradient(left, #eee, #fff 20%);
+  background: -webkit-linear-gradient(left, #eee, #fff 20%);
+
+  padding:17px;
   height:1%; /* make hasLayout for ie */
-  box-shadow:0 6px 6px #999;
-  border:1px solid #D5DDE5;
-  border-radius: 4px;
+  box-shadow: 1px 2px 20px #333;
+  border-radius: 6px;
   font-size:12px;
+}
+.qs-popup input {
+  vertical-align: top;
 }
 .qs-popup-title{
   font-weight:bold;
+  margin-left: -2px
 }
 .qs-popup-section{
   margin:10px 0 0;
@@ -92,7 +99,4 @@ a.qs-selection{
   text-align: right;
   font-size: 11px;
   margin: 2px 0 0;
-}
-.qs-advanced a{
-/*  color:#ccc; */
 }
