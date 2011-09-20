@@ -285,19 +285,12 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   background-color: #eee;
   text-decoration: none;
 }
-/*.mod-popup dd{
-  border-bottom: 1px solid #873121;
-  box-shadow: 0 1px 0 #b17452;
-}
-.mod-popup dd:last-child{
-  border: 0;
-  box-shadow: none;
-}*/
 .mod-popup dt{
-  background-color: #873121;
-  color:#c7a372;
-  padding: 5px 15px 6px;
-  text-align: right;
+  background: linear-gradient(left, #ccc, #ccc 50%, #eee);
+  background: -moz-linear-gradient(left, #ccc, #ccc 50%, #eee);
+  background: -webkit-linear-gradient(left, #ccc, #ccc 50%, #eee);
+  margin: 5px 25px 5px 15px;
+  height: 1px;
 }
 nav.below{
   margin-bottom:40px;
