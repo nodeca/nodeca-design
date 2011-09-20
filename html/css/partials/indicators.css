@@ -12,6 +12,7 @@
   width:29px;
   display: block;
   background: url(../../images/indicator-mail.png) no-repeat;
+  opacity: .5;
 }
 .indicator.event {
   height: 20px;
@@ -44,16 +45,20 @@
 
 .indicator.mail[data-count] {
   background: url(../../images/indicator-mail-new.png) no-repeat;
+  opacity: 1;
 }
 .indicator.mail[data-count="0"] {
   background: url(../../images/indicator-mail.png) no-repeat;
+  opacity: .5;
 }
 .indicator.event[data-count] {
+  opacity: 1;
   background: url(../../images/indicator-event-new.png) no-repeat;
   display:block;
 }
 .indicator.event[data-count="0"] {
   display:none;
+  opacity: .5;
 }
 
 .indicator:focus{
