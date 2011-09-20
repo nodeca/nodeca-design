@@ -22,6 +22,9 @@
 }
 ._menu-activated .auth-toggle{
   background: #fff;
+  background: linear-gradient(left, #eee, #fff 20px);
+  background: -moz-linear-gradient(left, #eee, #fff 20px);
+  background: -webkit-linear-gradient(left, #eee, #fff 20px);
   display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
   padding:0 15px;
   margin:-12px -11px 0 -11px;
@@ -35,6 +38,9 @@
 .auth-popup{
   display: none;
   background:#fff;
+  background: linear-gradient(left, #eee, #fff 20px);
+  background: -moz-linear-gradient(left, #eee, #fff 20px);
+  background: -webkit-linear-gradient(left, #eee, #fff 20px);
   color:#333;
   position:absolute;
   *top:26px;/* ie6-7 hack */
