@@ -253,16 +253,18 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 .mod-popup{
   background: #fff;
-  background: linear-gradient(left, #eee, #fff 20%);
+/*  background: linear-gradient(left, #eee, #fff 20%);
   background: -moz-linear-gradient(left, #eee, #fff 20%);
   background: -webkit-linear-gradient(left, #eee, #fff 20%);
-  border-radius: 6px;
+*/
   font-size: 13px;
   position: absolute;
   right: 0;
   top:36px;
   display: none;
-  box-shadow: 1px 2px 20px #333;
+  border: 1px solid #666;
+  border-radius: 4px;
+  box-shadow: 1px 2px 20px #666;
   padding: 10px 0;
   z-index: 9;
 }

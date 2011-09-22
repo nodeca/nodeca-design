@@ -22,9 +22,10 @@
 }
 ._menu-activated .auth-toggle{
   background: #fff;
-  background: linear-gradient(left, #eee, #fff 20px);
+/*  background: linear-gradient(left, #eee, #fff 20px);
   background: -moz-linear-gradient(left, #eee, #fff 20px);
   background: -webkit-linear-gradient(left, #eee, #fff 20px);
+*/
   display:inline-block;*display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
   padding:0 15px;
   margin:-12px -11px 0 -11px;
@@ -34,23 +35,27 @@
   color:#333;
   position:relative;
   z-index:1;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
 }
 .auth-popup{
   display: none;
   background:#fff;
-  background: linear-gradient(left, #eee, #fff 20px);
+/*  background: linear-gradient(left, #eee, #fff 20px);
   background: -moz-linear-gradient(left, #eee, #fff 20px);
   background: -webkit-linear-gradient(left, #eee, #fff 20px);
+*/
   color:#333;
   position:absolute;
   *top:26px;/* ie6-7 hack */
-  top:25px;
+  top:24px;
   left:-11px;
   width:200px;
   overflow:hidden;
   padding:15px 10px 0;
-  box-shadow:2px 2px 20px #000;
-  border-radius:0 4px 4px 4px;
+  border: 1px solid #666;
+  border-radius: 0 4px 4px 4px;
+  box-shadow: 1px 2px 20px #666;
   font-size:14px;
 }
 .auth-popup li {
