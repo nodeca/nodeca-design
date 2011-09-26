@@ -100,7 +100,7 @@
 
 .indicator-item{
   float:left;
-  width:400px;
+  width:500px;
   padding:11px 0;
   margin: 0 9px;
   border-bottom: 1px solid #ccc;
@@ -110,13 +110,13 @@
 }
 .indicator-link{
   float:left;
-  width: 400px
+  width: 500px
   height:1%; /* make hasLayout for ie */
 }
 .indicator-item .userpic{
   float:left;
   display:inline;/* double margin hack for ie */
-  margin:5px 10px 0 0;
+  margin:4px 10px 0 0;
   vertical-align:top;
   width: 30px;
   border-radius: 3px;
@@ -133,10 +133,22 @@
   line-height: 1.2em;
 }
 .indicator-item .head{
-  font-size:11px;
   color: #888;
+  font-size:11px;
+  line-height:1.2em;
+  margin-bottom: 3px;
 }
-.indicator-item .title{
+.indicator-item .topic{
   color: #666666;
   font-style: italic;
+  font-weight: bold;
+  display: block;
+}
+.indicator-item .author{
+  margin-left: 7px;
+}
+.indicator-item .ts{
+  font-size: 9px;
+  font-style: italic;
+  margin-left: 5px;
 }
