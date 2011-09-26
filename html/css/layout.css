@@ -460,7 +460,7 @@ a.gn-link{
   box-sizing: border-box;
   width: 502px;
   padding: 5px;
-  box-shadow: 0 0 20px #333;
+  box-shadow: 0 0 60px #333;
 }
 .prf-mini:before,
 .prf-mini:after{

@@ -253,10 +253,6 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 .mod-popup{
   background: #fff;
-/*  background: linear-gradient(left, #eee, #fff 20%);
-  background: -moz-linear-gradient(left, #eee, #fff 20%);
-  background: -webkit-linear-gradient(left, #eee, #fff 20%);
-*/
   font-size: 13px;
   position: absolute;
   right: 0;
@@ -264,14 +260,14 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   display: none;
   border: 1px solid #666;
   border-radius: 4px;
-  box-shadow: 1px 2px 20px #666;
+  box-shadow: 1px 2px 60px #888;
   padding: 10px 0;
   z-index: 9;
 }
 .below .mod-popup{
   top:auto;
   bottom:36px;
-  box-shadow: 1px -2px 20px #333;
+  box-shadow: 1px -2px 60px #888;
 }
 .mod-popup a{
   -webkit-transition: 0.5s ease all;
