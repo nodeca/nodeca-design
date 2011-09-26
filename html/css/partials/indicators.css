@@ -64,75 +64,78 @@
 .indicator:focus{
   outline: 0;
 }
-.notify-popup{
+.indicator-popup{
   background-color: #F4EE95;
   position:absolute;
   display: none;
-  right: 0;
-  top: 25px;
+  left: -13px;
+  top: 40px;
   box-shadow: 0 0 20px #333;
   border:1px solid #0a425c;
   border-radius: 4px;
-  
+
+  border: 3px solid #666;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 -30px 30px -30px #ddd inset, 0 0 200px #666;
+
 }
-.notify-popup:before{
+.indicator-popup:before,
+.indicator-popup:after {
   content:'';
-  border-color: transparent transparent #0a425c;
-  border-style: solid;
-  border-width: 0 7px 7px;
+  position:absolute;
+  display:block;
   height:0;
   width:0;
-  position:absolute;
-  top:-8px;
-  right:10px;
-  display:block;
-}
-.notify-popup:after{
-  content:'';
-  border-color: transparent transparent #f4ee95;
+  border-color: transparent transparent #666;
   border-style: solid;
-  border-width: 0 7px 7px;
-  height:0;
-  width:0;
-  position:absolute;
-  top:-7px;
-  right:10px;
-  display:block;
+  border-width: 0 15px 15px;
+  top:-18px;
+  left:10px;
+}
+.indicator-popup:after{
+  border-color: transparent transparent #fff;
+  top: -14px;
 }
 
-.notify-msg{
-  border-top:1px solid #fffccc;
-  border-bottom:1px solid #d6ca5f;
+.indicator-item{
   float:left;
-  width:321px;
-  padding:11px 9px;
+  width:400px;
+  padding:11px 0;
+  margin: 0 9px;
+  border-bottom: 1px solid #ccc;
 }
-.notify-msg:first-child{
-  border-radius:4px 4px 0 0;
-  border-top: 0;
+.indicator-item:last-child{
+  border-bottom: 0 none;
 }
-.notify-msg:last-child{
-  border-radius:0 0 4px 4px;
-  border-bottom:0;
-}
-.notify-msg:nth-child(2n){
-  background-color:#fffccc;
-}
-.notify-msg-link{
+.indicator-link{
   float:left;
-  width:321px;
+  width: 400px
   height:1%; /* make hasLayout for ie */
 }
-.notify-userpic{
+.indicator-item .userpic{
   float:left;
   display:inline;/* double margin hack for ie */
-  margin:0 10px 0 0;
+  margin:5px 10px 0 0;
   vertical-align:top;
+  width: 30px;
+  border-radius: 3px;
 }
-.notify-msg-content{
+.indicator-item .msg{
   overflow:hidden;
   display:block;
   zoom:1;
   font-size:13px;
-  height:50px;
+  color: #333;
+  min-height:40px;
+  max-height:80px;
+  line-height: 1.2em;
+}
+.indicator-item .head{
+  font-size:11px;
+  color: #888;
+}
+.indicator-item .title{
+  color: #666666;
+  font-style: italic;
 }
