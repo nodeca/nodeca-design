@@ -120,6 +120,7 @@
   vertical-align:top;
   width: 30px;
   border-radius: 3px;
+  opacity: .7;
 }
 .indicator-item .msg{
   overflow:hidden;
