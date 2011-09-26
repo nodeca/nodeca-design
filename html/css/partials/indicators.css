@@ -128,6 +128,7 @@
 }
 .indicator-item .msg{
   overflow:hidden;
+  text-overflow: ellipsis;
   display:block;
   zoom:1;
   font-size:13px;
