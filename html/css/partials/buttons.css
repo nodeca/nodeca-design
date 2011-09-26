@@ -264,6 +264,11 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   padding: 10px 0;
   z-index: 9;
 }
+.mod-popup li{
+  float: none;
+  display: block;
+  margin:0;
+}
 .below .mod-popup{
   top:auto;
   bottom:36px;
@@ -283,7 +288,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   background-color: #eee;
   text-decoration: none;
 }
-.mod-popup dt{
+.mod-popup .separator{
   background: linear-gradient(left, #ccc, #ccc 50%, #eee);
   background: -moz-linear-gradient(left, #ccc, #ccc 50%, #eee);
   background: -webkit-linear-gradient(left, #ccc, #ccc 50%, #eee);
