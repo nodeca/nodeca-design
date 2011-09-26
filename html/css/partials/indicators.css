@@ -111,8 +111,11 @@
 }
 .indicator-link{
   float:left;
-  width: 500px
+  width: 500px;
   height:1%; /* make hasLayout for ie */
+}
+.indicator-link:hover{
+  text-decoration: none;
 }
 .indicator-item .userpic{
   float:left;
