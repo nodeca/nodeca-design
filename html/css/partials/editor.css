@@ -59,3 +59,27 @@ input.editor-theme,
   margin-top: 15px;
   text-align: right;
 }
+
+
+.similar-theme{
+  font-size: 13px;
+  margin-top: 15px;
+}
+.similar-theme-activity{
+  float: right;
+  width: 150px;
+}
+.similar-theme-info{
+  overflow: hidden;
+  zoom:1;/* overflow:hidden hack for ie */
+}
+.similar-theme-info h4{
+  margin-bottom: 3px;
+}
+.similar-theme-info .theme-type{
+  color:#888;
+}
+.popover.similar-threads{
+  width: 525px;
+  margin-left: 125px !important;
+}

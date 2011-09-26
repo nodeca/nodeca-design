@@ -3,7 +3,7 @@
  *  Popup
  *
  */
-.pp{
+.popover{
   position: absolute;
   width: 455px;
   padding: 20px;
@@ -15,8 +15,8 @@
   display: none;
   z-index: 9999;
 }
-.pp:before,
-.pp:after{
+.popover:before,
+.popover:after{
   content: '';
   display: block;
   width: 0;
@@ -28,13 +28,9 @@
   left: 20px;
   bottom: -18px;
 }
-.pp:after{
+.popover:after{
   border-color: #efefef transparent transparent;
   bottom: -15px;
-}
-.reply-theme-pp{
-  width: 525px;
-  margin-left: 125px !important;
 }
 /*
  * arrow top
@@ -95,23 +91,4 @@
   font-size: 13px;
   font-weight: bold;
   margin: 0 0 10px;
-}
-
-.similar-theme{
-  font-size: 13px;
-  margin-top: 15px;
-}
-.similar-theme-activity{
-  float: right;
-  width: 150px;
-}
-.similar-theme-info{
-  overflow: hidden;
-  zoom:1;/* overflow:hidden hack for ie */
-}
-.similar-theme-info h4{
-  margin-bottom: 3px;
-}
-.similar-theme-info .theme-type{
-  color:#888;
 }
