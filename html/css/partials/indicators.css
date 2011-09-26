@@ -108,6 +108,7 @@
   padding:11px 0;
   margin: 0 9px;
   border-bottom: 1px solid #ccc;
+  position:relative;
 }
 .indicator-item:last-child{
   border-bottom: 0 none;
@@ -158,4 +159,28 @@
   font-size: 9px;
   font-style: italic;
   margin-left: 5px;
+}
+.indicator-item .markread{
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+
+  position:absolute;
+  top: 3px;
+  right:-5px;
+  padding: 5px;
+  font-size: 20px;
+  opacity: 0;
+  color: #aaa;
+}
+.indicator-item .markread:hover{
+  color: #333;
+  text-decoration: none;
+}
+
+.indicator-item .markread:before{
+  content: '✖';
+}
+.indicator-item:hover .markread{
+  opacity: 1;
 }

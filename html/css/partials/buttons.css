@@ -302,45 +302,45 @@ nav.below{
  * (!) this class should be applied to parent (!)
  */
 .subscribe {
-    position:relative;
-    z-index:1;
-    overflow:hidden;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
 }
 
 .subscribe a {
-    padding-left:33px;
+  padding-left:33px;
 }
 .subscribe a:before, 
 .subscribe a:after {
-    content:"";
-    position:absolute;
-    top:50%;
-    background:#666;
+  content:"";
+  position:absolute;
+  top:50%;
+  background:#666;
 }
 
 .subscribe a:before {
-    left:14px;
-    width:16px;
-    height:5px;
-    margin-top:2px;
-    /* css3 */
-    -webkit-border-top-right-radius:5px;
-    -webkit-border-top-left-radius:5px;
-    -moz-border-radius:5px 5px 0 0;
-    border-radius:5px 5px 0 0;        
+  left:14px;
+  width:16px;
+  height:5px;
+  margin-top:2px;
+  /* css3 */
+  -webkit-border-top-right-radius:5px;
+  -webkit-border-top-left-radius:5px;
+  -moz-border-radius:5px 5px 0 0;
+  border-radius:5px 5px 0 0;        
 }
 .subscribe a:after {
-    left:19px;
-    width:6px;
-    height:10px;
-    margin-top:-6px;
-    /* css3 */
-    -webkit-border-top-right-radius:5px;
-    -webkit-border-top-left-radius:5px;
-    -webkit-border-bottom-right-radius:5px 10px;
-    -webkit-border-bottom-left-radius:5px 10px;
-    -moz-border-radius:5px 5px 5px 5px / 5px 5px 10px 10px;
-    border-radius:5px 5px 5px 5px / 5px 5px 10px 10px;
+  left:19px;
+  width:6px;
+  height:10px;
+  margin-top:-6px;
+  /* css3 */
+  -webkit-border-top-right-radius:5px;
+  -webkit-border-top-left-radius:5px;
+  -webkit-border-bottom-right-radius:5px 10px;
+  -webkit-border-bottom-left-radius:5px 10px;
+  -moz-border-radius:5px 5px 5px 5px / 5px 5px 10px 10px;
+  border-radius:5px 5px 5px 5px / 5px 5px 10px 10px;
 }
 
 .btn.active {
@@ -350,27 +350,27 @@ nav.below{
 }
 
 .btn.edit:before {
-    content: "✎";
-    font-size: 18px;
-    line-height: 12px;
-    position: relative;
-    top: 3px;
+  content: "✎";
+  font-size: 18px;
+  line-height: 12px;
+  position: relative;
+  top: 3px;
 }
 
 .btn.delete:before{
   content: '×';
-    font-size: 18px;
-    line-height: 12px;
-    position: relative;
-    top: 1px;
+  font-size: 18px;
+  line-height: 12px;
+  position: relative;
+  top: 1px;
 }
 
 .btn.markread:before{
   content: '✔';
-    font-size: 16px;
-    line-height: 12px;
-    position: relative;
-    top: 2px;
+  font-size: 16px;
+  line-height: 12px;
+  position: relative;
+  top: 2px;
 }
 
 .btn.more{
