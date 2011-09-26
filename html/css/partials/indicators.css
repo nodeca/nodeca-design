@@ -99,6 +99,10 @@
 }
 
 .indicator-item{
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+
   float:left;
   width:500px;
   padding:11px 0;
@@ -107,6 +111,9 @@
 }
 .indicator-item:last-child{
   border-bottom: 0 none;
+}
+.indicator-item:hover{
+  background-color: #f8f8f8;
 }
 .indicator-link{
   float:left;
