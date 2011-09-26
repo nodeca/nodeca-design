@@ -172,7 +172,7 @@
   top: 3px;
   right:-5px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 18px;
   opacity: 0;
   color: #aaa;
 }
@@ -182,7 +182,7 @@
 }
 
 .indicator-item .markread:before{
-  content: '✖';
+  content: '×';
 }
 .indicator-item:hover .markread{
   opacity: 1;
