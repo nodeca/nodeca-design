@@ -74,15 +74,12 @@ a.qs-selection{
 }
 .qs-popup ul{
   background-color:#fff;
-/*  background: linear-gradient(left, #eee, #fff 20%);
-  background: -moz-linear-gradient(left, #eee, #fff 20%);
-  background: -webkit-linear-gradient(left, #eee, #fff 20%);
-*/
   padding:17px;
+  padding-top: 12px;
   height:1%; /* make hasLayout for ie */
-  border: 1px solid #666;
+  border: 1px solid #888;
   border-radius: 4px;
-  box-shadow: 1px 2px 20px #666;
+  box-shadow: 1px 2px 60px #888;
   font-size:12px;
 }
 .qs-popup input {
