@@ -21,10 +21,10 @@
 .fl-cat-table td{
   padding:10px 15px 10px 0;
 /*  vertical-align:middle; */
-  height: 70px;
 }
 .fl-cat-table tr{
   border-bottom:1px solid #f8f8f8;
+  height: 70px;
 }
 .fl-cat-table tr:last-child {
   border: 0;
