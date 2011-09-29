@@ -127,6 +127,11 @@
 	-webkit-box-shadow:-1px -1px 2px #888;
 	box-shadow:-1px -1px 2px #888;
 }
+.blog-meta .tags a.cat{
+  font-weight: bold;
+  font-style: italic;
+}
+
 .blog-meta .tags a:hover{background:#ddd;}	
 .blog-meta .tags a:hover:before{border-color:transparent #ddd transparent transparent;}
 
