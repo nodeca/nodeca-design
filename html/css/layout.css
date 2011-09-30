@@ -586,32 +586,90 @@ a.gn-link{
   display: none;
 }
 
-/*
- *
- * Markup styles
- *
- */
-.quick-select{
+.bulkmod-menu {
   position: fixed;
-  left:50%;
+  right:50%;
   top:-12px;
-  background-color: #fff;
-  color:#1d1d1d;
   display: none;
   z-index: 9999;
-  padding: 7px 10px;
-  box-shadow: 0 2px 5px #666;
-  font-size: 12px;
-  margin-top: -12px;
   _position: absolute; /* ie6 position fixed hack */
   _top: expression(document.getElementsByTagName("body")[-12].scrollTop + "px"); /* ie6 position fixed hack */
 }
-.quick-select dt,
-.quick-select dd{
-  line-height: 24px;
+.bulkmod-menu-pin {
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 8px 4px 4px 8px;
+  padding-right: 5px;
+  vertical-align: middle;
+  box-shadow: 0 0 60px #888;
 }
-.quick-select dd{
-  display: none;
+.bulkmod-menu-pin:before{
+  content:'-';
+  position: relative;
+  background: #888;
+  color: #888;
+  display: inline-block;
+  width:20px;
+  margin-right:3px;
+  border-radius: 6px 0 0  6px;
+}
+.bulkmod-menu-pin:after{
+  content:'«';
+  position: absolute;
+  color: #fff;
+  text-align:center;
+  width:20px;
+  font-size: 25px;
+  left: 0;
+  top: 0;
+}
+
+.bulkmod-menu-content {
+  background-color: #fff;
+  border: 1px solid #888;
+  font-size: 13px;
+  display:none;
+  border-radius: 4px;
+  box-shadow: 0 0 60px #888;
+  padding: 0 0 10px;
+}
+.bulkmod-menu-content a {
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  color:#356;
+  display: block;
+  padding: 8px 30px 8px 20px;
+  height: 1%;
+  white-space: nowrap;
+}
+.bulkmod-menu-content a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+.bulkmod-menu-content dt {
+  padding: 15px 0 5px 15px;
+  font-size:15px;
+  font-weight: bold;
+}
+.bulkmod-menu-content dd {
+  display: inline-block;
+  vertical-align: top;
+}
+.bulkmod-menu-content .first {
+  border-right: 1px solid #ccc;
+}
+.bulkmod-menu-content .first a {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.bulkmod-menu:hover .bulkmod-menu-pin{
+  display:none;
+}
+.bulkmod-menu:hover .bulkmod-menu-content{
+  display:block;
 }
 
 ._scroll-top{

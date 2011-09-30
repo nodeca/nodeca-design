@@ -620,20 +620,27 @@ if ( isset($movie->getID()) ) {
     </div>
   </div>
 
-  <form method="post" action="" class="quick-select">
-    <dl>
-      <dt>(5) selected</dt>
-      <dd><a href="#1">Delete</a></dd>
-      <dd><a href="#1">Approve</a></dd>
-      <dd><a href="#1" class="quick-unselect-all">Unselect All</a></dd>
-      <dt>Other</dt>
-      <dd><a href="#1">Restore</a></dd>
-      <dd><a href="#1">Unapprove</a></dd>
-      <dd><a href="#1">Move</a></dd>
-      <dd><a href="#1">Merge</a></dd>
-      <dd><a href="#1">Split</a></dd>
+  <div method="post" action="" class="bulkmod-menu">
+    <div class="bulkmod-menu-pin">+5</div>
+    <dl class="bulkmod-menu-content">
+      <dt>With 5 selected:</dt>
+      <dd class="first">
+        <ul>
+          <li><a href="#1">Delete</a></li>
+          <li><a href="#1">Approve</a></li>
+          <li><a href="#1" class="quick-unselect-all">Unselect All</a></li>
+        </ul>
+      </dd><dd>
+        <ul>
+          <li><a href="#1">Restore</a></li>
+          <li><a href="#1">Unapprove</a></li>
+          <li><a href="#1">Move</a></li>
+          <li><a href="#1">Merge</a></li>
+          <li><a href="#1">Split</a></li>
+        </ul>
+      </dd>
     </dl>
-  </form>
+  </div>
 
   <!-- JavaScript at the bottom for fast page loading -->
 
