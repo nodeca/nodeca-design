@@ -101,6 +101,9 @@ td.fl-summary-col {
 .fl-last-post-col li{
   margin:0 0 2px; 
   white-space:nowrap;
+  position:relative;
+  overflow:hidden;
+  text-overflow: ellipsis;
 }
 .fl-last-post-date{
   color:#888;
@@ -108,26 +111,12 @@ td.fl-summary-col {
   padding-left: 3px;
 }
 .fl-last-post-author {
- font-size: 11px;
+  font-size: 11px;
 }
 .fl-last-post-author a{
   color:#333;
 }
 .fl-last-post-title{
-  position:relative;
-  overflow:hidden;
-  white-space:nowrap;
-}
-.fl-last-post-title:after,
-.fl-last-post-title:before{
-  content:' ';
-  display:block;
-  position:absolute;
-  top:0;
-  right:-10px;
-  height:30px;
-  width:10px;
-  box-shadow:-5px -5px 15px #fff;
 }
 
 /*

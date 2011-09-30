@@ -101,41 +101,21 @@ td.tl-summary-col{
   min-width: 150px;
   width: 150px;
 }
-.last-post-info{
+.last-post-info li{
   font-size: 13px;
+  white-space:nowrap;
+  position:relative;
+  overflow:hidden;
+  text-overflow: ellipsis;
 }
 .last-post-date{
   margin-bottom: 2px;
 }
-.last-post-author {
-  font-size: 11px;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-}
 .last-post-author,
 .last-post-author a{
+  font-size: 11px;
   color: #333;
 }
-.last-post-author:after{
-  background: linear-gradient(center left, rgba(251,251,251,0), #fff);
-  background: -moz-linear-gradient(center left, rgba(251,251,251,0), #fff);
-  background: -webkit-linear-gradient(top left,  rgba(251,251,251,0),#fff);
-  position: absolute;
-  display: block;
-  content: '';
-  height: 100%;
-  width: 30px;
-  right: 0;
-  top:0;
-}
-/*
-._expanded .last-post-author:after{
-  background: linear-gradient(center left, rgba(255,255,240,0), #FFFFF0);
-  background: -moz-linear-gradient(center left, rgba(255,255,240,0), #FFFFF0);
-  background: -webkit-linear-gradient(top left, rgba(255,255,240,0), #FFFFF0);
-}
-*/
 .tl-select-col{
   max-width: 1%;
   min-width: 1%;
@@ -273,8 +253,6 @@ a.tl-preview-ctl:before {
   height: 1%;
 }
 .thread-post{
-  overflow: hidden;
-  zoom:1;
   margin-bottom: 17px;
 }
 .thread-post-thumb{
@@ -286,14 +264,14 @@ a.tl-preview-ctl:before {
 }
 .thread-post-content{
   font-size: 13px;
-  overflow: hidden;
-  zoom:1;
   line-height: 1.3;
+  overflow: hidden;
 }
 .thread-post-content header{
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 5px;
   margin-bottom: 5px;
+  font-size:11px;
 }
 .thread-posts-actions a{
   font-size: 13px;
@@ -392,7 +370,6 @@ a.tl-preview-ctl:before {
   margin-left: 10px;
   text-align: center;
   line-height: 16px;
-  overflow: hidden;
   font-size: 16px;
   text-decoration: none !important;
   opacity: 0.5;
@@ -408,7 +385,6 @@ a.tl-preview-ctl:before {
   width: 16px;
   background: url(../images/tmp/paperclip.png) no-repeat 0 50%;
   margin-left: 10px;
-/*  overflow: hidden; */
   text-decoration: none !important;
   opacity: 0.5;
 }
