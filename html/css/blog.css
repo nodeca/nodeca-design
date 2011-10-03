@@ -24,7 +24,7 @@
   display: inline;/* double margin hack for ie */
   margin: 55px 0 0 0;
 }
-.new-post-link{
+.blog .btn.aside {
   position: absolute;
   right:0;
   top:-36px;
