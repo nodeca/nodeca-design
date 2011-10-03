@@ -79,8 +79,9 @@
 .p-photo-img img{
   width:200px;
 }
-.p-photo-link{
+a.p-photo-link{
   font-size: 11px;
+  color: #666;
 }
 
 /*
@@ -204,10 +205,12 @@ li.pw-g-item:last-child:after{
 }
 .pw-b-meta{
   font-size:10px;
-  color: #888;
+  color: #aaa;
   margin:3px 0 0;
 }
-
+.pw-blog a {
+  color: #666;
+}
 /*
  * 
  * Profile info blocks (right column)
