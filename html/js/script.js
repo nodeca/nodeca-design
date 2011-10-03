@@ -17,6 +17,8 @@ $(window).load(function(){
   // init hidden menus
   $('._menu-pin').ndMenu();
 
+  $('._editable').editable('http://www.appelsiini.net/projects/jeditable/php/save.php', {});
+
   // Debug code ===================
   // Add button to switch page width
   var dbg_width_arr = ['', '760px', '80%'], // '' is "default" (as in CSS)

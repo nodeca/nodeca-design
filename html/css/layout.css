@@ -139,9 +139,20 @@ h1.title{
   margin: 0;
 /*  font-family: serif; */
   font-size:26px;
+  display: inline-block;
 }
 h1.title{
   margin-bottom: 15px;
+}
+/*
+.title h1._editable:hover:after,
+h1.title._editable:hover:after {
+ content: " ✎";
+}*/
+.title h1._editable:hover,
+h1.title._editable:hover {
+ text-decoration: underline;
+ cursor: pointer;
 }
 .title .subtitle{
   font-size:12px;
