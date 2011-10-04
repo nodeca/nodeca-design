@@ -279,6 +279,7 @@ li.pw-g-item:last-child:after{
 .p-info-label{
   float:left;
   width:120px;
+  color: #888;
 }
 .p-info-box .info{
   overflow:hidden;
