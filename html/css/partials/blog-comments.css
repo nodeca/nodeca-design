@@ -15,7 +15,6 @@
   margin: 30px 0 20px;
 }
 .blog-comments{
-  line-height: 20px;
 }
 .new-comment-link{
   margin-left: 10px;
@@ -26,6 +25,7 @@
 }
 .blog-comment-content {
   font-size:13px;
+  line-height: 1.4em;
 }
 .blog-comment .blog-comment{
   margin-left: 30px;
