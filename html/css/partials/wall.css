@@ -50,7 +50,7 @@
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  color: #333;
+  color: #666;
   text-decoration: underline;
   margin-left: 15px;
 }
@@ -61,7 +61,7 @@
   text-decoration: none;
 }
 a.w-like-link {
-  color: #333 !important;
+  color: #666 !important;
   text-decoration: underline !important;
 }
 
