@@ -161,6 +161,7 @@ img.pw-a-thumb{
   overflow:hidden;
   font-size:11px;
   text-align:center;
+  line-height: 1.1em;
 }
 .pw-f-thumb{
   vertical-align:top;
@@ -168,7 +169,7 @@ img.pw-a-thumb{
 }
 .pw-f-name{
   display:block;
-  margin:5px 0 0;
+  margin:3px 0 0;
   color: #666;
 }
 .pw-f-link:hover .pw-f-name{
