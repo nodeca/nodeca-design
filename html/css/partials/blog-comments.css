@@ -9,6 +9,7 @@
   padding:0 20px;
   margin: 0 -20px;
   border-left: 1px solid #ddd;
+  font-size: 11px;
 }
 .blog-comments-title{
   margin: 30px 0 20px;
@@ -86,7 +87,7 @@
   opacity:1;
 }
 .blog-comment-inner .actions a{
-  color:#333;
+  color:#666;
   text-decoration: underline;
 }
 
