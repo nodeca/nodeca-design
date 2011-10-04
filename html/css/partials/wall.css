@@ -18,7 +18,7 @@
 .w-comment{
   float:left;
   width:100%;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 
 .w-entry {
@@ -50,7 +50,7 @@
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  color: #036;
+  color: #333;
   text-decoration: underline;
   margin-left: 15px;
 }
@@ -61,6 +61,7 @@
   text-decoration: none;
 }
 a.w-like-link {
+  color: #333 !important;
   text-decoration: underline !important;
 }
 
@@ -90,17 +91,18 @@ a.w-like-link {
 .w-entry-head,
 .w-comment-head{
   margin:0 0 2px;
-  font-size: 12px;
+  font-size: 11px;
   overflow:hidden;
 }
 
-.w-delete{
+a.w-delete{
   float:right;
   opacity:0;
+  color: #333;
 }
 .w-delete:after{
   font-size:14px;
-  content:'✖';
+  content:'×';
 }
 .w-delete:hover{
   text-decoration:none;
