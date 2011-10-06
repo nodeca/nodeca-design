@@ -116,7 +116,9 @@ a.w-delete{
 
 /* comments offset */
 .w-comments{
-  margin:0 0 0 60px;
+  margin:0 0 0 50px;
+  padding-left:10px;
+  border-left: 1px solid #ccc;
 }
 
 /* disable text flow under avatar */
