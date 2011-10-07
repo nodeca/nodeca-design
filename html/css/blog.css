@@ -20,20 +20,30 @@
   float: right;
   position: relative;
   width: 262px;
-  border-left: 1px solid #ccc;
+/*  border-left: 1px solid #ccc; */
   padding: 16px 0 5px;
   display: inline;/* double margin hack for ie */
   margin: 60px 0 0 0;
 }
 
 .blog .sidebar:before{
-   border-top: 1px solid #ccc;
-    content: "";
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 10px;
+  border-top: 1px solid #ccc;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10px;
+}
+.blog .sidebar:after {
+  background-color: #ccc;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: -moz-linear-gradient(top, #ccc 90%, #fff);
 }
 
 .blog .btn.aside {
@@ -46,13 +56,13 @@
 }
 .blog-entry:after {
   display: block;
-  height: 2px;
-  background-color: #000;
+  height: 1px;
+  background-color: #aaa;
   width: 100%;
   content: '';
-  background: linear-gradient(left, #ccc, #fff);
-  background: -webkit-linear-gradient(left, #ccc, #fff);
-  background: -moz-linear-gradient(left, #ccc, #fff);
+  background: linear-gradient(left, #aaa, #fff);
+  background: -webkit-linear-gradient(left, #aaa, #fff);
+  background: -moz-linear-gradient(left, #aaa, #fff);
 }
 
 .blog-head{
