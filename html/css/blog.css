@@ -11,7 +11,7 @@
   left:15px;
 }
 .blog .content{
-  margin-top: 55px;
+  margin-top: 60px;
   margin-right: 293px;
   border: 0;
   padding: 0;
@@ -22,7 +22,7 @@
   border-left: 1px solid #b0b0b0;
   padding: 20px 0 5px;
   display: inline;/* double margin hack for ie */
-  margin: 55px 0 0 0;
+  margin: 60px 0 0 0;
 }
 .blog .btn.aside {
   position: absolute;
@@ -55,9 +55,11 @@
 .blog-content{
   line-height: 1.4em;
 }
-.blog-content p,
+.blog-content p{
+  margin: 1.4em 0;
+}
 .blog-content .image{
-  margin: 15px 0;
+  margin: 1.7em 0;
 }
 .blog-content .image img{
   vertical-align: top;
