@@ -42,7 +42,17 @@
   top:-36px;
 }
 .blog-entry {
-  border-bottom: 2px solid #ccc;
+/*  border-bottom: 2px solid #ccc; */
+}
+.blog-entry:after {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  content: '';
+  background: linear-gradient(left, #ccc, #fff);
+  background: -webkit-linear-gradient(left, #ccc, #fff);
+  background: -moz-linear-gradient(left, #ccc, #fff);
 }
 
 .blog-head{
