@@ -18,12 +18,24 @@
 }
 .blog .sidebar{
   float: right;
+  position: relative;
   width: 262px;
-  border-left: 1px solid #b0b0b0;
-  padding: 20px 0 5px;
+  border-left: 1px solid #ccc;
+  padding: 16px 0 5px;
   display: inline;/* double margin hack for ie */
   margin: 60px 0 0 0;
 }
+
+.blog .sidebar:before{
+   border-top: 1px solid #ccc;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+
 .blog .btn.aside {
   position: absolute;
   right:0;
@@ -56,7 +68,7 @@
   line-height: 1.4em;
 }
 .blog-content p{
-  margin: 1.4em 0;
+  margin: 1em 0;
 }
 .blog-content .image{
   margin: 1.7em 0;
