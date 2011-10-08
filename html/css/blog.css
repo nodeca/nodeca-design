@@ -43,7 +43,9 @@
   left: 0;
   width: 1px;
   height: 100%;
-  background: -moz-linear-gradient(top, #ccc 90%, #fff);
+  background: linear-gradient(top, #ccc 95%, #fff);
+  background: -moz-linear-gradient(top, #ccc 95%, #fff);
+  background: -webkit-linear-gradient(top, #ccc 95%, #fff);
 }
 
 .blog .btn.aside {
@@ -60,9 +62,9 @@
   background-color: #aaa;
   width: 100%;
   content: '';
-  background: linear-gradient(left, #aaa, #fff);
-  background: -webkit-linear-gradient(left, #aaa, #fff);
-  background: -moz-linear-gradient(left, #aaa, #fff);
+  background: linear-gradient(left, #aaa 80%, #fff);
+  background: -webkit-linear-gradient(left, #aaa 80%, #fff);
+  background: -moz-linear-gradient(left, #aaa 80%, #fff);
 }
 
 .blog-head{
