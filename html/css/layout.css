@@ -597,6 +597,9 @@ a.gn-link{
   display: none;
 }
 
+/*
+ * Mass moderation controls
+ */
 .bulkmod-menu {
   position: fixed;
   right:50%;
@@ -683,6 +686,9 @@ a.gn-link{
   display:block;
 }
 
+/*
+ * Right static menu (for long pages) with scroller
+ */
 ._scroll-top{
   background: #ececec;
   position: fixed;
@@ -713,3 +719,45 @@ a.gn-link{
   overflow: hidden;
   zoom:1; /* ie hack */
 }
+
+/*
+ * Avatars
+ */
+.av-s {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+  border-radius: 2px;
+}
+.av-m {
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+  border-radius: 3px;
+}
+.av-ml {
+  width: 70px;
+  height: 70px;
+  vertical-align: top;
+  border-radius: 3px;
+}
+.av-l {
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+  border-radius: 3px;
+}
+.av-xl {
+  width: 150px;
+  height: 150px;
+  vertical-align: top;
+  border-radius: 3px;
+}
+.av-xxl {
+  width: 200px;
+  height: 200px;
+  vertical-align: top;
+  border-radius: 3px;
+  box-shadow: 0 0 1px #333333;
+}
+

@@ -174,14 +174,14 @@ a.w-delete{
 }
 
 .w-entry-userpic img {
-  vertical-align:top;
+/*  vertical-align:top;
   width:50px;
   height:50px;
-  border-radius:3px;
+  border-radius:3px;*/
 }
 .w-comment-userpic img{
-  vertical-align:top;
+/*  vertical-align:top;
   width:30px;
   height:30px;
-  border-radius:2px;
+  border-radius:2px;*/
 }

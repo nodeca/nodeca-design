@@ -50,11 +50,11 @@
   text-decoration: none;
 }
 .blog-comment-head .author-pic{
-  border-radius: 3px;
   margin-right: 7px;
+/*  border-radius: 3px;
   vertical-align: middle;
   height: 30px;
-  width: 30px;
+  width: 30px;*/
 }
 .blog-comment-head .author:hover .author-name{
   text-decoration: underline;

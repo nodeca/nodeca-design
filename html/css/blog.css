@@ -242,9 +242,9 @@ a.blog-calendar-date:hover {
   float: left;
   display: inline;/* ie double margin hack */
   margin:3px 10px 0 0;
-  height: 30px;
+/*  height: 30px;
   width: 30px;
-  border-radius: 3px;
+  border-radius: 3px;*/
 }
 .recent-comments-wgt .author-name{
   color:#333;
