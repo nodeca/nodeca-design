@@ -109,6 +109,7 @@
 	font-size:11px;
   padding-left: 19px;
   background: url(../images/tag.svg) no-repeat 0 4px;
+  opacity: .5;
   
 }
 .blog-meta .tags li{
@@ -119,7 +120,7 @@
 }
 .blog-meta .tags a{
 	margin-left:3px;
-	color:#888;
+	color:#333;
 }
 .blog-meta .tags a.cat{
   font-weight: bold;
