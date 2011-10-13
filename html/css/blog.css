@@ -107,6 +107,9 @@
   max-width: 70%;
 	list-style:none;
 	font-size:11px;
+  padding-left: 14px;
+  background: url(../images/tag.svg) no-repeat 0 7px;
+  
 }
 .blog-meta .tags li{
 	float:left;
