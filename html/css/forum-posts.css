@@ -80,7 +80,7 @@ a.post-timestamp:hover {
 }
 .post-meta {
 /*  font-size: 12px; */
-  line-height: 30px;
+  line-height: 20px;
   position: absolute;
   left: 0;
   bottom: -12px;

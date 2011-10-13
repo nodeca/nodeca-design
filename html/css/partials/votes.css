@@ -16,15 +16,16 @@ a.vote-down{
   -moz-transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   text-decoration: none!important;
+  vertical-align: middle;
 }
 
 a.vote-up{
   padding-right: 3px;
-  padding-left: 6px;
+  padding-left: 3px;
 }
 a.vote-down{
   padding-left: 3px;
-  padding-right: 6px;
+  padding-right: 3px;
 }
 a.vote-up:after{
   content: '↑';
@@ -33,7 +34,8 @@ a.vote-down:after{
   content: '↓';
 }
 .votes-count{
-  font-size:12px;
+  font-size:10px;
+  vertical-align: middle;
 }
 .votable:hover a.vote-up,
 .votable:hover a.vote-down{
@@ -55,20 +57,21 @@ a.vote-down:hover{
   font-size: 14px;
   overflow:hidden; /* IE6 hack */
   border-radius: 4px;
-  line-height: 30px;
-  height: 30px;
+  line-height: 20px;
+  height: 20px;
 }
+/*
 .votable:hover .votes.large{
   background-color: #EEE;
 }
-/*
 .votes.large a.vote-up:after{
   content: '⇧';
 }
 .votes.large a.vote-down:after{
   content: '⇩';
 }
+*/
 .votes.large .votes-count{
   font-size:12px;
 }
-*/
+

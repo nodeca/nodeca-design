@@ -99,7 +99,7 @@
   vertical-align: top;
 }
 .blog-meta{
-  margin: 15px 0 5px;
+  margin: 15px 0 7px;
 }
 .blog-meta .tags{
   text-align: right;
@@ -108,14 +108,14 @@
 	list-style:none;
 	font-size:11px;
   padding-left: 14px;
-  background: url(../images/tag.svg) no-repeat 0 7px;
+  background: url(../images/tag.svg) no-repeat 0 4px;
   
 }
 .blog-meta .tags li{
 	float:left;
 	height:20px;
 	line-height:20px;
-  margin: 4px 0 1px;
+/*  margin: 0 0 1px; */
 }
 .blog-meta .tags a{
 	margin-left:5px;

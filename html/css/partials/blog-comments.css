@@ -39,6 +39,7 @@
   border-radius: 6px;
 }
 .blog-comment-head{
+  height: 30px;
   line-height: 30px;
   margin: 0 0 5px;
   font-size:13px;
