@@ -107,7 +107,7 @@
   max-width: 70%;
 	list-style:none;
 	font-size:11px;
-  padding-left: 14px;
+  padding-left: 19px;
   background: url(../images/tag.svg) no-repeat 0 4px;
   
 }
@@ -118,7 +118,7 @@
 /*  margin: 0 0 1px; */
 }
 .blog-meta .tags a{
-	margin-left:5px;
+	margin-left:3px;
 	color:#888;
 }
 .blog-meta .tags a.cat{

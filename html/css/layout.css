@@ -86,7 +86,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   margin-right: 3px;
 }
 .hlist li:last-child:after{
-  content:'';
+  content:' ';
 }
 
 /*
