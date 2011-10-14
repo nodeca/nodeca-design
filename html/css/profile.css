@@ -277,7 +277,9 @@ li.pw-g-item:last-child:after{
 .p-info-box dt{
   color:#898989;
   font-weight:bold;
-  margin:0 0 3px 10px;
+  font-style:italic;
+  font-size:11px;
+  margin:0 0 5px 10px;
 }
 .p-info-label{
   float:left;
