@@ -102,7 +102,7 @@ td.tl-summary-col{
   width: 150px;
 }
 .last-post-info li{
-  font-size: 13px;
+  font-size: 11px;
   white-space:nowrap;
   position:relative;
   overflow:hidden;
@@ -111,6 +111,10 @@ td.tl-summary-col{
 .last-post-date{
   margin-bottom: 2px;
 }
+.last-post-date a{
+  color: #888;
+}
+
 .last-post-author,
 .last-post-author a{
   font-size: 11px;
