@@ -100,8 +100,8 @@ a.p-photo-link{
 }
 .p-widget-head{
   margin: 0 0 12px -15px;
-  font-size:18px;
-  line-height:18px;
+  font-size:20px;
+  line-height:20px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
   padding: 0 0 3px;
@@ -229,6 +229,7 @@ li.pw-g-item:last-child:after{
   -webkit-transition: all 0.5s ease;
   font-weight: normal;
   margin: 0 0 10px -15px;
+  font-size: 20px;
 }
 ._collapsed .p-block-title{
   color: #ccc;
@@ -248,7 +249,8 @@ li.pw-g-item:last-child:after{
   padding:4px 5px 4px;
   vertical-align: top;
   display:inline-block;
-  font-size: 9px;
+  font-size: 11px;
+  color: #888;
 }
 .p-block-title ._collapser:hover{
   text-decoration:none;
@@ -263,7 +265,7 @@ li.pw-g-item:last-child:after{
   content:'▼';
 }
 ._collapsed .p-block-title ._collapser{
-  padding:3px 5px;
+/*  padding:3px 5px; */
 }
 
 /* user statictics subblocks */
@@ -306,6 +308,7 @@ li.pw-g-item:last-child:after{
   vertical-align: top;
   display:inline-block;
   font-size: 7px;
+  color: #888;
 }
 .p-info-collapser ._collapser:hover{
   text-decoration:none;
