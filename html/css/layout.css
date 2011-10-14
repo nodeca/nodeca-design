@@ -101,6 +101,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   padding:20px;
   height:1%; /* make hasLayout for ie */
   margin-top:30px;
+  color: #888;
+  font-size: 12px;
 }
 .page-summary section {
   margin: 0 0 15px 10px;
@@ -111,6 +113,9 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .page-summary section h5 {
   margin: 0 0 8px -10px;
   font-family: sans-serif;
+  color: #333;
+  font-weight: normal;
+  font-size: 13px;
 }
 .page-summary section p{
   line-height:1.4em;
