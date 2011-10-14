@@ -62,9 +62,9 @@
   background-color: #aaa;
   width: 100%;
   content: '';
-  background: linear-gradient(left, #aaa 80%, #fff);
-  background: -webkit-linear-gradient(left, #aaa 80%, #fff);
-  background: -moz-linear-gradient(left, #aaa 80%, #fff);
+  background: linear-gradient(left, #aaa 80%, #aaa);
+  background: -webkit-linear-gradient(left, #aaa 80%, #aaa);
+  background: -moz-linear-gradient(left, #aaa 80%, #aaa);
 }
 
 .blog-head{
