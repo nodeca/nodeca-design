@@ -163,6 +163,7 @@
 }
 .blog-widget-title{
   margin:0 0 10px -15px;
+  font-weight: normal;
 }
 .blog-widget a:hover {
   color: #036;
