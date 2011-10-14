@@ -213,7 +213,8 @@ td.fl-summary-col {
   margin:0 25px 0 0px;
   float: left;
   font-weight: normal;
-  color: #666;
+  color: #888;
+  font-style: italic;
 }
 .fl-cat-head:hover ._collapser{
   opacity:1;
