@@ -145,7 +145,7 @@ td.tl-summary-col{
 .tl-pagination li{
   display: inline;
   vertical-align: top;
-  line-height: 10px;
+  line-height: 14px;
 }
 .tl-pagination a{
 /*  border: 1px solid #d0d0d0; */
@@ -155,6 +155,7 @@ td.tl-summary-col{
   font-size: 9px;
   padding: 0px 5px;
   margin-right: 2px;
+  color: #666;
 }
 .tl-starter {
   color:#aaa;
