@@ -198,7 +198,7 @@ td.fl-summary-col {
   width:24px;
   line-height: 22px;
   text-align:center;
-  border-radius:5px;
+  border-radius:3px;
   box-shadow: 0 0 1px #888;
   content:'';
   color:#fff;
@@ -210,6 +210,7 @@ td.fl-summary-col {
   font-family: sans-serif; */
   margin:0 25px 0 10px;
   float: left;
+  font-weight: normal;
 }
 .fl-cat-head:hover ._collapser{
   opacity:1;
