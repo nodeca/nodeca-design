@@ -64,26 +64,23 @@ h6 {
 }
 
 .quote{
-  border-left: 4px solid #aaa;
-  color:#444;
-/*  font-size: 13px; */
-  margin: 20px 0px 20px 20px;
-  padding:0 0 0 10px;
+  border-left: 5px solid #eee;
+  font-size: 13px;
+  margin: 20px 0px 20px 0px;
+  padding:0 0 0 15px;
   height: 1%;
   color: #888;
 }
 .quote-head{
   font-size: 11px;
-  margin: 0 0 5px;
+  margin: 5px 0;
 }
 a.quote-author{
   color: #aaa;
   float: left;
 }
 a.quote-author:before{
-  content: '↰';
-  padding-right: 10px;
-  text-decoration: none !important;
+  content: "— ";
 }
 .quote-date{
   color:#aaa;
