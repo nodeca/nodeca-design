@@ -277,11 +277,11 @@ li.pw-g-item:last-child:after{
   _height:17px;
 }
 .p-info-box dt{
-  color:#898989;
+  color:#ccc;
   font-weight:bold;
   font-style:italic;
   font-size:11px;
-  margin:0 0 5px 10px;
+  margin:0 0 5px 5px;
 }
 .p-info-label{
   float:left;
