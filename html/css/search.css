@@ -69,7 +69,10 @@
   padding: 0 0 0 23px;
   position: relative;
   left:-1px;
-  color:#888;
+  color: #aaa;
+}
+.s-res-filter a {
+  color: #666;
 }
 .s-res-filter li.active{
   background: #fff;
@@ -80,7 +83,8 @@
   position: relative;
   line-height: 36px;
   margin: 3px 0;
-  color: #000;
+  color: #c66;
+  font-weight:bold;
   height: 1%;
 }
 .s-res-filter li.active:before,
@@ -105,7 +109,7 @@
   border-radius: 4px 0 0 0;
 }
 .s-res-filter li.active a{
-  color:#000;
+  color: #c66;
 }
 .s-res-filter li.active a:hover{
   cursor: default;
@@ -115,6 +119,10 @@
 .s-res-sorting{
   padding: 0 0 0 12px;
 }
+.s-res-sorting a {
+  color: #666;
+}
+
 .s-res-sorting dt{
   font-weight: bold;
   font-size: 13px;
@@ -124,7 +132,7 @@
   margin: 13px 0 0 10px;
 }
 .s-res-sorting dd.active a{
-  color:#555;
+  color:#c66;
 }
 
 .s-list{
