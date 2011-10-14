@@ -378,7 +378,7 @@ a.tl-preview-ctl:before {
   line-height: 16px;
   font-size: 16px;
   text-decoration: none !important;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .mark-i-posted:after{
   content: '⚫';
@@ -392,7 +392,7 @@ a.tl-preview-ctl:before {
   background: url(../images/tmp/paperclip.png) no-repeat 0 50%;
   margin-left: 10px;
   text-decoration: none !important;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 /*
 .mark-i-attach:after{

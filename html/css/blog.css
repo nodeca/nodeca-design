@@ -54,8 +54,9 @@
   top:-36px;
 }
 .blog-entry {
-/*  border-bottom: 2px solid #ccc; */
+  border-bottom: 1px solid #ccc; 
 }
+/*
 .blog-entry:after {
   display: block;
   height: 1px;
@@ -66,7 +67,7 @@
   background: -webkit-linear-gradient(left, #aaa 80%, #aaa);
   background: -moz-linear-gradient(left, #aaa 80%, #aaa);
 }
-
+*/
 .blog-head{
   margin: 0 0 25px;
 }

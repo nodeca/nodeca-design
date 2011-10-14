@@ -12,7 +12,7 @@
   font-size: 11px;
 }
 .blog-comments-title{
-  margin: 30px 0 20px;
+  margin: 20px 0 20px;
   font-weight: normal;
 }
 .blog-comments{
@@ -62,7 +62,7 @@
   text-decoration: underline;
 }
 .blog-comment-head time{
-  color:#8c8c8c;
+  color:#aaa;
   margin-right: 15px;
   font-size: 10px;
 }
