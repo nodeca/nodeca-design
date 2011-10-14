@@ -160,7 +160,7 @@ h1.title._editable:hover {
 }
 .title .subtitle{
   font-size:12px;
-  color: #888;
+  color: #aaa;
   max-width: 60%;
 }
 .title.has-filters .subtitle{
