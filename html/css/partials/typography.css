@@ -73,7 +73,7 @@ h6 {
 }
 .quote-head{
   font-size: 11px;
-  margin: 5px 0;
+  margin-top: 7px;
 }
 a.quote-author{
   color: #aaa;
@@ -83,7 +83,7 @@ a.quote-author:before{
   content: "— ";
 }
 .quote-date{
-  color:#aaa;
+  color:#ccc;
   float: right;
 }
 
