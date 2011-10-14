@@ -123,6 +123,7 @@ a.post-timestamp:hover {
   color:#333;
   font-size: 12px;
   height: 1%;
+  margin-top: 30px;
 }
 .post-atts dt{
   font-size: 14px;
@@ -131,13 +132,13 @@ a.post-timestamp:hover {
 }
 .post-atts dd{
   line-height: 24px;
-  padding-left: 23px;
-  margin-left: 5px;
+/*  padding-left: 23px; */
+  margin-left: 10px;
 }
 .post-atts a {
   color: #666;
 }
-
+/*
 .post-atts dd.image-att{
   background: url(../images/tmp/image-att.png) no-repeat 0 50%;
 }
@@ -147,3 +148,4 @@ a.post-timestamp:hover {
 .post-atts dd.sound-att{
   background: url(../images/tmp/sound-att.png) no-repeat 0 50%;
 }
+*/
