@@ -116,7 +116,8 @@ td.fl-summary-col {
 .fl-last-post-author a{
   color:#333;
 }
-.fl-last-post-title{
+.fl-last-post-title a{
+  color: #666;
 }
 
 /*
