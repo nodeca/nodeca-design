@@ -30,3 +30,6 @@
 .loginza-buttons img{
   vertical-align:middle;
 }
+.loginza:not(:hover) .loginza-buttons img{
+  filter: url(../../images/resources.svg#desaturate);
+}
