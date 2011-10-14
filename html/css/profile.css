@@ -126,7 +126,7 @@ a.p-photo-link{
   width:100%;
   margin:15px 0 0;
 }
-.pw-a-item:hover .pw-a-desc a {
+.pw-a-thumb:hover + .pw-a-desc a {
   text-decoration: underline;
 }
 a.pw-a-thumb{
