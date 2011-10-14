@@ -77,6 +77,12 @@ a.p-photo-link{
   color: #666;
 }
 
+.p-photo .menu-popup {
+  left: 0;
+  right: auto;
+  top: 20px;
+}
+
 /*
  *
  * Widget (middle column) generic styles

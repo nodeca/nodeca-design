@@ -247,11 +247,11 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   outline: none;
 }
 
-.mod-menu-wrap{
+.menu-wrap{
   position: relative;
   z-index: 1;
 }
-.mod-popup{
+.menu-popup{
   background: #fff;
   font-size: 13px;
   position: absolute;
@@ -261,20 +261,20 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   border: 1px solid #888;
   border-radius: 4px;
   box-shadow: 1px 2px 60px #888;
-  padding: 10px 0;
+  padding: 5px 0;
   z-index: 9;
 }
-.mod-popup li{
+.menu-popup li{
   float: none;
   display: block;
   margin:0;
 }
-.below .mod-popup{
+.below .menu-popup{
   top:auto;
   bottom:36px;
   box-shadow: 1px -2px 60px #888;
 }
-.mod-popup a{
+.menu-popup a{
   -webkit-transition: 0.5s ease all;
   -moz-transition: 0.5s ease all;
   transition: 0.5s ease all;
@@ -284,11 +284,11 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   height: 1%;
   white-space: nowrap;
 }
-.mod-popup a:hover {
+.menu-popup a:hover {
   background-color: #eee;
   text-decoration: none;
 }
-.mod-popup .separator{
+.menu-popup .separator{
   background: linear-gradient(left, #ccc, #ccc 50%, #eee);
   background: -moz-linear-gradient(left, #ccc, #ccc 50%, #eee);
   background: -webkit-linear-gradient(left, #ccc, #ccc 50%, #eee);
