@@ -154,6 +154,16 @@ $(window).load(function(){
     $('.popover').fadeOut();
   });
 
+
+  // Background noise
+  $('body').noisy({
+    'intensity' : 1,
+    'size' : 200,
+    'opacity' : 0.06,
+    'fallback' : '',
+    'monochrome' : false
+  }).css('background-color', '#fff');
+
 });
 
 
