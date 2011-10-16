@@ -162,7 +162,7 @@ $(window).load(function(){
     'opacity' : 0.06,
     'fallback' : '',
     'monochrome' : false
-  }).css('background-color', '#fff');
+  }); //.css('background-color', '#fff');
 
 });
 
