@@ -353,7 +353,7 @@ li.pw-g-item:last-child:after{
   */
   color:#fff;
   border-radius:4px 4px 4px 0;
-  font:11px/15px sans-serif;;
+  font:11px/15px Verdana,sans-serif;
   position:absolute;
   margin:-12px 0 0 4px;
   padding:0 5px;

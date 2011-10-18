@@ -3,7 +3,7 @@
 /* page reset
  ------------------------------------------------------------------------------------------------------------ */
 html,body{height:100%;}
-body{background:#f8f8f0;color:#333;font:14px sans-serif;}
+body{background:#f8f8f0;color:#333;font:14px Verdana,sans-serif;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,address{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;font-size:inherit;}
 fieldset,img{border:0;}
@@ -43,7 +43,7 @@ input:-moz-placeholder  {color:#999;font-style:italic;}
 textarea:-moz-placeholder {color:#999;font-style:italic;}
 
 input[type="text"], input[type="password"], textarea, select {
-  font-family: sans-serif;
+  font-family: Verdana,sans-serif;
   box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
   padding: 8px;
   border: 1px solid #AAA;

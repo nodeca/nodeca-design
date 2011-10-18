@@ -69,7 +69,7 @@ td.fl-summary-col {
 
 .fl-title{
   font-size:18px;
-  font-family: sans-serif;
+  font-family: Verdana,sans-serif;
   font-weight: normal;
 }
 
@@ -209,7 +209,7 @@ td.fl-summary-col {
 }
 .fl-cat-title{
 /*  font-size:20px; */
-  font-family: sans-serif;
+  font-family: Verdana,sans-serif;
   margin:0 25px 0 0px;
   float: left;
   font-weight: normal;

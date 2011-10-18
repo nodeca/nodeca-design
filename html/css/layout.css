@@ -7,7 +7,7 @@
 .clearfix:after { clear: none!important; overflow: hidden; width: 100%; } /* clearfix fix for fluid layout */
 
 html,body{height:100%;}
-body { color:#333; font:14px/1.231 sans-serif; }
+body { color:#333; font:14px/1.231 Verdana,sans-serif; }
 
 ul,ol{margin:0;}
 li{list-style:none;}
@@ -112,7 +112,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 .page-summary section h5 {
   margin: 0 0 8px -10px;
-  font-family: sans-serif;
+  font-family: Verdana,sans-serif;
   color: #333;
   font-weight: normal;
   font-size: 13px;
