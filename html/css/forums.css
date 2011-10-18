@@ -82,7 +82,7 @@ td.fl-summary-col {
 
 /* counters */
 .fl-total-col {
-  font-size: 12px;
+  font-size: 13px;
   color: #666;
   min-width:110px;
   width:12%;
@@ -94,7 +94,7 @@ td.fl-summary-col {
 
 /* last column styles */
 .fl-last-post-col{
-  font-size:12px;
+  font-size:11px;
   max-width:190px;
   min-width:190px;
   width:190px;
@@ -108,7 +108,7 @@ td.fl-summary-col {
 }
 .fl-last-post-date{
   color:#888;
-  font-size: 11px;
+  font-size: 9px;
   padding-left: 3px;
 }
 .fl-last-post-author {
@@ -118,7 +118,7 @@ td.fl-summary-col {
   color:#333;
 }
 .fl-last-post-title a{
-  color: #666;
+  color: #888;
 }
 
 /*

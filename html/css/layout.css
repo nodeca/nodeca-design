@@ -159,7 +159,7 @@ h1.title._editable:hover {
  cursor: pointer;
 }
 .title .subtitle{
-  font-size:12px;
+  font-size:11px;
   color: #aaa;
   max-width: 60%;
 }
