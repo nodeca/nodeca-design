@@ -39,6 +39,10 @@ textarea::-webkit-input-placeholder  {color:#999;font-style:italic;}
 input:-moz-placeholder  {color:#999;font-style:italic;}
 textarea:-moz-placeholder {color:#999;font-style:italic;}
 
+button, input, select, textarea {
+  font-family: Verdana,sans-serif;
+}
+
 input[type="text"], input[type="password"], textarea, select {
   box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
   padding: 8px;
