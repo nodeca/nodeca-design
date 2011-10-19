@@ -440,16 +440,7 @@ a.gn-link{
   width:50%;
 }
 .draggable .srow-parts-descr{
-  padding-left: 24px;
-}
-.srow-parts-drag{
-  background: url(../../images/drag-icon.png) no-repeat 50%;
-  cursor: move;
-  width: 38px;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0;
+  padding-left: 10px;
 }
 .srow-parts-actions{
   font-size: 12px;
