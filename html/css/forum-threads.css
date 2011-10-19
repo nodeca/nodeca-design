@@ -333,23 +333,21 @@ a.tl-preview-ctl:before {
 }
 
 
-.mark-i-closed {
-  color: #888;
-  color: #888;
-  display: block;
-  margin: 3px auto;
-  height: 24px;
-  line-height: 24px;
-  width: 14px;
-  font-size: 25px;
+.mark-closed h2 a{
+  position:relative;
+  padding-right: 16px;
+  opacity: .8;
 }
-.mark-i-closed:after{
-  content: '♯';
+.mark-closed h2 a:after{
+  content:'';
+  position:absolute;
+  right:0;
+  top:1px;
+  height:14px;
+  width:13px;
+  background: url(../images/mark-closed.png) no-repeat;
 }
-.mark-closed .tl-title a{
-/*  color: #888; */
-  opacity: .6;
-}
+
 .mark-i-moved {
   color: #888;
   display: block;
@@ -377,7 +375,6 @@ a.tl-preview-ctl:before {
   opacity: 0.8;
 }
 .mark-i-posted:after{
-  content: '⚫';
   content: '✱';
   color:#6a6;
 }
@@ -390,9 +387,3 @@ a.tl-preview-ctl:before {
   text-decoration: none !important;
   opacity: 0.8;
 }
-/*
-.mark-i-attach:after{
-  content: '❐';
-  color:#888;
-}
-*/
