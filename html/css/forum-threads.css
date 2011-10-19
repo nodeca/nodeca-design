@@ -381,9 +381,8 @@ a.tl-preview-ctl:before {
 .mark-i-attach {
   float: right;
   height: 16px;
-  width: 16px;
-  background: url(../images/tmp/paperclip.png) no-repeat 0 50%;
+  width: 12px;
+  background: url(../images/mark-withattach.png) no-repeat 0 50%;
   margin-left: 10px;
   text-decoration: none !important;
-  opacity: 0.8;
 }
