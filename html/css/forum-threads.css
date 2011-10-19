@@ -140,6 +140,7 @@ td.tl-summary-col{
   font-family: Verdana,sans-serif;
   margin-right: 10px;
   vertical-align: middle;
+  line-height: 1;
 }
 .tl-pagination,
 .tl-pagination li{
@@ -315,13 +316,8 @@ a.tl-preview-ctl:before {
   font-weight: bold;
 }
 .mark-unread .tl-icon-col a {
-/*  color: #c43c35;
-  color: #800; */
 }
-/*
-.mark-unread .tl-title h2 a:before{
-  content:'☀ ';
-}*/
+
 .mark-unread .tl-title {
   margin-left: 15px;
 }
@@ -331,6 +327,7 @@ a.tl-preview-ctl:before {
 .mark-unread .status-mark {
   float:left;
   height: 18px;
+  margin-top: -1px;
   width: 7px;
   background: #c66;
 }
