@@ -308,7 +308,7 @@ nav.below{
  */
 .subscribe {
   background-image: url("../../images/btn-subscribe.png");
-  background-position: 14px 11px;
+  background-position: 14px 50%;
   background-repeat: no-repeat;
   padding-left: 32px;
 }
