@@ -328,32 +328,9 @@ a.gn-link{
 }
 ._menu-pin:focus{
 }
-.menu-popup{
-  border: 1px solid #CCC;
-  background-color: #fff;
-  overflow: hidden;
-  position: absolute;
-  display: none;
-  right: 20px;
-  margin-top: 9px;
-  z-index: 1;
-  padding: 5px 0;
-  box-shadow: 1px 2px 5px #888888;
-  top:50%;
-}
-.menu-popup li{
-  padding: 3px 15px;
-  line-height: 17px;
-}
-.menu-popup li a{
-  color: #333;
-}
-.menu-popup li:hover{
-  background: #106fa5;
-}
-.menu-popup li:hover a{
-  color: #fff;
-  text-decoration: none;
+.menu-popup {
+  right: 20px !important;
+  top: 50% !important;
 }
 
 /*
