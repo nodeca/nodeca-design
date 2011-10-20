@@ -391,7 +391,8 @@ a.gn-link{
 }
 
 .page-controls.above {
-  margin:0 5px 15px;
+/*  margin:0 5px 15px; */
+  margin-bottom: 10px;
 }
 .page-controls.below {
   margin:0px 5px 15px;
@@ -407,6 +408,14 @@ a.gn-link{
   float: left;
   display: inline; /* ie double margin hack */
   margin-left: 7px; 
+}
+.buttons-secondary {
+  float: left;
+}
+.buttons-secondary li{
+  float: left;
+  display: inline; /* ie double margin hack */
+  margin-right: 7px; 
 }
 
 .gray-box{

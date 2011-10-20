@@ -1,112 +1,37 @@
-.tl-wrap{
-/*  margin: 0 0 10px; */
-}
-
-.tl-table{
-/*  background: #fbfbfb; */
-/*  border-top: 2px solid #ccc; */
-/*  border-bottom: 2px solid #aaa; */
-  width: 100%;
-}
-
-/*.tl-row {
-  border-top: 1px solid #f8f8f8;
-}*/
-.tl-row:first-child {
+.tl{
   border-top: 2px solid #ccc;
-}
-.tl-table td{
-  padding: 11px 8px;
-/*  vertical-align: middle; */
-}
-.tl-row:first-child td {
-  padding-top: 20px;
-}
-.tl-icon-col{
-/*  padding: 0!important;*/
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-/*  width: 42px;
-  max-width: 42px;
-  min-width: 42px;*/
-  display: none;
-}
-.thread-icon{
-  border-radius: 3px;
-  height: 22px;
-  width: 22px;
-  margin: auto;
-  text-align: center;
-  line-height: 22px;
-  overflow: hidden;
-  color:#d4d4d4;
-  font-size: 27px;
+  padding-top: 10px;
 }
 
-.tl-summary-col{
-  width: 70%;
+.tl-separator {
+  border-bottom: 1px solid #AAAAAA;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 3px 0;
 }
-.tl-summary-col a{
+
+.tl-row {
+  display: block;
+  padding: 11px 0px;
+  position: relative;
+  min-height: 32px;
+}
+.tl-row a{
   color: #333;
 }
-.tl-summary-col a:hover{
+.tl-row a:hover{
   color: #036;
 }
-td.tl-summary-col{
-  padding-left: 0;
-  padding-right: 0;
-  
+
+/*
+ * topic header and description
+*/
+.tl-content-col{
   padding-left: 15px;
+  padding-right: 25px;
+  overflow: hidden;
 }
-.tl-tools-col{
-  max-width: 60px;
-  min-width: 60px;
-  width: 60px;
-  text-align: center;
-  padding-left: 0!important;
-  padding-right: 0!important;
-  vertical-align: middle;
-}
-.tl-total-col{
-  font-size: 12px;
-  min-width: 110px;
-  white-space: nowrap;
-  color: #666;
-}
-.tl-last-post-col{
-  max-width: 150px;
-  min-width: 150px;
-  width: 150px;
-}
-.last-post-info li{
-  font-size: 11px;
-  white-space:nowrap;
-  position:relative;
-  overflow:hidden;
-  text-overflow: ellipsis;
-}
-.last-post-date{
-  margin-bottom: 2px;
-}
-.last-post-date a{
-  color: #888;
-}
-
-.last-post-author,
-.last-post-author a{
-  font-size: 11px;
-  color: #333;
-}
-.tl-select-col{
-  max-width: 1%;
-  min-width: 1%;
-  width: 1%;
-  text-align: center;
-  padding-left: 0!important;
-  padding-right: 15px!important;
-  margin-left: 0;
-}
-
 .tl-title{
   margin: 0 0 2px;
 }
@@ -119,14 +44,14 @@ td.tl-summary-col{
   vertical-align: middle;
   line-height: 1;
 }
-.tl-pagination,
-.tl-pagination li{
+.tl-row-pages,
+.tl-row-pages ul,
+.tl-row-pages li{
   display: inline;
   vertical-align: top;
   line-height: 14px;
 }
-.tl-pagination a{
-/*  border: 1px solid #d0d0d0; */
+.tl-row-pages a{
   border: 1px solid #E8E8E8; 
   border-radius: 3px;
   background: #f3f3f3;
@@ -135,12 +60,12 @@ td.tl-summary-col{
   margin-right: 2px;
   color: #666;
 }
-.tl-starter {
+.tl-meta {
   color:#aaa;
   margin-left:10px;
   font-size:11px;
 }
-.tl-starter a{
+.tl-meta a{
   color:#aaa;
 }
 .tl-start-date{
@@ -148,58 +73,64 @@ td.tl-summary-col{
   -moz-transition: opacity 0.6s ease;
   -webkit-transition: opacity 0.6s ease;
   color:#aaa;
-/*  opacity: 0; */
   margin-left: 5px;
   font-size: 10px;
   font-style: italic;  
 }
-.tl-row:hover .tl-start-date{
-  opacity: 1;
+
+/*
+ * counters
+ */
+.tl-stat-col{
+  float: right;
+  width: 110px;
+  margin-right:15px;
+}
+.tl-stat-col li {
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
 }
 
 /*
-.tl-preview-ctl{
-  transition: opacity 0.6s ease;
-  -moz-transition: opacity 0.6s ease;
-  -webkit-transition: opacity 0.6s ease;
-  background: #d6d6d6;
-  border-radius: 14px;
-  display: block;
-  height: 24px;
-  width: 24px;
-  margin: auto;
-  color:#6b6b6b;
-  line-height: 24px;
-  opacity: 0;
-}
-.tl-preview-ctl:hover{
-  text-decoration: none;
-}
-.tl-preview-ctl:after{
-  content: '▾';
-}
-.tl-row:hover .tl-preview-ctl {
-  opacity: 1;
-}
-._expanded .tl-preview-ctl:after{
-  content: '×';
-}
-._expanded .tl-preview-ctl{
-  background: #6b6b6b;
-  color:#fff;
-  opacity: 1;
-}
-*/
-
-/********************************************/
-/* Alternate Preview controls
+ * last post info
  */
-.tl-tools-col {
-  display: none;
+.tl-last-col{
+  width: 150px;
+  float: right;
+  margin-right: 30px;
 }
-td.tl-summary-col {
-  padding-right: 20px;
+.tl-last-col li {
+  font-size: 11px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
 }
+.tl-last-date{
+  margin-bottom: 2px;
+}
+.tl-last-date a{
+  color: #888;
+}
+.tl-last-author a{
+  font-size: 11px;
+  color: #333;
+}
+
+/*
+ * row selection checkbox
+ */
+.tl-select-col {
+  position: absolute;
+  right:12px;
+  top: 11px;
+}
+
+/*
+ * Preview controls & inner
+ */
 a.tl-preview-ctl {
   float:right;
   transition: all 0.6s ease-in-out;
@@ -224,8 +155,6 @@ a.tl-preview-ctl:before {
 }
 ._expanded a.tl-preview-ctl:hover{
 }
-
-/********************************************/
 
 .tl-preview-row{
   display: none;
@@ -277,36 +206,20 @@ a.tl-preview-ctl:before {
  *   Icon is defined with "mark-i-*STATE*"
  * 
  */
-.tl-icon-col a {
-  color:#fff;
-  font-size:16px;
-  padding: 0 10px;
-}
-.tl-icon-col a:before {
-  content:'➟';
-  content:'‣';
-  content:'✳';
-  content:'→';
-  content:'✚';
-  content:'❏';
-
-}
 .mark-unread .tl-title h2{
   font-weight: bold;
 }
-.mark-unread .tl-icon-col a {
-}
-
 .mark-unread .tl-title {
   margin-left: 15px;
 }
-.mark-unread .tl-starter {
+.mark-unread .tl-meta {
   margin-left: 25px;
 }
 .mark-unread .status-mark {
-  float:left;
+  position:absolute;
   height: 18px;
-  margin-top: -1px;
+  top: 10px;
+  left: 15px;
   width: 7px;
   background: #c66;
 }
@@ -324,7 +237,7 @@ a.tl-preview-ctl:before {
   top:1px;
   height:14px;
   width:13px;
-  background: url(../images/mark-closed.png) no-repeat;
+  background: url(../../images/mark-closed.png) no-repeat;
 }
 
 .mark-i-moved {
@@ -341,6 +254,10 @@ a.tl-preview-ctl:before {
 }
 .mark-moved .tl-title a{
   color: #888;
+}
+.mark-moved .tl-title a:after{
+  content:' →';
+  color: #aaa;
 }
 /* Mark, that user have posted in thread */
 .mark-i-posted {
@@ -361,7 +278,7 @@ a.tl-preview-ctl:before {
   float: right;
   height: 16px;
   width: 12px;
-  background: url(../images/mark-withattach.png) no-repeat 0 50%;
+  background: url(../../images/mark-withattach.png) no-repeat 0 50%;
   margin-left: 10px;
   text-decoration: none !important;
 }

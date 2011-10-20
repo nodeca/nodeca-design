@@ -263,7 +263,6 @@ h3.fl-title {
   width: 6px;
 }
 .redirect .fl-title a:after {
-  content:'→';
+  content:' →';
   color: #aaa;
-  margin-left: 10px;
 }
