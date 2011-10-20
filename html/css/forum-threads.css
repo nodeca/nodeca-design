@@ -255,7 +255,9 @@ a.tl-preview-ctl:before {
   padding: 9px!important;
 }
 .thread-posts{
-  padding: 0 60px 20px;
+  background-color: #eee;
+  padding: 20px;
+  margin-left: 50px;
   height: 1%;
 }
 .thread-post{
