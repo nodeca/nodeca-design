@@ -18,7 +18,7 @@ $(window).load(function(){
   $('._menu-pin').ndMenu();
 
   $('._editable').editable('http://www.appelsiini.net/projects/jeditable/php/save.php', {});
-
+/*
   // Debug code ===================
   // Add button to switch page width
   var dbg_width_arr = ['', '760px', '80%'], // '' is "default" (as in CSS)
@@ -29,9 +29,7 @@ $(window).load(function(){
     top: '5px',
     left: '5px',
     opacity: .3,
-    fontSize: '12px',
-/*    padding: '3px 5px', */
-
+    fontSize: '12px'
   }).click(function () {
     if (dbg_width_max < ++dbg_width_idx) { dbg_width_idx = 0; }
     $('.trunk').css('width', dbg_width_arr[dbg_width_idx]);
@@ -155,7 +153,7 @@ $(window).load(function(){
     $('.popover').fadeOut();
   });
 
-
+/*
   // Background noise
   $('body').noisy({
     'intensity' : 1,
@@ -164,7 +162,7 @@ $(window).load(function(){
     'fallback' : '',
     'monochrome' : false
   }); //.css('background-color', '#fff');
-
+*/
 });
 
 
