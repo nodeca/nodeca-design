@@ -237,7 +237,7 @@ window.log = function(){
   $.fn.scrollhead = function () {
     this.each(function () {
       var $this = $(this),
-          $head = $this.clone().css(head_css).insertBefore($this),
+          $head = $this.clone(true).css(head_css).insertBefore($this),
           offset = $this.offset().top,
           applied = false,
           fix_size = function () {
