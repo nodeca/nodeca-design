@@ -94,11 +94,11 @@ $(window).load(function(){
   });
 
   // Scroller
-  var checkScroller = function(){
-    var s = $("window,html,body").scrollTop(),
+/*  var checkScroller = function(){
+    var s = $("html,body,document").scrollTop(),
         h = 300,
         el = $('._scroll-top');
-        
+    
     if ( s > h && !el.is(':visible') ) {
       el.fadeIn();
     } else if ( s <= h && el.is(':visible') ) {
@@ -109,9 +109,9 @@ $(window).load(function(){
   
   $('._scroll-top').click(function(e){
     e.preventDefault();
-    $('html,body').animate({scrollTop: 0}, 'fast');
+    $("html,body").animate({scrollTop: 0}, 'fast');
   });
-
+*/
   // toggle filter button
   $('.filter-btn').click(function(){
     $(this).parent().toggleClass('_filter-active');
