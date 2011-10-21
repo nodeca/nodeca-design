@@ -19,6 +19,9 @@
 .search .tl-last-col {
   margin-right: 20px;
 }
+.search .tl-meta {
+  font-size: 13px;
+}
 
 .s-form{
   margin: 0 150px 25px 0;

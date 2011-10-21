@@ -138,6 +138,7 @@ a.tl-preview-ctl {
   -webkit-transition: all 0.6s ease-in-out;
   color: #666;
   opacity: 0;
+  font-size: 11px;
 }
 a.tl-preview-ctl:before {
   content: "↓";
