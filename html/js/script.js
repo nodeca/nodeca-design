@@ -83,7 +83,7 @@ $(window).load(function(){
       if ($(this).is(':checked')) {$(this).click();}
     });
   });
-
+/*
   // Scroller
   var checkScroller = function(){
     var s = $(window).scrollTop(),
@@ -102,7 +102,7 @@ $(window).load(function(){
     e.preventDefault();
     $("html,body").animate({scrollTop: 0}, 'fast');
   });
-
+*/
 
   // toggle filter button
   $('.filter-btn').click(function(){

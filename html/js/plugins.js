@@ -258,8 +258,8 @@ window.log = function(){
           $head.css('display', 'none');
         } else if (!applied && viewport >= offset) {
           applied = true;
-          $this.css('visibility', 'hidden');
           $head.css('display', 'block');
+          $this.css('visibility', 'hidden');
         }
       });
     });
