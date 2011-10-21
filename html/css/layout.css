@@ -47,7 +47,7 @@ input[type="text"], input[type="password"], textarea, select {
   box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
   padding: 8px;
   border: 1px solid #AAA;
-  border-radius:4px;
+  border-radius:2px;
   box-shadow: 1px 1px 1px #EEE;
   background: linear-gradient(#F8F8F8 0, #FFFFFF 20px);
   background: -moz-linear-gradient(#F8F8F8 0, #FFFFFF 20px);

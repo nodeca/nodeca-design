@@ -12,7 +12,7 @@
 }
 .qs .right{
   background:#f3f3f3;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 2px 2px 0;
   height: 21px;
   padding: 4px 4px 4px 0;
   float:right;
@@ -20,7 +20,7 @@
 }
 .qs-text-wrap{
   background:#f3f3f3;
-  border-radius: 4px 0 0 4px;
+  border-radius: 2px 0 0 2px;
   height: 21px;
   padding: 4px;
   overflow:hidden;zoom:1;
