@@ -95,7 +95,7 @@ $(window).load(function(){
 
   // Scroller
   var checkScroller = function(){
-    var s = $(window).scrollTop(),
+    var s = $("window,html,body").scrollTop(),
         h = 300,
         el = $('._scroll-top');
         

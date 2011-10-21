@@ -235,13 +235,22 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 
 
 .btn.menu:before{
-  font-size: 7px;
   content:'▼';
+/*
+  font-size: 7px;
   line-height: 1;
+*/
+  color: #666666;
+  font-size: 10px;
+  left: 15px;
+  position: absolute;
+  top: 9px;
+
 }
 .btn.menu{
   position:relative;
   z-index: 10;
+  width: 10px;
 }
 .btn.menu:focus {
   outline: none;
@@ -319,17 +328,9 @@ nav.below{
   box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.btn.edit:after,
-.btn.delete:after,
-.btn.markread:after {
-  /* hack for proper height calculation */
-  content: '-';
-  opacity: 0;
-}
 .btn.edit,
 .btn.delete,
 .btn.markread {
-  /* hack for proper height calculation */
   width: 10px;
   position:relative;
 }
@@ -364,6 +365,7 @@ nav.below{
   width: 100%;
   text-align:center;
   box-sizing:border-box;-moz-box-sizing:border-box;
+  padding-left: 0; padding-right: 0; /* IE7 fix */
 }
 .btn.more:before{
   content: '↓';

@@ -531,7 +531,7 @@ a.gn-link{
 }
 .prf-mini-sidebar .btn{
   width: 100%;
-  padding: 4px;
+  padding: 4px 0;
   box-sizing:border-box;-moz-box-sizing:border-box;
   text-align: center;
 }

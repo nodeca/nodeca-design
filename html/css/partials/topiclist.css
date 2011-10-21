@@ -159,12 +159,12 @@ a.tl-preview-ctl:before {
 
 .tl-preview-row{
   display: none;
-  padding: 9px!important;
+  padding: 9px !important;
+  margin-left: 60px !important;
 }
 .thread-posts{
   background-color: #eee;
   padding: 20px;
-  margin-left: 50px;
   height: 1%;
 }
 .thread-post{
