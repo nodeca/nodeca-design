@@ -94,18 +94,19 @@ $(window).load(function(){
   });
 
   // Scroller
-  $(window).scroll(function(){
-    var s = $(window).scrollTop();
-    //var h = $(window).height() / 2;
-    var h = 300;
-
-    var el = $('._scroll-top');
+  var checkScroller = function(){
+    var s = $(window).scrollTop(),
+        h = 300,
+        el = $('._scroll-top');
+        
     if ( s > h && !el.is(':visible') ) {
       el.fadeIn();
     } else if ( s <= h && el.is(':visible') ) {
       el.fadeOut();
     }
-  });
+  }
+  $(window).scroll($.throttle(250, checkScroller));
+  
   $('._scroll-top').click(function(e){
     e.preventDefault();
     $('html,body').animate({scrollTop: 0}, 'fast');
