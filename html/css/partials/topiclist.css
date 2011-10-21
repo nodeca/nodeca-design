@@ -163,6 +163,7 @@ a.tl-preview-ctl:before {
   margin-left: 60px !important;
 }
 .thread-posts{
+  background-color: rgb(238,238,238); /* IE7 hack */
   background-color: rgba(238,238,238, 0.7);
   padding: 20px;
   height: 1%;

@@ -18,7 +18,7 @@ $(window).load(function(){
   $('._menu-pin').ndMenu();
 
   $('._editable').editable('http://www.appelsiini.net/projects/jeditable/php/save.php', {});
-/*
+
   // Debug code ===================
   // Add button to switch page width
   var dbg_width_arr = ['', '760px', '80%'], // '' is "default" (as in CSS)
@@ -78,13 +78,6 @@ $(window).load(function(){
     }
   });
 
-/*
-  $('.quick-select').hover(function(){
-    $(this).find('dd').show();
-  }, function(){
-    $(this).find('dd').hide();
-  });
-*/
   $('.quick-unselect-all').click(function(){
     $('.post-v, .tl-select-col input').each(function(){
       if ($(this).is(':checked')) {$(this).click();}
@@ -92,8 +85,8 @@ $(window).load(function(){
   });
 
   // Scroller
-/*  var checkScroller = function(){
-    var s = $("html,body,document").scrollTop(),
+  var checkScroller = function(){
+    var s = $(window).scrollTop(),
         h = 300,
         el = $('._scroll-top');
     
@@ -109,7 +102,8 @@ $(window).load(function(){
     e.preventDefault();
     $("html,body").animate({scrollTop: 0}, 'fast');
   });
-*/
+
+
   // toggle filter button
   $('.filter-btn').click(function(){
     $(this).parent().toggleClass('_filter-active');
@@ -153,7 +147,7 @@ $(window).load(function(){
     $('.popover').fadeOut();
   });
 
-/*
+
   // Background noise
   $('body').noisy({
     'intensity' : 1,
@@ -162,7 +156,7 @@ $(window).load(function(){
     'fallback' : '',
     'monochrome' : false
   }); //.css('background-color', '#fff');
-*/
+
 });
 
 
