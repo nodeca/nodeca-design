@@ -157,10 +157,15 @@ $(window).load(function(){
     'monochrome' : false
   }); //.css('background-color', '#fff');
 
+  //
+  // Pin sticky headers (topics, posts)
+  //
+  $('._sticky').scrollhead();
+
 });
 
 
-// Activate scroller if page already in scrolled atate after load.
+// Activate scroller if page already in scrolled state after load.
 $(window).load(function(){
   $(window).scroll();
 });

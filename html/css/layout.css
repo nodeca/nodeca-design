@@ -144,6 +144,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .title{
   margin-bottom: 15px;
 }
+.title.nearby{
+  margin-bottom: 5px;
+}
+
 .title h1,
 h1.title{
   margin: 0;
@@ -390,9 +394,15 @@ a.gn-link{
   margin:0;
 }
 
+.page-controls {
+  background-color: #fff;
+  z-index: 1000;
+}
 .page-controls.above {
 /*  margin:0 5px 15px; */
-  margin-bottom: 10px;
+/*  margin-bottom: 10px; */
+  padding: 10px 15px;
+  box-shadow: 0 5px 5px -5px;
 }
 .page-controls.below {
   margin:0px 5px 15px;
