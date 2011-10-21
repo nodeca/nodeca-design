@@ -319,28 +319,45 @@ nav.below{
   box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.btn.edit:before {
-  content: "✎";
-  font-size: 18px;
-  line-height: 12px;
-  position: relative;
-  top: 3px;
+.btn.edit:after,
+.btn.delete:after,
+.btn.markread:after {
+  /* hack for proper height calculation */
+  content: '-';
+  opacity: 0;
+}
+.btn.edit,
+.btn.delete,
+.btn.markread {
+  /* hack for proper height calculation */
+  width: 10px;
+  position:relative;
+}
+
+
+.btn.edit {
+  background-image: url("../../images/btn-edit.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 10px;
 }
 
 .btn.delete:before{
-  content: '×';
+  content: "×";
+  color: #666666;
   font-size: 18px;
-  line-height: 12px;
-  position: relative;
-  top: 1px;
+  left: 12px;
+  position: absolute;
+  top: 4px;
 }
 
 .btn.markread:before{
   content: '✔';
-  font-size: 16px;
-  line-height: 12px;
-  position: relative;
-  top: 2px;
+  color: #666666;
+  font-size: 18px;
+  left: 12px;
+  position: absolute;
+  top: 4px;
 }
 
 .btn.more{

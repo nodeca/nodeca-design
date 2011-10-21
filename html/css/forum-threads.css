@@ -345,17 +345,12 @@ a.tl-preview-ctl:before {
 /* Mark, that user have posted in thread */
 .mark-i-posted {
   float: right;
-  height: 15px;
+  height: 16px;
+  width: 13px;
+  background: url(../images/mark-posted.png) no-repeat 0 50%;
   margin-left: 10px;
-  text-align: center;
-  line-height: 16px;
-  font-size: 16px;
   text-decoration: none !important;
-  opacity: 0.8;
-}
-.mark-i-posted:after{
-  content: '✱';
-  color:#6a6;
+  opacity: .6;
 }
 .mark-i-attach {
   float: right;
