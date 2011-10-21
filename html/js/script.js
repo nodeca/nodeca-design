@@ -152,7 +152,7 @@ $(window).load(function(){
   $('body').noisy({
     'intensity' : 1,
     'size' : 200,
-    'opacity' : 0.06,
+    'opacity' : 0.04,
     'fallback' : '',
     'monochrome' : false
   }); //.css('background-color', '#fff');

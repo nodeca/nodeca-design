@@ -240,6 +240,7 @@ td.fl-summary-col {
   -webkit-transition: opacity 1s ease;
   overflow:hidden;
   opacity:1;
+  background-color: #fff;
 }
 ._collapsed .fl-cat-content{
   opacity:0;

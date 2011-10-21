@@ -5,8 +5,8 @@
  * Post
  */
 .post{
-/*  background-color: #fbfbfb; */
   padding-bottom: 30px;
+  background-color: #fff;
 }
 .post-head{
   background-color: #efefef;
