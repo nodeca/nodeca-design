@@ -146,8 +146,7 @@ $(window).load(function(){
   $('._pp-focus').blur(function(){
     $('.popover').fadeOut();
   });
-
-
+/*
   // Background noise
   $('body').noisy({
     'intensity' : 1,
@@ -156,12 +155,11 @@ $(window).load(function(){
     'fallback' : '',
     'monochrome' : false
   }); //.css('background-color', '#fff');
-
+*/
   //
   // Pin sticky headers (topics, posts)
   //
   $('._sticky').scrollhead();
-
 });
 
 

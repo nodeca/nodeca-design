@@ -399,10 +399,9 @@ a.gn-link{
   z-index: 1000;
 }
 .page-controls.above {
-/*  margin:0 5px 15px; */
-/*  margin-bottom: 10px; */
   padding: 10px 15px;
-  box-shadow: 0 5px 5px -5px;
+  box-shadow: 0 5px 5px -5px #444;
+  border-bottom: 1px solid #AAAAAA;
 }
 .page-controls.below {
   margin:0px 5px 15px;
