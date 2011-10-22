@@ -70,7 +70,7 @@
   display: none;
   left: -13px;
   top: 40px;
-  box-shadow: 0 0 20px #333;
+  box-shadow: 0 0 20px #444;
   border:1px solid #0a425c;
   border-radius: 4px;
 
@@ -132,7 +132,7 @@
   display:block;
   zoom:1;
   font-size:13px;
-  color: #333;
+  color: #444;
   min-height:40px;
   max-height:80px;
   line-height: 1.2em;
@@ -177,7 +177,7 @@
   color: #aaa;
 }
 .indicator-item .markread:hover{
-  color: #333;
+  color: #444;
   text-decoration: none;
 }
 

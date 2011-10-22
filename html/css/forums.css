@@ -74,7 +74,7 @@ td.fl-summary-col {
 }
 
 .fl-summary-col a{
-  color: #333;
+  color: #444;
 }
 .fl-summary-col a:hover{
   color: #036;
@@ -115,7 +115,7 @@ td.fl-summary-col {
   font-size: 11px;
 }
 .fl-last-post-author a{
-  color:#333;
+  color:#444;
 }
 .fl-last-post-title a{
   color: #888;

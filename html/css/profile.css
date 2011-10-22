@@ -358,7 +358,7 @@ li.pw-g-item:last-child:after{
   margin:-12px 0 0 4px;
   padding:0 5px;
   height:17px;
-  text-shadow: 0 0 4px #333333;
+  text-shadow: 0 0 4px #444;
 }
 .online-sticker:before {
 /*  background-color:#b7db47; */

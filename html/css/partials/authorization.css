@@ -32,7 +32,7 @@
   *margin:-12px -5px 0;/* ie6-7 hack */
   height:32px;
   line-height:34px;
-  color:#333;
+  color:#444;
   position:relative;
   z-index:1;
   border-left: 1px solid #666;
@@ -45,7 +45,7 @@
   background: -moz-linear-gradient(left, #eee, #fff 20px);
   background: -webkit-linear-gradient(left, #eee, #fff 20px);
 */
-  color:#333;
+  color:#444;
   position:absolute;
   *top:26px;/* ie6-7 hack */
   top:24px;

@@ -4,7 +4,7 @@
  *
  */
 a.btn {
-  color: #333;
+  color: #444;
 }
 .btn {
   display: inline-block;
@@ -24,8 +24,6 @@ a.btn {
   line-height: normal;
 }
 .btn:hover {
-/*  background-position: 0 -15px;
-  color: #333; */
   opacity: .9;
   text-decoration: none;
 }

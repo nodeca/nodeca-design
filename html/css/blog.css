@@ -229,7 +229,6 @@ a.blog-calendar-date:hover {
   display: inline-block;
   background: #666;
   color:#fff;
-/*  border-radius: 3px; */
   padding: 4px 5px 3px;
   margin: 0 0 0 -10px;
   position: relative;
@@ -239,9 +238,6 @@ a.blog-calendar-date:hover {
   margin: 0 0 -15px;
   font-size:13px;
 }
-/*.recent-comments-wgt a {
-  color: #333;
-}*/
 .recent-comments-wgt li{
   margin: 0 0 15px;
 }
@@ -254,7 +250,7 @@ a.blog-calendar-date:hover {
   border-radius: 3px;*/
 }
 .recent-comments-wgt .author-name{
-  color:#333;
+  color:#444;
   font-size: 11px;
 }
 .recent-comments-wgt time{

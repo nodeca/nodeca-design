@@ -131,7 +131,7 @@
   -webkit-transition: opacity 0.6s ease;
 }
 .phrase .meta .actions a{
-  color: #333;
+  color: #444;
   text-decoration: underline;
 }
 .phrase .translation:hover .meta{

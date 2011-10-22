@@ -7,7 +7,7 @@
 .clearfix:after { clear: none!important; overflow: hidden; width: 100%; } /* clearfix fix for fluid layout */
 
 html,body{height:100%;}
-body { color:#333; font:14px/1.231 Verdana,sans-serif; }
+body { color:#444; font:14px/1.231 Verdana,sans-serif; }
 
 ul,ol{margin:0;}
 li{list-style:none;}
@@ -126,7 +126,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .page-summary section h5 {
   margin: 0 0 8px -10px;
   font-family: Verdana,sans-serif;
-  color: #333;
+  color: #444;
   font-weight: normal;
   font-size: 13px;
 }
@@ -277,7 +277,7 @@ a.gn-link{
   border-color: #aaa #aaa #fff #aaa;
   border-bottom: 0 none;
   border-radius:5px 5px 0 0; 
-  color:#333;
+  color:#444;
   height:33px;
   line-height:33px;
   text-decoration:none;
@@ -496,7 +496,7 @@ a.gn-link{
  */
 .prf-mini{
   display: none;
-  background-color: #333;
+  background-color: #444;
   border-radius:4px;
 /*  color:#1d1d1d; */
   position: absolute;
@@ -505,9 +505,9 @@ a.gn-link{
   z-index: 999;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 502px;
+  width: 500px;
   padding: 5px;
-  box-shadow: 0 0 60px #333;
+  box-shadow: 0 0 60px #444;
 }
 .prf-mini:before,
 .prf-mini:after{
@@ -516,7 +516,7 @@ a.gn-link{
   position: absolute;
   left:20px;
   border: 15px solid transparent;
-  border-top-color: #333;
+  border-top-color: #444;
   bottom: -30px;
   width:0;
   height: 0;
@@ -792,6 +792,6 @@ a.gn-link{
   height: 200px;
   vertical-align: top;
   border-radius: 3px;
-  box-shadow: 0 0 1px #333333;
+  box-shadow: 0 0 1px #444;
 }
 

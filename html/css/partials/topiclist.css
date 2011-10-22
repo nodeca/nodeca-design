@@ -19,7 +19,7 @@
   min-height: 32px;
 }
 .tl-row a{
-  color: #333;
+  color: #444;
 }
 .tl-row a:hover{
   color: #036;
@@ -117,7 +117,7 @@
 }
 .tl-last-author a{
   font-size: 11px;
-  color: #333;
+  color: #444;
 }
 
 /*

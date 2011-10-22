@@ -47,7 +47,7 @@
   width: 70%;
 }
 .tl-summary-col a{
-  color: #333;
+  color: #444;
 }
 .tl-summary-col a:hover{
   color: #036;
@@ -95,7 +95,7 @@ td.tl-summary-col{
 .last-post-author,
 .last-post-author a{
   font-size: 11px;
-  color: #333;
+  color: #444;
 }
 .tl-select-col{
   max-width: 1%;

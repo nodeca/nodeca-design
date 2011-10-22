@@ -98,7 +98,7 @@ a.w-like-link {
 a.w-delete{
   float:right;
   opacity:0;
-  color: #333;
+  color: #444;
 }
 .w-delete:after{
   font-size:14px;
