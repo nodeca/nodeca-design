@@ -28,37 +28,6 @@ a:hover { text-decoration:underline; }
 .left { float: left;}
 .right { float: right;}
 
-/*
- * 
- * Buttons & form fieldset
- *
- */
-
-input::-webkit-input-placeholder  {color:#999;font-style:italic;}
-textarea::-webkit-input-placeholder  {color:#999;font-style:italic;}
-input:-moz-placeholder  {color:#999;font-style:italic;}
-textarea:-moz-placeholder {color:#999;font-style:italic;}
-
-button, input, select, textarea {
-  font-family: Verdana,sans-serif;
-}
-
-input[type="text"], input[type="password"], textarea, select {
-  box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
-  padding: 8px;
-  border: 1px solid #AAA;
-  border-radius:4px;
-  box-shadow: 1px 1px 1px #EEE;
-  background: linear-gradient(#F8F8F8 0, #FFFFFF 20px);
-  background: -moz-linear-gradient(#F8F8F8 0, #FFFFFF 20px);
-  background: -webkit-linear-gradient(#F8F8F8 0, #FFFFFF 20px);
-  background-clip:border;-moz-background-clip:border;
-}
-
-input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
-  border: 1px solid #C53;
-  box-shadow: 1px 1px 1px #EEE, 0 0 2px #C53 inset;
-}
 
 /* warning for disabled JS */
 .js  .jsnotice { display: none; }

@@ -27,7 +27,7 @@
   margin: 0 150px 0 0;
   z-index: 10000;
   background-color: #fff;
-  box-shadow: 0 5px 5px -5px;
+  box-shadow: 0 5px 5px -5px #444;
 }
 .s-head {
   padding: 10px 15px;
