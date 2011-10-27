@@ -328,19 +328,34 @@ nav.below{
 
 .btn.edit,
 .btn.delete,
+.btn.more,
+.btn.back,
 .btn.markread {
-  width: 10px;
-  position:relative;
-}
-
-
-.btn.edit {
-  background-image: url("../../images/btn-edit.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   width: 10px;
 }
 
+.btn.back {
+  background-image: url("../../images/btn-back.png");
+  width: 30px;
+}
+.btn.edit {
+  background-image: url("../../images/btn-edit.png");
+}
+
+.btn.delete {
+  background-image: url("../../images/btn-delete.png");
+}
+
+.btn.markread {
+  background-image: url("../../images/btn-markread.png");
+}
+
+.btn.more {
+  background-image: url("../../images/btn-dropdown.png");
+}
+/*
 .btn.delete:before{
   content: "×";
   color: #666666;
@@ -363,9 +378,10 @@ nav.below{
   width: 100%;
   text-align:center;
   box-sizing:border-box;-moz-box-sizing:border-box;
-  padding-left: 0; padding-right: 0; /* IE7 fix */
+  padding-left: 0; padding-right: 0; /* IE7 fix */ /*
 }
 .btn.more:before{
   content: '↓';
   margin-right: 3px;
 }
+*/
