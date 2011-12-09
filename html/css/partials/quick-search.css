@@ -3,6 +3,37 @@
  * Quick search styles
  * 
  */
+.header input:-moz-placeholder {
+  color: #E6E6E6;
+}
+.header input {
+  -moz-transition: none 0s ease 0s;
+  background: none !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-image: none  !important;
+  border: 1px solid #111111  !important;
+  border-radius: 4px 4px 4px 4px  !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.25)  !important;
+  color: rgba(255, 255, 255, 0.75)  !important;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1;
+  padding: 4px 9px  !important;
+  font-size: 12px  !important;
+}
+.header input:hover {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: #fff !important;
+}
+.header input:focus {
+  background-color: #fff !important;
+  border: 0 none !important;
+  color: #444 !important;
+  outline: 0 none !important;
+  padding: 5px 10px !important;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15)  !important;
+}
+
+ /* outdated */
 .qs{
   border-radius:4px;
   position:absolute;

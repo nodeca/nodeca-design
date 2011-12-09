@@ -36,111 +36,86 @@
 
   <div class="global-wrap">
     <header class="header" id="top"><!-- for quick scroll -->
-      <div class="trunk">
+      <div class="trunk clearfix">
         <div class="logo"><a href="index.html">Nodeca</a></div>
         <nav class="global-nav">
           <ul>
             <li class="gn-tab"><a class="gn-link" href="#1">Profile</a></li>
             <li class="gn-tab"><a class="gn-link" href="#1">Forum</a></li>
-            <li class="gn-tab active"><a class="gn-link" href="#1">Blogs</a></li>
-            <li class="gn-tab"><a class="gn-link" href="#1">Maps</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Blogs</a></li>
             <li class="gn-tab"><a class="gn-link" href="#1">Questions</a></li>
             <li class="gn-tab"><a class="gn-link" href="#1">Sales</a></li>
+            <li class="gn-tab"><a class="gn-link menu _menu-pin" href="#1">More</a>
+			  <ul class="menu-dropdown">
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Maps</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Translations</a></li>
+              </ul>
+            </li>
           </ul>
-        </nav><!-- global nav end -->
-        <ul class="user-bar">
-          <li class="ub-item notify">
-            <a class="indicator mail _menu-pin" data-count="0" href="javascript:void(0)"></a>
-            <ul class="indicator-popup">
-              <li class="indicator-item">
-                <a class="markread" href="#123"></a>
-                <a href="#1" class="indicator-link">
-                  <img src="images/tmp/a-upic.jpg" alt="Alexander Kizyachenko" class="userpic" />
-                  <div class="msg">
-                    <div class="head">
-                      <span class="topic">Travel to India</span>
-                      <span class="author">Alexander (izya) Kizyachenko</span>
-                      <time class="ts">19:24</time>
+        </nav>
+        <form action="">
+          <input type="text" placeholder="Search">
+        </form>
+        <nav class="global-nav secondary">
+          <ul>
+            <li class="gn-tab notify"><a class="gn-link indicator mail _menu-pin" title="Notifications" data-count="0" href="#">&nbsp</a>
+              <ul class="indicator-popup">
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Alexander Kizyachenko" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Travel to India</span>
+                        <span class="author">Alexander (izya) Kizyachenko</span>
+                        <time class="ts">19:24</time>
+                      </div>
+                      Anybody here?
                     </div>
-                    Anybody here?
-                  </div>
-                </a>
-              </li>
-              <li class="indicator-item">
-                <a class="markread" href="#123"></a>
-                <a href="#1" class="indicator-link">
-                  <img src="images/tmp/a-upic.jpg" alt="Konstantin Savinov" class="userpic" />
-                  <div class="msg">
-                    <div class="head">
-                      <span class="topic">Enlarge your Node.js</span>
-                      <span class="author">Konstantin (Oblom) Savinov</span>
-                      <time class="ts">21.05.2011</time>
+                  </a>
+                </li>
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Konstantin Savinov" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Enlarge your Node.js</span>
+                        <span class="author">Konstantin (Oblom) Savinov</span>
+                        <time class="ts">21.05.2011</time>
+                      </div>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </div>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  </div>
-                </a>
-              </li>
-              <li class="indicator-item">
-                <a class="markread" href="#123"></a>
-                <a href="#1" class="indicator-link">
-                  <img src="images/tmp/a-upic.jpg" alt="Polina Smirnova" class="userpic" />
-                  <div class="msg">
-                    <div class="head">
-                      <span class="topic">Yesterday</span>
-                      <span class="author">Polina (small beauty) Smirnova</span>
-                      <time class="ts">14.12.2010</time>
+                  </a>
+                </li>
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Polina Smirnova" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Yesterday</span>
+                        <span class="author">Polina (small beauty) Smirnova</span>
+                        <time class="ts">14.12.2010</time>
+                      </div>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </li><!-- notifications end -->
-          <li class="ub-item highlight auth-wrap">
-            <a class="auth-toggle _menu-pin" href="#1">Login</a>
-            <form class="auth-popup" method="post" action="">
-                <ul>
-                  <li class="auth-popup-input"><input type="text" placeholder="E-mail" class="_tip" title="Type your Email or Nickname" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
-                  <li class="auth-popup-input"><input type="password" placeholder="Password" class="_tip" title="Type your password" data-tipsy-gravity="e" data-tipsy-trigger="focus" /></li>
-                  <li class="auth-popup-submit"><input type="submit" class="btn primary" value="Login" /> <a href="#1" class="forgot-pwd">forgot password?</a></li>
-                </ul>
-                <ul>
-                  <li class="loginza">
-                    <span>or login via</span>
-                    <ul class="loginza-buttons">
-                      <li><a href="#1"><img src="images/loginza/vk.png" alt="Вконтакте" /></a></li>
-                      <li><a href="#1"><img src="images/loginza/fb.png" alt="Facebook" /></a></li>
-                      <li><a href="#1"><img src="images/loginza/google.png" alt="Google" /></a></li>
-                      <li><a href="#1"><img src="images/loginza/yandex.png" alt="Яндекс" /></a></li>
-                    </ul>
-                  </li>
-                </ul>
-            </form>
-          </li>
-          <li class="ub-item"><a href="#1">Register</a></li>
-        </ul><!-- user nav end -->
-        <form method="post" action="" class="qs">
-          <div class="right">
-            <div class="qs-menu">
-              <a href="javascript:void(0)" class="qs-selection">Forums</a>
-              <div class="qs-popup">
-                <ul>
-                  <li class="qs-popup-title">Search section:</li>
-                  <li class="qs-popup-section"><input name="search-section" id="search-forums" type="radio" checked="checked" /> <label for="search-forums">Forums</label></li>
-                  <li class="qs-popup-section"><input name="search-section" id="search-members" type="radio" /> <label for="search-members">Members</label></li>
-                  <li class="qs-popup-section"><input name="search-section" id="search-help" type="radio" /> <label for="search-help">Help Files</label></li>
-                  <li class="qs-popup-section"><input name="search-section" id="search-blogs" type="radio" /> <label for="search-blogs">Blogs</label></li>
-                  <li class="qs-popup-section"><input name="search-section" id="search-calendar" type="radio" /> <label for="search-calendar">Calendar</label></li>
-                  <li class="qs-popup-section"><input name="search-section" id="search-gallery" type="radio" /> <label for="search-gallery">Gallery</label></li>
-                </ul>
-              </div>
-            </div>
-            <input type="submit" class="qs-submit" value="" />
-          </div>
-          <div class="qs-text-wrap">
-            <input type="text" placeholder="Search" class="qs-text" />
-          </div>
-        <div class="qs-advanced"><a href="#1">advanced search</a></div></form><!-- Search -->
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="gn-tab"><a class="gn-link menu _menu-pin" href="#1">vasya@pupkin.net</a>
+			  <ul class="menu-dropdown">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Images Off</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <div class="container search trunk clearfix">

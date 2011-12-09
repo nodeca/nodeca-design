@@ -3,23 +3,22 @@
  *  Notifications picker & popup
  *
  */
-.notify{
-  position: relative;
-  z-index: 1;
-}
-.indicator {
+
+a.indicator {
   height: 20px;
   width:29px;
   display: block;
   opacity: .5;
+  outline: 0 none;
+  padding: 0;
+  margin: 10px 7px 0;
 }
-.indicator.event {
+a.indicator.event {
   height: 20px;
   width:24px;
   display: none;
 }
-
-.indicator[data-count]:after{
+a.indicator[data-count]:after{
   background-color:#e10;
   color: #fff;
   content: attr(data-count);
@@ -34,49 +33,43 @@
   box-shadow: 0 0 7px #fff;
   text-shadow: 0 0 2px #666666;
   position:absolute;
-  right:-8px;
+  right:-1px;
   bottom:-6px;
 }
-.indicator[data-count="0"]:after {
+a.indicator[data-count="0"]:after {
   display: none;
 }
 
-.indicator.mail[data-count] {
+a.indicator.mail[data-count] {
   border-radius: 1.5px;
-  background: url(../../images/ind-newmail.png) no-repeat;
+/*  background: url(../../images/ind-newmail.png) no-repeat; */
+  background: url(../../images/ind-mail.png) no-repeat;
   opacity: 1;
 }
-.indicator.mail[data-count="0"] {
+a.indicator.mail[data-count="0"] {
   border-radius: 1.5px;
   background: url(../../images/ind-mail.png) no-repeat;
   opacity: .5;
 }
-.indicator.event[data-count] {
+a.indicator.event[data-count] {
   opacity: 1;
   background: url(../../images/ind-newevent.png) no-repeat;
   display:block;
 }
-.indicator.event[data-count="0"] {
+a.indicator.event[data-count="0"] {
   display:none;
   opacity: .5;
 }
 
-.indicator:focus{
-  outline: 0;
-}
 .indicator-popup{
-  background-color: #F4EE95;
+  background-color: #fff;
   position:absolute;
+  z-index: 100;
   display: none;
-  left: -13px;
-  top: 40px;
-  box-shadow: 0 0 20px #444;
-  border:1px solid #0a425c;
-  border-radius: 4px;
-
+  right: -8px;
+  top: 50px;
   border: 3px solid #666;
   border-radius: 6px;
-  background: #fff;
   box-shadow: 0 -30px 30px -30px #ddd inset, 0 0 200px #666;
 
 }
@@ -91,7 +84,7 @@
   border-style: solid;
   border-width: 0 15px 15px;
   top:-18px;
-  left:10px;
+  right:10px;
 }
 .indicator-popup:after{
   border-color: transparent transparent #fff;
