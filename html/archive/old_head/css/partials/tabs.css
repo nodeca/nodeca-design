@@ -1,0 +1,68 @@
+/*
+ *
+ *  Tabs
+ *
+ */
+
+.tabs-content{
+  display: none;
+}
+.tabs-content-visible{
+  display: block;
+}
+
+.tabs{
+  background: linear-gradient(#ffffff, #f3f3f3);
+  background: -moz-linear-gradient(#ffffff,#f3f3f3);
+  background: -webkit-linear-gradient(#ffffff,#f3f3f3);
+  border-bottom: 1px solid #a3a3a3;
+  padding: 0 5px;
+  margin: 0 0 30px;
+}
+.tabs li{
+  float: left;
+}
+.tab{
+  float: left;
+  padding: 0 15px;
+  line-height: 35px;
+  height: 33px;
+  overflow: hidden;
+  margin: 0 1px;
+}
+.active .tab{
+  background: #ffffff;
+  border: 1px solid #aaaaaa;
+  border-bottom: 0;
+  color:#000;
+  line-height: 32px;
+  position: relative;
+  top: 1px;
+  overflow: visible;
+  border-radius: 4px 4px 0 0;
+  box-shadow: -2px -2px 4px -4px #000, 2px -1px 4px -4px #000;
+  margin: 0;
+}
+.active .tab:before,
+.active .tab:after{
+  content: '';
+  display: block;
+  border-bottom: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-radius: 0 0 4px;
+  position: absolute;
+  width: 4px;
+  left: -5px;
+  bottom: 0;
+  height: 4px;
+  box-shadow: 2px 2px 0 #fff;
+}
+.active .tab:after{
+  border-bottom: 1px solid #aaa;
+  border-right: 0;
+  border-left: 1px solid #aaa;
+  border-radius: 0 0 0 4px;
+  left: auto;
+  right: -5px;
+  box-shadow: -2px 2px 0 #fff;
+}

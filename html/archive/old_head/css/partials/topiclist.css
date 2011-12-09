@@ -1,0 +1,283 @@
+.tl{
+/*  border-top: 1px solid #aaa; */
+  padding-top: 10px;
+  background-color: #fff;
+}
+
+.tl-separator {
+  border-bottom: 1px solid #AAAAAA;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 3px 0;
+}
+
+.tl-row {
+  display: block;
+  padding: 11px 0px;
+  position: relative;
+  min-height: 32px;
+}
+.tl-row a{
+  color: #444;
+}
+.tl-row a:hover{
+  color: #036;
+}
+
+/*
+ * topic header and description
+*/
+.tl-content-col{
+  padding-left: 15px;
+  padding-right: 25px;
+  overflow: hidden;
+}
+.tl-title{
+  margin: 0 0 2px;
+}
+.tl-title h2{
+  display: inline;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Verdana,sans-serif;
+  margin-right: 10px;
+  vertical-align: middle;
+  line-height: 1;
+}
+.tl-row-pages,
+.tl-row-pages ul,
+.tl-row-pages li{
+  display: inline;
+  vertical-align: top;
+  line-height: 14px;
+}
+.tl-row-pages a{
+  border: 1px solid #E8E8E8; 
+  border-radius: 3px;
+  background: #f3f3f3;
+  font-size: 9px;
+  padding: 0px 5px;
+  margin-right: 2px;
+  color: #666;
+}
+.tl-meta {
+  color:#aaa;
+  margin-left:10px;
+  font-size:11px;
+}
+.tl-meta a{
+  color:#aaa;
+}
+.tl-start-date{
+  transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -webkit-transition: opacity 0.6s ease;
+  color:#aaa;
+  margin-left: 5px;
+  font-size: 10px;
+  font-style: italic;  
+}
+
+/*
+ * counters
+ */
+.tl-stat-col{
+  float: right;
+  width: 110px;
+  margin-right:15px;
+}
+.tl-stat-col li {
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+/*
+ * last post info
+ */
+.tl-last-col{
+  width: 150px;
+  float: right;
+  margin-right: 30px;
+}
+.tl-last-col li {
+  font-size: 11px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+.tl-last-date{
+  margin-bottom: 2px;
+}
+.tl-last-date a{
+  color: #888;
+}
+.tl-last-author a{
+  font-size: 11px;
+  color: #444;
+}
+
+/*
+ * row selection checkbox
+ */
+.tl-select-col {
+  position: absolute;
+  right:12px;
+  top: 11px;
+}
+
+/*
+ * Preview controls & inner
+ */
+a.tl-preview-ctl {
+  float:right;
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  color: #666;
+  opacity: 0;
+  font-size: 11px;
+}
+a.tl-preview-ctl:before {
+  content: "↓";
+  margin-right: 3px;
+}
+.tl-row:hover a.tl-preview-ctl {
+  opacity: 1;
+}
+._expanded a.tl-preview-ctl{
+  color:#036;
+  opacity: 1;
+}
+._expanded a.tl-preview-ctl:before {
+  content: "↑";
+}
+._expanded a.tl-preview-ctl:hover{
+}
+
+.tl-preview-row{
+  display: none;
+  padding: 9px !important;
+  margin-left: 60px !important;
+}
+.thread-posts{
+  background-color: rgb(238,238,238); /* IE7 hack */
+  background-color: rgba(238,238,238, 0.7);
+  padding: 20px;
+  height: 1%;
+  border-radius: 3px;
+}
+.thread-post{
+  margin-bottom: 17px;
+}
+.thread-post-thumb{
+  float: left;
+  display: inline;
+  margin: 0 13px 0 0;
+/*  width: 70px;
+  border-radius: 4px; */
+}
+.thread-post-content{
+  font-size: 13px;
+  line-height: 1.3;
+  overflow: hidden;
+}
+.thread-post-content header{
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size:11px;
+}
+.thread-posts-actions a{
+  font-size: 13px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.thread-posts-actions .action-button{
+  float: none;
+  display: inline-block;
+  *display:inline;zoom:1;
+}
+
+/*
+ *
+ * State marks
+ *
+ *   Table row is marked as "mark-*STATE*"
+ *   Icon is defined with "mark-i-*STATE*"
+ * 
+ */
+.mark-unread .tl-title h2{
+  font-weight: bold;
+}
+.mark-unread .tl-title {
+  margin-left: 15px;
+}
+.mark-unread .tl-meta {
+  margin-left: 25px;
+}
+.mark-unread .status-mark {
+  position:absolute;
+  height: 18px;
+  top: 10px;
+  left: 15px;
+  width: 7px;
+  background: #c66;
+}
+
+
+.mark-closed h2 a{
+  position:relative;
+  padding-right: 16px;
+  opacity: .8;
+}
+.mark-closed h2 a:after{
+  content:'';
+  position:absolute;
+  right:0;
+  top:1px;
+  height:14px;
+  width:13px;
+  background: url(../../images/mark-closed.png) no-repeat;
+}
+
+.mark-i-moved {
+  color: #888;
+  display: block;
+  margin: 3px auto;
+  height: 14px;
+  line-height: 18px;
+  width: 23px;
+  font-size: 25px;
+}
+.mark-i-moved:after{
+  content: '↶';
+}
+.mark-moved .tl-title a{
+  color: #888;
+}
+.mark-moved .tl-title a:after{
+  content:' →';
+  color: #aaa;
+}
+/* Mark, that user have posted in thread */
+.mark-i-posted {
+  float: right;
+  height: 16px;
+  width: 13px;
+  background: url(../../images/mark-posted.png) no-repeat 0 50%;
+  margin-left: 10px;
+  text-decoration: none !important;
+  opacity: .6;
+}
+.mark-i-attach {
+  float: right;
+  height: 16px;
+  width: 12px;
+  background: url(../../images/mark-withattach.png) no-repeat 0 50%;
+  margin-left: 10px;
+  text-decoration: none !important;
+}

@@ -1,0 +1,86 @@
+/*
+ *
+ *  Editor
+ *
+ */
+.editor{
+  margin: 0 0 30px;
+}
+.editor-frame{
+  margin:auto;
+  max-width: 1024px;
+}
+.editor-area{
+  float: left;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.editor-area .indent{
+  margin-right: 165px;
+}
+input.editor-theme,
+.editor-msg{
+  display: block;
+  width: 100%;
+}
+.editor-msg{
+  margin-top: 12px;
+  height: 205px;
+}
+.editor-sidebar{
+  float: left;
+  display: inline; /* ie double margin hack */
+  margin: 0 0 0 -150px;
+  width: 150px;
+}
+.editor-sidebar dt{
+/*  font-weight: bold; */
+  margin: 20px 0 10px;
+}
+.editor-sidebar dt:first-child{
+  margin-top: 0;
+}
+.editor-sidebar dd{
+  margin: 0 0 5px;
+  font-size: 11px;
+  color: #666;
+}
+.editor-sidebar dd:last-child{
+  margin-bottom: 0;
+}
+.editor-sidebar input[type="checkbox"]{
+  vertical-align: middle;
+}
+.editor-sidebar label{
+  vertical-align: middle;
+}
+.editor-buttons{
+  margin-top: 15px;
+  text-align: right;
+}
+
+
+.similar-theme{
+  font-size: 13px;
+  margin-top: 15px;
+}
+.similar-theme-activity{
+  float: right;
+  width: 150px;
+}
+.similar-theme-info{
+  overflow: hidden;
+  zoom:1;/* overflow:hidden hack for ie */
+}
+.similar-theme-info h4{
+  margin-bottom: 3px;
+}
+.similar-theme-info .theme-type{
+  color:#888;
+}
+.popover.similar-threads{
+  width: 525px;
+  margin-left: 125px !important;
+}

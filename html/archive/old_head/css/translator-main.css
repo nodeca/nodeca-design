@@ -1,0 +1,53 @@
+/*
+ *
+ *  Translator phrases
+ *
+ */
+.translator .content{
+  border: 0;
+  padding: 0;
+}
+
+.listview{
+  width: 100%;
+}
+.listview th{
+  border-bottom: 2px solid #ccc;
+  color:#000;
+  font-weight: bold;
+  padding: 10px 0 5px;
+  font-size: 12px;
+  text-align: left;
+}
+.listview td{
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  vertical-align: middle;
+}
+.progress-bar{
+  background-color: #f55f5f;
+  border-radius: 4px;
+  font-size: 0;
+  line-height: 1;
+  min-width: 115px;
+  width: 60%;
+}
+.progress-bar .inner{
+  background-color: #8dc73f;
+  border-radius: 4px 0 0 4px;
+  height: 16px;
+  width: 0;
+}
+.last-author{
+  font-size: 12px;
+  color:#444;
+  margin-bottom: 2px;
+}
+.last-author a{
+  color:#444;
+}
+.last-date{
+  color: #888888;
+  font-size: 11px;
+  padding-left: 3px;
+}

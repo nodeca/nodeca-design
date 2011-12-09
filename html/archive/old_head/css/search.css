@@ -1,0 +1,165 @@
+/*
+ *
+ *  Search
+ *
+ */
+ 
+/* topiclist mutations */
+.search .tl{
+  margin-right: 150px;
+  border-top: 0 none;
+}
+.search .tl-content-col {
+/*  padding-left: 0; */
+}
+.search .tl-select-col {
+/*  right: 0; */
+}
+.search .tl-last-col {
+/*  margin-right: 20px; */
+}
+.search .tl-meta {
+  font-size: 13px;
+}
+
+/* search form */
+.s-controls{
+  margin: 0 150px 0 0;
+  z-index: 10000;
+  background-color: #fff;
+  box-shadow: 0 5px 5px -5px #444;
+}
+.s-head {
+  padding: 10px 15px;
+  position: relative;
+}
+.s-query-wrap{
+  float: left;
+  width: 100%;
+}
+.s-query-indent{
+  margin-right: 100px;
+  overflow: hidden;
+}
+.s-query{
+  width: 100%;
+}
+.s-title{
+  font-size: 15px;
+  font-family: Verdana,sans-serif;
+}
+.s-info{
+  padding: 7px 0 0 9px;
+  height: 1%;
+  clear: both;
+}
+.s-tip{
+  float: left;
+  color:#888;
+  font-size: 11px;
+}
+.s-adv-pin{
+  font-size: 11px;
+  float: right;
+}
+.s-submit{
+  float: left;
+  display: inline; /* double margin hack for ie */
+  margin-left: -83px;
+  width: 83px;
+  overflow: hidden;
+}
+.s-submit .btn{
+  width: 100%;
+}
+
+.s-res-wrap{
+  margin: 0 0 0 150px;
+}
+
+.search .sidebar{
+/*  float: right; */
+  width: 120px;
+  position: absolute;
+  right: -150px;
+  top: 100px;
+  background-color: #fff;
+}
+
+.s-res-filter{
+  font-size: 13px;
+  border-left: 1px solid #aaa;
+  line-height: 26px;
+  padding: 15px 0 0;
+  height: 1%;
+  margin: 0 0 45px;
+}
+.s-res-filter li{
+  padding: 0 0 0 23px;
+  position: relative;
+  left:-1px;
+  color: #aaa;
+}
+.s-res-filter a {
+  color: #666;
+}
+.s-res-filter li.active{
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #aaa;
+  border-left: 0;
+  box-shadow: 3px 1px 8px -5px #000;
+  position: relative;
+  line-height: 36px;
+  margin: 3px 0;
+  color: #c66;
+  font-weight:bold;
+  height: 1%;
+}
+.s-res-filter li.active:before,
+.s-res-filter li.active:after{
+  content: '';
+  display: block;
+  border-bottom: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-radius: 0 0 0 4px;
+  position: absolute;
+  width: 8px;
+  left: 0px;
+  top:-5px;
+  height: 4px;
+  box-shadow: -4px 0px 0 #fff;
+}
+.s-res-filter li.active:after{
+  border-bottom: 0;
+  border-top: 1px solid #aaa;
+  top:auto;
+  bottom: -5px;
+  border-radius: 4px 0 0 0;
+}
+.s-res-filter li.active a{
+  color: #c66;
+}
+.s-res-filter li.active a:hover{
+  cursor: default;
+  text-decoration: none;
+}
+
+.s-res-sorting{
+  padding: 0 0 0 12px;
+}
+.s-res-sorting a {
+  color: #666;
+}
+
+.s-res-sorting dt{
+  font-weight: bold;
+  font-size: 13px;
+}
+.s-res-sorting dd{
+  font-size: 12px;
+  margin: 13px 0 0 10px;
+}
+.s-res-sorting dd.active a{
+  color:#c66;
+}

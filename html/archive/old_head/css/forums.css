@@ -1,0 +1,269 @@
+.forums .page-controls {
+  margin-top: 30px;
+}
+
+.fl-content-wrap{
+  margin:0 0 20px;
+}
+
+.content.forums {
+  padding-top: 1px;
+}
+
+/*
+ * 
+ * Forum list tables
+ * 
+ */
+.fl-cat-table{
+  margin-top:15px;
+}
+.fl-cat-table td{
+  padding:10px 15px 10px 0;
+/*  vertical-align:middle; */
+}
+.fl-cat-table tr{
+  border-bottom:1px solid #f8f8f8;
+  height: 70px;
+}
+.fl-cat-table tr:last-child {
+  border: 0;
+}
+/* first column + icon */
+td.fl-icon-col{
+  padding-left:0;
+  padding-right:0;
+  width:1%;
+
+  display: none;
+}
+td.fl-summary-col {
+  padding-left: 30px;
+  width: 100%;
+}
+/*.fl-icon{
+  height:50px;
+  width:50px;
+}*/
+.fl-icon{
+  width:20px;
+  height:50px
+}
+
+    /* icon-specific styles, modify on your needs */
+/*.fl-icon-default{
+  background: url(../images/forum-new2.png) no-repeat 50% 50%;
+  opacity: .5;
+}
+.fl-icon-new{
+  background: url(../images/forum-new2.png) no-repeat 50% 50%;
+}
+.fl-icon-closed{
+  background: url(../images/forum-closed.png) no-repeat 50% 50%;
+}
+.fl-icon-link{
+  background: url(../images/forum-link.png) no-repeat 50% 50%;
+}
+*/
+/* forum title, moderators, description */
+
+.fl-title{
+  font-size:18px;
+  font-family: Verdana,sans-serif;
+  font-weight: normal;
+}
+
+.fl-summary-col a{
+  color: #444;
+}
+.fl-summary-col a:hover{
+  color: #036;
+}
+
+/* counters */
+.fl-total-col {
+  font-size: 13px;
+  color: #666;
+  min-width:110px;
+  width:12%;
+}
+.fl-total-col li{
+  margin:0 0 2px;
+  white-space:nowrap;
+}
+
+/* last column styles */
+.fl-last-post-col{
+  font-size:11px;
+  max-width:190px;
+  min-width:190px;
+  width:190px;
+}
+.fl-last-post-col li{
+  margin:0 0 2px; 
+  white-space:nowrap;
+  position:relative;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+.fl-last-post-date{
+  color:#888;
+  font-size: 9px;
+  padding-left: 3px;
+}
+.fl-last-post-author {
+  font-size: 11px;
+}
+.fl-last-post-author a{
+  color:#444;
+}
+.fl-last-post-title a{
+  color: #888;
+}
+
+/*
+ * Subforums @ forums list (use with .def-list)
+ */
+.fl-subforums {
+  margin-left:25px;
+}
+.fl-subforums dt{
+  margin-right:3px;
+  margin-left:-15px;
+}
+.fl-subforums dd:after{
+  margin-right:5px;
+}
+.fl-subforums {
+  font-size: 12px;
+}
+.fl-subforums dd a{
+  margin-right:2px;
+  font-weight: bold;
+  opacity: .6;
+}
+
+/*
+ * forum moderators @ forums list (use with .def-list)
+ */
+.fl-moderators dt{
+  margin-right:3px;
+  margin-left:5px;
+}
+.fl-moderators,
+.fl-moderators a{
+  color:#aaa;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+/*
+ * 
+ * Categories wrapperss & collapsers
+ * 
+ */ 
+.fl-category{
+/*  margin:0 0 5px; */
+}
+.fl-cat-head{
+  font-size:16px;
+  text-align:left;
+  position:relative;
+  line-height:21px;
+  transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  border-bottom:2px solid #aaa;
+}
+._collapsed .fl-cat-head:hover{
+  opacity: 0.7;
+}
+._collapsed .fl-cat-head{
+  opacity: 0.2;
+}
+.fl-cat-head ._collapser{
+  background: #41a0d3;
+  background-image: linear-gradient(#aaa, #666);
+  background-image: -moz-linear-gradient(#aaa,#666);
+  background-image: -webkit-linear-gradient(#aaa,#666);
+  transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -webkit-transition: opacity 0.6s ease;
+  display:block;
+  float: left;
+  position:relative;
+  right:13px;
+  top:-2px;
+  height:24px;
+  width:24px;
+  line-height: 22px;
+  text-align:center;
+  border-radius:3px;
+  box-shadow: 0 0 1px #888;
+  content:'';
+  color:#fff;
+  font-size:10px;
+  opacity:0;
+}
+.fl-cat-title{
+/*  font-size:20px; */
+  font-family: Verdana,sans-serif;
+  margin:0 25px 0 0px;
+  float: left;
+  font-weight: normal;
+  color: #888;
+  font-style: italic;
+}
+.fl-cat-head:hover ._collapser{
+  opacity:1;
+}
+.fl-cat-head ._collapser:hover{
+  text-decoration:none;
+}
+.fl-cat-head ._collapser:focus{
+  outline: 0;
+}
+.fl-cat-head ._collapser:before{
+  content:'▲';
+}
+._collapsed > .fl-cat-head > ._collapser{
+  line-height:24px;
+}
+._collapsed > .fl-cat-head > ._collapser:before{
+  content:'▼';
+}
+.fl-cat-content{
+  transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  overflow:hidden;
+  opacity:1;
+  background-color: #fff;
+}
+._collapsed .fl-cat-content{
+  opacity:0;
+}
+
+
+h3.fl-title {
+  position: relative;
+}
+
+.fl-title a:before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 21px;
+  background: #ddd;
+  left: -20px;
+}
+.unread .fl-title a:before {
+  background: #c66;
+  width: 6px;
+}
+.redirect .fl-title a:after {
+  content:' →';
+  color: #aaa;
+}
