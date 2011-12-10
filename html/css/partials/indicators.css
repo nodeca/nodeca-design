@@ -70,7 +70,7 @@ a.indicator.event[data-count="0"] {
   top: 50px;
   border: 3px solid #666;
   border-radius: 6px;
-  box-shadow: 0 -30px 30px -30px #ddd inset, 0 0 200px #666;
+  box-shadow: 0 -30px 30px -30px #DDDDDD inset, 5px 5px 30px #444;
 
 }
 .indicator-popup:before,
