@@ -328,7 +328,7 @@ nav.below{
 
 .btn.edit,
 .btn.delete,
-.btn.more,
+.btn.menu,
 .btn.back,
 .btn.markread {
   background-position: 50% 50%;
@@ -352,36 +352,18 @@ nav.below{
   background-image: url("../../images/btn-markread.png");
 }
 
-.btn.more {
+.btn.menu {
   background-image: url("../../images/btn-dropdown.png");
-}
-/*
-.btn.delete:before{
-  content: "×";
-  color: #666666;
-  font-size: 18px;
-  left: 12px;
-  position: absolute;
-  top: 4px;
-}
-
-.btn.markread:before{
-  content: '✔';
-  color: #666666;
-  font-size: 18px;
-  left: 12px;
-  position: absolute;
-  top: 4px;
 }
 
 .btn.more{
   width: 100%;
   text-align:center;
   box-sizing:border-box;-moz-box-sizing:border-box;
-  padding-left: 0; padding-right: 0; /* IE7 fix */ /*
+  padding-left: 0; padding-right: 0; /* IE7 fix */ 
 }
 .btn.more:before{
   content: '↓';
   margin-right: 3px;
 }
-*/
+
