@@ -18,10 +18,13 @@
 .w-comment{
   float:left;
   width:100%;
-  line-height: 1.2em;
+  font-size: 12px;
+  line-height: 1.4em;
 }
 
 .w-entry {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
   margin-bottom:15px;
 }
 .w-comment {
@@ -90,7 +93,7 @@ a.w-like-link {
  */
 .w-entry-head,
 .w-comment-head{
-  margin:0 0 2px;
+/*  margin:0 0 2px; */
   font-size: 11px;
   overflow:hidden;
 }
@@ -118,7 +121,7 @@ a.w-delete{
 .w-comments{
   margin:0 0 0 50px;
   padding-left:10px;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #eee;
 }
 
 /* disable text flow under avatar */
