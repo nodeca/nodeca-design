@@ -267,7 +267,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   display: none;
   border: 1px solid #888;
   border-radius: 4px;
-  box-shadow: 1px 2px 60px #888;
+  box-shadow: 0 -30px 30px -30px #eee inset, 5px 5px 30px #444444;
   padding: 5px 0;
   z-index: 9;
 }

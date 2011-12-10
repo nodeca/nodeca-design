@@ -384,7 +384,7 @@ a.gn-link:hover{
 .content{
   border-bottom:1px solid #b0b0b0;
   border-left:1px solid #b0b0b0;
-  margin:22px 0 0;
+  margin:30px 0 0;
   padding: 30px 0 30px 30px;
   height: 1%;/* ie padding hack */
 }
