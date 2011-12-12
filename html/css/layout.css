@@ -238,7 +238,7 @@ a.gn-link{
   padding:13px 7px;
   font-size:14px;
   line-height: 14px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
   outline: none;
 }
 a.gn-link:hover{
@@ -308,6 +308,7 @@ a.gn-link:hover{
 .menu-dropdown li a {
   display: block;
   padding: 6px 25px 6px 15px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
 }
 .menu-dropdown li a:hover {
   color: #fff;
