@@ -1,0 +1,35 @@
+.loginza{
+  text-align:right;
+  font-size:12px;
+  margin:15px 0 10px !important;
+  vertical-align: middle;
+}
+.loginza-buttons{
+  display:inline-block;
+  *display:inline;zoom:1; /* display:inline-block hack for ie6-7 */
+  vertical-align: middle;
+}
+.loginza-buttons li{
+  display:inline;
+  vertical-align:middle;
+  height:16px;
+  line-height:16px;
+}
+.loginza li{
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  opacity: .7;
+}
+.loginza:hover li{
+  opacity: 1;
+}
+.loginza-buttons a{
+  vertical-align:top;
+}
+.loginza-buttons img{
+  vertical-align:middle;
+}
+.loginza:not(:hover) .loginza-buttons img{
+  filter: url(../../images/resources.svg#desaturate);
+}

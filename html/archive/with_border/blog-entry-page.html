@@ -1,0 +1,537 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodeca</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" />
+
+  <link rel="stylesheet" href="css/boilerplate-start.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/partials/form.css">
+  <link rel="stylesheet" href="css/partials/buttons.css">
+  <link rel="stylesheet" href="css/partials/typography.css">
+  <link rel="stylesheet" href="css/addons/loginza.css">
+  <link rel="stylesheet" href="css/partials/indicators.css">
+  <link rel="stylesheet" href="css/partials/quick-search.css">
+  <link rel="stylesheet" href="css/partials/authorization.css">
+  <link rel="stylesheet" href="css/partials/pagination2.css">
+  <link rel="stylesheet" href="css/partials/votes.css">
+  <link rel="stylesheet" href="css/partials/blog-comments.css">
+  <link rel="stylesheet" href="css/addons/sape.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/boilerplate-end.css">
+
+  <script type="text/javascript" src="js/libs/modernizr-2.0.min.js"></script>
+  <!--script src="js/libs/respond.min.js"></script-->
+</head>
+
+<body>
+
+  <div class="global-wrap">
+    <header class="header" id="top"><!-- for quick scroll -->
+      <div class="trunk clearfix">
+        <div class="logo"><a href="index.html">Nodeca</a></div>
+        <nav class="global-nav">
+          <ul>
+            <li class="gn-tab"><a class="gn-link" href="#1">Profile</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Forum</a></li>
+            <li class="gn-tab active"><a class="gn-link" href="#1">Blogs</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Questions</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Sales</a></li>
+            <li class="gn-tab"><a class="gn-link menu _menu-pin" href="#1">More</a>
+			  <ul class="menu-dropdown">
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Maps</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Translations</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <form action="">
+          <input type="text" placeholder="Search">
+        </form>
+        <nav class="global-nav secondary">
+          <ul>
+            <li class="gn-tab notify"><a class="gn-link indicator mail _menu-pin" title="Notifications" data-count="0" href="#">&nbsp</a>
+              <ul class="indicator-popup">
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Alexander Kizyachenko" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Travel to India</span>
+                        <span class="author">Alexander (izya) Kizyachenko</span>
+                        <time class="ts">19:24</time>
+                      </div>
+                      Anybody here?
+                    </div>
+                  </a>
+                </li>
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Konstantin Savinov" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Enlarge your Node.js</span>
+                        <span class="author">Konstantin (Oblom) Savinov</span>
+                        <time class="ts">21.05.2011</time>
+                      </div>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                  </a>
+                </li>
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Polina Smirnova" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Yesterday</span>
+                        <span class="author">Polina (small beauty) Smirnova</span>
+                        <time class="ts">14.12.2010</time>
+                      </div>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="gn-tab"><a class="gn-link menu _menu-pin" href="#1">vasya@pupkin.net</a>
+			  <ul class="menu-dropdown">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Images Off</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container blog trunk clearfix">
+      <aside class="sidebar">
+        <a href="#1" class="btn primary aside">New Post</a>
+        <div class="blog-widget">
+          <h4 class="blog-widget-title">Categories</h4>
+          <ul class="blog-cat-list">
+            <li><a href="#1">African Railway</a></li>
+            <li>
+              <a href="#1">More information</a>
+              <ul>
+                <li><a href="#1">The invasion</a></li>
+                <li><a href="#1">The battle begins</a></li>
+                <li><a href="#1">October</a></li>
+              </ul>
+            </li>
+            <li><a href="#1">Explore</a></li>
+            <li><a href="#1">Battle of Britain TV</a></li>
+            <li><a href="#1">Although on paper</a></li>
+            <li><a href="#1">Hands on History</a></li>
+            <li><a href="#1">The Battle of Britain</a></li>
+          </ul>
+        </div>
+        <div class="blog-widget">
+          <h4 class="blog-widget-title">Calendar</h4>
+          <table class="blog-calendar">
+            <tr>
+              <th class="prev"><a href="#1"></a></th>
+              <th colspan="5"><a href="#1">July 2011</a></th>
+              <th class="next"><a href="#1"></a></th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td><a class="blog-calendar-date" href="#1">13</a></td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td><span class="today">17</span></td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td><a class="blog-calendar-date" href="#1">23</a></td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <a class="blog-archive" href="#1">Archive</a>
+        </div>
+        <div class="blog-widget">
+          <h4 class="blog-widget-title">Recent Comments</h4>
+          <ul class="recent-comments-wgt">
+            <li class="clearfix">
+              <a href="#1"><img src="images/tmp/a-upic.jpg" class="author-pic av-s" /></a>
+              <div class="nofloat">
+                <a href="#1">Nulla erat elit, mattis quis</a><br/>
+                <a class="author-name" href="#1">Vunder (diggger) Vaflin</a>
+                <time datetime="2011-05-23T11-39Z">23.05.2011, 11:39</time>
+              </div>
+            </li>
+            <li class="clearfix">
+              <a href="#1"><img src="images/tmp/a-alf.jpg" class="author-pic av-s" /></a>
+              <div class="nofloat">
+                <a href="#1">Ut posuere tortor vitae purus pretium eu vehicula</a><br/>
+                <a class="author-name" href="#1">Viktor (Andy) Somoilov</a>
+                <time datetime="2011-05-23T11-39Z">23.05.2011, 11:39</time>
+              </div>
+            </li>
+            <li class="clearfix">
+              <a href="#1"><img src="images//av-s.png" class="author-pic av-s" /></a>
+              <div class="nofloat">
+                <a href="#1">Donec adipiscing diam mattis orci eleifend tempor</a><br/>
+                <a class="author-name" href="#1">Viktor (Andy) Somoilov</a>
+                <time datetime="2011-05-23T11-39Z">23.05.2011, 11:39</time>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <article class="content">
+        <nav class="breadcrumbs">
+          <ul>
+            <li><a href="#1">Blogs</a></li>
+            <li><a href="#1">Company Nodeca</a></li>
+          </ul>
+        </nav>
+        <div class="blog-entry votable">
+          <header class="blog-head">
+            <a href="#1" class="author-pic av-s"><img src="images/tmp/a-bruce.jpg" alt="" /></a>
+            <div class="nofloat">
+              <nav class="buttons">
+                <ul>
+                  <li><a href="#1" class="btn edit">&nbsp;</a></li>
+                  <li><a href="#1" class="btn delete">&nbsp;</a></li>
+                  <li><a class="btn subscribe" href="#1">24</a></li>
+                </ul>
+              </nav>
+              <h1 class="title">Battle of Britain TV</h1>
+              <a class="clearfix" href="#1">Vunder (diggger) Vaflin</a>
+              <time class="timestamp" datetime="2011-05-14T11-39Z">14 May 2011, 11:39</time>
+            </div>
+          </header>
+          <article class="blog-content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five
+            centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum.</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content here', making it look like readable
+            English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+            default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+            Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
+            <div class="image"><img src="images/tmp/blog-entry-page.jpg" /></div>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+            also reproduced in their exact original form, accompanied by English versions from the 1914
+            translation by H. Rackham.</p>
+          </article>
+          <footer class="blog-meta clearfix">
+            <ul class="hlist tags">
+              <li><a class="cat" href="#1">bene riki</a></li>
+              <li><a class="cat"  href="#1">faki</a></li>
+              <li><a href="#1">turbo</a></li>
+              <li><a href="#1">urbo</a></li>
+              <li><a href="#1">oktyabryaki</a></li>
+            </ul>
+            <ul class="left">
+              <li class="votes large"><a class="vote-up _tip" href="#1"  title="Thanks author" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a><span class="votes-count">+34</span><a class="vote-down _tip" href="#1" title="Vote Down" data-tipsy-gravity="se" data-tipsy-delayIn="1000"><!-- --></a></li>
+            </ul>
+          </footer>
+        </div>
+        <nav class="page-roll">
+          <a href="#1" class="prev-post">Previous post</a>
+          <a href="#1" class="next-post">Next post</a>
+        </nav>
+        <nav><h3 class="blog-comments-title">20 comments <a href="#1" class="new-comment-link">Add New</a></h3></nav>
+        <div class="blog-comments-wrapper">
+          <article class="blog-comments">
+            <article class="blog-comment">
+              <div class="blog-comment-inner votable">
+                <footer class="blog-comment-head clearfix">
+                  <div class="left">
+                    <a href="#1" class="author">
+                      <img src="images/tmp/a-upic.jpg" class="author-pic av-s" />
+                      <span class="author-name">Viktor (Andy) Somoilov</span>
+                    </a>
+                    <time datetime="2011-05-14T11-39Z">14 May 2011, 11:39</time>
+                    <a class="id" href="#1">#</a>
+                  </div>
+                  <div class="right">
+                    <span class="votes"><a href="#1" class="vote-up"></a><span class="votes-count">+26</span><a href="#1" class="vote-down"></a></span>
+                  </div>
+                </footer>
+                <div class="blog-comment-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged.</div>
+                <footer class="blog-comment-meta">
+                  <ul class="actions">
+                    <li><a href="#1">Edit</a></li>
+                    <li><a href="#1">Delete</a></li>
+                  </ul>
+                </footer>
+              </div>
+              <article class="blog-comment">
+                <div class="blog-comment-inner votable blog-author-comment">
+                  <footer class="blog-comment-head clearfix">
+                    <div class="left">
+                      <a href="#1" class="author">
+                        <img src="images/tmp/a-bruce.jpg" class="author-pic av-s" />
+                        <span class="author-name">Viktor (Andy) Somoilov</span>
+                      </a>
+                      <time datetime="2011-05-14T11-39Z">14 May 2011, 11:39</time>
+                      <a class="id" href="#1">#</a>
+                    </div>
+                    <div class="right">
+                      <span class="votes"><a href="#1" class="vote-up"></a><span class="votes-count">+26</span><a href="#1" class="vote-down"></a></span>
+                    </div>
+                  </footer>
+                  <div class="blog-comment-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                  leap into electronic typesetting, remaining essentially unchanged.</div>
+                  <footer class="blog-comment-meta">
+                    <ul class="actions">
+                      <li><a href="#1">Edit</a></li>
+                      <li><a href="#1">Delete</a></li>
+                    </ul>
+                  </footer>
+                </div>
+                <article class="blog-comment">
+                  <div class="blog-comment-inner votable">
+                    <footer class="blog-comment-head clearfix">
+                      <div class="left">
+                        <a href="#1" class="author">
+                          <img src="images/tmp/a-alf.jpg" class="author-pic av-s" />
+                          <span class="author-name">Viktor (Andy) Somoilov</span>
+                        </a>
+                        <time datetime="2011-05-14T11-39Z">14 May 2011, 11:39</time>
+                        <a class="id" href="#1">#</a>
+                      </div>
+                      <div class="right">
+                        <span class="votes"><a href="#1" class="vote-up"></a><span class="votes-count">+26</span><a href="#1" class="vote-down"></a></span>
+                      </div>
+                    </footer>
+                    <div class="blog-comment-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</div>
+                    <footer class="blog-comment-meta">
+                      <ul class="actions">
+                        <li><a href="#1">Reply</a></li>
+                      </ul>
+                    </footer>
+                  </div>
+                  <article class="blog-comment">
+                    <div class="blog-comment-inner votable">
+                      <footer class="blog-comment-head clearfix">
+                        <div class="left">
+                          <a href="#1" class="author">
+                            <img src="images/av-s.png" class="author-pic av-s" />
+                            <span class="author-name">Viktor (Andy) Somoilov</span>
+                          </a>
+                          <time datetime="2011-05-14T11-39Z">14 May 2011, 11:39</time>
+                          <a class="id" href="#1">#</a>
+                        </div>
+                        <div class="right">
+                          <span class="votes"><a href="#1" class="vote-up"></a><span class="votes-count">+26</span><a href="#1" class="vote-down"></a></span>
+                        </div>
+                      </footer>
+                      <div class="blog-comment-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                      leap into electronic typesetting, remaining essentially unchanged.</div>
+                      <footer class="blog-comment-meta" style="display: none;">
+                        <ul class="actions">
+                          <li><a href="#1">Edit</a></li>
+                          <li><a href="#1">Delete</a></li>
+                        </ul>
+                      </footer>
+                      <form method="post" action="" class="blog-reply-form">
+                        <textarea class="text" placeholder="Write something"></textarea>
+                        <input type="submit" class="btn" value="Submit" />
+                        <input type="submit" class="btn" value="Preview" />
+                      </form>
+                    </div>
+                  </article>
+                </article>
+              </article>
+            </article>
+            <article class="blog-comment">
+              <div class="blog-comment-inner votable blog-author-comment">
+                <footer class="blog-comment-head clearfix">
+                  <div class="left">
+                    <a href="#1" class="author">
+                      <img src="images/tmp/a-bruce.jpg" class="author-pic av-s" />
+                      <span class="author-name">Viktor (Andy) Somoilov</span>
+                    </a>
+                    <time datetime="2011-05-14T11-39Z">14 May 2011, 11:39</time>
+                    <a class="id" href="#1">#</a>
+                  </div>
+                  <div class="right">
+                    <span class="votes"><a href="#1" class="vote-up"></a><span class="votes-count">+26</span><a href="#1" class="vote-down"></a></span>
+                  </div>
+                </footer>
+                <div class="blog-comment-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged.</div>
+                <footer class="blog-comment-meta">
+                  <ul class="actions">
+                    <li><a href="#1">Edit</a></li>
+                    <li><a href="#1">Delete</a></li>
+                  </ul>
+                </footer>
+              </div>
+              <article class="blog-comment">
+                <div class="blog-comment-inner votable">
+                  <footer class="blog-comment-head clearfix">
+                    <div class="left">
+                      <a href="#1" class="author">
+                        <img src="images/tmp/a-upic.jpg" class="author-pic av-s" />
+                        <span class="author-name">Viktor (Andy) Somoilov</span>
+                      </a>
+                      <time datetime="2011-05-14T11-39Z">14 May 2011, 11:39</time>
+                      <a class="id" href="#1">#</a>
+                    </div>
+                    <div class="right">
+                      <span class="votes"><a href="#1" class="vote-up"></a><span class="votes-count">+26</span><a href="#1" class="vote-down"></a></span>
+                    </div>
+                  </footer>
+                  <div class="blog-comment-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                  leap into electronic typesetting, remaining essentially unchanged.</div>
+                  <footer class="blog-comment-meta">
+                    <ul class="actions">
+                      <li><a href="#1">Reply</a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </article>
+            </article>
+          </article>
+        </div>
+        <form method="post" action="" class="blog-comment-form">
+          <h3>Add comment</h3>
+          <textarea class="text" placeholder="Write something"></textarea>
+          <input type="submit" class="btn primary" value="Post" />
+          <input type="submit" class="btn" value="Preview" />
+        </form>
+
+      </article>
+    </div>
+  </div> <!-- /global-wrap -->
+
+  <footer class="footer trunk">
+    <ul class="footer-nav">
+        <li><a href="#1">About</a></li>
+        <li><a href="#1">Contacts</a></li>
+        <li><a href="#1">Terms</a></li>
+        <li><a href="#1">Help</a></li>
+    </ul>
+    <ul class="site-options">
+      <li>
+        <noindex><a href="#1" rel="nofollow"><img src="images/tmp/counter.png" alt="" /></a></noindex>
+      </li>
+      <li>
+        <select class="site-theme">
+          <optgroup label="Change Style">
+            <option selected="selected">Desktop Blue</option>
+            <option>Desktop Ultramarine</option>
+          </optgroup>
+        </select>
+        <select class="site-lang">
+          <optgroup label="Select Language">
+            <option selected="selected">English</option>
+            <option>English GB</option>
+          </optgroup>
+        </select>
+      </li>
+    </ul>
+    <p class="copyrights">Powered by <a href="#1">Nodeca</a>, social platform by <a href="#1">RC Design</a></p>
+    <div class="sape-links">Ads: All <a href="#1">photos jokes</a>, funny jokes as well as. New printers, <a href="#1">buying ink cartridges</a>.</div>
+  </footer>
+
+  <a class="_scroll-top" href="#top"><!-- --></a>
+
+  <div class="jsnotice"><div class="alert-message error">This site will not work without javascript!</div></div>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <link rel="stylesheet" href="css/addons/jquery.tipsy.css" />
+  <script src="js/libs/jquery.tipsy.js"></script>
+  <script src="js/libs/jquery.ba-throttle-debounce.js"></script>
+  <script src="js/libs/jquery.noisy.js"></script>
+  <script src="js/libs/jquery.jeditable.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+  <!--[if lt IE 7 ]>
+    <script type="text/javascript" src="js/libs/dd_belatedpng.js"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.png_bg'); </script>
+  <![endif]-->
+
+</body>
+</html>

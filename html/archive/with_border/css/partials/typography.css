@@ -1,0 +1,121 @@
+/*
+ *
+ *  typography
+ *
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  color: #bfbfbf;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+h1 small {
+  font-size: 18px;
+}
+h2 {
+  font-size: 24px;
+}
+h2 small {
+  font-size: 14px;
+}
+h3 {
+  font-size: 18px;
+}
+h3 small {
+  font-size: 14px;
+}
+h4 {
+  font-size: 16px;
+}
+h4 small {
+  font-size: 12px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 13px;
+  color: #bfbfbf;
+  text-transform: uppercase;
+}
+
+
+.signature{
+  font-size: 12px;
+  color:#888;
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px solid #eee;
+}
+
+.quote{
+  border-left: 5px solid #eee;
+  font-size: 13px;
+  margin: 20px 0px 20px 0px;
+  padding:0 0 0 15px;
+  height: 1%;
+  color: #888;
+}
+.quote-head{
+  font-size: 11px;
+  margin-top: 7px;
+}
+a.quote-author{
+  color: #aaa;
+  float: left;
+}
+a.quote-author:before{
+  content: "— ";
+}
+.quote-date{
+  color:#ccc;
+  float: right;
+}
+
+.code{
+  background-color: #f6f6f6;
+  color:#222;
+  font-size: 13px;
+  line-height:1.2em;
+  padding: 10px 15px;
+  margin: 20px 0 20px 0;
+  overflow: auto;
+  max-height: 400px;
+  white-space:pre;
+}
+
+.attachments{
+  color:#444;
+  font-size: 12px;
+  height: 1%;
+  margin-top: 30px;
+}
+.attachments dt{
+  font-size: 14px;
+  margin: 20px 0 5px;
+  font-style: italic;
+}
+.attachments dd{
+  line-height: 24px;
+  margin-left: 10px;
+}
+.attachments a {
+  color: #666;
+  padding-left: 17px;
+  background: url(../../images/attach-download.png) no-repeat 0 50%;
+}

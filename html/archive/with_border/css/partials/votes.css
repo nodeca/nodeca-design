@@ -1,0 +1,77 @@
+/*
+ *
+ *  Votes
+ *
+ */
+.votes{
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+}
+a.vote-up,
+a.vote-down{
+  color:#666;
+  opacity: 0.2!important;
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  text-decoration: none!important;
+  vertical-align: middle;
+}
+
+a.vote-up{
+  padding-right: 3px;
+  padding-left: 3px;
+}
+a.vote-down{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+a.vote-up:after{
+  content: '↑';
+}
+a.vote-down:after{
+  content: '↓';
+}
+.votes-count{
+  font-size:10px;
+  vertical-align: middle;
+}
+.votable:hover a.vote-up,
+.votable:hover a.vote-down{
+  opacity: 1!important;
+}
+a.vote-up:hover,
+a.vote-down:hover{
+  text-decoration: none;
+}
+/*.votes:hover*/ a.vote-up{
+  color:#080;
+}
+/*.votes:hover*/ a.vote-down{
+  color:#c00;
+}
+
+
+.votes.large{
+  font-size: 14px;
+  overflow:hidden; /* IE6 hack */
+  border-radius: 4px;
+  line-height: 20px;
+  height: 20px;
+}
+/*
+.votable:hover .votes.large{
+  background-color: #EEE;
+}
+.votes.large a.vote-up:after{
+  content: '⇧';
+}
+.votes.large a.vote-down:after{
+  content: '⇩';
+}
+*/
+.votes.large .votes-count{
+  font-size:12px;
+}
+

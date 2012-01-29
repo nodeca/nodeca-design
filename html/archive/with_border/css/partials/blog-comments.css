@@ -1,0 +1,114 @@
+/*
+ *
+ *  Blog comments
+ *
+ */
+
+.blog-comments-wrapper{
+/*  background: #f6f6f6; */
+  padding:0 20px;
+  margin: 0 -20px;
+  border-left: 1px solid #ccc;
+  font-size: 11px;
+}
+.blog-comments-title{
+  margin: 20px 0 20px;
+  font-weight: normal;
+}
+.blog-comments{
+}
+.new-comment-link{
+  margin-left: 10px;
+}
+.blog-comment-inner{
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+}
+.blog-comment-content {
+  font-size:13px;
+  line-height: 1.4em;
+}
+.blog-comment .blog-comment{
+  margin-left: 30px;
+}
+.blog-author-comment{
+  background: #FFF8F0;
+/*  box-shadow: 0 1px 2px #aaa; */
+  padding: 10px;
+  margin: 10px -10px 20px;
+  border: 1px solid #fceec1 !important;
+  border-radius: 6px;
+}
+.blog-comment-head{
+  height: 30px;
+  line-height: 30px;
+  margin: 0 0 5px;
+  font-size:13px;
+}
+.blog-comment-head .author{
+  margin-right: 15px;
+}
+.blog-comment-head .author:hover{
+  text-decoration: none;
+}
+.blog-comment-head .author-pic{
+  margin-right: 7px;
+/*  border-radius: 3px;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;*/
+}
+.blog-comment-head .author:hover .author-name{
+  text-decoration: underline;
+}
+.blog-comment-head time{
+  color:#aaa;
+  margin-right: 15px;
+  font-size: 10px;
+}
+.blog-comment-meta{
+  font-size: 12px;
+  margin-top:5px;
+  text-align: left;
+}
+.blog-comment-meta .actions{
+  line-height: 1;
+}
+.blog-comment-meta .actions li{
+  display: inline;
+  margin-left: 10px;
+}
+.blog-comment-inner .id,
+.blog-comment-inner .actions a{
+  transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  opacity:.3;
+}
+.blog-comment-inner:hover .id,
+.blog-comment-inner:hover .actions a{
+  opacity:1;
+}
+.blog-comment-inner .actions a{
+  color:#666;
+  text-decoration: underline;
+}
+
+.blog-reply-form{
+  margin-top: 15px;
+}
+.blog-comment-form{
+  margin: 30px 0 0;
+}
+.blog-reply-form .text,
+.blog-comment-form .text{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.blog-comment-form h3{
+  font-size: 16px;
+  color:#000;
+  margin: 0 0 15px;
+  font-weight: normal;
+}

@@ -1,0 +1,772 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodeca</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" />
+
+  <link rel="stylesheet" href="css/boilerplate-start.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/partials/form.css">
+  <link rel="stylesheet" href="css/partials/buttons.css">
+  <link rel="stylesheet" href="css/partials/typography.css">
+  <link rel="stylesheet" href="css/partials/topiclist.css">
+  <link rel="stylesheet" href="css/addons/loginza.css">
+  <link rel="stylesheet" href="css/partials/indicators.css">
+  <link rel="stylesheet" href="css/partials/quick-search.css">
+  <link rel="stylesheet" href="css/partials/authorization.css">
+  <link rel="stylesheet" href="css/partials/pagination2.css">
+  <link rel="stylesheet" href="css/addons/sape.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/boilerplate-end.css">
+
+  <script type="text/javascript" src="js/libs/modernizr-2.0.min.js"></script>
+  <!--script src="js/libs/respond.min.js"></script-->
+</head>
+
+<body>
+
+  <div class="global-wrap">
+    <header class="header" id="top"><!-- for quick scroll -->
+      <div class="trunk clearfix">
+        <div class="logo"><a href="index.html">Nodeca</a></div>
+        <nav class="global-nav">
+          <ul>
+            <li class="gn-tab"><a class="gn-link" href="#1">Profile</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Forum</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Blogs</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Questions</a></li>
+            <li class="gn-tab"><a class="gn-link" href="#1">Sales</a></li>
+            <li class="gn-tab"><a class="gn-link menu _menu-pin" href="#1">More</a>
+			  <ul class="menu-dropdown">
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Maps</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Translations</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <form action="">
+          <input type="text" placeholder="Search">
+        </form>
+        <nav class="global-nav secondary">
+          <ul>
+            <li class="gn-tab notify"><a class="gn-link indicator mail _menu-pin" title="Notifications" data-count="0" href="#">&nbsp</a>
+              <ul class="indicator-popup">
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Alexander Kizyachenko" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Travel to India</span>
+                        <span class="author">Alexander (izya) Kizyachenko</span>
+                        <time class="ts">19:24</time>
+                      </div>
+                      Anybody here?
+                    </div>
+                  </a>
+                </li>
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Konstantin Savinov" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Enlarge your Node.js</span>
+                        <span class="author">Konstantin (Oblom) Savinov</span>
+                        <time class="ts">21.05.2011</time>
+                      </div>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                  </a>
+                </li>
+                <li class="indicator-item">
+                  <a class="markread" href="#123"></a>
+                  <a href="#1" class="indicator-link">
+                    <img src="images/tmp/a-upic.jpg" alt="Polina Smirnova" class="userpic" />
+                    <div class="msg">
+                      <div class="head">
+                        <span class="topic">Yesterday</span>
+                        <span class="author">Polina (small beauty) Smirnova</span>
+                        <time class="ts">14.12.2010</time>
+                      </div>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="gn-tab"><a class="gn-link menu _menu-pin" href="#1">vasya@pupkin.net</a>
+			  <ul class="menu-dropdown">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Images Off</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container search trunk clearfix">
+      <article class="content styled clearfix">
+        <nav class="breadcrumbs">
+          <ul>
+            <li><a href="#1">Search</a></li>
+          </ul>
+        </nav>
+
+        <header class="s-controls _sticky">
+          <div class="s-head clearfix">
+            <div class="s-query-wrap">
+              <div class="s-query-indent">
+                <input type="text" class="s-query" />
+              </div>
+            </div>
+            <div class="s-submit">
+              <input type="submit" class="btn primary" value="Search" />
+            </div>
+            <div class="s-info">
+              <div class="s-tip">Found 657 results</div>
+              <a href="#1" class="s-adv-pin">Advanced search</a>
+            </div>
+
+          <aside class="sidebar">
+            <ul class="s-res-filter">
+              <li><a href="#1">Blog</a> (4)</li>
+              <li class="active"><a href="#1">Forum</a> (53)</li>
+              <li><a href="#1">Questions</a> (2)</li>
+              <li><a href="#1">Sales</a></li>
+              <li><a href="#1">Maps</a></li>
+              <li><a href="#1">Profile</a> (7)</li>
+            </ul>
+            <dl class="s-res-sorting">
+              <dt>Sort by</dt>
+              <dd class="active"><a href="#1">Last Update</a></dd>
+              <dd><a href="#1">Relevance</a></dd>
+              <dd><a href="#1">Replies count</a></dd>
+            </dl>
+          </aside><!-- /s-sidebar -->
+
+
+          </div>
+        </header>
+        
+        <ul class="tl">
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <a class="mark-i-posted _tip" href="#" title="Show my posts" data-tipsy-gravity="sw"><!-- --></a>
+                <a class="mark-i-attach _tip" href="#" title="512 attached images/files" data-tipsy-gravity="sw"><!-- --></a>
+                <h2><a href="#1">Electric Plane Talk</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Ad minim veniam, quis nostrud Electric Plane Talk</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row mark-posted clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <a class="mark-i-posted _tip" href="#" title="Show my posts" data-tipsy-gravity="sw"><!-- --></a>
+                <h2><a href="#1">Electric Plane Talk</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-12we3tyu">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+          <li class="tl-preview-row _pr-12we3tyu"  style="display: none">
+            <div class="thread-posts _pr-12we3tyu">
+              <div class="thread-post clearfix">
+                <a href="#1"><img class="thread-post-thumb av-ml" src="images/tmp/a-bruce.jpg" alt="" /></a>
+                <div class="thread-post-content">
+                  <header><a href="#1">First post</a> by <a href="#1">Vasya (iben) Pupkin</a></header>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+              <div class="thread-post clearfix">
+                <a href="#1"><img class="thread-post-thumb av-ml" src="images/av-ml.png" alt="" /></a>
+                <div class="thread-post-content">
+                  <header><a href="#1">Last post</a> by <a href="#1">Jora (gisgo) Bjakin</a></header>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+              <div class="thread-posts-actions"><a class="btn small" href="#1">Go to this topic</a><a href="#1">Mark As Read</a></div>
+            </div>
+          </li><!-- preview end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Donec adipiscing diam mattis orci eleifend tempor</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Mauris gravida tincidunt malesuada</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Proin rutrum, magna id semper viverra</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row mark-posted clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <a class="mark-i-posted _tip" href="#" title="Show my posts" data-tipsy-gravity="sw"><!-- --></a>
+                <h2><a href="#1">Nulla suscipit consequat sodales</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <a class="mark-i-attach _tip" href="#" title="512 attached images/files" data-tipsy-gravity="sw"><!-- --></a>
+                <h2><a href="#1">Sed venenatis sollicitudin metus</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row mark-closed clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Donec nec egestas diam</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Proin tincidunt venenatis</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row mark-closed clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Electric Ut enim ad minim veniam, quis nostrud</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Nulla erat elit, mattis quis</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row mark-moved clearfix">
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Enim ad minim veniam, quis nostrud </a></h2>
+              </div>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Quisque faucibus elit eu</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Ut posuere tortor vitae purus pretium eu vehicula</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-separator clearfix">results 30-60</li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Proin rutrum, magna id semper viverra</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row mark-posted clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <a class="mark-i-posted _tip" href="#" title="Show my posts" data-tipsy-gravity="sw"><!-- --></a>
+                <h2><a href="#1">Nulla suscipit consequat sodales</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <a class="mark-i-attach _tip" href="#" title="512 attached images/files" data-tipsy-gravity="sw"><!-- --></a>
+                <h2><a href="#1">Sed venenatis sollicitudin metus</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row mark-closed clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Donec nec egestas diam</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Proin tincidunt venenatis</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row mark-closed clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Electric Ut enim ad minim veniam, quis nostrud</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Nulla erat elit, mattis quis</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Quisque faucibus elit eu</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+          <li class="tl-row clearfix">
+            <ul class="tl-last-col">
+              <li class="tl-last-date"><a href="#1"><time datetime="2011-07-20T21-03Z">Yesterday, 09:03 PM</time></a></li>
+              <li class="tl-last-author"><a href="#1">Salam (krokus) Dolbokluvovovich</a></li>
+            </ul>
+            <ul class="tl-stat-col">
+              <li>848 replies</li>
+            </ul>
+            <div class="tl-content-col">
+              <div class="tl-title">
+                <h2><a href="#1">Ut posuere tortor vitae purus pretium eu vehicula</a></h2>
+              </div>
+              <footer class="tl-meta">
+                <a href="#" class="tl-preview-ctl _expander" data-notify="-3" data-toggle="._pr-ldgbd4gfd">Preview</a>
+                ╰ <a href="#1">African stories</a>
+              </footer>
+              <div class="status-mark"></div>
+            </div>
+            <div class="tl-select-col"><input type="checkbox" /></div>
+          </li><!-- row end -->
+
+        </ul><!-- /s-res -->
+
+      </article>
+    </div>
+  </div> <!-- /global-wrap -->
+
+  <footer class="footer trunk">
+    <ul class="footer-nav">
+        <li><a href="#1">About</a></li>
+        <li><a href="#1">Contacts</a></li>
+        <li><a href="#1">Terms</a></li>
+        <li><a href="#1">Help</a></li>
+    </ul>
+    <ul class="site-options">
+      <li>
+        <noindex><a href="#1" rel="nofollow"><img src="images/tmp/counter.png" alt="" /></a></noindex>
+      </li>
+      <li>
+        <select class="site-theme">
+          <optgroup label="Change Style">
+            <option selected="selected">Desktop Blue</option>
+            <option>Desktop Ultramarine</option>
+          </optgroup>
+        </select>
+        <select class="site-lang">
+          <optgroup label="Select Language">
+            <option selected="selected">English</option>
+            <option>English GB</option>
+          </optgroup>
+        </select>
+      </li>
+    </ul>
+    <p class="copyrights">Powered by <a href="#1">Nodeca</a>, social platform by <a href="#1">RC Design</a></p>
+    <div class="sape-links">Ads: All <a href="#1">photos jokes</a>, funny jokes as well as. New printers, <a href="#1">buying ink cartridges</a>.</div>
+  </footer>
+
+  <a class="_scroll-top" href="#top"><!-- --></a>
+
+
+  <div class="jsnotice"><div class="alert-message error">This site will not work without javascript!</div></div>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <link rel="stylesheet" href="css/addons/jquery.tipsy.css" />
+  <script src="js/libs/jquery.tipsy.js"></script>
+  <script src="js/libs/jquery.ba-throttle-debounce.js"></script>
+  <script src="js/libs/jquery.noisy.js"></script>
+  <script src="js/libs/jquery.jeditable.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+  <!--[if lt IE 7 ]>
+    <script type="text/javascript" src="js/libs/dd_belatedpng.js"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.png_bg'); </script>
+  <![endif]-->
+
+</body>
+</html>

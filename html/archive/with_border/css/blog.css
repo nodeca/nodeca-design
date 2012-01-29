@@ -1,0 +1,261 @@
+/*
+ *
+ *  Search
+ *
+ */
+.blog{
+  position: relative;
+}
+.blog .breadcrumbs{
+  top:20px;
+  left:15px;
+}
+.blog .content{
+  margin-top: 60px;
+  margin-right: 293px;
+  border: 0;
+  padding: 0;
+}
+.blog .sidebar{
+  float: right;
+  position: relative;
+  width: 262px;
+/*  border-left: 1px solid #ccc; */
+  padding: 16px 0 5px;
+  display: inline;/* double margin hack for ie */
+  margin: 60px 0 0 0;
+}
+
+.blog .sidebar:before{
+  border-top: 1px solid #ccc;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10px;
+}
+.blog .sidebar:after {
+  background-color: #ccc;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(top, #ccc 95%, #fff);
+  background: -moz-linear-gradient(top, #ccc 95%, #fff);
+  background: -webkit-linear-gradient(top, #ccc 95%, #fff);
+}
+
+.blog .btn.aside {
+  position: absolute;
+  right:0;
+  top:-36px;
+}
+.blog-entry {
+  border-bottom: 1px solid #ccc; 
+}
+/*
+.blog-entry:after {
+  display: block;
+  height: 1px;
+  background-color: #aaa;
+  width: 100%;
+  content: '';
+  background: linear-gradient(left, #aaa 80%, #aaa);
+  background: -webkit-linear-gradient(left, #aaa 80%, #aaa);
+  background: -moz-linear-gradient(left, #aaa 80%, #aaa);
+}
+*/
+.blog-head{
+  margin: 0 0 25px;
+}
+.blog-head .author-pic img{
+  float: left;
+  margin: 0 20px 0 0;
+  vertical-align: top;
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+}
+.blog-head h1{
+  margin: 0;
+}
+.blog-head .timestamp{
+  color:#888;
+  font-size: 11px;
+  margin-top: 3px;
+  display: block;
+}
+.blog-content{
+  line-height: 1.4em;
+}
+.blog-content p{
+  margin: 1em 0;
+}
+.blog-content .image{
+  margin: 1.7em 0;
+}
+.blog-content .image img{
+  vertical-align: top;
+}
+.blog-meta{
+  margin: 15px 0 7px;
+}
+.blog-meta .tags{
+  text-align: right;
+  float:right;
+  max-width: 70%;
+	list-style:none;
+	font-size:11px;
+  padding-left: 19px;
+  background: url(../images/tag.svg) no-repeat 0 4px;
+  opacity: .5;
+  
+}
+.blog-meta .tags li{
+	float:left;
+	height:20px;
+	line-height:20px;
+/*  margin: 0 0 1px; */
+}
+.blog-meta .tags a{
+	margin-left:3px;
+	color:#333;
+}
+.blog-meta .tags a.cat{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.blog-meta .tags a:hover{
+  text-decoration: underline;
+}	
+
+.page-roll{
+  text-align: center;
+  margin: 15px 0 20px;
+  display: none;
+}
+.page-roll a{
+  margin: 0 10px;
+  font-size: 12px;
+  color: #333;
+}
+.page-roll .prev-post:before{
+  content: '← ';
+}
+.page-roll .next-post:after{
+  content: ' →';
+}
+
+/*
+ *
+ * Votes control
+ *
+ */
+
+.blog-widget{
+  margin:0 0 30px 30px;
+/*
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+*/
+}
+.blog-widget-title{
+  margin:0 0 10px -15px;
+  font-weight: normal;
+}
+.blog-widget a:hover {
+  color: #036;
+}
+
+.blog-cat-list{
+  line-height: 1.5em;
+  font-size: 13px;
+}
+.blog-cat-list a {
+  color: #666;
+}
+.blog-cat-list ul{
+  margin-left: 20px;
+}
+.blog-calendar{
+  background: #f6f6f6;
+  border-radius: 4px;
+  width: 100%;
+}
+a.blog-calendar-date {
+  color: #333;
+  text-decoration: underline;
+}
+a.blog-calendar-date:hover {
+  color: #607890;
+}
+
+.blog-calendar th{
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  padding: 5px 0 10px;
+}
+.blog-calendar .prev,
+.blog-calendar .next{
+  width: 1%;
+}
+.blog-calendar .prev a:after{
+  content: '←';
+}
+.blog-calendar .next a:after{
+  content: '→';
+}
+
+.blog-calendar td{
+  font-size: 12px;
+  color: #888;
+  height: 22px;
+  width: 1%;
+  vertical-align: middle;
+  text-align: center;
+}
+.blog-archive{
+  font-size: 12px;
+  text-align: right;
+  padding: 5px 10px 5px 0;
+  display: block;
+}
+
+.blog-calendar .today{
+  display: inline-block;
+  background: #666;
+  color:#fff;
+  padding: 4px 5px 3px;
+  margin: 0 0 0 -10px;
+  position: relative;
+  left: 5px;
+}
+.recent-comments-wgt{
+  margin: 0 0 -15px;
+  font-size:13px;
+}
+.recent-comments-wgt li{
+  margin: 0 0 15px;
+}
+.recent-comments-wgt .author-pic{
+  float: left;
+  display: inline;/* ie double margin hack */
+  margin:3px 10px 0 0;
+/*  height: 30px;
+  width: 30px;
+  border-radius: 3px;*/
+}
+.recent-comments-wgt .author-name{
+  color:#444;
+  font-size: 11px;
+}
+.recent-comments-wgt time{
+  color:#8c8c8c;
+  font-size: 9px;
+  display: block;
+  text-align: right;
+}

@@ -1,0 +1,120 @@
+.pl-wrap{
+}
+
+/* ----------------------------------
+ * Post
+ */
+.post{
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.post-head{
+  background-color: #efefef;
+  padding: 11px 15px;
+  line-height: 19px;
+}
+.post-head .left{
+  float: left;
+}
+a.post-author{
+  font-size: 16px;
+  color: #777;
+  line-height: 1em;
+  vertical-align: middle;
+}
+a.post-author:hover{
+  color: #036;
+}
+.post-head .right{
+  float: right;
+  font-size: 11px;
+}
+a.post-timestamp {
+  color:#888;
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+}
+a.post-timestamp:hover {
+  color: #036;
+}
+.post-marker{
+  margin-left: 25px;
+  vertical-align: middle;
+}
+.post-v{
+  vertical-align: middle;
+}
+.post-aside{
+  float: left;
+  display: inline; /* ie double margin hack */
+  margin: 30px 30px 0;
+  width: 150px;
+  text-align: center;
+}
+.post-author-pic img{
+/*  border-radius: 4px;
+  vertical-align: top;
+  max-height: 150px;
+  max-width: 150px; */
+}
+.post-author-info{
+  font-size: 12px;
+  margin-top: 5px;
+  line-height: 1.4;
+  color: #AAA;
+  display: none;
+}
+.post-content{
+  margin: 26px 15px 0 210px;
+  padding-bottom: 30px;
+  line-height: 1.4;
+  position: relative;
+  min-height: 125px;
+  _height: 125px; /* ie6 min-height hack */
+}
+.pl-short .post-content{
+  margin: 15px 15px -15px;
+  padding: 0;
+  min-height: 1px;
+  _height: 1px; /* ie6 min-height hack */
+}
+.post-meta {
+/*  font-size: 12px; */
+  line-height: 20px;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+}
+.post-meta a.action{
+  transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  opacity:.2;
+  color: #444;
+  text-decoration: underline;
+}
+.post:hover .post-meta a.action{
+  opacity: .8;
+}
+.post-meta:hover a.action{
+  opacity:1 !important;
+}
+
+.post-meta li{
+  float: left;
+  display: inline;/* ie double margin hack */
+  margin:0 15px 0 0;
+}
+.post-meta .right li{
+  margin:0 0 0 15px;
+}
+
+
+.post-image{
+  margin: 20px 0;
+}
+.post-image img{
+  vertical-align: middle;
+}

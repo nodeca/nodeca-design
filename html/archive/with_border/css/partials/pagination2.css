@@ -1,0 +1,105 @@
+/*
+ *
+ * Pagination buttons
+ *
+ */
+.pagination{
+  background: linear-gradient(top, #fff, #f4f4f4, #fff);
+  background: -moz-linear-gradient(top, #fff, #f4f4f4, #fff);
+  background: -webkit-linear-gradient(top, #fff, #f4f4f4, #fff);
+  float:left;
+  margin-top: 5px;
+}
+.pagination li{
+  float:left;
+  display: inline; /* ie double margin hack */
+  line-height: 23px;
+}
+.pagination a{
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease  all;
+  transition: 0.2s ease all;
+  font-size: 12px;
+  color:#444;
+  padding:0 9px;
+  text-align:center;
+  float:left;
+  cursor:pointer;
+  height: 23px;
+  border-radius: 2px;
+}
+.pagination a:hover{
+  background: #ccc;
+}
+.pagination a.more{
+  padding: 0 3px;
+}
+.pagination ul{
+  padding-top:3px;
+}
+.pagination li{
+  position:relative;
+}
+.pagination a.next,
+.pagination a.prev {
+/*  background: #eee;  */
+/* border: 1px solid #ccc; */
+}
+.pagination a.next:hover,
+.pagination a.prev:hover {
+  text-decoration: none;
+  border-radius: 20px;
+}
+.pagination a.next:before {
+  content:'→';
+}
+.pagination a.prev:before {
+  content:'←';
+}
+a.page-jump {
+  text-decoration: none;
+  font-weight:bold;
+  background: #444;
+/*  border-color: #e0e0e0; */
+  box-shadow: 0 0 1px #444;
+  color: #fff;
+}
+a.page-jump:hover {
+  background: #666;
+}
+.pgn-popup{
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  left:-2px;
+  top:25px;
+  z-index: 999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 7px 10px 10px;
+  white-space: nowrap;
+  border: 1px solid #888;
+  border-radius: 4px;
+  box-shadow: 1px 2px 60px #888;
+}
+.pgn-popup dt{
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0 5px 3px;
+  line-height:1em;
+}
+.pgn-popup .page-number{
+  padding: 7px;
+  padding-bottom: 6px;
+  width: 60px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.pgn-popup .button{
+  font-weight: normal;
+  padding: 2px 10px 4px;
+  vertical-align: middle;
+  height: 26px;
+  line-height: 24px;
+}

@@ -1,0 +1,374 @@
+/*
+ *
+ * Profile layout
+ *
+ */
+.profile .sidebar{
+  margin: 38px 0 0;
+  width:100px;
+}
+.profile .sidebar-nav{
+  line-height:24px;
+}
+.profile .sidebar-nav a{
+  color: #666;
+}
+.profile .sidebar-nav a:hover{
+  color: #036;
+}
+.profile .sidebar-nav .active a{
+  font-weight:bold;
+  color: #c66;
+}
+.profile .content{
+  margin-left: 120px;
+}
+
+.profile .widgets{
+  float:left;
+  width:240px;
+  position: relative;
+}
+.profile .sub-content{
+  margin:0 0 0 280px;
+  *overflow:hidden;
+}
+
+/*
+ *
+ * user moderation quick links
+ * 
+ */
+.user-mod-menu{
+  position:absolute;
+  font-size:12px;
+  top:-7px;
+  right:0px;
+  white-space:nowrap;
+}
+.user-mod-menuitem{
+  display:inline;/* double margin hack for ie */
+  margin:0 0 0 16px;
+}
+
+.profile-head{
+  margin:0 0 15px;
+}
+.profile-head .page-title{
+  margin: 0;
+}
+.profile-status{
+  font-size:12px;
+  color: #888;
+}
+
+/*
+ *
+ * Profile photo
+ *
+ */
+.p-photo{
+  margin:0 0 20px;
+}
+.p-photo-img{
+  margin:5px 0 5px;
+}
+a.p-photo-link{
+  font-size: 11px;
+  color: #666;
+}
+
+.p-photo .menu-popup {
+  left: 0;
+  right: auto;
+  top: 20px;
+}
+
+/*
+ *
+ * Widget (middle column) generic styles
+ *
+ */
+.p-widget{
+  padding:0px 25px 0px 15px;
+  font-size: 12px;
+  height:1%; /* make hasLayout for ie */
+  margin:0 0 30px;
+}
+.p-widget:last-child{
+  margin:0;
+}
+.p-widget-head{
+  margin: 0 0 12px -15px;
+  font-size:20px;
+  line-height:20px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  padding: 0 0 3px;
+  border-bottom: 2px solid #ccc;
+}
+.p-widget-head .small {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.p-widget-content a{
+/*  color: #666; */
+}
+
+/*
+ * Albums widget internals
+ */
+.pw-albums{
+  margin:-15px 0 0;
+}
+.pw-a-item{
+  float:left;
+  width:100%;
+  margin:15px 0 0;
+}
+.pw-a-thumb:hover + .pw-a-desc a {
+  text-decoration: underline;
+}
+a.pw-a-thumb{
+  float:left;
+  display:inline;/* double margin hack for ie */
+  margin:0 13px 0 0;
+}
+img.pw-a-thumb{
+  border-radius:2px;
+}
+.pw-a-desc{
+  display:block;
+  overflow:hidden;zoom:1;
+}
+.pw-a-desc a{
+  color: #666;
+}
+.pw-a-desc .ts{
+  font-size:10px;
+  display:block;
+  margin:2px 0 0;
+  color: #aaa;
+}
+/*
+ * Friends widget internals
+ */
+.pw-friends{
+  margin:-10px -29px 0 0;
+}
+.pw-f-item{
+  float:left;
+  width:50px;
+  margin:10px 25px 0 0;
+  display:inline;/* double margin hack for ie */
+  overflow:hidden;
+  font-size:11px;
+  text-align:center;
+  line-height: 1.1em;
+}
+.pw-f-thumb{
+/*  vertical-align:top;
+  border-radius:3px; */
+}
+.pw-f-name{
+  display:block;
+  margin:3px 0 0;
+  color: #666;
+}
+.pw-f-link:hover .pw-f-name{
+  text-decoration: underline;
+}
+/*
+ * Groups widget internals
+ */
+.pw-groups a {
+  color: #666;
+}
+li.pw-g-item{
+  display:inline;
+  line-height: 1.4em;
+}
+li.pw-g-item:after{
+  content:'•';
+  margin:0 0 0 4px;
+  color: #444;
+}
+li.pw-g-item:last-child:after{
+  content:'';
+  margin:0;
+}
+/* 
+ * Blog widget internals
+ */
+.pw-blog{
+  margin:-10px 0 0;
+}
+.pw-b-item{
+  margin:10px 0 0;
+}
+.pw-b-meta{
+  font-size:10px;
+  color: #aaa;
+  margin:3px 0 0;
+}
+.pw-blog a {
+  color: #666;
+}
+/*
+ * 
+ * Profile info blocks (right column)
+ * 
+ */
+.p-block{
+  margin:0 0 30px;
+}
+.p-block-title{
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  font-weight: normal;
+  margin: 0 0 10px -15px;
+  font-size: 20px;
+}
+._collapsed .p-block-title{
+  color: #ccc;
+}
+._collapsed .p-block-title:hover{
+  color: #888;
+}
+
+/* Toggler for title */
+.p-block-title ._collapser{
+  background: #f3f3f3;
+  background: linear-gradient(#fff, #e7e7e7);
+  background: -moz-linear-gradient(#fff,#e7e7e7);
+  background: -webkit-linear-gradient(#fff,#e7e7e7);
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px #CCC;
+  padding:4px 5px 4px;
+  vertical-align: top;
+  display:inline-block;
+  font-size: 11px;
+  color: #888;
+}
+.p-block-title ._collapser:hover{
+  text-decoration:none;
+}
+.p-block-title ._collapser:focus{
+  outline:0;
+}
+.p-block-title ._collapser:before{
+  content:'▲';
+}
+._collapsed .p-block-title ._collapser:before{
+  content:'▼';
+}
+._collapsed .p-block-title ._collapser{
+/*  padding:3px 5px; */
+}
+
+/* user statictics subblocks */
+.p-info-box{
+  margin-bottom:15px;
+}
+.p-info-box dd{
+  min-height:17px;
+  _height:17px;
+}
+.p-info-box dt{
+  color:#ccc;
+  font-weight:bold;
+  font-style:italic;
+  font-size:11px;
+  margin:0 0 5px 5px;
+}
+.p-info-label{
+  float:left;
+  width:120px;
+  color: #888;
+}
+.p-info-box .info{
+  overflow:hidden;
+  zoom:1;
+}
+.p-info-box .ts{
+  font-size:11px;
+}
+
+/* Toggler in subblock */
+.p-info-collapser ._collapser{
+  background: #f3f3f3;
+  background: linear-gradient(#fff, #e7e7e7);
+  background: -moz-linear-gradient(#fff,#e7e7e7);
+  background: -webkit-linear-gradient(#fff,#e7e7e7);
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px #CCC;
+  padding:2px 5px 4px;
+  vertical-align: top;
+  display:inline-block;
+  font-size: 7px;
+  color: #888;
+}
+.p-info-collapser ._collapser:hover{
+  text-decoration:none;
+}
+.p-info-collapser ._collapser:focus{
+  outline:0;
+}
+.p-info-collapser ._collapser:before{
+  content:'▲';
+}
+._collapsed .p-info-collapser ._collapser:before{
+  content:'▼';
+}
+._collapsed .p-info-collapser ._collapser{
+  padding:3px 5px;
+}
+
+/*
+ *
+ * Profile notepad
+ *
+ */
+.pnotepad-text{
+  height:150px;
+  width:100%;
+}
+.pnotepad-controls{
+  text-align:right;
+  margin-top: 10px;
+}
+
+/*
+ * 
+ * Other
+ * 
+ */
+.online-sticker{
+  background: #b7db47;
+/*  background: linear-gradient(#9fc42d, #b7db47, #b7db47);
+  background: -moz-linear-gradient(#9fc42d, #b7db47, #b7db47);
+  background: -webkit-linear-gradient(#9fc42d, #b7db47, #b7db47);
+  */
+  color:#fff;
+  border-radius:4px 4px 4px 0;
+  font:11px/15px Verdana,sans-serif;
+  position:absolute;
+  margin:-12px 0 0 4px;
+  padding:0 5px;
+  height:17px;
+  text-shadow: 0 0 4px #444;
+}
+.online-sticker:before {
+/*  background-color:#b7db47; */
+  position:absolute;
+  content: '';
+  left:0;
+  bottom:-4px;
+  width:0px;
+  height:0px;
+  display:block;
+  border: 2px solid;
+  border-color: #b7db47 transparent transparent #b7db47;
+}

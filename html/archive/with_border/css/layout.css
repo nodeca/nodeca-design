@@ -1,0 +1,822 @@
+/*
+ * 
+ * Basic definitions
+ * 
+ */
+
+.clearfix:after { clear: none!important; overflow: hidden; width: 100%; } /* clearfix fix for fluid layout */
+
+html,body{height:100%;}
+body { color:#444; font:14px/1.231 Verdana,sans-serif; }
+
+ul,ol{margin:0;}
+li{list-style:none;}
+
+/*
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #015b7d;text-decoration:none; }
+a:hover { color: #015b7d;text-decoration:underline; }
+a *{cursor:pointer;}
+*/
+a, a:active, a:visited { text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+
+.normal {font-weight: normal;}
+.nodisplay {display:none;}
+.more-icon:after{content:' ▾';}
+.left { float: left;}
+.right { float: right;}
+
+
+/* warning for disabled JS */
+.js  .jsnotice { display: none; }
+.no-js .jsnotice {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 90px;
+  z-index: 10000;
+}
+
+/*
+ * 
+ * Lists helpers
+ *
+ */
+
+/*  Definition list template. Looks like:
+ *    Today Plans: Kill Bill, Play game, Save documents */
+.def-list dt,
+.def-list dd {
+  display:inline;
+  white-space:nowrap;
+}
+.def-list dd:after{
+  content:',';
+}
+.def-list dd:last-child:after{
+  content:'';
+}
+
+/* Horisontal list, separated by ',' */
+.hlist li {
+  display: inline;
+}
+.hlist li:after{
+  content:',';
+  margin-right: 3px;
+}
+.hlist li:last-child:after{
+  content:' ';
+}
+
+/*
+ * 
+ * Page footer statictics.
+ *
+ */
+.page-summary {
+  background-color:#F7F7F7;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #E0E0E0;
+  padding:20px;
+  height:1%; /* make hasLayout for ie */
+  margin-top:30px;
+  color: #888;
+  font-size: 12px;
+}
+.page-summary section {
+  margin: 0 0 15px 10px;
+}
+.page-summary section:last-child {
+  margin-bottom: 0;
+}
+.page-summary section h5 {
+  margin: 0 0 8px -10px;
+  font-family: Verdana,sans-serif;
+  color: #444;
+  font-weight: normal;
+  font-size: 13px;
+}
+.page-summary section p{
+  line-height:1.4em;
+  font-size: 11px;
+}
+.page-summary-users{
+  line-height:1.4em;
+}
+.page-summary-users a{
+/*  color:#067ba1; */
+}
+.global-stats li{
+  display: inline;
+  margin-right:10px;
+}
+
+/*
+ *
+ * General Styles
+ *
+ */
+.title{
+  margin-bottom: 15px;
+}
+.title.nearby{
+  margin-bottom: 5px;
+}
+
+.title h1,
+h1.title{
+  margin: 0;
+  font-size:26px;
+  color: #666;
+}
+h1.title{
+  margin-bottom: 15px;
+}
+/*
+.title h1._editable:hover:after,
+h1.title._editable:hover:after {
+ content: " ✎";
+}*/
+.title h1._editable:hover,
+h1.title._editable:hover {
+ text-decoration: underline;
+ cursor: pointer;
+}
+.title .subtitle{
+  font-size:11px;
+  color: #aaa;
+  max-width: 60%;
+}
+.title.has-filters .subtitle{
+  max-width: 75%;
+}
+
+/* Helps to keep footer near window bottom */
+.global-wrap{
+  min-height:100%;
+}
+* html .global-wrap{
+  height:100%;
+}
+
+/* Limits content width */
+.trunk{
+  margin-left:auto;
+  margin-right:auto;
+  min-width:760px;
+  
+  /* Change to switch page width             */
+  /* by default - 960px, for 1024px screens  */
+  width:960px;
+  
+  padding-left:15px;
+  padding-right:15px;
+}
+
+/*
+ *
+ * Page header styles
+ *
+ */
+.header{
+  background: #333;
+  box-shadow: 0 0 3px #000000; /*, 0 -1px 0 #AAAAAA inset;*/
+}
+.header.small{
+  height: 38px;
+}
+header .trunk{
+  position:relative;
+  z-index:11;
+}
+.header a, .header a:hover {
+  color: #bbb;
+  text-decoration: none;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.logo{
+  position: relative;
+  float: left;
+  line-height: 20px;
+  font-size:20px;
+  width: 120px;
+}
+.header.small {
+  bottom:5px;
+}
+.logo a{
+  color:#fff;
+  display: block;
+  padding: 10px 10px 10px 0;
+}
+.logo a:hover{
+  color:#fff;
+}
+
+/*
+ * 
+ * Global navigation (heading tabs)
+ * 
+ */
+.global-nav {
+  float: left;
+  margin-right: 10px;
+}
+.global-nav ul{
+  float: left;
+}
+.gn-tab{
+  float:left;
+  position: relative;
+/*  display:inline; /* double margin hack for ie */
+}
+a.gn-link{
+  display:block;
+  padding:13px 7px;
+  font-size:14px;
+  line-height: 14px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+a.gn-link:hover{
+  color: #fff;
+}
+.active a.gn-link {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.gn-tab.active:before {
+  position: absolute;
+  content: '';
+  bottom: -0px;
+  width: 100%;
+  height: 2px;
+/*  background-color: #fff; */
+  border-bottom: 2px solid #ccc;
+}
+
+.header .menu:after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #FFFFFF;
+  content: "&darr";
+  display: inline-block;
+  height: 0;
+  margin-left: 4px;
+  margin-top: 6px;
+  opacity: 0.5;
+  text-indent: -99999px;
+  vertical-align: top;
+  width: 0;
+}
+.menu-dropdown {
+  background-clip: padding-box;
+  background-color: #404040;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 6px 6px;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 220px;
+  min-width: 100px;
+  padding: 6px 0;
+  position: absolute;
+  top: 40px;
+  left: -1px;
+  z-index: 900;
+}
+.menu-dropdown .divider {
+  background-color: #303030;
+  border-bottom: 1px solid #505050;
+  height: 1px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+.menu-dropdown li{
+  display: block;
+  float: none;
+  white-space: nowrap;
+}
+.menu-dropdown li a {
+  display: block;
+  padding: 6px 25px 6px 15px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
+}
+.menu-dropdown li a:hover {
+  color: #fff;
+  background-color: #222;
+}
+.header ._menu-activated a.menu {
+  background-color: #404040;
+}
+.header form {
+    float: left;
+    margin: 7px 0 0;
+    opacity: 1;
+    position: relative;
+}
+
+.header .secondary {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.header .secondary .menu-dropdown {
+  left: auto;
+  right: -1px;
+}
+
+/* --------------------------------------
+ * user navigation
+ */
+.user-bar{
+  position:absolute;
+  top:7px;
+  left:184px;
+  z-index:1;
+  font-size:11px;
+}
+.small .user-bar{
+  left: auto;
+  right: 0;
+  top:10px;
+}
+.ub-item {
+  float:left;
+  display:inline;/* double margin hack for ie */
+  margin:0 16px 0 0;
+  height: 20px;
+  line-height: 20px;
+}
+.ub-item.highlight a {
+  /*color:#fff;*/
+  font-weight: bold;
+}
+
+/*
+ *
+ * Sidebar
+ *
+ */
+.sidebar{
+  float:left;
+  display:inline;/* double margin hack for ie */
+}
+
+/* --------------------------------------
+ * content
+ */
+.container{
+  padding-bottom:140px;/* indent for footer */
+}
+.content-wrap{
+  float:left;
+  width:100%;
+  margin-left:-100px;
+}
+.content{
+  border-bottom:1px solid #b0b0b0;
+  border-left:1px solid #b0b0b0;
+  margin:30px 0 0;
+  padding: 20px 0 30px 30px;
+  height: 1%;/* ie padding hack */
+}
+.styled{
+  position: relative;
+}
+.styled:before{
+  position: absolute;
+  content: '';
+  display: block;
+  width: 14px;
+  border-top:1px solid #b0b0b0;
+  left: 0;
+  top: 0;
+}
+
+.breadcrumbs{
+  position:absolute;
+  left:30px;
+  top:-7px;
+  line-height:1;
+  font-size:14px;
+  color:#898989;
+  white-space:nowrap;
+}
+.breadcrumbs a{
+  color:#666;
+}
+.breadcrumbs li{
+  display:inline;
+  margin:0 4px 0 0;
+}
+.breadcrumbs li:after{
+  content:'»';
+  margin:0 0 0 6px;
+  font-size:14px;
+}
+.breadcrumbs li:last-child:after{
+  content:'';
+  margin:0;
+}
+
+.page-controls {
+  background-color: #fff;
+  z-index: 1000;
+}
+.page-controls.above {
+  padding: 10px 15px;
+  box-shadow: 0 5px 5px -5px #444;
+  border-bottom: 1px solid #AAAAAA;
+}
+.page-controls.below {
+  margin:0px 5px 15px;
+}
+
+.page-controls .btn.more{
+  margin: 0 0 10px;
+}
+.buttons {
+  float: right;
+}
+.buttons li{
+  float: left;
+  display: inline; /* ie double margin hack */
+  margin-left: 7px; 
+}
+.buttons-secondary {
+  float: left;
+}
+.buttons-secondary li{
+  float: left;
+  display: inline; /* ie double margin hack */
+  margin-right: 7px; 
+}
+
+.gray-box{
+  background-color: #F7F7F7;
+  padding: 25px;
+  height: 1%; /* ie padding hack */
+}
+.narrow-column{
+  margin: auto;
+  width:656px;
+}
+
+/*
+ *
+ * Page footer styles
+ *
+ */
+.footer{
+  position:relative;
+  margin-top:-100px;
+}
+.footer-nav{
+  margin:0 0 5px;
+}
+.footer-nav li{
+  display:inline;
+  margin-right:7px;
+}
+.copyrights{
+  font-size:13px;
+}
+.with-aside-menu-col .footer-nav,
+.with-aside-menu-col .copyrights{
+  padding-left:120px;
+}
+.site-options{
+  position:absolute;
+  right:15px;
+  top:0;
+}
+.site-options li{
+  float:left;
+  display:inline;/* double margin hack for ie */
+  margin:0 0 0 10px;
+}
+.site-theme,
+.site-lang{
+  border-radius:2px;
+  font-size:10px;
+  padding:0;
+  width:100px;
+  margin:0 0 5px;
+  display:block;
+}
+
+/*
+ *
+ * Mini profile popup (shown on member name hover)
+ *
+ */
+.prf-mini{
+  display: none;
+  background-color: #444;
+  border-radius:4px;
+/*  color:#1d1d1d; */
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 999;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 5px;
+  box-shadow: 0 0 60px #444;
+}
+.prf-mini:before,
+.prf-mini:after{
+  content: '';
+  display: block;
+  position: absolute;
+  left:20px;
+  border: 15px solid transparent;
+  border-top-color: #444;
+  bottom: -30px;
+  width:0;
+  height: 0;
+  overflow: hidden;
+}
+.prf-mini:after{
+  border-top-color: #fff;
+  bottom: -24px;
+}
+.prf-mini-head{
+  color:#fff;
+  font-size: 16px;
+  padding-left: 172px;
+  line-height: 44px;
+}
+.prf-mini-wrap{
+  background-color: #fff;
+  padding: 7px;
+  height: 1%;
+}
+.prf-mini-author img {
+  margin-bottom: 10px;
+}
+.prf-mini-sidebar{
+  float: left;
+  display: inline;
+  margin: -40px 14px 0 0;
+  width: 150px;
+  position: relative;
+}
+.prf-mini-sidebar .btn{
+  width: 100%;
+  padding: 4px 0;
+  box-sizing:border-box;-moz-box-sizing:border-box;
+  text-align: center;
+}
+.prf-mini-actions li{
+  margin-top: 2px;
+}
+.prf-mini-content{
+  overflow: hidden;
+  zoom:1;
+  font-size: 12px;
+}
+.prf-mini-info li{
+  margin-bottom: 10px;
+  overflow: hidden;
+  zoom:1;
+}
+.prf-mini-info .label{
+  float: left;
+  width:125px;
+}
+.prf-mini-info .nofloat{
+  float: left;
+  width:180px;
+}
+
+/* ----------------------------------
+ * Tabs
+ */
+.tabs-content{
+  display: none;
+}
+.tabs-content-visible{
+  display: block;
+}
+
+/*
+ *
+ * Cutted text
+ *
+ */
+.cutted-text{
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: right;
+  margin: 0 0 30px;
+}
+.cutted-area{
+  text-align: left;
+  overflow: hidden;
+  height: 100px;
+  position: relative;
+  margin: 0 0 10px;
+}
+._expanded .cutted-area{
+  height: auto;
+}
+.cutted-area p{
+  margin-bottom: 7px;
+}
+.cutted-area:after{
+  background: linear-gradient(rgba(255,255,255,0), #fff);
+  background: -moz-linear-gradient(rgba(255,255,255,0), #fff);
+  background: -webkit-linear-gradient(rgba(255,255,255,0), #fff);
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height: 40px;
+  overflow: hidden;
+}
+.gray-box .cutted-area:after{
+  background: linear-gradient(rgba(255,255,255,0), #f7f7f7);
+  background: -moz-linear-gradient(rgba(255,255,255,0), #f7f7f7);
+  background: -webkit-linear-gradient(rgba(255,255,255,0), #f7f7f7);
+}
+._expanded .cutted-area:after{
+  display: none;
+}
+
+/*
+ * Mass moderation controls
+ */
+.bulkmod-menu {
+  position: fixed;
+  right:50%;
+  top:-12px;
+  display: none;
+  z-index: 9999;
+  _position: absolute; /* ie6 position fixed hack */
+  _top: expression(document.getElementsByTagName("body")[-12].scrollTop + "px"); /* ie6 position fixed hack */
+}
+.bulkmod-menu-pin {
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 8px 4px 4px 8px;
+  padding-right: 5px;
+  vertical-align: middle;
+  box-shadow: 0 0 60px #888;
+}
+.bulkmod-menu-pin:before{
+  content:'-';
+  position: relative;
+  background: #888;
+  color: #888;
+  display: inline-block;
+  width:20px;
+  margin-right:3px;
+  border-radius: 6px 0 0  6px;
+}
+.bulkmod-menu-pin:after{
+  content:'«';
+  position: absolute;
+  color: #fff;
+  text-align:center;
+  width:20px;
+  font-size: 25px;
+  left: 0;
+  top: 0;
+}
+
+.bulkmod-menu-content {
+  background-color: #fff;
+  border: 1px solid #888;
+  font-size: 13px;
+  display:none;
+  border-radius: 4px;
+  box-shadow: 0 0 60px #888;
+  padding: 0 0 10px;
+}
+.bulkmod-menu-content a {
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  color:#356;
+  display: block;
+  padding: 8px 30px 8px 20px;
+  height: 1%;
+  white-space: nowrap;
+}
+.bulkmod-menu-content a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+.bulkmod-menu-content dt {
+  padding: 15px 0 5px 15px;
+  font-size:15px;
+  font-weight: bold;
+}
+.bulkmod-menu-content dd {
+  display: inline-block;
+  vertical-align: top;
+}
+.bulkmod-menu-content .first {
+  border-right: 1px solid #ccc;
+}
+.bulkmod-menu-content .first a {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.bulkmod-menu:hover .bulkmod-menu-pin{
+  display:none;
+}
+.bulkmod-menu:hover .bulkmod-menu-content{
+  display:block;
+}
+
+/*
+ * Right static menu (for long pages) with scroller
+ */
+._scroll-top{
+  background: #ececec;
+  position: fixed;
+  right: 0;
+  top:50%;
+  height: 50px;
+  width: 50px;
+  border-radius:4px 0 0 4px;
+  line-height: 50px;
+  overflow: hidden;
+  margin-top: -25px;
+  z-index: 999;
+  text-align: center;
+  font-size: 24px;
+  display: none;
+}
+._scroll-top:after{
+  content: '⇪';
+}
+._scroll-top:hover{
+  background: #efefef;
+  text-decoration: none;
+}
+._scroll-top:focus{
+  outline: 0;
+}
+.nofloat{
+  overflow: hidden;
+  zoom:1; /* ie hack */
+}
+
+/*
+ * Avatars
+ */
+.av-s {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+  border-radius: 2px;
+}
+.av-m {
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+  border-radius: 3px;
+}
+.av-ml {
+  width: 70px;
+  height: 70px;
+  vertical-align: top;
+  border-radius: 3px;
+}
+.av-l {
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+  border-radius: 3px;
+}
+.av-xl {
+  width: 150px;
+  height: 150px;
+  vertical-align: top;
+  border-radius: 4px;
+}
+.av-xxl {
+  width: 200px;
+  height: 200px;
+  vertical-align: top;
+  border-radius: 3px;
+  box-shadow: 0 0 1px #444;
+}
+

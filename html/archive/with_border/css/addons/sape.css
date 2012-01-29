@@ -1,0 +1,11 @@
+.sape-links{
+  color:#888;
+  font-size:10px;
+  margin:10px 0 0 5px;
+}
+.sape-links a{
+  color:#888;
+}
+.with-aside-menu-col .sape-links{
+  padding-left:180px;
+}
