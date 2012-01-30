@@ -51,11 +51,12 @@
  * 
  */
 .user-mod-menu{
-  position:absolute;
   font-size:12px;
+/*  position:absolute;
   top:-7px;
-  right:0px;
-  white-space:nowrap;
+  right:0px;*/
+  float: right;
+  white-space: nowrap;
 }
 .user-mod-menuitem{
   display:inline;/* double margin hack for ie */
