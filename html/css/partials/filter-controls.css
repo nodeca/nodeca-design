@@ -40,6 +40,7 @@ a.filter-btn:focus{
   position: absolute;
   right: 6px;
   bottom: 0;
+  display: none;
 }
 
 .filter{

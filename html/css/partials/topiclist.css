@@ -1,6 +1,6 @@
 .tl{
 /*  border-top: 1px solid #aaa; */
-  padding-top: 10px;
+/*  margin-top: 10px; */
   background-color: #fff;
 }
 
@@ -14,9 +14,10 @@
 
 .tl-row {
   display: block;
-  padding: 11px 0px;
+  padding: 15px 0px;
   position: relative;
   min-height: 32px;
+  border-bottom: 1px solid #F8F8F8;
 }
 .tl-row a{
   color: #444;
@@ -29,7 +30,7 @@
  * topic header and description
 */
 .tl-content-col{
-  padding-left: 15px;
+  padding-left: 5px;
   padding-right: 25px;
   overflow: hidden;
 }
@@ -222,8 +223,8 @@ a.tl-preview-ctl:before {
 .mark-unread .status-mark {
   position:absolute;
   height: 18px;
-  top: 10px;
-  left: 15px;
+  top: 14px;
+  left: 5px;
   width: 7px;
   background: #c66;
 }

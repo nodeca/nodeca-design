@@ -6,12 +6,15 @@
 .profile .sidebar{
   margin: 38px 0 0;
   width:100px;
+  border-right: 1px solid #ccc;
 }
 .profile .sidebar-nav{
   line-height:24px;
+/*  text-align: right;*/
 }
 .profile .sidebar-nav a{
   color: #666;
+  margin-right: 20px;
 }
 .profile .sidebar-nav a:hover{
   color: #036;
@@ -32,6 +35,14 @@
 .profile .sub-content{
   margin:0 0 0 280px;
   *overflow:hidden;
+}
+
+/* Overrides */
+.profile .title .subtitle {
+  margin-top: -15px;
+}
+.profile .title h1 {
+  margin-left: 0;
 }
 
 /*

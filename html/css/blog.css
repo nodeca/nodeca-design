@@ -9,6 +9,7 @@
 .blog .breadcrumbs{
   top:20px;
   left:15px;
+  position: absolute;
 }
 .blog .content{
   margin-top: 60px;
@@ -81,6 +82,7 @@
 }
 .blog-head h1{
   margin: 0;
+  line-height: inherit;
 }
 .blog-head .timestamp{
   color:#888;
